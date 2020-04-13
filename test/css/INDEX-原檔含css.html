@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: "微軟正黑體";
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gototop {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            background-color: rgb(248, 248, 171);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            opacity: 0.65;
+            border: 5px solid gray;
+            z-index: 99;
+        }
+
+        nav.navbar {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(248, 248, 171);
+            display: flex;
+        }
+
+        .logo1 {
+            width: 100px;
+            height: 150px;
+            background-image: url(./img/logo1.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .logo2 {
+            width: 94px;
+            height: 150px;
+            background-image: url(./img/logo2.png);
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .logo3 {
+            width: 102px;
+            height: 150px;
+            background-image: url(./img/logo3.png);
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .logo4 {
+            width: 85px;
+            height: 150px;
+            background-image: url(./img/logo4.png);
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .logo5 {
+            width: 85px;
+            height: 150px;
+            background-image: url(./img/logo5.png);
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .logo6 {
+            width: 90px;
+            height: 150px;
+            background-image: url(./img/logo6.png);
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .logo7 {
+            width: 103px;
+            height: 150px;
+            background-image: url(./img/logo7.png);
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+
+        section.banner {
+            width: 100%;
+            height: calc(100vh - 150px);
+            background-image: url(./img/DespicableMe3/12.jpg);
+            background-position: 100% 60%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        section.content1 {
+            background-color: rgb(248, 248, 171);
+            background-image: url(./img/DespicableMe1/1-1.jpg);
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .block1 {
+            height: 100vh;
+            background-image: url(./img/DespicableMe1/1.jpg);
+            background-position: top;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 1;
+        }
+
+        article.text1 {
+            color: rgba(221, 84, 5, 0.9);
+            /* color: rgba(0, 0, 0, 0.8); */
+            font-size: 17px;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+            padding: 100px 100px 0 125px;
+            font-weight: 900;
+            text-align: justify;
+        }
+
+        .section2-1 {
+            width: 100%;
+            height: 50vh;
+            padding: 10px 0;
+        }
+
+        .section2-2 {
+            width: 100%;
+            height: 50vh;
+            padding: 10px 0;
+        }
+
+
+
+
+        footer {
+            background-color: rgb(248, 248, 171);
+            font-size: 15px;
+            padding: 20px 0;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+    <a href="#">
+        <div class="gototop"></div>
+    </a>
+    <nav class="navbar">
+        <a href="">
+            <div class="logo1">Despicable Me</div>
+        </a>
+        <a href="">
+            <div class="logo2"></div>
+        </a>
+        <a href="">
+            <div class="logo3"></div>
+        </a>
+        <a href="">
+            <div class="logo4"></div>
+        </a>
+        <a href="">
+            <div class="logo5"></div>
+        </a>
+        <a href="">
+            <div class="logo6"></div>
+        </a>
+        <a href="">
+            <div class="logo7"></div>
+        </a>
+    </nav>
+    <main id="main-content">
+        <section class="banner"></section>
+
+        <section class="content1">
+            <div class="container">
+                <div class="section1">
+                    <div class="block1">
+                        <article class="text1">
+                            <p>在和諧美麗的郊野社區，家家戶戶前院有鮮豔玫瑰、白色圍籬的裝飾。但唯有一戶人家，不但雜草叢生、烏漆抹黑，其中更藏匿一個不為人知的祕密基地。這裡是做壞事做上癮的世界級大壞蛋格魯，他不但坐擁各種最先進的科技產品，一發起狠來，更會使用縮小光、冷凍光和陸空戰車，來消滅阻止他偷月亮計畫的人。
+                            </p>
+                            <p>不料他竟然踢到鐵板=
+                                =，三個活潑可愛的孤兒不速而降，搞得他手足無措、兵荒馬亂，眼看他策畫已久、史上最大的一票的偷月計劃即將展開…，這三個寶貝究竟會與格魯擦出什麼樣的火花…，偷月計劃能如願成功嗎？還是格魯會乖乖服貼成一個他想都沒想過超級奶爸呢？
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content2">
+            <div class="container">
+                <div class="section2-1">
+                    <div class="block2-1"></div>
+                    <article class="text2-1">
+                        cupiditate voluptate minus culpa libero consequatur quae veniam illo eius, expedita
+                        doloremque soluta et aliquam.
+                    </article>
+                </div>
+
+                <div class="section2-2">
+                    <div class="block2-2"></div>
+                    <article class="text2-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati cumque provident
+                        debitis suscipit repellendus.
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">本網頁僅供教學及練習使用，若有冒犯請洽0912-345678</footer>
+
+</body>
+
+</html>

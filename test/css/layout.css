@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*----------以下為回上方按鈕----------*/ 
+/* i.star{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    color: rgba(0, 0, 0, 0.3);
+}
+i.star:hover{
+    opacity: 0.7;
+} */
+
+.gototop{
+    background-image: url(../img/gototop.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 150px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 99;
+}
+/* .gototop:active{
+    opacity: 0.3;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 50px;
+    color:rgb(248, 248, 171)
+} */
+
+/* .gototop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(255, 142, 49);
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.65;
+    border: 5px solid rgb(77, 77, 77);
+    z-index: 99;
+    font-size: 40px;
+} */
+
+
+/*----------以下為navbar----------*/ 
+.menu-toggle {
+    display: none;
+}
+
+nav.navbar {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(248, 248, 171);
+}
+
+#menu{
+    width: 823px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo1 {
+    width: 100px;
+    height: 150px;
+    background-image: url(../img/logo1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo2 {
+    width: 102px;
+    height: 150px;
+    background-image: url(../img/logo2.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.logo3 {
+    width: 86px;
+    height: 150px;
+    background-image: url(../img/logo3.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.logo4 {
+    width: 85px;
+    height: 150px;
+    background-image: url(../img/logo4.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.logo5 {
+    width: 90px;
+    height: 150px;
+    background-image: url(../img/logo5.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.logo6 {
+    width: 103px;
+    height: 150px;
+    background-image: url(../img/logo6.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+@media(max-width:823px){
+    .menu-toggle {
+        cursor: pointer;
+        display: block;
+        /* width: 50px;
+        height: 50px; */
+        /* background-image: url(../img/v.png);
+        background-size: cover; */
+        font-size: 50px;
+        padding: 0 0 0 10px;
+        color: rgb(255, 145, 0);
+    }
+
+    .menu-toggle:hover~#menu {
+        display: block;
+    }
+    .menu-toggle:active~#menu {
+        display: block;
+    }
+
+    nav.navbar {
+        display: block;
+    }
+
+    #menu{
+        display: none;
+        height: 50vh;
+        width: 100vh;
+        position: fixed;
+    }
+    #menu:hover{
+        display: block;
+    }
+
+    .logo1{
+        height: 130px;
+        position: fixed;
+        top: 45px;
+        left: 0;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .logo2{
+        height: 70px;
+        height: 110px;
+        position: fixed;
+        top: 140px;
+        left: 60px;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .logo3{
+        width: 77px;
+        height: 115px;
+        position: fixed;
+        top: 60px;
+        left: 138px;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .logo4{
+        height: 80px;
+        height: 115px;
+        position: fixed;
+        top: 135px;
+        left: 208px;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .logo5{
+        height: 120px;
+        position: fixed;
+        top: 55px;
+        left: 270px;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .logo6{
+        height: 130px;
+        position: fixed;
+        top: 120px;
+        left: 338px;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+
+}
+
+
+
+/*----------以下為主要內容----------*/ 
+main.main{
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    background-color: rgb(21, 19, 42);
+}
+
+
+
+
+/*----------以下為footer----------*/ 
+footer.footer {
+    background-color: rgb(248, 248, 171);
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: rgba(0, 0, 0, 0.8);
+}
