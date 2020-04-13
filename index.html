@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zn-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        *{box-sizing: border-box;}
+
+        .content{
+            width: 100%;
+            background-image: url(https://live.staticflickr.com/363/20357621486_ae5ecb1696_4k.jpg);
+            background-size:cover;
+            background-attachment: fixed;
+        }
+
+        .container{
+            margin: auto;
+            width: 1140px;
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card{
+            background-color:white;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            opacity: 0.75;
+        }
+
+        .card img{
+            height: 150px;
+            width: 150px;
+        }
+
+        .card #size{
+            font-size: 30px;
+        }
+
+        .card #go{
+            font-size: 23px;  
+            font-weight: 900;
+        }
+
+        .test{
+            display: flex;
+            padding: 0 35px;
+        }
+
+        .test h3{
+            margin: 0;
+        }
+
+        .test div{
+            background-color:rgba(255, 140, 0, 0.75);
+            border-radius: 7px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+
+        $.ajax({
+            url:"https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D",
+            
+            success:function(weather){
+                var locations = weather.records.location;
+
+                console.log(locations)
+
+
+                // for迴圈可以用index+=2等等，但forEach就只+1，就是逐步進行的
+
+                // locations.forEach(element => {
+
+                for (let index = 0; index < locations.length; index++) {
+                    const element = locations[index];
+                    
+                    var city = element.locationName;
+                    var Wx = element.weatherElement[0].time[0].parameter.parameterName;
+                    var PoP = element.weatherElement[1].time[0].parameter.parameterName;
+                    var MinT = element.weatherElement[2].time[0].parameter.parameterName;
+                    var MaxT = element.weatherElement[4].time[0].parameter.parameterName;
+
+                    console.log(city)
+
+
+                    var content = document.querySelector(".container")
+
+                var img_src = " "
+                var advice = " "
+                var color = " "
+                if(PoP >= 0 && PoP < 30){
+                    img_src = "https://img.88tph.com/production/20180117/12466214-1.jpg!/watermark/url/L3BhdGgvbG9nby5wbmc/align/center";
+                    advice = "快快樂樂出門"
+                }else if(PoP >= 30 && PoP < 60){
+                    img_src = "http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconqu0fk35r40v.png";
+                    advice = "平平安安回家"
+                }else{
+                    img_src = "https://img.88tph.com/production/20180117/12466188-1.jpg!/watermark/url/L3BhdGgvbG9nby5wbmc/align/center/repeat/true";
+                    advice = "請勿出門"
+                    color = 'style="background-color: red;"'
+                }
+
+
+                content.innerHTML += `
+                    <div class="card">
+                        <img src="${img_src}" alt="">
+                        <h2>${city}</h2>
+                        <h3>${Wx}</h3>
+                        <h3>今天${MinT}~${MaxT}度C</h3>
+                        <h3>您需要帶傘der機率 <span id="size">${PoP}%</span></h3>
+                        <div class="test"><h3>建議您：</h3>
+                            <div ${color}>
+                                <span id="go">${advice}</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+                }
+                // });
+
+            }
+        })
+            
+    </script>
+
+</body>
+
+</html>
