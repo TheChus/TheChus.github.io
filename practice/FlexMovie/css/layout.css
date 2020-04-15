@@ -150,7 +150,7 @@ nav.navbar {
         display: block;
     }
     .menu-toggle:active~#menu {
-        /* display: block; */
+        display: block;
     }
 
     nav.navbar {
