@@ -33,7 +33,7 @@
             .container{
                 display: block;
                 width: 100%;
-                padding: 10px;
+                padding: unset;
             }
         }
 
@@ -45,6 +45,12 @@
             border-radius: 20px;
             margin-bottom: 30px;
             opacity: 0.75;
+        }
+
+        @media(max-width:576px){
+            .card{
+                margin: 0 auto 50px auto;
+            }
         }
 
         .card img{
@@ -116,7 +122,7 @@
                     console.log(city)
 
 
-                    var content = document.querySelector(".container")
+                    var container = document.querySelector(".container")
 
                 var img_src = " "
                 var advice = " "
@@ -134,7 +140,7 @@
                 }
 
 
-                content.innerHTML += `
+                container.innerHTML += `
                     <div class="card">
                         <img src="${img_src}" alt="">
                         <h2>${city}</h2>
