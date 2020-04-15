@@ -74,7 +74,8 @@ section.content1 {
 
 @media(max-width:875px){
     .content1 .section1 .text{
-        font-size: 15px;
+        font-size: 8px;
+        padding: 20px;
     }
 }
 
@@ -218,7 +219,8 @@ section.content1 {
     .content3 .section1 .text{
         width: 100%;
         height: 30vh;
-        font-size: 15px;
+        font-size: 14px;
+        line-height: unset;
     }
 }
 
