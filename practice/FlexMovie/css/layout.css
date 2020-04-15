@@ -1,4 +1,4 @@
-body {
+ body {
     margin: 0;
     padding: 0;
 }
@@ -150,7 +150,7 @@ nav.navbar {
         display: block;
     }
     .menu-toggle:active~#menu {
-        display: block;
+        /* display: block; */
     }
 
     nav.navbar {
@@ -162,6 +162,7 @@ nav.navbar {
         height: 50vh;
         width: 100vh;
         position: fixed;
+        z-index: 9999;
     }
     #menu:hover{
         display: block;
