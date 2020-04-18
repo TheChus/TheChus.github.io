@@ -1,0 +1,256 @@
+/* 這裡是nav */
+/* 需詢問老師：不知為何把css放到index.css連結會fixed失敗？
+而且fixed後，nav黑色一長條變短了？
+*/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.bg-my-color {
+    background-color: black;
+}
+
+#toggle {
+    width: 28px;
+    height: 30px;
+    margin: 10px auto;
+}
+
+@media (min-width: 992px) {
+    #toggle {
+        display: none;
+    }
+}
+
+#toggle div {
+    width: 100%;
+    height: 5px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+#toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on .two {
+    opacity: 0;
+}
+
+#toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.navbar-brand {
+    padding: unset;
+}
+
+.nav-link {
+    font-size: 21px;
+    font-weight: 900;
+}
+
+/* 這裡是section1 */
+#section1 {
+    width: 100%;
+    height: calc(100vh - 106.458px);
+    position: relative;
+}
+
+/* 需詢問老師：為什麼想罩一層黑色在原圖上會無效？ */
+.mask {
+    width: 100%;
+    height: 100%;
+    /* background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; */
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* 這裡是section2 */
+#section2 {
+    width: 100%;
+    position: relative;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+
+#section2 .swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+
+#section2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #151617;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* 需問老師：如何改「點點」的顏色？
+而且swiper的試範點點在右邊，不知道為何我的在左邊？ 
+下面是f12檢查看的，但顏色改了也沒用？*/
+/* .swiper-pagination:root {
+    --swiper-theme-color: #549b31;
+} */
+
+.section-name{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+#slide_11{
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/slide11.JPG);
+    background-position: center;
+    background-size: cover;
+}
+#slide_12{
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/slide12.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 這裡是section3 */
+#section3 {
+    width: 100%;
+    position: relative;
+    color:rgb(202, 197, 197);
+    margin: 0;
+    padding: 0;
+}
+
+#section3 .swiper-container {
+    width: 100%;
+    height: 100vh;
+  }
+  #section3 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+#slide_21{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slide21.JPG);
+    background-position: center;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+#slide_22{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slide22.JPG);
+    background-position: center;
+    background-size: cover;
+}
+#slide_23{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slide23.JPG);
+    background-position: center;
+    background-size: cover;
+}
+#slide_24{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slide24.JPG);
+    background-position: center;
+    background-size: cover;
+}
+#slide_25{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slide25.JPG);
+    background-position: center;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+#slide_26{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slide26.JPG);
+    background-position: center;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+#slide_27{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slide27.JPG);
+    background-position: center;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
