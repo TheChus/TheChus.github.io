@@ -1,9 +1,3 @@
-.fullpage {
-    width: 100%;
-    height: 100%;
-}
-
-
 /* 這裡是nav */
 /* 需詢問老師：不知為何把css放到index.css連結會fixed失敗？
 而且fixed後，nav黑色一長條變短了？
@@ -63,8 +57,8 @@
 
 /* 這裡是section1 */
 #section1 {
-    width: 100%;
-    height: calc(100vh - 106.458px);
+    width: 1920px;
+    height: 1080px;
     position: relative;
 }
 
@@ -79,16 +73,25 @@
     z-index: 2; */
 }
 
+.fullpage {
+    width: 100%;
+    height: 100%;
+}
+
 .banner {
     width: 100%;
     height: 100%;
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner1.jpg);
     background-size: cover;
     background-position: bottom;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+#scene {
+    overflow: hidden;
 }
 
 /* 這裡是section2 */
@@ -259,162 +262,4 @@
     color: white;
     font-weight: 700;
     font-size: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* 問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖都有依px重新裁切，但min-width沒有變？ */
-/* 這裡是footer*/
-footer {
-    width: 100%;
-    height: 566px;
-    position: relative;
-}
-
-.footer {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/footer.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-@media(min-width:320px){
-
-}
-
-@media(min-width:576px){
-
-}
-
-@media(min-width:768px){
-
-}
-
-@media(min-width:1462px){
-    .footer{
-        background-image: url(../img/footer1462.jpg);
-    }
-}
-
-@media(min-width:1765px){   
-    .footer{
-        background-image: url(../img/footer1765.jpg);
-    }
-}
-
-#cow1 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/cow1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}#cow2 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/cow2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}#cow3 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/cow3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}#dog1 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/dog1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}#dog2 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/dog2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}#dog3 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/dog3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}#dog4 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/dog4.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-@media(min-width:320px){
-
-}
-
-@media(min-width:576px){
-
-}
-
-@media(min-width:768px){
-
-}
-
-@media(min-width:1462px){
-    #cow1{
-        background-image: url(../img/cow11462.png);
-    }
-    #cow2{
-        background-image: url(../img/cow21462.png);
-    }
-    #cow3{
-        background-image: url(../img/cow31462.png);
-    }
-    #dog1{
-        background-image: url(../img/dog11462.png);
-    }
-    #dog2{
-        background-image: url(../img/dog21462.png);
-    }
-    #dog3{
-        background-image: url(../img/dog31462.png);
-    }
-    #dog4{
-        background-image: url(../img/dog41462.png);
-    }
-}
-
-@media(min-width:1765px){
-    
-    #cow2{
-        background-image: url(../img/cow21765.png);
-    }
-    #cow3{
-        background-image: url(../img/cow31765.png);
-    }
-    #dog2{
-        background-image: url(../img/dog21765.png);
-    }
-    #dog3{
-        background-image: url(../img/dog31765.png);
-    }
-}
-
-#scene {
-    overflow: hidden;
 }
