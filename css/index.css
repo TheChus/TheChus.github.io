@@ -307,10 +307,6 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 
 
 
-
-
-
-
 /* 要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖都有依px重新裁切，但min-width或是助教說改max-width都沒有變？ */
 /* 這裡是footer*/
 footer {
