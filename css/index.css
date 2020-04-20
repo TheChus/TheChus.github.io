@@ -126,7 +126,7 @@
     align-items: center;
 }
 
-/* 需問老師：如何改「點點」的顏色？
+/* 需問老師：如何改「swiper點點」的顏色？
 而且swiper的試範點點在右邊，不知道為何我的在左邊？ 
 下面是f12檢查看的，但顏色改了也沒用？*/
 /* .swiper-pagination:root {
@@ -198,7 +198,7 @@
 #slide_21{
     width: 100%;
     height: 100%;
-    background-image: url(../img/slide21.JPG);
+    background-image: url(../img/slide21.jpg);
     background-position: center;
     background-size: cover;
     line-height: 500px;
@@ -209,7 +209,7 @@
 #slide_22{
     width: 100%;
     height: 100%;
-    background-image: url(../img/slide22.JPG);
+    background-image: url(../img/slide22.jpg);
     background-position: center;
     background-size: cover;
 }
