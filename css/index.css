@@ -1,14 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: '微軟正黑體';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 .fullpage {
     width: 100%;
     height: 100%;
 }
 
 
-/* 這裡是nav */
-/* 需詢問老師：不知為何把css放到index.css連結會fixed失敗？
-而且fixed後，nav黑色一長條變短了？
-*/
 .navbar{
+    width: 100%;
+    max-height: 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,19 +78,17 @@
 /* 這裡是section1 */
 #section1 {
     width: 100%;
-    height: calc(100vh - 106.458px);
+    height: 100vh;
     position: relative;
 }
 
-/* 需詢問老師：為什麼想罩一層黑色在原圖上會無效？ */
-.mask {
+.banner::before{
+    content:'';
+    position: absolute;
     width: 100%;
     height: 100%;
-    /* background-color: red;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2; */
+    background-color: black;
+    opacity: 0.3;
 }
 
 .banner {
@@ -85,10 +97,6 @@
     background-image: url(../img/banner.jpg);
     background-size: cover;
     background-position: bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 /* 這裡是section2 */
@@ -100,37 +108,61 @@
     padding: 0;
 }
 
-#section2 .swiper-container {
+.section2_swiper{
     width: 100%;
     height: 300px;
+}
+#section2 .swiper-container {
+    width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 
 #section2 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #151617;
+    background: #000000;
 
     /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
 
-/* 需問老師：如何改「swiper點點」的顏色？
-而且swiper的試範點點在右邊，不知道為何我的在左邊？ 
-下面是f12檢查看的，但顏色改了也沒用？*/
-/* .swiper-pagination:root {
-    --swiper-theme-color: #549b31;
+/* 已解決的問題區ok！ */
+/* ok！<!-- 問老師如何用bootstrap將>768px時，只有一個col就好？用col-12，(1920px時是用col-lg-4 -->
+
+ok！<!-- BOotstrap的padding跟margin只有1~5嗎？對 -->
+
+ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
+/*ok！ <!-- 若要寫文字，這時候該怎麼置中？要固定swiper-container的高度才能用line-height吧？#slide_21{display:flex} --> */
+
+/*ok！ 需詢問老師：為什麼::before會無效？
+一定要有content:'';
+    position: absolute;
+    若無高度一定要有w跟h
+    width: 100%;
+    height: 100%; */
+
+/*ok！<!-- 問老師：滑鼠往下滾swiper，只能滑到slide-1跟-2，slide-3要手動移動滑鼠才可以？// 可將var swiper「3」 = new Swiper重新命名
+// 不然就加入「swiper.init();」在所有section的js最下方即可正常swiper --> */
+
+/* ok！需問老師：如何改「swiper點點」的顏色？
+而且swiper的試範點點在右邊(js加入oberser已回恢預設值，在下方) 
+顏色改：*/
+/* 可以用
+    .swiper-pagination-fraction 改方框{
+    background-color;去改！   }
+
+    .swiper-pagination-fraction span改點點 {
+    display:flex
+    justify-con:center
+    aling---center
+} */
+/* #section2 .swiper-pagination-fraction span{
+    background-color: tomato
 } */
 
 .section-name{
@@ -152,6 +184,10 @@
     background-image: url(../img/slide11.JPG);
     background-position: center;
     background-size: cover;
+    border-radius: 5px;
+    border: 5px white solid;
+    opacity: 0.7;
+    transition: 0.3s;
 }
 #slide_12{
     width: 300px;
@@ -159,6 +195,15 @@
     background-image: url(../img/slide12.JPG);
     background-position: center;
     background-size: cover;
+    border-radius: 5px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+#slide_11:hover{
+    opacity: 1;
+}
+#slide_12:hover{
+    opacity: 1;
 }
 
 
@@ -180,17 +225,8 @@
     font-size: 18px;
 
     /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
   }
 
@@ -262,7 +298,11 @@
 }
 
 
+/* 這裡是section4 */
 
+/* 這裡是section5 */
+
+/* 這裡是section6 */
 
 
 
@@ -288,29 +328,26 @@ footer {
     background-position: center;
 }
 
-@media(min-width:320px){
-
-}
-
-@media(min-width:576px){
-
-}
-
-@media(min-width:768px){
-
-}
-
-@media(min-width:1462px){
-    .footer{
-        background-image: url(../img/footer1462.jpg);
-    }
-}
-
-@media(min-width:1765px){   
+@media(max-width:1765px){   
     .footer{
         background-image: url(../img/footer1765.jpg);
     }
 }
+@media(max-width:1462px){
+    .footer{
+        background-image: url(../img/footer1462.jpg);
+    }
+}
+@media(max-width:768px){
+
+}
+@media(max-width:576px){
+
+}
+@media(max-width:320px){
+
+}
+
 
 #cow1 {
     width: 100%;
@@ -363,19 +400,22 @@ footer {
     background-position: center;
 }
 
-@media(min-width:320px){
-
+@media(max-width:1765px){
+    
+    #cow2{
+        background-image: url(../img/cow21765.png);
+    }
+    #cow3{
+        background-image: url(../img/cow31765.png);
+    }
+    #dog2{
+        background-image: url(../img/dog21765.png);
+    }
+    #dog3{
+        background-image: url(../img/dog31765.png);
+    }
 }
-
-@media(min-width:576px){
-
-}
-
-@media(min-width:768px){
-
-}
-
-@media(min-width:1462px){
+@media(max-width:1462px){
     #cow1{
         background-image: url(../img/cow11462.png);
     }
@@ -398,22 +438,16 @@ footer {
         background-image: url(../img/dog41462.png);
     }
 }
+@media(max-width:768px){
 
-@media(min-width:1765px){
-    
-    #cow2{
-        background-image: url(../img/cow21765.png);
-    }
-    #cow3{
-        background-image: url(../img/cow31765.png);
-    }
-    #dog2{
-        background-image: url(../img/dog21765.png);
-    }
-    #dog3{
-        background-image: url(../img/dog31765.png);
-    }
 }
+@media(max-width:576px){
+
+}
+@media(max-width:320px){
+
+}
+
 
 #scene {
     overflow: hidden;
