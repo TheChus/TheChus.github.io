@@ -146,8 +146,6 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     width: 100%;
     height: 100%; */
 
-/*ok！<!-- 問老師：滑鼠往下滾swiper，只能滑到slide-1跟-2，slide-3要手動移動滑鼠才可以？// 可將var swiper「3」 = new Swiper重新命名
-// 不然就加入「swiper.init();」在所有section的js最下方即可正常swiper --> */
 
 /* ok！需問老師：如何改「swiper點點」的顏色？
 而且swiper的試範點點在右邊(js加入oberser已回恢預設值，在下方) 
