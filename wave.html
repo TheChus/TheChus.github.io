@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 問老師，水波效果怎麼做不出來，已copy網站上測試成功的程式碼了= = -->
+    <!-- http://jqmdesigner.appspot.com/designer.html#&id=1587393816200 -->
+
+    <style>
+        html,
+        body,
+        #home,
+        .ui-content {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .bg {
+            width: 100%;
+            height: 100%;
+            background-image: url(https://thechus.github.io/img/banner.jpg);
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: auto 100%;
+        }
+
+        .wave-position {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+
+        .wave-body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .wave {
+            position: absolute;
+            top: calc((100% - 30px)/2);
+            left: calc((100% - 30px)/2);
+            width: 30px;
+            height: 30px;
+            border-radius: 300px;
+            background: url(https://thechus.github.io/img/banner.jpg);
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        .wave0 {
+            z-index: 2;
+            background-size: auto 106%;
+            -webkit-animation: w 1s;
+            -moz-animation: w 1s;
+            animation: w 1s;
+        }
+
+        .wave1 {
+            z-index: 3;
+            background-size: auto 102%;
+            -webkit-animation: w 1s .15s;
+            -moz-animation: w 1s .15s;
+            animation: w 1s .15s;
+        }
+
+        .wave2 {
+            z-index: 4;
+            background-size: auto 104%;
+            -webkit-animation: w 1s .3s;
+            -moz-animation: w 1s .3s;
+            animation: w 1s .3s;
+        }
+
+        .wave3 {
+            z-index: 5;
+            background-size: auto 101%;
+            -webkit-animation: w 1s .45s;
+            -moz-animation: w 1s .45s;
+            animation: w 1s .45s;
+        }
+
+        .wave4 {
+            z-index: 6;
+            background-size: auto 102%;
+            -webkit-animation: w 1s .6s;
+            -moz-animation: w 1s .6s;
+            animation: w 1s .6s;
+        }
+
+        .wave5 {
+            z-index: 7;
+            background-size: auto 100%;
+            -webkit-animation: w 1s .75s;
+            -moz-animation: w 1s .75s;
+            animation: w 1s .75s;
+        }
+
+        @-webkit-keyframes w {
+            0% {
+                top: calc((100% - 30px)/2);
+                left: calc((100% - 30px)/2);
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+
+            99% {
+                opacity: 1;
+            }
+
+            100% {
+                top: calc((100% - 300px)/2);
+                left: calc((100% - 300px)/2);
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+
+        @-moz-keyframes w {
+            0% {
+                top: calc((100% - 30px)/2);
+                left: calc((100% - 30px)/2);
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+
+            99% {
+                opacity: 1;
+            }
+
+            100% {
+                top: calc((100% - 300px)/2);
+                left: calc((100% - 300px)/2);
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes w {
+            0% {
+                top: calc((100% - 30px)/2);
+                left: calc((100% - 30px)/2);
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+
+            99% {
+                opacity: 1;
+            }
+
+            100% {
+                top: calc((100% - 300px)/2);
+                left: calc((100% - 300px)/2);
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+
+
+        /* .wave {
+            position: absolute;
+            top: calc((100% - 30px)/2);
+            left: calc((100% - 30px)/2);
+            要問老師：無法改成banner100vh嗎？
+            width: 100%;
+            height: 100vh;
+            border-radius: 300px;
+            background-image: url(img/banner.jpg);
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .wave0 {
+
+            z-index: 2;
+            background-size: auto 106%;
+            animation-name: w;
+            animation-duration: 1s;
+
+            animation-fill-mode: forwards;
+        }
+
+        .wave1 {
+
+            z-index: 3;
+            background-size: auto 102%;
+            animation-name: w;
+            animation-duration: 1s;
+            animation-delay: .2s;
+            animation-fill-mode: forwards;
+        }
+
+        .wave2 {
+
+            z-index: 4;
+            background-size: auto 104%;
+            animation-name: w;
+            animation-duration: 1s;
+            animation-delay: .4s;
+            animation-fill-mode: forwards;
+        }
+
+        .wave3 {
+
+            z-index: 5;
+            background-size: auto 101%;
+            animation-name: w;
+            animation-duration: 1s;
+            animation-delay: .5s;
+            animation-fill-mode: forwards;
+        }
+
+        .wave4 {
+
+            z-index: 6;
+            background-size: auto 102%;
+            animation-name: w;
+            animation-duration: 1s;
+            animation-delay: .8s;
+            animation-fill-mode: forwards;
+        }
+
+        .wave5 {
+
+            z-index: 7;
+            background-size: auto 100%;
+            animation-name: w;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes w {
+            0% {
+                top: calc((100% - 30px)/2);
+                left: calc((100% - 30px)/2);
+                width: 30px;
+                height: 30px;
+            }
+
+            100% {
+                top: calc((100% - 300px)/2);
+                left: calc((100% - 300px)/2);
+                width: 300px;
+                height: 300px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div is="page" id="home" data-role="page">
+        <div is="content" role="main" class="ui-content">
+            <div is="dragable" class="bg"></div>
+        </div>
+    </div>
+
+    <!-- <div class="wave wave5"></div>
+    <div class="wave wave4"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave1"></div>
+    <div class="wave wave0"></div> -->
+
+    <script>
+
+        (function () {
+            $(document).on('pageshow', '#home', function () {
+                var mx, my, timer;
+                var z = 2;
+                $(document).on('mousemove', function (e) {
+                    mx = e.pageX;
+                    my = e.pageY;
+                    z = z + 1;
+                    _wave(mx, my, z);
+                });
+
+                function _wave(i, j, k) {
+                    $('.ui-content').prepend(
+                        '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
+                        '<div class="wave-body">' +
+                        '<div class="wave wave5"></div>' +
+                        '<div class="wave wave4"></div>' +
+                        '<div class="wave wave3"></div>' +
+                        '<div class="wave wave2"></div>' +
+                        '<div class="wave wave1"></div>' +
+                        '<div class="wave wave0"></div>' +
+                        '</div>' +
+                        '</div>'
+                    );
+                    setTimeout(function () {
+                        $('.water' + k).remove();
+                    }, 3000);
+                }
+            });
+        })();
+
+
+        // var mx, my, timer;
+        // var z = 2;
+        // $(document).on('click', function (e) {
+        //     mx = e.pageX;
+        //     my = e.pageY;
+        //     z = z + 1;
+        //     _wave(mx, my, z);
+        // });
+
+        // function _wave(i, j, k) {
+        //     $('.ui-content').prepend(
+        //         '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
+        //         '<div class="wave-body">' +
+        //         '<div class="wave wave5"></div>' +
+        //         '<div class="wave wave4"></div>' +
+        //         '<div class="wave wave3"></div>' +
+        //         '<div class="wave wave2"></div>' +
+        //         '<div class="wave wave1"></div>' +
+        //         '<div class="wave wave0"></div>' +
+        //         '</div>' +
+        //         '</div>'
+        //     );
+        //     setTimeout(function () {
+        //         $('.water' + k).remove();
+        //     }, 3000);
+        // }
+
+    </script>
+
+</body>
+
+</html>

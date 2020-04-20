@@ -31,6 +31,7 @@ html{
 
 .bg-my-color {
     background-color: black;
+    opacity: 0.9;
 }
 
 #toggle {
@@ -66,7 +67,7 @@ html{
     transform: rotate(-45deg) translate(7px, -8px);
 }
 
-/* 問老師：要怎麼在手機版把toggle不要看不到？？？ */
+/* 問老師：要怎麼在手機版把toggle不要看不到？？？(因為前面有把navbar：fixed，還有max-width) */
 /* .navbar-collapse{
     width: 100%;
     height: 300px;
@@ -183,10 +184,9 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     color: white;
     text-align: left;
 }
-#slide_11{
+.slide2{
     width: 300px;
     height: 300px;
-    background-image: url(../img/slide11.JPG);
     background-position: center;
     background-size: cover;
     border-radius: 11px;
@@ -194,23 +194,31 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     opacity: 0.7;
     transition: 0.3s;
 }
-#slide_12{
-    width: 300px;
-    height: 300px;
-    background-image: url(../img/slide12.JPG);
-    background-position: center;
-    background-size: cover;
-    border-radius: 11px;
-    border: 5px whitesmoke solid;
-    opacity: 0.7;
-    transition: 0.3s;
-}
-#slide_11:hover{
+.slide2:hover{
     opacity: 1;
 }
-#slide_12:hover{
-    opacity: 1;
+#slide_211{
+    background-image: url(../img/slide211.JPG);
 }
+#slide_212{
+    background-image: url(../img/slide212.JPG);
+}
+#slide_221{
+    background-image: url(../img/slide221.JPG);
+}
+#slide_222{
+    background-image: url(../img/slide222.JPG);
+}
+#slide_231{
+    background-image: url(../img/slide231.JPG);
+}
+#slide_232{
+    background-image: url(../img/slide232.JPG);
+}
+/* 4/21要問老師：slide222、232的圖沒有怎樣，卻自動翻轉了？？？ */
+
+/* 4/21要問老師：怎麼讓lightbox裡的照片同樣大小？ */
+
 
 
 /* 這裡是section3 */
@@ -224,7 +232,7 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 
 #section3 .swiper-container {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   #section3 .swiper-slide {
     text-align: center;
@@ -236,71 +244,48 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     align-items: center;
   }
 
+.slide3{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
 
-#slide_21{
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/slide21.jpg);
+#slide_31{
+    background-image: url(../img/slide31.jpg);
+
+    /* 4/21：問老師為什麼上傳後jpg變text嗎 */
+    /* background-image: url(../img/ask.JPG); */
     background-position: center;
-    background-size: cover;
-    line-height: 500px;
-    color: white;
-    font-weight: 700;
-    font-size: 50px;
 }
-#slide_22{
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/slide22.jpg);
-    background-position: center;
-    background-size: cover;
+#slide_32{
+    background-image: url(../img/slide32.jpg);
+    background-position: 100% 70%;
 }
-#slide_23{
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/slide23.JPG);
-    background-position: center;
-    background-size: cover;
+#slide_33{
+    background-image: url(../img/slide33.JPG);
+        background-position: 100% 60%;
 }
-#slide_24{
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/slide24.JPG);
-    background-position: center;
-    background-size: cover;
+#slide_34{
+    background-image: url(../img/slide34.JPG);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
 }
-#slide_25{
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/slide25.JPG);
-    background-position: center;
-    background-size: cover;
-    line-height: 500px;
-    color: white;
-    font-weight: 700;
-    font-size: 50px;
+#slide_35{
+    background-image: url(../img/slide35.JPG);
+        background-position: center;
 }
-#slide_26{
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/slide26.JPG);
-    background-position: center;
-    background-size: cover;
-    line-height: 500px;
-    color: white;
-    font-weight: 700;
-    font-size: 50px;
+#slide_36{
+    background-image: url(../img/slide36.JPG);
+        background-position: 100% 65%;
 }
-#slide_27{
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/slide27.JPG);
-    background-position: center;
-    background-size: cover;
-    line-height: 500px;
-    color: white;
-    font-weight: 700;
-    font-size: 50px;
+#slide_37{
+    background-image: url(../img/slide37.JPG);
+        background-position: 100% 50%;
 }
 
 
