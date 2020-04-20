@@ -66,12 +66,12 @@ html{
     transform: rotate(-45deg) translate(7px, -8px);
 }
 
-/* 問老師要怎麼在手機版把toggle不要看不到？？？ */
-.navbar-collapse{
+/* 問老師：要怎麼在手機版把toggle不要看不到？？？ */
+/* .navbar-collapse{
     width: 100%;
     height: 300px;
     background-color: tomato;
-}
+} */
 
 .navbar-brand {
     padding: unset;
