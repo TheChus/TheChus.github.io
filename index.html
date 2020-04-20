@@ -75,6 +75,7 @@
 
     
 <!-- ok！問老師 ：section2的swiper「點點」不知為何跑到最右下方，超過section2_swiper的高度300px？因為swiper-pagination跑去swiper-container外面了，但也可以這樣用，加上position-ablute去調位置即可 -->
+
         <!-- Swiper Mousewheel Control-->
         <div class="section2_swiper">
             <div class="swiper-container">
@@ -207,7 +208,7 @@
                     <div id="slide_27">自己的照片記得要ps修圖</div>
                 </div>
             </div>
-<!-- 問老師：下方點點點的按鈕要記得改顏色！！！ -->
+<!-- 下方點點點的按鈕要記得改顏色！！！ -->
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
@@ -225,15 +226,27 @@
 
         <div class="footer">
             <div id="scene" class="fullpage">
-                <div id="cow1" data-depth="0.35">
-
+                <div class="layer" data-depth="0.35">
+                    <div id="cow1"></div>
                 </div>
-                <div id="cow2" data-depth="0.29"></div>
-                <div id="cow3" data-depth="0.51"></div>
-                <div id="dog1" data-depth="0.8"></div>
-                <div id="dog2" data-depth="0.46"></div>
-                <div id="dog3" data-depth="0.99"></div>
-                <div id="dog4" data-depth="1.3"></div>
+                <div class="layer" data-depth="0.29">
+                    <div id="cow2"></div>
+                </div>
+                <div class="layer" data-depth="0.51">
+                    <div id="cow3"></div>
+                </div>
+                <div class="layer" data-depth="0.8">
+                    <div id="dog1"></div>
+                </div>
+                <div class="layer" data-depth="0.46">
+                    <div id="dog2"></div>
+                </div>
+                <div class="layer" data-depth="0.99">
+                    <div id="dog3"></div>
+                </div>
+                <div class="layer" data-depth="1.3">
+                    <div id="dog4"></div>
+                </div>
                 <!-- <div id="avatar8" data-depth="0.78"><img src="img/avatar8.png" alt=""></div>
                 <div id="avatar9" data-depth="2.99"><img src="img/avatar9.png" alt=""></div>
                 <div id="avatar10" data-depth="1.77"><img src="img/avatar10.png" alt=""></div> -->

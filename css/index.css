@@ -184,8 +184,8 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     background-image: url(../img/slide11.JPG);
     background-position: center;
     background-size: cover;
-    border-radius: 5px;
-    border: 5px white solid;
+    border-radius: 11px;
+    border: 5px whitesmoke solid;
     opacity: 0.7;
     transition: 0.3s;
 }
@@ -195,7 +195,8 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     background-image: url(../img/slide12.JPG);
     background-position: center;
     background-size: cover;
-    border-radius: 5px;
+    border-radius: 11px;
+    border: 5px whitesmoke solid;
     opacity: 0.7;
     transition: 0.3s;
 }
@@ -312,7 +313,7 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 
 
 
-/* 問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖都有依px重新裁切，但min-width沒有變？ */
+/* 要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖都有依px重新裁切，但min-width或是助教說改max-width都沒有變？ */
 /* 這裡是footer*/
 footer {
     width: 100%;
@@ -328,7 +329,7 @@ footer {
     background-position: center;
 }
 
-@media(max-width:1765px){   
+/* @media(max-width:1765px){   
     .footer{
         background-image: url(../img/footer1765.jpg);
     }
@@ -346,9 +347,13 @@ footer {
 }
 @media(max-width:320px){
 
+} */
+
+
+.layer{
+    width: 100%;
+    height: 100%;
 }
-
-
 #cow1 {
     width: 100%;
     height: 100%;
@@ -400,7 +405,7 @@ footer {
     background-position: center;
 }
 
-@media(max-width:1765px){
+/* @media(max-width:1765px){
     
     #cow2{
         background-image: url(../img/cow21765.png);
@@ -446,7 +451,7 @@ footer {
 }
 @media(max-width:320px){
 
-}
+} */
 
 
 #scene {
