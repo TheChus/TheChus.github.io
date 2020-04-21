@@ -24,6 +24,34 @@ html{
     height: 100%;
 }
 
+.section-name{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.SmallSection-name{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.swiper-text{
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+
 
 /* 這裡是navbar */
 .navbar{
@@ -87,6 +115,21 @@ html{
 .nav-link {
     font-size: 21px;
     font-weight: 900;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav{
+        /* text-align: ; */
+        background-color: rgba(0,0,0,0.8);
+        border-radius: 5px;
+        max-width: 200px;
+        transform: translateX(-80%);
+        padding: 15px;
+    }
+
+    #nav-4{
+        margin: 0;
+    }
 }
 
 
@@ -304,19 +347,8 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     background-color: tomato
 } */
 
-.section-name{
-    color: white;
-    font-size: 30px;
-    font-weight: 900;
-}
-.text{
-    width: 300px;
-    height: 300px;
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-    text-align: left;
-}
+
+
 .slide2{
     width: 300px;
     height: 300px;
@@ -418,6 +450,45 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
         background-position: 100% 50%;
 }
 
+
+/* 這裡是section3-1 */
+#section3-1{
+    width: 100%;
+    height: 400px;
+}
+#slide_3-11{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    background-image: url(../img/slide311.jpg);
+    background-position: center;
+}
+#slide_3-12{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    background-image: url(../img/slide312.JPG);
+    background-position: center;
+}
+#slide_3-13{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    background-image: url(../img/slide313.JPG);
+    background-position: center;
+}
 
 /* 這裡是section4 */
 

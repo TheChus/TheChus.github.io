@@ -9,6 +9,8 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
     <!-- 越重要的link像是index.css放在最後，程式是由上往下讀取的 -->
@@ -20,9 +22,9 @@
 </head>
 
 <body>
-<!-- 4/21問老師：最新消息nav按下去，跳的位置擋到上面了！ -->
+    <!-- 4/21問老師：最新消息nav按下去，跳的位置擋到上面了！ -->
 
-<!-- 4/21問老師：可以讓logo變滿版沒有padding，就可以讓navbar變小一點(可能250px或200px) -->
+    <!-- 4/21問老師：可以讓logo變滿版沒有padding，就可以讓navbar變小一點(可能250px或200px) -->
     <!-- 這裡是nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-my-color">
         <div class="container">
@@ -39,12 +41,12 @@
                         <a class="nav-link text-white" href="#section2">最新消息</a>
                     </li>
                     <li class="nav-item  mr-5">
-                        <a class="nav-link text-white" href="#">階段目標</a>
+                        <a class="nav-link text-white" href="#section3">階段目標</a>
                     </li>
                     <li class="nav-item  mr-5">
                         <a class="nav-link text-white" href="#">商品訂購</a>
                     </li>
-                    <li class="nav-item dropdown  mr-5">
+                    <li class="nav-item dropdown  mr-5" id="nav-4">
                         <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             關於朱家牧場
@@ -55,8 +57,9 @@
                             <a class="dropdown-item" href="#">未來展望</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">聯絡我們</a>
+                    </span><li class="nav-item">
+                        <a class="nav-link text-white" href="#">聯絡我們
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -82,8 +85,8 @@
             </div>
         </div>
 
-    
-<!-- ok！問老師 ：section2的swiper「點點」不知為何跑到最右下方，超過section2_swiper的高度300px？因為swiper-pagination跑去swiper-container外面了，但也可以這樣用，加上position-ablute去調位置即可 -->
+
+        <!-- ok！問老師 ：section2的swiper「點點」不知為何跑到最右下方，超過section2_swiper的高度300px？因為swiper-pagination跑去swiper-container外面了，但也可以這樣用，加上position-ablute去調位置即可 -->
 
         <!-- Swiper Mousewheel Control-->
         <div class="section2_swiper">
@@ -93,7 +96,7 @@
                         <div class="container">
                             <div class="row ml-auto">
                                 <div class="col-12 col-lg-4 pl-lg-5">
-                                    <div class="text">
+                                    <div class="swiper-text">
                                         <span>
                                             <h5>2019.12.15</h5>
                                             <h5>牧場日常工作，與「中興大學-</h5>
@@ -133,7 +136,7 @@
                         <div class="container">
                             <div class="row ml-auto">
                                 <div class=" col-12 col-lg-4 pl-lg-5">
-                                    <div class="text">
+                                    <div class="swiper-text">
                                         <span>
                                             <h5>2018.11.30</h5>
                                             <h5>辦公大樓冷氣管道間</h5>
@@ -177,7 +180,7 @@
                         <div class="container">
                             <div class="row ml-auto">
                                 <div class=" col-12 col-lg-4 pl-lg-5">
-                                    <div class="text">
+                                    <div class="swiper-text">
                                         <span>
                                             <h5>2006.05.11</h5>
                                             <h5>阿不溜</h5>
@@ -225,7 +228,7 @@
 
 
     <!-- 這裡是section3 -->
-    <section id="section3" class="mb-5">
+    <section id="section3">
         <div class="container">
             <div class="section-name">
                 友善環境 Environment
@@ -257,21 +260,48 @@
                     <div id="slide_37" class="slide3">自己的照片記得要ps修圖</div>
                 </div>
             </div>
-<!-- 下方點點點的按鈕要記得改顏色！！！ -->
+            <!-- 下方點點點的按鈕要記得改顏色！！！ -->
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
             <div class="swiper-button-next">
-<!-- OK！ 可以再放入一個div，放入想要的箭頭圖，再將.swiper-button-next:after,-->
+                <!-- OK！ 可以再放入一個div，放入想要的箭頭圖，再將.swiper-button-next:after,-->
             </div>
             <div class="swiper-button-prev"></div>
         </div>
+    </section>
 
+    <!--section3的階段目標1  -->
+    <section id="section3-1">
+        <div class="container">
+            <div class="SmallSection-name pl-5 pt-3 animated rubberBand delay-1s">
+                階段目標 Goal</div>
+            <div class="text">第一階段：設備改善添購、牛舍改建重整</div>
+            <div data-aos="zoom-in" id="slide_3-11">
+                    <!-- <div class="row">
+                        <div class="col-lg-4">
+                            <div id="slide_3-11"></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="slide_3-12"></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="slide_3-13"></div>
+                        </div>
+                    </div> -->
+            </div>
+
+        </div>
+    </section>
+    <!--section3的階段目標2  -->
+    <section id="section3-2">
+        <div class="container pl-5 pt-3">
+            <div class="text">第二階段：科技養牛</div>
+        </div>
     </section>
 
 
-
-<!-- 4/21問老師：parallax官網會「自動」晃？的功能 -->
+    <!-- 4/21問老師：parallax官網會「自動」晃？的功能 -->
     <footer>
 
         <div class="footer">
@@ -324,6 +354,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <script>
@@ -350,36 +381,36 @@
         });
 
         // 這是section1的水波效果
-       // 4/22問老師:$('#section1')想讓水波效果只在#section1有作用
-       //看是否能做像wave.html的水波效果_比較自然
-    //    未完成 (function () {
-    //             var mx, my, timer;
-    //             var z = 2;
-    //             $(document).on('mousemove', function (e) {
-    //                 mx = e.pageX;
-    //                 my = e.pageY;
-    //                 z = z + 1;
-    //                 _wave(mx, my, z);
-    //             });
+        // 4/22問老師:$('#section1')想讓水波效果只在#section1有作用
+        //看是否能做像wave.html的水波效果_比較自然
+        //    未完成 (function () {
+        //             var mx, my, timer;
+        //             var z = 2;
+        //             $(document).on('mousemove', function (e) {
+        //                 mx = e.pageX;
+        //                 my = e.pageY;
+        //                 z = z + 1;
+        //                 _wave(mx, my, z);
+        //             });
 
-    //             function _wave(i, j, k) {
-    //                 $('.ui-content').prepend(
-    //                     '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
-    //                     '<div class="wave-body">' +
-    //                     '<div class="wave wave5"></div>' +
-    //                     '<div class="wave wave4"></div>' +
-    //                     '<div class="wave wave3"></div>' +
-    //                     '<div class="wave wave2"></div>' +
-    //                     '<div class="wave wave1"></div>' +
-    //                     '<div class="wave wave0"></div>' +
-    //                     '</div>' +
-    //                     '</div>'
-    //                 );
-    //                 setTimeout(function () {
-    //                     $('.water' + k).remove();
-    //                 }, 3000);
-    //             }
-    //     })();
+        //             function _wave(i, j, k) {
+        //                 $('.ui-content').prepend(
+        //                     '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
+        //                     '<div class="wave-body">' +
+        //                     '<div class="wave wave5"></div>' +
+        //                     '<div class="wave wave4"></div>' +
+        //                     '<div class="wave wave3"></div>' +
+        //                     '<div class="wave wave2"></div>' +
+        //                     '<div class="wave wave1"></div>' +
+        //                     '<div class="wave wave0"></div>' +
+        //                     '</div>' +
+        //                     '</div>'
+        //                 );
+        //                 setTimeout(function () {
+        //                     $('.water' + k).remove();
+        //                 }, 3000);
+        //             }
+        //     })();
 
 
         // 這是section2的swiper+lightbox
@@ -418,10 +449,20 @@
             },
         });
 
-//<!-- 問老師：滑鼠往下滾swiper，只能滑到slide-1跟-2，slide-3要手動移動滑鼠才可以？
-// 下方是助教的方式，但滑鼠滾還是怪怪的？不順？很慢，跟滾輪好像是無關= =
-// 可將var swiper「3」 = new Swiper重新命名
-// 不然就加入「swiper.init();」在所有section的js最下方即可正常swiper --> */
+
+        // 這是section3-1的Animate.css
+// 如何讓animate在滑到section3-1才彈跳「2次」？！
+// 要用onscrolltop嗎？
+
+        // 這是section3-1的AOS
+        AOS.init();
+
+
+
+        //<!-- 問老師：滑鼠往下滾swiper，只能滑到slide-1跟-2，slide-3要手動移動滑鼠才可以？
+        // 下方是助教的方式，但滑鼠滾還是怪怪的？不順？很慢，跟滾輪好像是無關= =
+        // 可將var swiper「3」 = new Swiper重新命名
+        // 不然就加入「swiper.init();」在所有section的js最下方即可正常swiper --> */
         // swiper.init();
 
 
