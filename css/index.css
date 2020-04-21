@@ -99,7 +99,7 @@ html{
     position: relative;
 } */
 
-/* .banner::before{
+/* .mask{
     content:'';
     position: absolute;
     width: 100%;
@@ -117,7 +117,11 @@ html{
 } */
 
 
-/* 4/21問老師：水波產生的底圖位置不對= = */
+/* OK!問老師：水波產生的底圖位置不對>把wave0~5的
+background-size:[auto]刪除 106%; */
+#section1{
+    position: relative;
+}
 #home,
 .ui-content {
             margin: 0;
@@ -130,7 +134,7 @@ html{
 
         .bg {
             width: 100%;
-            height: 100vh;
+            height: 1000px;
             background-image: url(../img/banner.jpg);
             background-attachment: fixed;
             background-position: bottom;
@@ -144,7 +148,7 @@ html{
         }
 
         .wave-body {
-            position: relative;
+            /* position: relative; */
             width: 100%;
             height: 100%;
         }
@@ -156,54 +160,62 @@ html{
             width: 30px;
             height: 30px;
             border-radius: 300px;
-            background: url(../img/banner.jpg);
+            background-image: url(../img/banner.jpg);
             background-attachment: fixed;
             background-position: bottom;
             background-size: cover;
             opacity: 0.3;
+            box-shadow:inset 0px 0px 50px 0px #1a1a1a35, 0px 0px 50px 0px #88888805;
         }
 
         .wave0 {
             z-index: 2;
-            background-size: auto 106%;
+            background-size:106%;
             animation: w 1s;
             opacity: 0.1;
         }
 
         .wave1 {
             z-index: 3;
-            background-size: auto 102%;
+            background-size:102%;
             animation: w 1s .15s;
             opacity: 0.1;
         }
 
         .wave2 {
             z-index: 4;
-            background-size: auto 104%;
+            background-size:104%;
             animation: w 1s .3s;
             opacity: 0.1;
         }
 
         .wave3 {
             z-index: 5;
-            background-size: auto 101%;
+            background-size:101%;
             animation: w 1s .45s;
             opacity: 0.1;
         }
 
         .wave4 {
             z-index: 6;
-            background-size: auto 102%;
+            background-size:102%;
             animation: w 1s .6s;
             opacity: 0.1;
         }
 
         .wave5 {
             z-index: 7;
-            background-size: auto 100%;
+            background-size:100%;
             animation: w 1s .75s;
             opacity: 0.1;
         }
+
+        /* .wave6 {
+            z-index: 8;
+            background-size:130%;
+            animation: w 1s .80s;
+            opacity: 0.1;
+        } */
 
         @keyframes w {
             0% {
