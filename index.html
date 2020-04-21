@@ -22,9 +22,6 @@
 </head>
 
 <body>
-    <!-- 4/21問老師：最新消息nav按下去，跳的位置擋到上面了！ -->
-
-    <!-- 4/21問老師：可以讓logo變滿版沒有padding，就可以讓navbar變小一點(可能250px或200px) -->
     <!-- 這裡是nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-my-color">
         <div class="container">
@@ -78,6 +75,7 @@
     </section>
 
     <!-- 這裡是section2 -->
+    <div id="tosection2"></div>
     <section id="section2" class="mb-5">
         <div class="container">
             <div class="section-name">
@@ -86,7 +84,7 @@
         </div>
 
 
-        <!-- ok！問老師 ：section2的swiper「點點」不知為何跑到最右下方，超過section2_swiper的高度300px？因為swiper-pagination跑去swiper-container外面了，但也可以這樣用，加上position-ablute去調位置即可 -->
+        <!-- !!已得到解法未修改區!!ok！問老師 ：section2的swiper「點點」不知為何跑到最右下方，超過section2_swiper的高度300px？因為swiper-pagination跑去swiper-container外面了，但也可以這樣用，加上position-ablute去調位置即可 -->
 
         <!-- Swiper Mousewheel Control-->
         <div class="section2_swiper">
@@ -239,7 +237,7 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div id="slide_31" class="slide3">要寫什麼文字嗎？沒哏</div>
+                    <div id="slide_31" class="slide3"></div>
                 </div>
                 <div class="swiper-slide">
                     <div id="slide_32" class="slide3"></div>
@@ -259,13 +257,17 @@
                 <div class="swiper-slide">
                     <div id="slide_37" class="slide3">自己的照片記得要ps修圖</div>
                 </div>
+                <div class="swiper-slide">
+                    <div id="slide_38" class="slide3">自己的照片記得要ps修圖</div>
+                </div>
             </div>
-            <!-- 下方點點點的按鈕要記得改顏色！！！ -->
+            <!-- !!已解決未處理!!下方點點點的按鈕要記得改顏色！！！ -->
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
             <div class="swiper-button-next">
-                <!-- OK！ 可以再放入一個div，放入想要的箭頭圖，再將.swiper-button-next:after,-->
+<!--(問過助教但想不太懂，可能再看一下f12檢查確認一下))可以再放入一個div，修改成想要的箭頭圖，再將.swiper-button-next:after,(before咧？)
+「4/22查一查然後呢？要幹嘛？？？」-->
             </div>
             <div class="swiper-button-prev"></div>
         </div>
@@ -277,21 +279,50 @@
             <div class="SmallSection-name pl-5 pt-3 animated rubberBand delay-1s">
                 階段目標 Goal</div>
             <div class="text">第一階段：設備改善添購、牛舍改建重整</div>
-            <div data-aos="zoom-in" id="slide_3-11">
-                    <!-- <div class="row">
-                        <div class="col-lg-4">
-                            <div id="slide_3-11"></div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div id="slide_3-12"></div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div id="slide_3-13"></div>
-                        </div>
-                    </div> -->
-            </div>
-
         </div>
+            <div data-aos="zoom-in" id="section3-1Background">
+                <div class="container">
+                    <div class="row ml-auto">
+                        <div class="col-lg-1">
+                            <div id="slide_3-11" class="slide_3">311</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-12" class="slide_3">312</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-13" class="slide_3">313</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-14" class="slide_3">314</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-15" class="slide_3">315</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-16" class="slide_3">316</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-17" class="slide_3">317</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-18" class="slide_3">318</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-19" class="slide_3">319</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-20" class="slide_3">320</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-21" class="slide_3">321</div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div id="slide_3-22" class="slide_3">322</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     </section>
     <!--section3的階段目標2  -->
     <section id="section3-2">
@@ -450,7 +481,7 @@
         });
 
 
-        // 這是section3-1的Animate.css
+        // 4/22問題：這是section3-1的Animate.css
 // 如何讓animate在滑到section3-1才彈跳「2次」？！
 // 要用onscrolltop嗎？
 
@@ -459,7 +490,7 @@
 
 
 
-        //<!-- 問老師：滑鼠往下滾swiper，只能滑到slide-1跟-2，slide-3要手動移動滑鼠才可以？
+        //<!-- 4/22問老師：section2滑鼠往下滾swiper，只能滑到slide-1跟-2，slide-3要手動移動滑鼠才可以？
         // 下方是助教的方式，但滑鼠滾還是怪怪的？不順？很慢，跟滾輪好像是無關= =
         // 可將var swiper「3」 = new Swiper重新命名
         // 不然就加入「swiper.init();」在所有section的js最下方即可正常swiper --> */
@@ -470,17 +501,6 @@
         var scene = document.querySelector('#scene');
         var parallaxInstance = new Parallax(scene);
 
-
-
-        // onscroll測試失敗中---------------
-        // var lastScrollTop = 0;
-        // window.addEventListener('scroll', function(){
-        //     var scrollval = $(window).scrollTop();
-        //     var document_height = $(document).height();
-        //     var window_height = $(window).height();
-
-        //     console.log = ("window-height:" , window_height)
-        // })
 
     </script>
 

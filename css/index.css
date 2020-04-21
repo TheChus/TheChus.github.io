@@ -2,6 +2,10 @@
 最後需要問老師ios的nav看不到問題
 ios不會自動播放影片 */
 
+/* 未解決：問老師：要怎麼在手機版把toggle不要看不到？？？(因為前面有把navbar：fixed，還有max-width)。ANS:助教說，是apple ios的問題，要再上網找解法 */
+
+/* 未解決：但不重要：為什麼寫這個個人網站時，如果有更新程式碼，golive的網頁都不會跳到最上面重載入？？？？？ */
+
 
 body {
     margin: 0;
@@ -53,10 +57,21 @@ html{
 }
 
 
+/* <!-- 4/22要問老師：可以讓logo變滿版沒有padding，就可以讓navbar變小一點(目前是先將.navbar{max-height: 80px;原100改成80px) --> */
+
+/* <!-- 4/22問老師：最新消息nav按下去，跳的位置擋到上面了！ 
+助教說section外再加上一個div，固定高度與navbar同高？有點忘了，但a指到那個div？~我測試失敗了--> */
+/* #tosection2{
+    width: 100%;
+    max-height: 80px;
+} */
+
+
+
 /* 這裡是navbar */
 .navbar{
     width: 100%;
-    max-height: 100px;
+    max-height: 80px;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,6 +89,7 @@ html{
     margin: 10px auto;
 }
 
+/* 4/22問：這裡是原本toogle的範例寫用(992px「min-width」，可以改成max-width嗎？這段有點看不太懂= = */
 @media (min-width: 992px) {
     #toggle {
         display: none;
@@ -101,12 +117,6 @@ html{
     transform: rotate(-45deg) translate(7px, -8px);
 }
 
-/* 問老師：要怎麼在手機版把toggle不要看不到？？？(因為前面有把navbar：fixed，還有max-width) */
-/* .navbar-collapse{
-    width: 100%;
-    height: 300px;
-    background-color: tomato;
-} */
 
 .navbar-brand {
     padding: unset;
@@ -130,12 +140,20 @@ html{
     #nav-4{
         margin: 0;
     }
+
+    /* 4/22要問老師：在手機版怎麼讓logo跟toggle上面不要有padding？？？ */
+    /* .navbar-brand img{
+        寫下面這樣都無效？
+        padding: unset;
+        margin: unset;
+    } */
 }
 
 
-
-
+/* 4/22要問老師，如何讓section1的水波效果只限於在section1？現在是下面的都有同樣效果= = 
+二、還有如何讓section1水波效果就像wave。html一樣自然？*/
 /* 這裡是section1 */
+
 /* #section1 {
     width: 100%;
     height: 100vh;
@@ -160,8 +178,7 @@ html{
 } */
 
 
-/* OK!問老師：水波產生的底圖位置不對>把wave0~5的
-background-size:[auto]刪除 106%; */
+
 #section1{
     position: relative;
 }
@@ -253,12 +270,6 @@ background-size:[auto]刪除 106%; */
             opacity: 0.1;
         }
 
-        /* .wave6 {
-            z-index: 8;
-            background-size:130%;
-            animation: w 1s .80s;
-            opacity: 0.1;
-        } */
 
         @keyframes w {
             0% {
@@ -315,39 +326,6 @@ background-size:[auto]刪除 106%; */
     align-items: center;
 }
 
-/* 已解決的問題區ok！ */
-/* ok！<!-- 問老師如何用bootstrap將>768px時，只有一個col就好？用col-12，(1920px時是用col-lg-4 -->
-
-ok！<!-- BOotstrap的padding跟margin只有1~5嗎？對 -->
-
-ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
-/*ok！ <!-- 若要寫文字，這時候該怎麼置中？要固定swiper-container的高度才能用line-height吧？#slide_21{display:flex} --> */
-
-/*ok！ 需詢問老師：為什麼::before會無效？
-一定要有content:'';
-    position: absolute;
-    若無高度一定要有w跟h
-    width: 100%;
-    height: 100%; */
-
-
-/* ok！需問老師：如何改「swiper點點」的顏色？
-而且swiper的試範點點在右邊(js加入oberser已回恢預設值，在下方) 
-顏色改：*/
-/* 可以用
-    .swiper-pagination-fraction 改方框{
-    background-color;去改！   }
-
-    .swiper-pagination-fraction span改點點 {
-    display:flex
-    justify-con:center
-    aling---center
-} */
-/* #section2 .swiper-pagination-fraction span{
-    background-color: tomato
-} */
-
-
 
 .slide2{
     width: 300px;
@@ -380,10 +358,16 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 #slide_232{
     background-image: url(../img/slide232.JPG);
 }
-/* 4/21要問老師：slide222、232的圖沒有怎樣，卻自動翻轉了？？？ */
+/* 4/22要問老師：slide222、232的圖沒有怎樣，卻「自動」翻轉了？？？ */
 
-/* 4/21要問老師：怎麼讓lightbox裡的照片同樣大小？ */
 
+/* 4/22要問老師：怎麼讓lightbox裡的照片同樣大小？ 
+設定了js的max-width或max-height都沒有用？！*/
+
+/* 4/22要問老師：section2的swiper「文+圖+圖」，如何在手機版變成一樣包在swiper裡，但皆是滿版的「文
+                                    圖
+                                     圖」
+，目前用bootstrp裡col-12失敗 */
 
 
 /* 這裡是section3 */
@@ -398,8 +382,10 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 #section3 .swiper-container {
     width: 100%;
     height: 70vh;
-  }
-  #section3 .swiper-slide {
+}
+
+/* !!未測試未確認!!若圖不需要寫字，此行應該可以刪除 */
+#section3 .swiper-slide {
     text-align: center;
     font-size: 18px;
 
@@ -407,7 +393,7 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .slide3{
     width: 100%;
@@ -449,6 +435,10 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     background-image: url(../img/slide37.jpg);
         background-position: 100% 50%;
 }
+#slide_38{
+    background-image: url(../img/slide38.jpg);
+        background-position: 100% 50%;
+}
 
 
 /* 這裡是section3-1 */
@@ -456,39 +446,56 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     width: 100%;
     height: 400px;
 }
-#slide_3-11{
+
+#section3-1Background{
+    background-color: whitesmoke;
+}
+
+.slide_3{
     width: 100%;
-    height: 100%;
+    height: 400px;
     background-size: cover;
     line-height: 500px;
     color: white;
     font-weight: 700;
-    font-size: 50px;
-    background-image: url(../img/slide311.jpg);
+    font-size:20px;
     background-position: center;
+}
+#slide_3-11{
+    background-image: url(../img/slide311.jpg);
 }
 #slide_3-12{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    line-height: 500px;
-    color: white;
-    font-weight: 700;
-    font-size: 50px;
     background-image: url(../img/slide312.JPG);
-    background-position: center;
 }
 #slide_3-13{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    line-height: 500px;
-    color: white;
-    font-weight: 700;
-    font-size: 50px;
     background-image: url(../img/slide313.JPG);
-    background-position: center;
 }
+#slide_3-14{
+    background-image: url(../img/slide314.jpg);
+}
+#slide_3-15{
+    background-image: url(../img/slide315.jpg);
+}
+#slide_3-16{
+    background-image: url(../img/slide316.jpg);
+}#slide_3-17{
+    background-image: url(../img/slide317.JPG);
+}
+#slide_3-18{
+    background-image: url(../img/slide318.JPG);
+}
+#slide_3-19{
+    background-image: url(../img/slide319.JPG);
+}#slide_3-20{
+    background-image: url(../img/slide320.JPG);
+}
+#slide_3-21{
+    background-image: url(../img/slide321.jpg);
+}
+#slide_3-22{
+    background-image: url(../img/slide322.jpg);
+}
+
 
 /* 這裡是section4 */
 
@@ -500,8 +507,12 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 
 
 
-/* 要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖都有依px重新裁切，但min-width或是助教說改max-width都沒有變？ */
+/* 4/22要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖要依px重新裁切嗎？ */
+/* 4/22問老師：如何將parallax前方草的效果做成自動波浪動嗎？ */
+
 /* 這裡是footer*/
+/* ！！未做的事！！要把同一層的圖卡一樣的data-depth，像是兩台車同一層、公牛自己一層、屋頂上的狗跟小牛同一層、炸欄的黑皮自己一層、皮蛋跟蛋捲跟熊能一層、母牛一層、前方的草自己一~兩三層。 */
+
 footer {
     width: 100%;
     height: 566px;
@@ -644,3 +655,43 @@ footer {
 #scene {
     overflow: hidden;
 }
+
+
+
+
+
+
+/* 已解決的問題區ok！ */
+/* ok！<!-- 問老師如何用bootstrap將>768px時，只有一個col就好？用col-12，(1920px時是用col-lg-4 -->
+
+ok！<!-- BOotstrap的padding跟margin只有1~5嗎？對 -->
+
+ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
+/*ok！ <!-- 若要寫文字，這時候該怎麼置中？要固定swiper-container的高度才能用line-height吧？#slide_21{display:flex} --> */
+
+/*ok！ 需詢問老師：為什麼::before會無效？
+一定要有content:'';
+    還有position: absolute;
+    若無高度一定要有w跟h
+    width: 100%;
+    height: 100%; */
+
+
+/* ok！需問老師：如何改「swiper點點」的顏色？
+而且swiper的試範點點在右邊(js加入oberser已回恢預設值，在下方) 
+顏色改：*/
+/* 可以用
+    .swiper-pagination-fraction 改方框{
+    background-color;去改！   }
+
+    .swiper-pagination-fraction span改點點 {
+    display:flex
+    justify-con:center
+    aling---center
+} */
+/* #section2 .swiper-pagination-fraction span{
+    background-color: tomato
+} */
+
+/* OK!問老師：section1水波產生的底圖位置不對>把wave0~5的
+background-size:[auto]要刪除 只留下106%; */
