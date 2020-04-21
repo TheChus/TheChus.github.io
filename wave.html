@@ -98,53 +98,7 @@
         .wave5 {
             z-index: 7;
             background-size: auto 100%;
-            -webkit-animation: w 1s .75s;
-            -moz-animation: w 1s .75s;
             animation: w 1s .75s;
-        }
-
-        @-webkit-keyframes w {
-            0% {
-                top: calc((100% - 30px)/2);
-                left: calc((100% - 30px)/2);
-                width: 30px;
-                height: 30px;
-                opacity: 1;
-            }
-
-            99% {
-                opacity: 1;
-            }
-
-            100% {
-                top: calc((100% - 300px)/2);
-                left: calc((100% - 300px)/2);
-                width: 300px;
-                height: 300px;
-                opacity: 0;
-            }
-        }
-
-        @-moz-keyframes w {
-            0% {
-                top: calc((100% - 30px)/2);
-                left: calc((100% - 30px)/2);
-                width: 30px;
-                height: 30px;
-                opacity: 1;
-            }
-
-            99% {
-                opacity: 1;
-            }
-
-            100% {
-                top: calc((100% - 300px)/2);
-                left: calc((100% - 300px)/2);
-                width: 300px;
-                height: 300px;
-                opacity: 0;
-            }
         }
 
         @keyframes w {
@@ -275,11 +229,13 @@
     <div class="wave wave2"></div>
     <div class="wave wave1"></div>
     <div class="wave wave0"></div> -->
-
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.js"
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
     <script>
 
         (function () {
-            $(document).on('pageshow', '#home', function () {
                 var mx, my, timer;
                 var z = 2;
                 $(document).on('mousemove', function (e) {
@@ -306,7 +262,6 @@
                         $('.water' + k).remove();
                     }, 3000);
                 }
-            });
         })();
 
 

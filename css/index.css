@@ -1,3 +1,8 @@
+/* 未解決區：
+最後需要問老師ios的nav看不到問題
+ios不會自動播放影片 */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -20,6 +25,7 @@ html{
 }
 
 
+/* 這裡是navbar */
 .navbar{
     width: 100%;
     max-height: 100px;
@@ -83,29 +89,144 @@ html{
     font-weight: 900;
 }
 
+
+
+
 /* 這裡是section1 */
-#section1 {
+/* #section1 {
     width: 100%;
     height: 100vh;
     position: relative;
-}
+} */
 
-.banner::before{
+/* .banner::before{
     content:'';
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0.3;
-}
+} */
 
-.banner {
+/* .banner {
     width: 100%;
     height: 100%;
     background-image: url(../img/banner.jpg);
     background-size: cover;
     background-position: bottom;
-}
+} */
+
+
+/* 4/21問老師：水波產生的底圖位置不對= = */
+#home,
+.ui-content {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .bg {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/banner.jpg);
+            background-attachment: fixed;
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        .wave-position {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+
+        .wave-body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .wave {
+            position: absolute;
+            top: calc((100% - 30px)/2);
+            left: calc((100% - 30px)/2);
+            width: 30px;
+            height: 30px;
+            border-radius: 300px;
+            background: url(../img/banner.jpg);
+            background-attachment: fixed;
+            background-position: bottom;
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        .wave0 {
+            z-index: 2;
+            background-size: auto 106%;
+            animation: w 1s;
+            opacity: 0.1;
+        }
+
+        .wave1 {
+            z-index: 3;
+            background-size: auto 102%;
+            animation: w 1s .15s;
+            opacity: 0.1;
+        }
+
+        .wave2 {
+            z-index: 4;
+            background-size: auto 104%;
+            animation: w 1s .3s;
+            opacity: 0.1;
+        }
+
+        .wave3 {
+            z-index: 5;
+            background-size: auto 101%;
+            animation: w 1s .45s;
+            opacity: 0.1;
+        }
+
+        .wave4 {
+            z-index: 6;
+            background-size: auto 102%;
+            animation: w 1s .6s;
+            opacity: 0.1;
+        }
+
+        .wave5 {
+            z-index: 7;
+            background-size: auto 100%;
+            animation: w 1s .75s;
+            opacity: 0.1;
+        }
+
+        @keyframes w {
+            0% {
+                top: calc((100% - 30px)/2);
+                left: calc((100% - 30px)/2);
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+
+            99% {
+                opacity: 0.9;
+            }
+
+            100% {
+                top: calc((100% - 300px)/2);
+                left: calc((100% - 300px)/2);
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+
 
 /* 這裡是section2 */
 #section2 {
@@ -210,7 +331,7 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     background-image: url(../img/slide222.JPG);
 }
 #slide_231{
-    background-image: url(../img/slide231.JPG);
+    background-image: url(../img/slide231.jpg);
 }
 #slide_232{
     background-image: url(../img/slide232.JPG);
@@ -256,9 +377,6 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 
 #slide_31{
     background-image: url(../img/slide31.jpg);
-
-    /* 4/21：問老師為什麼上傳後jpg變text嗎 */
-    /* background-image: url(../img/ask.JPG); */
     background-position: center;
 }
 #slide_32{
@@ -266,25 +384,25 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
     background-position: 100% 70%;
 }
 #slide_33{
-    background-image: url(../img/slide33.JPG);
+    background-image: url(../img/slide33.jpg);
         background-position: 100% 60%;
 }
 #slide_34{
-    background-image: url(../img/slide34.JPG);
+    background-image: url(../img/slide34.jpg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
 }
 #slide_35{
-    background-image: url(../img/slide35.JPG);
+    background-image: url(../img/slide35.jpg);
         background-position: center;
 }
 #slide_36{
-    background-image: url(../img/slide36.JPG);
+    background-image: url(../img/slide36.jpg);
         background-position: 100% 65%;
 }
 #slide_37{
-    background-image: url(../img/slide37.JPG);
+    background-image: url(../img/slide37.jpg);
         background-position: 100% 50%;
 }
 
