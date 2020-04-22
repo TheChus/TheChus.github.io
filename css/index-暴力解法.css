@@ -318,10 +318,20 @@ html{
         margin-right: auto;
 }
 
+/* 測試老師說的swiper原為直的，排列變三個一行 */
+#section2 .swiper-wrapper{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+#section2 .swiper-wrapper .swiper-slide{
+    width: 33.33%!important;
+}
 
 #section2 .swiper-slide {
     text-align: center;
     font-size: 18px;
+    height: 100% !important;
     /* background-color: rgb(0, 0, 0); */
 
     /* Center slide text vertically */
@@ -329,6 +339,20 @@ html{
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 992px) {
+    #section2 .swiper-wrapper{
+        display: block;
+        flex-direction: unset !important;
+        flex-wrap: unset;
+    }
+    #section2 .swiper-wrapper .swiper-slide{
+        width: 100%!important;
+    }
+    
+}
+
+
 
 
 .slide2{
