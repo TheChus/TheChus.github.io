@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <!-- 這裡是nav -->
+    <!----------- 這裡是nav ----------->
     <nav class="navbar navbar-expand-lg navbar-light bg-my-color">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="80"></a>
@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mr-5">
-                        <a class="nav-link text-white" href="#section2">最新消息</a>
+                        <a class="nav-link text-white" href="#tosection2">最新消息</a>
                     </li>
                     <li class="nav-item  mr-5">
                         <a class="nav-link text-white" href="#section3">階段目標</a>
@@ -54,7 +54,8 @@
                             <a class="dropdown-item" href="#">未來展望</a>
                         </div>
                     </li>
-                    </span><li class="nav-item">
+                    </span>
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="#">聯絡我們
                         </a>
                     </li>
@@ -63,7 +64,7 @@
         </div>
     </nav>
 
-    <!-- 這裡是section1 -->
+    <!----------- 這裡是section1 ----------->
     <section id="section1" class="mb-5">
         <div class="mask"></div>
         <div is="page" id="home" data-role="page">
@@ -74,7 +75,7 @@
         <!-- <div class="banner"></div> -->
     </section>
 
-    <!-- 這裡是section2 -->
+    <!----------- 這裡是section2 ----------->
     <div id="tosection2"></div>
     <section id="section2" class="mb-5">
         <div class="container">
@@ -86,6 +87,8 @@
 
         <!-- !!已得到解法未修改區!!ok！問老師 ：section2的swiper「點點」不知為何跑到最右下方，超過section2_swiper的高度300px？因為swiper-pagination跑去swiper-container外面了，但也可以這樣用，加上position-ablute去調位置即可 -->
 
+
+        <!-- 4/22要詢問老師的問題：swiper有包container，可是上下swiper「黑底」時，還是會一直卡在section2？ -->
         <!-- Swiper Mousewheel Control-->
         <div class="section2_swiper">
             <div class="swiper-container">
@@ -225,8 +228,8 @@
     </section>
 
 
-    <!-- 這裡是section3 -->
-    <section id="section3">
+    <!----------- 這裡是section3 ----------->
+    <section id="section3" class="mb-5">
         <div class="container">
             <div class="section-name">
                 友善環境 Environment
@@ -266,7 +269,7 @@
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
             <div class="swiper-button-next">
-<!--(問過助教但想不太懂，可能再看一下f12檢查確認一下))可以再放入一個div，修改成想要的箭頭圖，再將.swiper-button-next:after,(before咧？)
+                <!--(問過助教但想不太懂，可能再看一下f12檢查確認一下))可以再放入一個div，修改成想要的箭頭圖，再將.swiper-button-next:after,(before咧？)
 「4/22查一查然後呢？要幹嘛？？？」-->
             </div>
             <div class="swiper-button-prev"></div>
@@ -274,65 +277,90 @@
     </section>
 
 
-<!-- 4/22問老師：都還沒到#section3-1，字彈跳跟aos都出現完了= = = = = -->
-    <!--section3的階段目標1  -->
-    <section id="section3-1">
-        <div class="container">
-            <div class="SmallSection-name pl-5 pt-3 animated rubberBand delay-1s">
+    <!-- !!!已解決，未修改區!!!問老師：都還沒到#section3-1，字彈跳跟aos都出現完了= =
+    要在div加上data-aos-anchor-placement="center-center"，但現在圖片太大張，loading會lag -->
+    <!-----------section3的階段目標1  ----------->
+    <div class="container">
+        <section id="section3-1">
+            <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s" data-aos-anchor-placement="center-center">
                 階段目標 Goal</div>
-            <div class="text">第一階段：設備改善添購、牛舍改建重整</div>
-        </div>
-            <div data-aos="zoom-in" id="section3-1Background">
+            <div class="text mb-3">第一階段：設備改善添購、牛舍改建重整</div>
+
+            <div data-aos="zoom-in" id="section3-1Background" data-aos-anchor-placement="center-center">
                 <div class="container">
                     <div class="row ml-auto">
-                        <div class="col-lg-1">
+                        <!-- 4/22要問老師：如何讓手機版看到是整張圖？「col-12」嗎？但目前測試擋到下方的footer了 -->
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-11" class="slide_3">311</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-12" class="slide_3">312</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-13" class="slide_3">313</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-14" class="slide_3">314</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-15" class="slide_3">315</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-16" class="slide_3">316</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-17" class="slide_3">317</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-18" class="slide_3">318</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-19" class="slide_3">319</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-20" class="slide_3">320</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-21" class="slide_3">321</div>
                         </div>
-                        <div class="col-lg-1">
+                        <div class="col-12 col-lg-1">
                             <div id="slide_3-22" class="slide_3">322</div>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
-    <!--section3的階段目標2  -->
-    <section id="section3-2">
-        <div class="container">
-            <div class="text">第二階段：科技養牛</div>
-        </div>
-    </section>
+        </section>
+    </div>
+    <!-----------section3的階段目標2  ----------->
+    <div class="container">
+        <section id="section3-2" class="mb-5 pt-5">
+            <div class="text mb-3">第二階段：科技養牛</div>
+            <div class="container">
+                <p>美國農業科技公司嘉吉攜手愛爾蘭數據分析公司Cainthus打造養牛大數據，透過影像辨識技術，讓養牛更easy，不僅提高畜牧品質，也改善牧場經營方式，打造五星級牛隻旅館，精準管理牛隻健康狀況。
+                </p>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="SmallP">美國農業科技公司嘉吉從食品加工起家</div>
+                        美國老牌農業科技公司嘉吉（Cargill,
+                        Incorporated）是美國的私人跨國企業，本體事業是食品加工，其版圖亦觸及醫藥、金融、天然資源等。目前嘉吉近期與愛爾蘭主要從事機器視覺的新創公司Cainthus合作，積極開發家畜用臉部辨識技術，發展智能AI畜牧專家，現階段以牛隻的臉部辨識為開發主軸。
+                    </div>
+                    <div class="col-lg-4">2</div>
+                    <div class="col-lg-4">3</div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
+
+
+
+
+
+
+    <!----------- 這裡是section6 ----------->
+    <section id="section6">先不用聯絡我們</section>
 
     <footer>
 
@@ -390,7 +418,7 @@
 
 
     <script>
-        // 這是nav的taggle
+        /////////// 這是nav的taggle ///////////
         var swiper1 = new Swiper('nav .swiper-container', {
             observer: true,
             observeParents: true,
@@ -412,45 +440,54 @@
             console.log("Test");
         });
 
-        // 這是section1的水波效果
+        /////////// 這是section1的水波效果 ///////////
         // 4/22問老師:$('#section1')想讓水波效果只在#section1有作用
         //看是否能做像wave.html的水波效果_比較自然
-        //    未完成 (function () {
-        //             var mx, my, timer;
-        //             var z = 2;
-        //             $(document).on('mousemove', function (e) {
-        //                 mx = e.pageX;
-        //                 my = e.pageY;
-        //                 z = z + 1;
-        //                 _wave(mx, my, z);
-        //             });
+        // 未完成(function () {
+        //     var mx, my, timer;
+        //     var z = 2;
+        //     $('#section1').on('mousemove', function (e) {
+        //         mx = e.pageX;
+        //         my = e.pageY;
+        //         z = z + 1;
+        //         _wave(mx, my, z , true);
+        //     });
 
-        //             function _wave(i, j, k) {
-        //                 $('.ui-content').prepend(
-        //                     '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
-        //                     '<div class="wave-body">' +
-        //                     '<div class="wave wave5"></div>' +
-        //                     '<div class="wave wave4"></div>' +
-        //                     '<div class="wave wave3"></div>' +
-        //                     '<div class="wave wave2"></div>' +
-        //                     '<div class="wave wave1"></div>' +
-        //                     '<div class="wave wave0"></div>' +
-        //                     '</div>' +
-        //                     '</div>'
-        //                 );
-        //                 setTimeout(function () {
-        //                     $('.water' + k).remove();
-        //                 }, 3000);
-        //             }
-        //     })();
+        //     $('#section2').on('mouseenter', function (e) {
+        //         mx = e.pageX;
+        //         my = e.pageY;
+        //         z = z + 1;
+        //         _wave(mx, my, z , false);
+        //         console.log("13");
+        //     });
+
+        //     function _wave(i, j, k , active) {
+        //         if (active) {
+        //             $('.ui-content').prepend(
+        //                 '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
+        //                 '<div class="wave-body">' +
+        //                 '<div class="wave wave5"></div>' +
+        //                 '<div class="wave wave4"></div>' +
+        //                 '<div class="wave wave3"></div>' +
+        //                 '<div class="wave wave2"></div>' +
+        //                 '<div class="wave wave1"></div>' +
+        //                 '<div class="wave wave0"></div>' +
+        //                 '</div>' +
+        //                 '</div>'
+        //             );
+        //             setTimeout(function () {
+        //                 $('.water' + k).remove();
+        //             }, 3000);
+        //         }
+        //     }
+        // })();
 
 
-        // 這是section2的swiper+lightbox
+        /////////// 這是section2的swiper+lightbox ///////////
         var swiper2 = new Swiper('#section2 .swiper-container', {
             direction: 'vertical',
             slidesPerView: 1,
             spaceBetween: 30,
-            mousewheel: true,
             observer: true,
             observeParents: true,
             pagination: {
@@ -466,7 +503,7 @@
             // 'maxHeight': 800,
         })
 
-        // 這是section3的swiper
+        /////////// 這是section3的swiper ///////////
         var swiper3 = new Swiper('#section3 .swiper-container', {
             slidesPerView: 1,
             spaceBetween: 30,
@@ -483,10 +520,10 @@
 
 
         // 4/22問題：這是section3-1的Animate.css
-// 如何讓animate在滑到section3-1才彈跳「2次」？！
-// 要用onscrolltop嗎？
+        // 如何讓animate在滑到section3-1才彈跳「2次」？！
+        // 要用onscrolltop嗎？
 
-        // 這是section3-1的AOS
+        /////////// 這是section3-1的AOS ///////////
         AOS.init();
 
 
@@ -498,7 +535,7 @@
         // swiper.init();
 
 
-        // 這是footer的parrallax
+        /////////// 這是footer的parrallax ///////////
         var scene = document.querySelector('#scene');
         var parallaxInstance = new Parallax(scene);
 

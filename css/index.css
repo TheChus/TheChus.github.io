@@ -42,7 +42,7 @@ html{
 
 .text{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     color: whitesmoke;
     text-align: center;
 }
@@ -61,14 +61,18 @@ html{
 
 /* <!-- 4/22問老師：最新消息nav按下去，跳的位置擋到上面了！ 
 助教說section外再加上一個div，固定高度與navbar同高？有點忘了，但a指到那個div？~我測試失敗了--> */
-/* #tosection2{
-    width: 100%;
-    max-height: 80px;
-} */
+
+
+#tosection2{
+    position: relative;
+    top: -80px;
+    z-index: 999;
+    visibility: hidden;
+}
 
 
 
-/* 這裡是navbar */
+/*********** 這裡是navbar ***********/
 .navbar{
     width: 100%;
     max-height: 80px;
@@ -76,6 +80,7 @@ html{
     top: 0;
     left: 0;
     z-index: 99;
+    padding: 0;
 }
 
 .bg-my-color {
@@ -142,18 +147,14 @@ html{
     }
 
     /* 4/22要問老師：在手機版怎麼讓logo跟toggle上面不要有padding？？？ */
-    /* .navbar-brand img{
-        寫下面這樣都無效？
-        padding: unset;
-        margin: unset;
-    } */
+
 }
 
 
 /* 4/22要問老師，如何讓section1的水波效果只限於在section1？現在是下面的都有同樣效果= = 
 二、還有如何讓section1水波效果就像wave。html一樣自然？*/
-/* 這裡是section1 */
 
+/*********** 這裡是section1 ***********/
 /* #section1 {
     width: 100%;
     height: 100vh;
@@ -226,6 +227,7 @@ html{
             background-size: cover;
             opacity: 0.3;
             box-shadow:inset 0px 0px 50px 0px #1a1a1a35, 0px 0px 50px 0px #88888805;
+            z-index: -1;
         }
 
         .wave0 {
@@ -294,7 +296,7 @@ html{
         }
 
 
-/* 這裡是section2 */
+/*********** 這裡是section2 ***********/
 #section2 {
     width: 100%;
     position: relative;
@@ -358,7 +360,6 @@ html{
 #slide_232{
     background-image: url(../img/slide232.JPG);
 }
-/* 4/22要問老師：slide222、232的圖沒有怎樣，卻「自動」翻轉了？？？ */
 
 
 /* 4/22要問老師：怎麼讓lightbox裡的照片同樣大小？ 
@@ -370,7 +371,7 @@ html{
 ，目前用bootstrp裡col-12失敗 */
 
 
-/* 這裡是section3 */
+/*********** 這裡是section3 ***********/
 #section3 {
     width: 100%;
     position: relative;
@@ -441,10 +442,10 @@ html{
 }
 
 
-/* 這裡是section3-1 */
+/*********** 這裡是section3-1 ***********/
 #section3-1{
     width: 100%;
-    height: 400px;
+    height: 491px;
 }
 
 #section3-1Background{
@@ -456,7 +457,7 @@ html{
     height: 400px;
     background-size: cover;
     line-height: 500px;
-    color: white;
+    color: whitesmoke;
     font-weight: 700;
     font-size:20px;
     background-position: center;
@@ -496,21 +497,45 @@ html{
     background-image: url(../img/slide322.jpg);
 }
 
-
-/* 4/22問老師：為什麼section3-2的字會在section3-1的圖下方呢？？？ */
-/* 這裡是section3-2 */
+/*********** 這裡是section3-2 ***********/
 #section3-2{
     width: 100%;
-    height: 400px;
+    height: 600px;
+    background-color: whitesmoke;
+}
+
+#section3-2 .text{
+    color: rgb(41, 41, 41);
+}
+
+#section3-2 p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+    text-align: justify; 
+}
+
+.SmallP{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(41, 41, 41);
+    text-align: justify;
 }
 
 
-/* 這裡是section4 */
+/*********** 這裡是section4 ***********/
 
-/* 這裡是section5 */
+/*********** 這裡是section5 ***********/
 
-/* 這裡是section6 */
-
+/*********** 這裡是section6 ***********/
+#section6{
+    width: 100%;
+    height: 400px;
+    background-color: honeydew;
+    font-size: 50px;
+    text-align: center;
+    line-height: 400px;
+}
 
 
 
