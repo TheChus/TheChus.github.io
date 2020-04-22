@@ -38,7 +38,7 @@
                         <a class="nav-link text-white" href="#tosection2">最新消息</a>
                     </li>
                     <li class="nav-item  mr-5">
-                        <a class="nav-link text-white" href="#section3">階段目標</a>
+                        <a class="nav-link text-white" href="#tosection3">階段目標</a>
                     </li>
                     <li class="nav-item  mr-5">
                         <a class="nav-link text-white" href="#">商品訂購</a>
@@ -56,7 +56,7 @@
                     </li>
                     </span>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">聯絡我們
+                        <a class="nav-link text-white" href="#tosection6">聯絡我們
                         </a>
                     </li>
                 </ul>
@@ -76,7 +76,7 @@
     </section>
 
     <!----------- 這裡是section2 ----------->
-    <div id="tosection2"></div>
+    <div id="tosection2" class="ToSection"></div>
     <section id="section2" class="mb-5">
         <div class="container">
             <div class="section-name">
@@ -88,143 +88,150 @@
         <!-- !!已得到解法未修改區!!ok！問老師 ：section2的swiper「點點」不知為何跑到最右下方，超過section2_swiper的高度300px？因為swiper-pagination跑去swiper-container外面了，但也可以這樣用，加上position-ablute去調位置即可 -->
 
 
-        <!-- 4/22要詢問老師的問題：swiper有包container，可是上下swiper「黑底」時，還是會一直卡在section2？ -->
+        <!-- !!!待確認區!!!要詢問老師的問題：swiper有包container，可是上下swiper「黑底」時，還是會一直卡在section2？老師把swiper的js的「滾輪」參數刪除，要自己用滑鼠拖曳才可以， 要再測試手機版可以嗎？-->
+
         <!-- Swiper Mousewheel Control-->
         <div class="section2_swiper">
-            <div class="swiper-container">
+            <div class="swiper-container swiper-container-v">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" id="slide-1">
+                    <div class="swiper-slide">
                         <div class="container">
-                            <div class="row ml-auto">
-                                <div class="col-12 col-lg-4 pl-lg-5">
-                                    <div class="swiper-text">
-                                        <span>
-                                            <h5>2019.12.15</h5>
-                                            <h5>牧場日常工作，與「中興大學-</h5>
-                                            <h5>馬鳴興水境」團隊相遇，</h5>
-                                            <h5>最後的桌曆成品</h5>
-                                            <h5>FB<a href="https://www.facebook.com/mamingnchu/"
-                                                    target="_blank">@mamingnchu</a></h5>
-                                        </span>
+                            <div class="swiper-container swiper-container-h">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-text">
+                                            <span>
+                                                <h5>2019.12.15</h5>
+                                                <h5>牧場日常工作，與「中興大學-</h5>
+                                                <h5>馬鳴興水境」團隊相遇，</h5>
+                                                <h5>最後的桌曆成品</h5>
+                                                <h5>FB<a href="https://www.facebook.com/mamingnchu/"
+                                                        target="_blank">@mamingnchu</a></h5>
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <a href="img/slide213.JPG" data-lightbox="slide1" data-title="桌曆實物翻拍1">
-                                        <div id="slide_211" class="slide2"></div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <a href="img/slide211.JPG" data-lightbox="slide1" data-title="牧場兒子-朱八戒">
-                                        <div id="slide_212" class="slide2"></div>
-                                    </a>
-                                </div>
-                                <div class=" ">
-                                    <a href="img/slide212.JPG" data-lightbox="slide1" data-title="牧「牛」犬-皮蛋">
-                                        <div id="slide_213"></div>
-                                    </a>
-                                </div>
-                                <div class=" ">
-                                    <a href="img/slide214.JPG" data-lightbox="slide1" data-title="桌曆實物翻拍2">
-                                        <div id="slide_214"></div>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide" id="slide-2">
-                        <div class="container">
-                            <div class="row ml-auto">
-                                <div class=" col-12 col-lg-4 pl-lg-5">
-                                    <div class="swiper-text">
-                                        <span>
-                                            <h5>2018.11.30</h5>
-                                            <h5>辦公大樓冷氣管道間</h5>
-                                            <h5>撿到的流浪貓</h5>
-                                            <h5>超可愛 很黏人 又白目</h5>
-                                            <h5>梅機FB<a href="https://www.facebook.com/heymeiG/"
-                                                    target="_blank">@heymeiG</a></h5>
-                                        </span>
+                                    <div class="swiper-slide">
+                                        <a href="img/slide213.JPG" data-lightbox="slide1" data-title="桌曆實物翻拍1">
+                                            <div id="slide_211" class="slide2"></div>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class=" col-12 col-lg-4">
-                                    <a href="img/slide223.jpg" data-lightbox="slide2" data-title="醜貓多做怪">
-                                        <div id="slide_221" class="slide2"></div>
-                                    </a>
-                                </div>
-                                <div class=" col-12 col-lg-4">
-                                    <a href="img/slide224.jpg" data-lightbox="slide2" data-title="手長長網美照">
-                                        <div id="slide_222" class="slide2"></div>
-                                    </a>
-                                </div>
-                                <div class=" ">
-                                    <a href="img/slide221.JPG" data-lightbox="slide2" data-title="瑜珈墊裡的白目貓">
-                                        <div id="slide_223"></div>
-                                    </a>
-                                </div>
-                                <div class=" ">
-                                    <a href="img/slide222.JPG" data-lightbox="slide2" data-title="搞笑躺">
-                                        <div id="slide_224"></div>
-                                    </a>
-                                </div>
-                                <div class=" ">
-                                    <a href="img/slide225.jpg" data-lightbox="slide2" data-title="Matte Painting">
-                                        <div id="slide_225"></div>
-                                    </a>
+                                    <div class="swiper-slide">
+                                        <a href="img/slide211.JPG" data-lightbox="slide1" data-title="牧場兒子-朱八戒">
+                                            <div id="slide_212" class="slide2"></div>
+                                        </a>
+                                    </div>
+                                    <div class=" ">
+                                        <a href="img/slide212.JPG" data-lightbox="slide1" data-title="牧「牛」犬-皮蛋">
+                                            <div id="slide_213"></div>
+                                        </a>
+                                    </div>
+                                    <div class=" ">
+                                        <a href="img/slide214.JPG" data-lightbox="slide1" data-title="桌曆實物翻拍2">
+                                            <div id="slide_214"></div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide" id="slide-3">
+                    <div class="swiper-slide">
                         <div class="container">
-                            <div class="row ml-auto">
-                                <div class=" col-12 col-lg-4 pl-lg-5">
-                                    <div class="swiper-text">
-                                        <span>
-                                            <h5>2006.05.11</h5>
-                                            <h5>牧場野貓生下了長毛貓!!!</h5>
-                                            <h5>非常帥氣但很怕水</h5>
-                                            <h5>取名為「阿不溜」</h5>
-                                            <h5>可暱稱「溜溜」</h5>
-                                        </span>
+                            <div class="swiper-container swiper-container-h">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-text">
+                                            <span>
+                                                <h5>2018.11.30</h5>
+                                                <h5>辦公大樓冷氣管道間</h5>
+                                                <h5>撿到的流浪貓</h5>
+                                                <h5>超可愛 很黏人 又白目</h5>
+                                                <h5>梅機FB<a href="https://www.facebook.com/heymeiG/"
+                                                        target="_blank">@heymeiG</a></h5>
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class=" col-12 col-lg-4">
-                                    <a href="img/slide233.jpg" data-lightbox="slide3" data-title="~溜皇上~">
-                                        <div id="slide_231" class="slide2"></div>
-                                    </a>
-                                </div>
-                                <div class=" col-12 col-lg-4">
-                                    <a href="img/slide234.JPG" data-lightbox="slide3" data-title="貪吃貓">
-                                        <div id="slide_232" class="slide2"></div>
-                                    </a>
-                                </div>
-                                <div class=" ">
-                                    <a href="img/slide231.jpg" data-lightbox="slide3" data-title="小時候超級可愛">
-                                        <div id="slide_223"></div>
-                                    </a>
-                                </div>
-                                <div class=" ">
-                                    <a href="img/slide232.JPG" data-lightbox="slide3" data-title="不能吃">
-                                        <div id="slide_224"></div>
-                                    </a>
-                                </div>
-                                <div class=" ">
-                                    <a href="img/slide235.jpg" data-lightbox="slide3" data-title="Low Poly">
-                                        <div id="slide_225"></div>
-                                    </a>
+
+                                    <div class="swiper-slide">
+                                        <a href="img/slide223.jpg" data-lightbox="slide2" data-title="醜貓多做怪">
+                                            <div id="slide_221" class="slide2"></div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/slide224.jpg" data-lightbox="slide2" data-title="手長長網美照">
+                                            <div id="slide_222" class="slide2"></div>
+                                        </a>
+                                    </div>
+                                    <div class=" ">
+                                        <a href="img/slide221.JPG" data-lightbox="slide2" data-title="瑜珈墊裡的白目貓">
+                                            <div id="slide_223"></div>
+                                        </a>
+                                    </div>
+                                    <div class=" ">
+                                        <a href="img/slide222.JPG" data-lightbox="slide2" data-title="搞笑躺">
+                                            <div id="slide_224"></div>
+                                        </a>
+                                    </div>
+                                    <div class=" ">
+                                        <a href="img/slide225.jpg" data-lightbox="slide2" data-title="Matte Painting">
+                                            <div id="slide_225"></div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="swiper-container swiper-container-h">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-text">
+                                            <span>
+                                                <h5>2006.05.11</h5>
+                                                <h5>牧場野貓生下了長毛貓!!!</h5>
+                                                <h5>非常帥氣但很怕水</h5>
+                                                <h5>取名為「阿不溜」</h5>
+                                                <h5>可暱稱「溜溜」</h5>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a href="img/slide233.jpg" data-lightbox="slide3" data-title="~溜皇上~">
+                                            <div id="slide_231" class="slide2"></div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/slide234.JPG" data-lightbox="slide3" data-title="貪吃貓">
+                                            <div id="slide_232" class="slide2"></div>
+                                        </a>
+                                    </div>
+                                    <div class=" ">
+                                        <a href="img/slide231.jpg" data-lightbox="slide3" data-title="小時候超級可愛">
+                                            <div id="slide_223"></div>
+                                        </a>
+                                    </div>
+                                    <div class=" ">
+                                        <a href="img/slide232.JPG" data-lightbox="slide3" data-title="不能吃">
+                                            <div id="slide_224"></div>
+                                        </a>
+                                    </div>
+                                    <div class=" ">
+                                        <a href="img/slide235.jpg" data-lightbox="slide3" data-title="Low Poly">
+                                            <div id="slide_225"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
     </section>
 
 
@@ -280,52 +287,57 @@
     <!-- !!!已解決，未修改區!!!問老師：都還沒到#section3-1，字彈跳跟aos都出現完了= =
     要在div加上data-aos-anchor-placement="center-center"，但現在圖片太大張，loading會lag -->
     <!-----------section3的階段目標1  ----------->
+    <div id="tosection3" class="ToSection"></div>
     <div class="container">
         <section id="section3-1">
-            <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s" data-aos-anchor-placement="center-center">
+            <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s"
+                data-aos-anchor-placement="bottom-center">
                 階段目標 Goal</div>
             <div class="text mb-3">第一階段：設備改善添購、牛舍改建重整</div>
-
-            <div data-aos="zoom-in" id="section3-1Background" data-aos-anchor-placement="center-center">
+            <!-- 4/22要問老師：如何讓手機版看到是整張圖？「col-12」嗎？但目前測試擋到下方的footer了 -->
+            <div data-aos="zoom-in" id="section3-1Background" data-aos-anchor-placement="bottom-bottom">
                 <div class="container">
-                    <div class="row ml-auto">
-                        <!-- 4/22要問老師：如何讓手機版看到是整張圖？「col-12」嗎？但目前測試擋到下方的footer了 -->
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-11" class="slide_3">311</div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-11"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-12"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-13"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-14"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-15"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-16"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-17"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-18"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-19"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-20"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-21"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_3" id="slide_3-22"></div>
+                            </div>
                         </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-12" class="slide_3">312</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-13" class="slide_3">313</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-14" class="slide_3">314</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-15" class="slide_3">315</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-16" class="slide_3">316</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-17" class="slide_3">317</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-18" class="slide_3">318</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-19" class="slide_3">319</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-20" class="slide_3">320</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-21" class="slide_3">321</div>
-                        </div>
-                        <div class="col-12 col-lg-1">
-                            <div id="slide_3-22" class="slide_3">322</div>
-                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -360,6 +372,7 @@
 
 
     <!----------- 這裡是section6 ----------->
+    <div id="tosection6" class="ToSection"></div>
     <section id="section6">先不用聯絡我們</section>
 
     <footer>
@@ -484,15 +497,67 @@
 
 
         /////////// 這是section2的swiper+lightbox ///////////
-        var swiper2 = new Swiper('#section2 .swiper-container', {
+        // var swiper2 = new Swiper('#section2 .swiper-container', {
+        //     direction: 'vertical',
+        //     slidesPerView: 1,
+        //     spaceBetween: 30,
+        //     observer: true,
+        //     observeParents: true,
+        //     pagination: {
+        //         el: '#section2 .swiper-pagination',
+        //         clickable: true,
+        //     },
+        // });
+
+        var swiper2H = new Swiper('#section2 .swiper-container-h', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '#section2 .swiper-pagination-h',
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+                },
+            },
+        });
+        var swiper2V = new Swiper('#section2 .swiper-container-v', {
             direction: 'vertical',
             slidesPerView: 1,
             spaceBetween: 30,
-            observer: true,
-            observeParents: true,
             pagination: {
-                el: '#section2 .swiper-pagination',
+                el: '#section2 .swiper-pagination-v',
                 clickable: true,
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
             },
         });
 
@@ -525,6 +590,26 @@
 
         /////////// 這是section3-1的AOS ///////////
         AOS.init();
+        /////////// 這是section3-1的swiper ///////////
+        var swiper = new Swiper('#section3-1 .swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '#section3-1 .swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+            }
+        });
 
 
 
