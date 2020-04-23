@@ -63,8 +63,6 @@ html{
 }
 
 
-/* <!-- 4/22要問老師：可以讓logo變滿版沒有padding，就可以讓navbar變小一點(目前是先將.navbar{max-height: 80px;原100改成80px) --> */
-
 
 // 4/24問老師：section1牛水波紋出現一個大問題，上方的navbar無法按= =，該固定section1高度，不能用100vh了吧？
 
@@ -138,6 +136,8 @@ html{
     font-weight: 900;
 }
 
+// 4/23君毅老師說加入此段應該可解決iphone的nav問題
+// 但測試問題還是一樣沒解決
 .navbar-collapse {
     position: relative;
     left: 0;
@@ -157,14 +157,9 @@ html{
     #nav-4{
         margin: 0;
     }
-
-    /* 4/22要問老師：在手機版怎麼讓logo跟toggle上面不要有padding？？？ */
-
 }
 
 
-/* 4/22要問老師，如何讓section1的水波效果只限於在section1？現在是下面的都有同樣效果= = 
-二、還有如何讓section1水波效果就像wave。html一樣自然？*/
 
 /*********** 這裡是section1 ***********/
 /* #section1 {
@@ -366,8 +361,9 @@ html{
 }
 
 
-/* 4/22要問老師：怎麼讓lightbox裡的照片同樣大小？ 
+/* ok！4/22要問老師：怎麼讓lightbox裡的照片同樣大小？ 
 設定了js的max-width或max-height都沒有用？！*/
+// 裁切圖片為同樣大小，因為是「max」，但我的圖都沒有這麼小張，用裁切圖片順便優化圖片大小
 
 /* 4/22要問老師：section2的swiper「文+圖+圖」，如何在手機版變成一樣包在swiper裡，但皆是滿版的「文
                                     圖
@@ -625,8 +621,6 @@ html{
     font-size: 50px;
     text-align: center;
     line-height: 450px;
-    // 要先解決底色方框的問題，現在不知道怎麼調高度
-
 }
 
 
@@ -636,7 +630,6 @@ html{
     width: 100%;
     height: 700px;
     background: linear-gradient(180deg, white 0%, rgba(240, 255, 240, 1) 100%);
-
 }
 
 
