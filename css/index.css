@@ -59,8 +59,6 @@ html {
 }
 
 /* <!-- 4/22要問老師：可以讓logo變滿版沒有padding，就可以讓navbar變小一點(目前是先將.navbar{max-height: 80px;原100改成80px) --> */
-/* <!-- 4/22問老師：最新消息nav按下去，跳的位置擋到上面了！ 
-助教說section外再加上一個div，固定高度與navbar同高？有點忘了，但a指到那個div？~我測試失敗了--> */
 .ToSection {
   position: relative;
   top: -80px;
@@ -588,14 +586,18 @@ html {
 /*********** 這裡是section4 ***********/
 #section4 {
   width: 100%;
-  height: 700px;
-  background-color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(180deg, black 0%, white 100%);
+}
+
+#section4 .section-name {
+  background-color: black;
 }
 
 #section4_toggle {
   height: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0.9)));
-  background: linear-gradient(180deg, black 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(180deg, black 0%, white 100%);
   margin: 0;
 }
 
@@ -621,12 +623,12 @@ html {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), to(white));
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.1) 0%, white 100%);
   width: 100%;
-  height: 900px;
+  padding: 15px;
+  border-radius: 0 0 30px 30px;
 }
 
 .section4_text {
   width: 100%;
-  height: 650px;
   display: none;
 }
 
@@ -639,6 +641,7 @@ html {
   height: 300px;
   background-position: center;
   background-size: cover;
+  border-radius: 15px;
 }
 
 #pic411 {
