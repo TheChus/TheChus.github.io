@@ -1,0 +1,824 @@
+/* 未解決區：
+最後需要問老師ios的nav看不到問題
+ios不會自動播放影片 */
+
+/* 未解決：問老師：要怎麼在手機版把toggle不要看不到？？？(因為前面有把navbar：fixed，還有max-width)。ANS:助教說，是apple ios的問題，要再上網找解法 */
+
+/* 未解決：但不重要：為什麼寫這個個人網站時，如果有更新程式碼，golive的網頁都不會跳到最上面重載入？？？？？ */
+
+/* 未解決：ios查看網站時，navbar會往上彈？導致無法關閉navbar？ */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: '微軟正黑體';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.fullpage {
+    width: 100%;
+    height: 100%;
+}
+
+.section-name{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.SmallSection-name{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.swiper-text{
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+
+.TA-JUSTIFY{
+    text-align: justify;
+}
+
+
+/* <!-- 4/22要問老師：可以讓logo變滿版沒有padding，就可以讓navbar變小一點(目前是先將.navbar{max-height: 80px;原100改成80px) --> */
+
+/* <!-- 4/22問老師：最新消息nav按下去，跳的位置擋到上面了！ 
+助教說section外再加上一個div，固定高度與navbar同高？有點忘了，但a指到那個div？~我測試失敗了--> */
+
+
+.ToSection{
+    position: relative;
+    top: -80px;
+    z-index: 999;
+    visibility: hidden;
+}
+
+
+
+/*********** 這裡是navbar ***********/
+.navbar{
+    width: 100%;
+    max-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 0;
+}
+
+.bg-my-color {
+    background-color: black;
+}
+
+#toggle {
+    width: 28px;
+    height: 30px;
+    margin: 10px auto;
+}
+
+/* 4/22問：這裡是原本toogle的範例寫用(992px「min-width」，可以改成max-width嗎？這段有點看不太懂= = */
+@media (min-width: 992px) {
+    #toggle {
+        display: none;
+    }
+}
+
+#toggle div {
+    width: 100%;
+    height: 5px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+#toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on .two {
+    opacity: 0;
+}
+
+#toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+
+.navbar-brand {
+    padding: unset;
+}
+
+.nav-link {
+    font-size: 21px;
+    font-weight: 900;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav{
+        /* text-align: ; */
+        background-color: rgba(0,0,0,0.8);
+        border-radius: 5px;
+        max-width: 200px;
+        transform: translateX(-80%);
+        padding: 15px;
+    }
+
+    #nav-4{
+        margin: 0;
+    }
+
+    /* 4/22要問老師：在手機版怎麼讓logo跟toggle上面不要有padding？？？ */
+
+}
+
+
+/* 4/22要問老師，如何讓section1的水波效果只限於在section1？現在是下面的都有同樣效果= = 
+二、還有如何讓section1水波效果就像wave。html一樣自然？*/
+
+/*********** 這裡是section1 ***********/
+/* #section1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+} */
+
+/* .mask{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+} */
+
+/* .banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+} */
+
+
+
+#section1{
+    position: relative;
+    overflow: hidden;
+}
+#home,
+.ui-content {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            // overflow: hidden;
+            cursor: pointer;
+        }
+
+        .bg {
+            width: 100%;
+            height: 1000px;
+            background-image: url(../img/banner.jpg);
+            background-attachment: fixed;
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        .wave-position {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+
+        .wave-body {
+            /* position: relative; */
+            width: 100%;
+            height: 100%;
+        }
+
+        .wave {
+            position: absolute;
+            top: calc((100% - 30px)/2);
+            left: calc((100% - 30px)/2);
+            width: 30px;
+            height: 30px;
+            border-radius: 300px;
+            background-image: url(../img/banner.jpg);
+            background-attachment: fixed;
+            background-position: bottom;
+            background-size: cover;
+            opacity: 0.1;
+            box-shadow:inset 0px 0px 50px 0px #1a1a1a35, 0px 0px 50px 0px #88888805;
+            z-index: -1;
+        }
+
+        .wave0 {
+            z-index: 2;
+            zoom: 1.1;
+            animation: w 1s;
+            opacity: 0.1;
+          }
+          
+          .wave1 {
+            z-index: 3;
+            zoom: 1.02;
+            animation: w 1s .15s;
+            opacity: 0.1;
+          }
+          
+          .wave2 {
+            z-index: 4;
+            zoom: 1.06;
+            animation: w 1s .3s;
+            opacity: 0.1;
+          }
+          
+          .wave3 {
+            z-index: 5;
+            zoom: 1.01;
+            animation: w 1s .45s;
+            opacity: 0.1;
+          }
+          
+          .wave4 {
+            z-index: 6;
+            zoom: 1.02;
+            animation: w 1s .6s;
+            opacity: 0.1;
+          }
+          
+          .wave5 {
+            z-index: 7;
+            animation: w 1s .75s;
+            opacity: 0.1;
+          }
+
+
+        @keyframes w {
+            0% {
+                top: calc((100% - 30px)/2);
+                left: calc((100% - 30px)/2);
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+
+            99% {
+                opacity: 0.9;
+            }
+
+            100% {
+                top: calc((100% - 300px)/2);
+                left: calc((100% - 300px)/2);
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+
+
+/*********** 這裡是section2 ***********/
+#section2 {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.section2_swiper{
+    width: 100%;
+    height: 300px;
+}
+#section2 .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#section2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background-color: rgb(0, 0, 0); */
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide2{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 11px;
+    border: 5px whitesmoke solid;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.slide2:hover{
+    opacity: 1;
+}
+#slide_211{
+    background-image: url(../img/slide211.JPG);
+}
+#slide_212{
+    background-image: url(../img/slide212.JPG);
+}
+#slide_221{
+    background-image: url(../img/slide221.JPG);
+}
+#slide_222{
+    background-image: url(../img/slide222.JPG);
+}
+#slide_231{
+    background-image: url(../img/slide231.jpg);
+}
+#slide_232{
+    background-image: url(../img/slide232.JPG);
+}
+
+
+/* 4/22要問老師：怎麼讓lightbox裡的照片同樣大小？ 
+設定了js的max-width或max-height都沒有用？！*/
+
+/* 4/22要問老師：section2的swiper「文+圖+圖」，如何在手機版變成一樣包在swiper裡，但皆是滿版的「文
+                                    圖
+                                     圖」
+，目前用bootstrp裡col-12失敗 */
+
+
+/*********** 這裡是section3 ***********/
+#section3 {
+    width: 100%;
+    position: relative;
+    color:rgb(202, 197, 197);
+    margin: 0;
+    padding: 0;
+}
+
+#section3 .swiper-container {
+    width: 100%;
+    height: 70vh;
+}
+
+/* !!未測試未確認!!若圖不需要寫字，此行應該可以刪除 */
+#section3 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide3{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    line-height: 500px;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#slide_31{
+    background-image: url(../img/slide31.jpg);
+    background-position: center;
+}
+#slide_32{
+    background-image: url(../img/slide32.jpg);
+    background-position: 100% 70%;
+}
+#slide_33{
+    background-image: url(../img/slide33.jpg);
+        background-position: 100% 60%;
+}
+#slide_34{
+    background-image: url(../img/slide34.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+#slide_35{
+    background-image: url(../img/slide35.jpg);
+        background-position: center;
+}
+#slide_36{
+    background-image: url(../img/slide36.jpg);
+        background-position: 100% 65%;
+}
+#slide_37{
+    background-image: url(../img/slide37.jpg);
+        background-position: 100% 50%;
+}
+#slide_38{
+    background-image: url(../img/slide38.jpg);
+        background-position: 100% 50%;
+}
+
+
+/*********** 這裡是section3-1 ***********/
+#section3-1{
+    width: 100%;
+    height: 491px;
+}
+
+#section3-1Background{
+    background-color: whitesmoke;
+}
+
+.slide_3{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    line-height: 500px;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size:20px;
+    background-position: center;
+}
+#slide_3-11{
+    background-image: url(../img/slide311.jpg);
+}
+#slide_3-12{
+    background-image: url(../img/slide312.JPG);
+}
+#slide_3-13{
+    background-image: url(../img/slide313.JPG);
+}
+#slide_3-14{
+    background-image: url(../img/slide314.jpg);
+}
+#slide_3-15{
+    background-image: url(../img/slide315.jpg);
+}
+#slide_3-16{
+    background-image: url(../img/slide316.jpg);
+}#slide_3-17{
+    background-image: url(../img/slide317.JPG);
+}
+#slide_3-18{
+    background-image: url(../img/slide318.JPG);
+}
+#slide_3-19{
+    background-image: url(../img/slide319.JPG);
+}#slide_3-20{
+    background-image: url(../img/slide320.JPG);
+}
+#slide_3-21{
+    background-image: url(../img/slide321.jpg);
+}
+#slide_3-22{
+    background-image: url(../img/slide322.jpg);
+}
+
+#section3-1 .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+#section3-1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+/*********** 這裡是section3-2 ***********/
+#section3-2{
+    width: 100%;
+    background-color: whitesmoke;
+    padding-bottom: 14px;
+}
+
+#section3-2 .text{
+    color: black;
+}
+
+#section3-2 p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+    text-align: justify; 
+}
+
+.SmallP{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+
+/*********** 這裡是section4 ***********/
+#section4{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    padding-top: 20px;
+
+}
+
+// 4/23原手寫要改成boostrp寫法
+// #section4_title {
+//     width: 100%;
+//     height: 100px;
+//     background-color: cadetblue;
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.button {
+    width: 100px;
+    height: 100%;
+    background-color: chocolate;
+    text-align: center;
+    line-height: 100px;
+    translate: 0.3s;
+}
+.button.active {
+    background-color: black;
+    color: white;
+}
+.section4_content {
+    /* background-color: darkgreen; */
+    width: 100%;
+    height: 900px;
+}
+.section4_text {
+    background-color: darkgrey;
+    width: 100%;
+    height: 300px;
+    display: none;
+}
+.section4_text.active {
+    display: block;
+}
+
+.pic4{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#pic411{
+    background-image: url(../img/pic411.jpg);
+}
+#pic412{
+    background-image: url(../img/pic412.jpg);
+}
+#pic413{
+    background-image: url(../img/pic413.jpg);
+}
+#pic414{
+    background-image: url(../img/pic414.jpg);
+}
+
+
+
+/*********** 這裡是section5 ***********/
+
+/*********** 這裡是section6 ***********/
+#section6{
+    width: 100%;
+    height: 400px;
+    background-color: honeydew;
+    font-size: 50px;
+    text-align: center;
+    line-height: 400px;
+}
+
+
+
+
+/* 4/22要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖要依px重新裁切嗎？ */
+/* 4/22問老師：如何將parallax前方草的效果做成自動波浪動嗎？ */
+
+/* 這裡是footer*/
+/* ！！未做的事！！要把同一層的圖卡一樣的data-depth，像是兩台車同一層、公牛自己一層、屋頂上的狗跟小牛同一層、炸欄的黑皮自己一層、皮蛋跟蛋捲跟熊能一層、母牛一層、前方的草自己一~兩三層。 */
+
+footer {
+    width: 100%;
+    height: 566px;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* @media(max-width:1765px){   
+    .footer{
+        background-image: url(../img/footer1765.jpg);
+    }
+}
+@media(max-width:1462px){
+    .footer{
+        background-image: url(../img/footer1462.jpg);
+    }
+}
+@media(max-width:768px){
+
+}
+@media(max-width:576px){
+
+}
+@media(max-width:320px){
+
+} */
+
+
+.layer{
+    width: 100%;
+    height: 100%;
+}
+#cow1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cow1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}#cow2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cow2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}#cow3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/cow3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}#dog1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/dog1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}#dog2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/dog2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}#dog3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/dog3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}#dog4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/dog4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* @media(max-width:1765px){
+    
+    #cow2{
+        background-image: url(../img/cow21765.png);
+    }
+    #cow3{
+        background-image: url(../img/cow31765.png);
+    }
+    #dog2{
+        background-image: url(../img/dog21765.png);
+    }
+    #dog3{
+        background-image: url(../img/dog31765.png);
+    }
+}
+@media(max-width:1462px){
+    #cow1{
+        background-image: url(../img/cow11462.png);
+    }
+    #cow2{
+        background-image: url(../img/cow21462.png);
+    }
+    #cow3{
+        background-image: url(../img/cow31462.png);
+    }
+    #dog1{
+        background-image: url(../img/dog11462.png);
+    }
+    #dog2{
+        background-image: url(../img/dog21462.png);
+    }
+    #dog3{
+        background-image: url(../img/dog31462.png);
+    }
+    #dog4{
+        background-image: url(../img/dog41462.png);
+    }
+}
+@media(max-width:768px){
+
+}
+@media(max-width:576px){
+
+}
+@media(max-width:320px){
+
+} */
+
+
+#scene {
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* 已解決的問題區ok！ */
+/* ok！<!-- 問老師如何用bootstrap將>768px時，只有一個col就好？用col-12，(1920px時是用col-lg-4 -->
+
+ok！<!-- BOotstrap的padding跟margin只有1~5嗎？對 -->
+
+ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
+/*ok！ <!-- 若要寫文字，這時候該怎麼置中？要固定swiper-container的高度才能用line-height吧？#slide_21{display:flex} --> */
+
+/*ok！ 需詢問老師：為什麼::before會無效？
+一定要有content:'';
+    還有position: absolute;
+    若無高度一定要有w跟h
+    width: 100%;
+    height: 100%; */
+
+
+/* ok！需問老師：如何改「swiper點點」的顏色？
+而且swiper的試範點點在右邊(js加入oberser已回恢預設值，在下方) 
+顏色改：*/
+/* 可以用
+    .swiper-pagination-fraction 改方框{
+    background-color;去改！   }
+
+    .swiper-pagination-fraction span改點點 {
+    display:flex
+    justify-con:center
+    aling---center
+} */
+/* #section2 .swiper-pagination-fraction span{
+    background-color: tomato
+} */
+
+/* OK!問老師：section1水波產生的底圖位置不對>把wave0~5的
+background-size:[auto]要刪除 只留下106%; */
