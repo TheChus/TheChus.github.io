@@ -47,6 +47,8 @@
                     <li class="nav-item  mr-5">
                         <a class="nav-link text-white" href="#tosection4">商品訂購</a>
                     </li>
+            
+<!-- 4/24問老師：「關於朱家牧場」沒辦法加錨點嗎？測試加上去後錨點就失效了!!! -->
                     <li class="nav-item dropdown  mr-5" id="nav-4">
                         <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -582,11 +584,9 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
-            <div class="swiper-button-next">
-                <!--(問過助教但想不太懂，可能再看一下f12檢查確認一下))可以再放入一個div，修改成想要的箭頭圖，再將.swiper-button-next:after,(before咧？)
-「4/22查一查然後呢？要幹嘛？？？」-->
+            <!-- <div class="swiper-button-next">
             </div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-prev"></div> -->
         </div>
     </section>
 
@@ -596,13 +596,13 @@
     <!-----------section3的階段目標1  ----------->
     <div id="tosection3" class="ToSection"></div>
     <div class="container">
-        <section id="section3-1" class="mb-5">
-            <div class="SmallSection-name pb-3 animated rubberBand delay-1s" data-aos-anchor-placement="bottom-center">
+        <section id="section3-1" class="">
+            <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s" data-aos-anchor-placement="bottom-center">
                 階段目標 Goal</div>
             <div class="text mb-3">第一階段：設備改善添購、牛舍改建重整</div>
             <!-- 4/22要問老師：如何讓手機版看到是整張圖？「col-12」嗎？但目前測試擋到下方的footer了 -->
             <div data-aos="zoom-in" id="section3-1Background" data-aos-anchor-placement="bottom-bottom"
-                class="pb-5 pt-3">
+                class="">
                 <div class="container">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -650,9 +650,14 @@
             </div>
         </section>
     </div>
+
+
+
+<!-- 4/24科技養牛的三小文字區塊，要再加上圖片各一張(正圓框)用#evevZoom.js來把滑鼠移到圖片變負片效果，或是黑白效果 -->
+
     <!-----------section3的階段目標2  ----------->
     <div class="container">
-        <section id="section3-2" class="mb-5">
+        <section id="section3-2" class="mb-5 pt-5">
             <div class="text mb-3">第二階段：科技養牛</div>
             <div class="container">
                 <p>美國農業科技公司嘉吉攜手愛爾蘭數據分析公司Cainthus打造養牛大數據，透過影像辨識技術，讓養牛更easy，不僅提高畜牧品質，也改善牧場經營方式，打造五星級牛隻旅館，精準管理牛隻健康狀況。
@@ -714,7 +719,7 @@
                 <div class="section4_text active" id="text1">
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="title">生乳</div>
+                            <div class="title">牛奶</div>
                             <div class="pic4" id="pic411"></div>
                         </div>
                         <div class="col-lg-6">
@@ -722,23 +727,24 @@
                             <div class="pic4" id="pic412"></div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="title">奶酪</div>
+                            <div class="title">鮮奶奶酪</div>
                             <div class="pic4" id="pic413"></div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="title">布丁</div>
+                            <div class="title">鮮奶布丁</div>
                             <div class="pic4" id="pic414"></div>
                         </div>
                     </div>
                 </div>
-                <div class="section4_text" id="text2">看天氣產出</div>
-                <div class="section4_text" id="text3">不定時suprise</div>
+                <div class="section4_text" id="text2">看季節與時間才產出</div>
+                <div class="section4_text" id="text3">不定時有貨的小驚喜</div>
             </div>
         </div>
 
 
     </section>
 
+<!-- 4/24將牧牛犬區用skrollr.js用視差滾動，讓每個區塊以上下左右方向移動，像是在四格漫畫fu？我的fu是啥毀？要想想，我總共五張圖 -->
     <!----------- 這裡是section5 ----------->
     <div id="tosection5-1" class="ToSection"></div>
     <section id="section5-1">
@@ -746,7 +752,69 @@
             <div class="section-name">
                關於牧場 About TheChus
             </div>
-            <div class="text mb-3">牧「牧」犬們hover認養代替購買</div>
+            <div class="text mb-3">牧「牛」犬們hover認養代替購買</div>
+
+            <div class="row">
+<!-- 4/24看boostrap怎麼讓兩col-5水平置中 -->
+                <div class="col-5">
+                    <div class="pic5" id="pic511"></div>
+                </div>
+                <div class="col-5">
+                    <div class="pic5" id="pic512"></div>
+                </div>
+<!-- 4/24看bootstrap如何讓文字置中！ -->
+                <div class="col-12"><h1>皮蛋</h1></div>
+                <div class="col-12"><h3>目前牧場的狗老大，非常保護牧場，外人請勿觸摸(注意!內有惡犬)</h3></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="pic5" id="pic521"></div>
+                </div>
+                <div class="col-6">
+                    <div class="pic5" id="pic522"></div>
+                </div>
+                <div class="col-12"><h1>黑皮</h1></div>
+                <div class="col-12"><h3>牧場最胖的一隻狗，會假裝受傷博取同情</h3></div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="pic5" id="pic531"></div>
+                </div>
+                <div class="col-4">
+                    <div class="pic5" id="pic532"></div>
+                </div>
+                <div class="col-4">
+                    <div class="pic5" id="pic533"></div>
+                </div>
+                <div class="col-12"><h1>蛋捲</h1></div>
+                <div class="col-12"><h3>牧場最可愛的黑狗兄，腳短短、愛笑及搖尾巴，很受人疼愛</h3></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="pic5" id="pic541"></div>
+                </div>
+                <div class="col-6">
+                    <div class="pic5" id="pic542"></div>
+                </div>
+                <div class="col-12"><h1>兩光</h1></div>
+                <div class="col-12"><h3>顧名思義此狗個性較為兩光，曾跑出去大馬路上走失，也曾自己跑去「外勞」宿舍= =</h3></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="pic5" id="pic551"></div>
+                </div>
+                <div class="col-6">
+                    <div class="pic5" id="pic552"></div>
+                </div>
+                <div class="col-12"><h1>熊熊</h1></div>
+                <div class="col-12"><h3>目前還在長大中，腳掌很大隻，就很像熊</h3></div>
+            </div>
+
+
         </div>
     </section>
 
