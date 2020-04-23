@@ -194,7 +194,7 @@
                                                 <h5>牧場野貓生下了長毛貓!!!</h5>
                                                 <h5>非常帥氣但很怕水</h5>
                                                 <h5>取名為「阿不溜」</h5>
-                                                <h5>可暱稱「溜溜」</h5>
+                                                <h5>暱稱「溜溜」</h5>
                                             </span>
                                         </div>
                                     </div>
@@ -292,13 +292,13 @@
     <!-----------section3的階段目標1  ----------->
     <div id="tosection3" class="ToSection"></div>
     <div class="container">
-        <section id="section3-1">
-            <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s"
-                data-aos-anchor-placement="bottom-center">
+        <section id="section3-1" class="mb-5">
+            <div class="SmallSection-name pb-3 animated rubberBand delay-1s" data-aos-anchor-placement="bottom-center">
                 階段目標 Goal</div>
             <div class="text mb-3">第一階段：設備改善添購、牛舍改建重整</div>
             <!-- 4/22要問老師：如何讓手機版看到是整張圖？「col-12」嗎？但目前測試擋到下方的footer了 -->
-            <div data-aos="zoom-in" id="section3-1Background" data-aos-anchor-placement="bottom-bottom">
+            <div data-aos="zoom-in" id="section3-1Background" data-aos-anchor-placement="bottom-bottom"
+                class="pb-5 pt-3">
                 <div class="container">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -348,7 +348,7 @@
     </div>
     <!-----------section3的階段目標2  ----------->
     <div class="container">
-        <section id="section3-2" class="pt-5">
+        <section id="section3-2" class="mb-5">
             <div class="text mb-3">第二階段：科技養牛</div>
             <div class="container">
                 <p>美國農業科技公司嘉吉攜手愛爾蘭數據分析公司Cainthus打造養牛大數據，透過影像辨識技術，讓養牛更easy，不僅提高畜牧品質，也改善牧場經營方式，打造五星級牛隻旅館，精準管理牛隻健康狀況。
@@ -389,74 +389,40 @@
     <div id="tosection4" class="ToSection"></div>
     <section id="section4">
         <div class="container">
-            <div class="row" id="section4_title">
-                <div id="button1" class="col-lg-4">
-                    <div class="button active"><h6>乳製品</h6></div>
+            <div class="row" id="section4_toggle">
+                <div id="button1" class="button active">乳製品
                 </div>
-                <!-- 可延伸加入hover效果？牛乳可用咖啡、珍珠奶茶 -->
-
-                
-                <div id="button2" class="col-lg-4">
-                    <div class="button"><h5>有機蔬菜</h5></div>
-                    </div>
-                <div id="button3" class="col-lg-4">
-                    <div class="button"><h4>有機水果</h4></div>
-                    </div>
+                <div id="button2" class="button">有機蔬菜
+                </div>
+                <div id="button3" class="button">有機水果
+                </div>
             </div>
 
+
+<!-- 4/23問老師，怎麼讓字跟圖交換？flex-row-reverse沒用？ -->
             <div class="section4_content">
-                <div class="section4_text active">
-                    <div class="row h-50">
-                        <div class="col-6">
-                            <div class="row h-100">
-                                <div class="col-6">
-                                生乳
-                                </div>
-                                <div class="col-6">
-                                    <div class="pic4" id=
-                                    "pic411"></div>
-                                </div>
-                            </div>
+                <div class="section4_text active" id="text1">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="title">生乳</div>
+                            <div class="pic4" id="pic411"></div>
                         </div>
-                        <div class="col-6">
-                            <div class="row h-100">
-                                <div class="col-6">
-                                延伸咖啡、珍奶
-                                </div>
-                                <div class="col-6">
-                                    <div class="pic4" id=
-                                    "pic412"></div>
-                                </div>
-                            </div>
+                        <div class="col-lg-6">
+                            <div class="title">拿鐵</div>
+                            <div class="pic4" id="pic412"></div>
                         </div>
-                    </div>
-                    <div class="row h-50">
-                        <div class="col-6">
-                            <div class="row h-100">
-                                <div class="col-6">
-                                    奶酪
-                                </div>
-                                <div class="col-6">
-                                    <div class="pic4" id=
-                                    "pic413"></div>
-                                </div>
-                            </div>
+                        <div class="col-lg-6">
+                            <div class="title">奶酪</div>
+                            <div class="pic4" id="pic413"></div>
                         </div>
-                        <div class="col-6">
-                            <div class="row h-100">
-                                <div class="col-6">
-                                    布丁
-                                </div>
-                                <div class="col-6">
-                                    <div class="pic4" id=
-                                    "pic414"></div>
-                                </div>
-                            </div>
+                        <div class="col-lg-6">
+                            <div class="title">布丁</div>
+                            <div class="pic4" id="pic414"></div>
                         </div>
                     </div>
                 </div>
-                <div class="section4_text">222222222222222222222222</div>
-                <div class="section4_text">333333333333333333333333</div>
+                <div class="section4_text" id="text2">看天氣產出</div>
+                <div class="section4_text" id="text3">不定時suprise</div>
             </div>
         </div>
 
@@ -465,8 +431,19 @@
 
     <!----------- 這裡是section5 ----------->
     <div id="tosection5-1" class="ToSection"></div>
+    <section id="section5-1">
+
+    </section>
+
+
     <div id="tosection5-2" class="ToSection"></div>
-    <div id="tosection5-3" class="ToSection"></div>
+    <section id="section5-2">
+
+    </section>
+
+
+
+    </section>
 
 
 
@@ -531,7 +508,7 @@
 
     <script>
         /////////// 這是nav的taggle在手機版消失 ///////////
-        $('#navbarSupportedContent ul .nav-item').click(function(){
+        $('#navbarSupportedContent ul .nav-item').click(function () {
             $('#toggle').removeClass('on')
             $('#toggle').addClass('collapsed')
 
@@ -539,7 +516,7 @@
         })
         // 未測試區：4/22蕭麻吉說：toggleClass像是之前說的foreach或forloop寫法，點擊如果是紅色變綠色，綠色變紅色，可以用這想法在點擊「最新消息……等btns」，把#toggle，remove("on")
         //參考↑ 4/23君毅的教學// 這是nav的taggle在手機版消失 //
-        
+
 
         /////////// 這是nav ///////////
         $("#toggle").click(function () {
@@ -558,10 +535,10 @@
                 mx = e.pageX;
                 my = e.pageY;
                 z = z + 1;
-                _wave(mx, my, z , true);
+                _wave(mx, my, z, true);
             });
 
-            function _wave(i, j, k , active) {
+            function _wave(i, j, k, active) {
                 if (active) {
                     $('.ui-content').prepend(
                         '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
@@ -625,6 +602,8 @@
         })
 
         /////////// 這是section3的swiper ///////////
+
+        // 4/24問老師：可以讓swiper「慢慢」滑到下一張嗎？
         var swiper3 = new Swiper('#section3 .swiper-container', {
             slidesPerView: 1,
             spaceBetween: 30,
@@ -634,9 +613,13 @@
                 clickable: true,
             },
             navigation: {
-// 4/22蕭老師說：可以直接給一個class，放上新的箭頭圖片，直接改這裡即可↓
+                // 4/22蕭老師說：可以直接給一個class，放上新的箭頭圖片，直接改這裡即可↓
                 nextEl: '#section3 .swiper-button-next',
                 prevEl: '#section3 .swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
             },
         });
 

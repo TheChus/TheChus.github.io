@@ -137,6 +137,12 @@ html{
     font-weight: 900;
 }
 
+.navbar-collapse {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
 @media (max-width: 992px) {
     .navbar-nav{
         /* text-align: ; */
@@ -231,50 +237,43 @@ html{
             background-attachment: fixed;
             background-position: bottom;
             background-size: cover;
-            opacity: 0.1;
-            box-shadow:inset 0px 0px 50px 0px #1a1a1a35, 0px 0px 50px 0px #88888805;
-            z-index: -1;
+            box-shadow:inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
+            // z-index: -1;
         }
 
         .wave0 {
             z-index: 2;
             zoom: 1.1;
             animation: w 1s;
-            opacity: 0.1;
           }
           
           .wave1 {
             z-index: 3;
             zoom: 1.02;
             animation: w 1s .15s;
-            opacity: 0.1;
           }
           
           .wave2 {
             z-index: 4;
             zoom: 1.06;
             animation: w 1s .3s;
-            opacity: 0.1;
           }
           
           .wave3 {
             z-index: 5;
             zoom: 1.01;
             animation: w 1s .45s;
-            opacity: 0.1;
           }
           
           .wave4 {
             z-index: 6;
             zoom: 1.02;
             animation: w 1s .6s;
-            opacity: 0.1;
           }
           
           .wave5 {
             z-index: 7;
             animation: w 1s .75s;
-            opacity: 0.1;
           }
 
 
@@ -288,7 +287,7 @@ html{
             }
 
             99% {
-                opacity: 0.9;
+                opacity: 1;
             }
 
             100% {
@@ -449,7 +448,7 @@ html{
 /*********** 這裡是section3-1 ***********/
 #section3-1{
     width: 100%;
-    height: 491px;
+    height: 515px;
 }
 
 #section3-1Background{
@@ -531,7 +530,7 @@ html{
 #section3-2{
     width: 100%;
     background-color: whitesmoke;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
 }
 
 #section3-2 .text{
@@ -556,42 +555,44 @@ html{
 /*********** 這裡是section4 ***********/
 #section4{
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-color: white;
-    padding-top: 20px;
-
 }
 
-// 4/23原手寫要改成boostrp寫法
-// #section4_title {
-//     width: 100%;
-//     height: 100px;
-//     background-color: cadetblue;
-//     display: flex;
-//     justify-content: space-between;
-// }
-
+#section4_toggle {
+    height: 100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1)0%, rgba(255, 255, 255, 0.9)100%);
+    margin: 0;
+}
 .button {
     width: 100px;
-    height: 100%;
-    background-color: chocolate;
+    height: 100px;
+    background-color: black;
     text-align: center;
     line-height: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-right: 7px;
     translate: 0.3s;
 }
 .button.active {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.65);
     color: white;
 }
+
+
+// 4/24問老師：為何產品圖文，下方content的方塊會太小？(row的高度嗎？)
+// 調整過.section4_content、.section4_text都沒用= =
 .section4_content {
-    /* background-color: darkgreen; */
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.1)0%, rgba(255, 255, 255, 1)100%); 
     width: 100%;
     height: 900px;
 }
+
 .section4_text {
-    background-color: darkgrey;
     width: 100%;
-    height: 300px;
+    height: 650px;
     display: none;
 }
 .section4_text.active {
@@ -600,7 +601,7 @@ html{
 
 .pic4{
     width: 100%;
-    height: 100%;
+    height: 300px;
     background-position: center;
     background-size: cover;
 }
@@ -617,9 +618,25 @@ html{
     background-image: url(../img/pic414.jpg);
 }
 
+#section4 #text2,#text3{
+    font-size: 50px;
+    text-align: center;
+    line-height: 450px;
+    // 要先解決底色方框的問題，現在不知道怎麼調高度
+
+}
+
 
 
 /*********** 這裡是section5 ***********/
+#section5-1{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(180deg, white 0%, rgba(240, 255, 240, 1) 100%);
+
+}
+
+
 
 /*********** 這裡是section6 ***********/
 #section6{
