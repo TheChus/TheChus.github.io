@@ -1059,7 +1059,12 @@
         // 不然就加入「swiper.init();」在所有section的js最下方即可正常swiper --> */
         // swiper.init();
 
- 
+
+        /////////// 這是footer的parrallax ///////////
+        var scene = document.querySelector('#scene');
+        var parallaxInstance = new Parallax(scene);
+
+
         /////////// 這是section4切換多分頁 ///////////
         var btn = document.querySelectorAll(".button")
         var content = document.querySelectorAll(".section4_text")
@@ -1089,16 +1094,8 @@
         /////////// 這是section6的skrollr效果 ///////////
         var s = skrollr.init();
 
-
-
-        /////////// 這是footer的parrallax ///////////
-        var scene = document.querySelector('#scene');
-        var parallaxInstance = new Parallax(scene);
-
-
-
     </script>
-    Copyright © 2020 TheChus
+Copyright © 2020 TheChus
 </body>
 
 </html>
