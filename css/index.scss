@@ -649,7 +649,7 @@ html{
 #section5-1{
     width: 100%;
 // 要做100vh然後下右上左的滾輪一張一張換圖
-    // height: 100vh;
+    min-height: calc(100vh - 80px);
     background: linear-gradient(180deg, white 0%, rgba(240, 255, 240, 1) 100%);
 }
 
@@ -715,7 +715,7 @@ html{
     background-color: rgb(163, 191, 243);
     border-radius: 5%;
     border: 10px solid black;
-    height: 80vh;
+    height: calc(100vh - 221px);
 }
 
 
@@ -952,3 +952,5 @@ ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 
 /* OK!問老師：section1水波產生的底圖位置不對>把wave0~5的
 background-size:[auto]要刪除 只留下106%; */
+
+// <!--ok！ 4/24看boostrap怎麼讓兩col-5水平置中，在row 用justify-content-center-->

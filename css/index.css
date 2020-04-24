@@ -681,6 +681,7 @@ html {
 /*********** 這裡是section5 ***********/
 #section5-1 {
   width: 100%;
+  min-height: calc(100vh - 80px);
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(honeydew));
   background: linear-gradient(180deg, white 0%, honeydew 100%);
 }
@@ -749,7 +750,7 @@ html {
   background-color: #a3bff3;
   border-radius: 5%;
   border: 10px solid black;
-  height: 80vh;
+  height: calc(100vh - 221px);
 }
 
 #section5-2 {
