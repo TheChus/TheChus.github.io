@@ -418,8 +418,8 @@ html {
   background-size: cover;
   line-height: 500px;
   color: white;
-  font-weight: 700;
-  font-size: 50px;
+  font-weight: 900;
+  font-size: 30px;
 }
 
 #slide_31 {
@@ -474,11 +474,11 @@ html {
   background-color: whitesmoke;
 }
 
-.slide_3 {
+.slide_3-1 {
   width: 100%;
   height: 400px;
   background-size: cover;
-  line-height: 500px;
+  line-height: 400px;
   color: whitesmoke;
   font-weight: 700;
   font-size: 20px;
@@ -565,17 +565,22 @@ html {
   color: black;
 }
 
-#section3-2 p {
+#title-text {
   font-size: 18px;
-  font-weight: 500;
-  color: #292929;
-  text-align: justify;
+  color: black;
 }
 
 .SmallP {
   font-size: 18px;
   font-weight: 600;
   color: black;
+  text-align: justify;
+}
+
+#section3-2 .row p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #464646;
   text-align: justify;
 }
 
@@ -616,8 +621,8 @@ html {
 }
 
 .section4_content {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), to(white));
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.1) 0%, white 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.1)), to(white));
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.1) 0%, white 100%);
   width: 100%;
   padding: 15px;
   border-radius: 0 0 30px 30px;
@@ -657,7 +662,7 @@ html {
 }
 
 #section4 #text2, #text3 {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   line-height: 450px;
 }
@@ -679,7 +684,7 @@ html {
 
 .pic5 {
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-position: center;
   background-size: cover;
 }
@@ -729,11 +734,18 @@ html {
   background-image: url(../img/pic552.JPG);
 }
 
+#section5-1 .row {
+  background-color: #a3bff3;
+  border-radius: 5%;
+  border: 10px solid black;
+  height: 80vh;
+}
+
 #section5-2 {
   width: 100%;
   height: 700px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(240, 255, 250, 0.7)), to(honeydew));
-  background: linear-gradient(360deg, rgba(240, 255, 250, 0.7) 0%, honeydew 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#cffacf), to(honeydew));
+  background: linear-gradient(360deg, #cffacf 0%, honeydew 100%);
 }
 
 #section5-2 .text {
@@ -743,13 +755,21 @@ html {
 /*********** 這裡是section6 ***********/
 #section6 {
   width: 100%;
-  height: 400px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 255, 250, 0.7)), to(rgba(100, 149, 237, 0.9)));
-  background: linear-gradient(180deg, rgba(240, 255, 250, 0.7) 0%, rgba(100, 149, 237, 0.9) 100%);
+  height: 500px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cffacf), to(#faebba));
+  background: linear-gradient(180deg, #cffacf 0%, #faebba 100%);
   font-size: 50px;
   text-align: center;
-  line-height: 400px;
   color: #101d33;
+}
+
+#contactus {
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/contactus.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
 }
 
 /* 4/22要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖要依px重新裁切嗎？ */
@@ -765,6 +785,7 @@ footer {
 .footer {
   width: 100%;
   height: 100%;
+  text-align: center;
   background-image: url(../img/footer.jpg);
   background-size: cover;
   background-position: center;

@@ -402,8 +402,8 @@ html{
     background-size: cover;
     line-height: 500px;
     color: white;
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 900;
+    font-size: 30px;
 }
 
 #slide_31{
@@ -453,11 +453,11 @@ html{
     background-color: whitesmoke;
 }
 
-.slide_3{
+.slide_3-1{
     width: 100%;
     height: 400px;
     background-size: cover;
-    line-height: 500px;
+    line-height: 400px;
     color: whitesmoke;
     font-weight: 700;
     font-size:20px;
@@ -535,18 +535,23 @@ html{
     color: black;
 }
 
-#section3-2 p{
+#title-text{
     font-size: 18px;
-    font-weight: 500;
-    color: rgb(41, 41, 41);
-    text-align: justify; 
-}
+    color: black;
+ }
 
 .SmallP{
     font-size: 18px;
     font-weight: 600;
     color: rgb(0, 0, 0);
     text-align: justify;
+}
+
+#section3-2 .row p{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    text-align: justify; 
 }
 
 
@@ -584,7 +589,7 @@ html{
 
 
 .section4_content {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.1)0%, rgba(255, 255, 255, 1)100%); 
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.1)0%, rgba(255, 255, 255, 1)100%); 
     width: 100%;
     padding: 15px;
     border-radius: 0 0 30px 30px;
@@ -619,7 +624,7 @@ html{
 }
 
 #section4 #text2,#text3{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     line-height: 450px;
 }
@@ -643,7 +648,7 @@ html{
 
 .pic5{
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-position: center;
     background-size: cover;
 }
@@ -687,15 +692,23 @@ html{
     background-image: url(../img/pic552.JPG);
 }
 
+// 4/24問老師：在iphone看奇怪為什麼pic512照片又自動旋輔了？
 
-// 4/24問老師：奇怪為什麼pic512照片又自動旋輔了？
 
+// 4/24問老師：section5-1可以放手繪狗在背景飛嗎？
+// 類似skrollr的藍色點點功能
+#section5-1 .row{
+    background-color: rgb(163, 191, 243);
+    border-radius: 5%;
+    border: 10px solid black;
+    height: 80vh;
+}
 
 
 #section5-2{
     width: 100%;
     height: 700px;
-    background: linear-gradient(360deg, rgba(240, 255, 250, 0.7) 0%, rgba(240, 255, 240, 1) 100%);
+    background: linear-gradient(360deg, rgba(207, 250, 207, 1) 0%, rgba(240, 255, 240, 1) 100%);
 }
 #section5-2 .text{
     color: black;
@@ -706,13 +719,22 @@ html{
 /*********** 這裡是section6 ***********/
 #section6{
     width: 100%;
-    height: 400px;
-    background: linear-gradient(180deg, rgba(240, 255, 250, 0.7) 0%, rgba(100, 149, 237, 0.9) 100%);
+    height: 500px;
+    background: linear-gradient(180deg, rgba(207, 250, 207, 1) 0%, rgb(250, 235, 186) 100%);
     font-size: 50px;
     text-align: center;
-    line-height: 400px;
     color: rgb(16, 29, 51);
 }
+
+#contactus{
+    width:300px;
+    height: 300px;
+    background-image: url(../img/contactus.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
 
 
 
@@ -732,6 +754,7 @@ footer {
 .footer {
     width: 100%;
     height: 100%;
+    text-align: center;
     background-image: url(../img/footer.jpg);
     background-size: cover;
     background-position: center;
