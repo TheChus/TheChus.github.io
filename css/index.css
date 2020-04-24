@@ -611,10 +611,9 @@ html {
 }
 
 #section5-1 .row {
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(63, 81, 181, 0.1)));
-  background: linear-gradient(180deg, white 0%, rgba(63, 81, 181, 0.1) 100%);
+  background-color: white;
   border-radius: 5%;
-  border: 3px solid white;
+  border: 5px solid white;
   height: calc(100vh - 221px);
 }
 
@@ -647,7 +646,7 @@ html {
   height: 500px;
   background: -webkit-gradient(linear, left top, left bottom, from(#cffacf), to(#7fd6d5));
   background: linear-gradient(180deg, #cffacf 0%, #7fd6d5 100%);
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   color: #101d33;
 }
