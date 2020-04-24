@@ -685,9 +685,98 @@ html {
 /******** 這裡是section5-1 ********/
 #section5-1 {
   width: 100%;
-  height: 700px;
+  height: calc(100vh - 80px);
   background: linear-gradient(180deg, white 0%, honeydew 100%);
 }
+
+/* new11:01 */
+#section5-1 .section-name {
+    color: black;
+  }
+  
+  #section5-1 .text {
+    color: black;
+  }
+  
+  .pic5 {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #pic511 {
+    background-image: url(../img/pic511.jpg);
+  }
+  
+  #pic512 {
+    background-image: url(../img/pic512.jpg);
+  }
+  
+  #pic521 {
+    background-image: url(../img/pic521.jpg);
+  }
+  
+  #pic522 {
+    background-image: url(../img/pic522.jpg);
+  }
+  
+  #pic531 {
+    background-image: url(../img/pic531.JPG);
+  }
+  
+  #pic532 {
+    background-image: url(../img/pic532.JPG);
+    background-position: right;
+  }
+  
+  #pic541 {
+    background-image: url(../img/pic541.jpg);
+  }
+  
+  #pic542 {
+    background-image: url(../img/pic542.jpg);
+  }
+  
+  #pic551 {
+    background-image: url(../img/pic551.JPG);
+  }
+  
+  #pic552 {
+    background-image: url(../img/pic552.JPG);
+  }
+  
+  #section5-1 .row {
+    background-color: #a3bff3;
+    border-radius: 5%;
+    border: 10px solid black;
+    height: calc(100vh - 221px);
+  }
+
+
+/******** 這裡是section5-2 ********/
+#section5-2 {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(360deg, #cffacf 0%, honeydew 100%);
+  }
+  
+  #section5-2 .text, .left-block, .right-block {
+    width: 300px;
+    color: black;
+  }
+  
+  .left-block, .right-block {
+    float: left;
+    clear: right;
+    font-size: 18px;
+    font-size: 600;
+    background-color: white;
+    padding: 15px;
+    text-align: justify;
+  }
+
+
 
 /*********** 這裡是section6 ***********/
 #section6 {
