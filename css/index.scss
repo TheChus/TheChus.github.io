@@ -583,7 +583,7 @@ html{
     height: 100%;
     font-size: 30px;
     color: white;
-    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.562), 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
     font-weight: 900;
 }
 .text:nth-child(4) {}
@@ -639,6 +639,12 @@ html{
 #section5-1 .text{
     color: black;
 }
+#section5-1 h1{
+    color: rgb(121, 111, 105) ;
+}
+#section5-1 h3{
+    color: #B3A79F ;
+}
 
 .pic5{
     width: 100%;
@@ -686,9 +692,9 @@ html{
 // 4/24問老師：在iphone看奇怪為什麼pic512照片又自動旋轉了？
 
 #section5-1 .row{
-    background-color: rgb(163, 191, 243);
+    background-color: #FFE8D6;
     border-radius: 5%;
-    border: 10px solid black;
+    // border: 10px solid black;
     height: calc(100vh - 221px);
 }
 
