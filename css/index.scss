@@ -296,6 +296,7 @@ html{
                 opacity: 0;
             }
         }
+   
 
 
 /*********** 這裡是section2 ***********/
@@ -646,6 +647,7 @@ html{
 
 
 /*********** 這裡是section5 ***********/
+/******** 這裡是section5-1 ********/
 #section5-1{
     width: 100%;
 // 要做100vh然後下右上左的滾輪一張一張換圖
@@ -688,9 +690,6 @@ html{
     background-image: url(../img/pic532.JPG);
     background-position: right;
 }
-#pic533{
-    background-image: url(../img/pic533.JPG);
-}
 // 兩光
 #pic541{
     background-image: url(../img/pic541.jpg);
@@ -718,14 +717,25 @@ html{
     height: calc(100vh - 221px);
 }
 
-
+/******** 這裡是section5-2 ********/
 #section5-2{
     width: 100%;
     height: 700px;
     background: linear-gradient(360deg, rgba(207, 250, 207, 1) 0%, rgba(240, 255, 240, 1) 100%);
 }
-#section5-2 .text{
+#section5-2 .text, .left-block, .right-block{
+    width: 300px;
+    height: 300px;
     color: black;
+}
+
+.left-block, .right-block{
+    float: left;
+    clear: right;
+    font-size: 18px;
+    font-size: 600;
+    background-color: white;padding: 15px;
+    text-align: justify;
 }
 
 
