@@ -562,6 +562,13 @@ html {
   color: #5e6380;
 }
 
+.pic5 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
 #pic511 {
   background-image: url(../img/pic511.jpg);
 }
@@ -604,7 +611,8 @@ html {
 }
 
 #section5-1 .row {
-  background-color: rgba(63, 81, 181, 0.1);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(63, 81, 181, 0.1)));
+  background: linear-gradient(180deg, white 0%, rgba(63, 81, 181, 0.1) 100%);
   border-radius: 5%;
   border: 3px solid white;
   height: calc(100vh - 221px);
