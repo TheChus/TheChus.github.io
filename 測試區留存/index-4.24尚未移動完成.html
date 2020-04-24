@@ -579,8 +579,8 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
         </div>
     </section>
 
@@ -920,8 +920,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script> -->
-    <!-- 4/28下面這個是要讓營幕在某高度不做什麼事用的套件，網路說是很好用，但if/else還是失敗了呢 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 
@@ -998,12 +996,11 @@
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true,
-            // 4/25~4/26假加快直接把照片裁切一樣大小吧！
+            // 4/25~4/26假日快直接把照片裁切一樣大小吧！
         })
 
         /////////// 這是section3的swiper ///////////
 
-        // 4/24問老師：可以讓swiper「慢慢」滑到下一張嗎？
         var swiper3 = new Swiper('#section3 .swiper-container', {
             slidesPerView: 1,
             spaceBetween: 30,
@@ -1030,6 +1027,7 @@
 
         /////////// 這是section3-1的AOS ///////////
         AOS.init();
+        
         /////////// 這是section3-1的swiper ///////////
         var swiper3_1 = new Swiper('#section3-1 .swiper-container', {
             slidesPerView: 1,
@@ -1089,9 +1087,8 @@
         }
 
 
-        /////////// 這是section6的skrollr效果 ///////////
-        // new 4/24-11:55猜測問題是不是這個！！！手機版不能用
-        // var s = skrollr.init();
+        /////////// 這是section6改用lax文字效果+aos效果 ///////////
+
 
 
         /////////// 這是footer的parrallax ///////////

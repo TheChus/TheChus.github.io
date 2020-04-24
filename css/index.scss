@@ -4,8 +4,6 @@ ios不會自動播放影片 */
 
 /* 未解決：問老師：要怎麼在手機版把toggle不要看不到？？？(因為前面有把navbar：fixed，還有max-width)。ANS:助教說，是apple ios的問題，要再上網找解法 */
 
-/* 未解決：但不重要：為什麼寫這個個人網站時，如果有更新程式碼，golive的網頁都不會跳到最上面重載入？？？？？ */
-
 /* 未解決：ios查看網站時，navbar會往上彈？導致無法關閉navbar？ */
 
 
@@ -15,15 +13,18 @@ body {
     background-color: black;
     text-align: center;
     color: white;
+    -webkit-overflow-scrolling: touch;
 }
 
 * {
     box-sizing: border-box;
     font-family: '微軟正黑體';
+    -webkit-overflow-scrolling: touch;
 }
 
 html{
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 
@@ -65,18 +66,12 @@ html{
 }
 
 
-
-// 4/24問老師：section1牛水波紋出現一個大問題，上方的navbar無法按= =，該固定section1高度，不能用100vh了吧？
-
-
-
 .ToSection{
     position: relative;
     top: -80px;
     z-index: 999;
     visibility: hidden;
 }
-
 
 
 /*********** 這裡是navbar ***********/
@@ -100,7 +95,7 @@ html{
     margin: 10px auto;
 }
 
-/* 4/22問：這裡是原本toogle的範例寫用(992px「min-width」，可以改成max-width嗎？這段有點看不太懂= = */
+// /* 4/22問：這裡是原本toogle的範例寫用(992px「min-width」，可以改成max-width嗎？這段有點看不太懂= = ，不好，因為bootstrp的套件，不要改！
 @media (min-width: 992px) {
     #toggle {
         display: none;
@@ -149,8 +144,7 @@ html{
 
 @media (max-width: 992px) {
     .navbar-nav{
-        /* text-align: ; */
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0, 0, 0, 0.8);
         border-radius: 5px;
         max-width: 200px;
         transform: translateX(-80%);
@@ -167,18 +161,22 @@ html{
 /*********** 這裡是section1 ***********/
 #section1 {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: calc(100vh - 80px);
+    // 高度原本為100vh，測試改成這樣看看手機版如何
+
+    // 下面兩個是水波效果用的
+    // position: relative;
+    // overflow: hidden;
 }
 
-/* .mask{
-    content:'';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.3;
-} */
+// .mask{
+//     content:'';
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background-color: black;
+//     opacity: 0.3;
+// } 
 
 .banner {
     width: 100%;
@@ -192,7 +190,7 @@ html{
 /*********** 這裡是section1有水波效果 ***********/
 // #section1{
 //     position: relative;
-//     overflow: hidden;
+//     
 // }
 // #home,
 // .ui-content {
@@ -323,9 +321,6 @@ html{
 #section2 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* background-color: rgb(0, 0, 0); */
-
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,15 +360,9 @@ html{
 }
 
 
-/* ok！4/22要問老師：怎麼讓lightbox裡的照片同樣大小？ 
-設定了js的max-width或max-height都沒有用？！*/
+// /* ok！4/22要問老師：怎麼讓lightbox裡的照片同樣大小？ 
+// 設定了js的max-width或max-height都沒有用？！*/
 // 裁切圖片為同樣大小，因為是「max」，但我的圖都沒有這麼小張，用裁切圖片順便優化圖片大小
-
-/* 4/22要問老師：section2的swiper「文+圖+圖」，如何在手機版變成一樣包在swiper裡，但皆是滿版的「文
-                                    圖
-                                     圖」
-，目前用bootstrp裡col-12失敗 */
-
 
 /*********** 這裡是section3 ***********/
 #section3 {
@@ -393,8 +382,6 @@ html{
 #section3 .swiper-slide {
     text-align: center;
     font-size: 18px;
-
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,19 +500,8 @@ html{
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -605,6 +581,7 @@ html{
 #section4 .title{
     width: 50px;
     height: 100%;
+// 4/24無法置中？！？！
     // position: absolute;
     // top: 50%;
     // left: 50%;
@@ -651,7 +628,6 @@ html{
 /******** 這裡是section5-1 ********/
 #section5-1{
     width: 100%;
-// 要做100vh然後下右上左的滾輪一張一張換圖
     min-height: calc(100vh - 80px);
     background: linear-gradient(180deg, white 0%, rgba(240, 255, 240, 1) 100%);
 }
@@ -706,11 +682,8 @@ html{
     background-image: url(../img/pic552.JPG);
 }
 
-// 4/24問老師：在iphone看奇怪為什麼pic512照片又自動旋輔了？
+// 4/24問老師：在iphone看奇怪為什麼pic512照片又自動旋轉了？
 
-
-// 4/24問老師：section5-1可以放手繪狗在背景飛嗎？
-// 類似skrollr的藍色點點功能
 #section5-1 .row{
     background-color: rgb(163, 191, 243);
     border-radius: 5%;
@@ -718,6 +691,7 @@ html{
     height: calc(100vh - 221px);
 }
 
+// 這裡還是改成boostrp切版吧！
 /******** 這裡是section5-2 ********/
 #section5-2{
     width: 100%;
@@ -734,7 +708,8 @@ html{
     clear: right;
     font-size: 18px;
     font-size: 600;
-    background-color: white;padding: 15px;
+    background-color: white;
+    padding: 15px;
     text-align: justify;
 }
 
@@ -765,11 +740,9 @@ html{
 
 /*********** 這裡是footer ***********/
 
-/* 4/22要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖要依px重新裁切嗎？ */
-/* 4/22問老師：如何將parallax前方草的效果做成自動波浪動嗎？ */
-
-/* 這裡是footer*/
-/* ！！未做的事！！要把同一層的圖卡一樣的data-depth，像是兩台車同一層、公牛自己一層、屋頂上的狗跟小牛同一層、炸欄的黑皮自己一層、皮蛋跟蛋捲跟熊能一層、母牛一層、前方的草自己一~兩三層。 */
+// /* 4/22要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖要依px重新裁切嗎？ */
+// /* 4/22問老師：如何將parallax前方草的效果做成自動波浪動嗎？ */
+// /* ！！未做的事！！要加上traslatex、y、z軸！！！！！才有距離感！要把同一層的圖卡一樣的data-depth，像是兩台車同一層、公牛自己一層、屋頂上的狗跟小牛同一層、炸欄的黑皮自己一層、皮蛋跟蛋捲跟熊能一層、母牛一層、前方的草自己一~兩三層。 */
 
 footer {
     width: 100%;
@@ -786,25 +759,25 @@ footer {
     background-position: center;
 }
 
-/* @media(max-width:1765px){   
-    .footer{
-        background-image: url(../img/footer1765.jpg);
-    }
-}
-@media(max-width:1462px){
-    .footer{
-        background-image: url(../img/footer1462.jpg);
-    }
-}
-@media(max-width:768px){
+// @media(max-width:1765px){   
+//     .footer{
+//         background-image: url(../img/footer1765.jpg);
+//     }
+// }
+// @media(max-width:1462px){
+//     .footer{
+//         background-image: url(../img/footer1462.jpg);
+//     }
+// }
+// @media(max-width:768px){
 
-}
-@media(max-width:576px){
+// }
+// @media(max-width:576px){
 
-}
-@media(max-width:320px){
+// }
+// @media(max-width:320px){
 
-} */
+// } 
 
 
 .layer{
@@ -872,53 +845,53 @@ footer {
     background-position: center;
 }
 
-/* @media(max-width:1765px){
+// @media(max-width:1765px){
     
-    #cow2{
-        background-image: url(../img/cow21765.png);
-    }
-    #cow3{
-        background-image: url(../img/cow31765.png);
-    }
-    #dog2{
-        background-image: url(../img/dog21765.png);
-    }
-    #dog3{
-        background-image: url(../img/dog31765.png);
-    }
-}
-@media(max-width:1462px){
-    #cow1{
-        background-image: url(../img/cow11462.png);
-    }
-    #cow2{
-        background-image: url(../img/cow21462.png);
-    }
-    #cow3{
-        background-image: url(../img/cow31462.png);
-    }
-    #dog1{
-        background-image: url(../img/dog11462.png);
-    }
-    #dog2{
-        background-image: url(../img/dog21462.png);
-    }
-    #dog3{
-        background-image: url(../img/dog31462.png);
-    }
-    #dog4{
-        background-image: url(../img/dog41462.png);
-    }
-}
-@media(max-width:768px){
+//     #cow2{
+//         background-image: url(../img/cow21765.png);
+//     }
+//     #cow3{
+//         background-image: url(../img/cow31765.png);
+//     }
+//     #dog2{
+//         background-image: url(../img/dog21765.png);
+//     }
+//     #dog3{
+//         background-image: url(../img/dog31765.png);
+//     }
+// }
+// @media(max-width:1462px){
+//     #cow1{
+//         background-image: url(../img/cow11462.png);
+//     }
+//     #cow2{
+//         background-image: url(../img/cow21462.png);
+//     }
+//     #cow3{
+//         background-image: url(../img/cow31462.png);
+//     }
+//     #dog1{
+//         background-image: url(../img/dog11462.png);
+//     }
+//     #dog2{
+//         background-image: url(../img/dog21462.png);
+//     }
+//     #dog3{
+//         background-image: url(../img/dog31462.png);
+//     }
+//     #dog4{
+//         background-image: url(../img/dog41462.png);
+//     }
+// }
+// @media(max-width:768px){
 
-}
-@media(max-width:576px){
+// }
+// @media(max-width:576px){
 
-}
-@media(max-width:320px){
+// }
+// @media(max-width:320px){
 
-} */
+// } 
 
 
 #scene {
@@ -930,39 +903,39 @@ footer {
 
 
 
-/* 已解決的問題區ok！ */
-/* ok！<!-- 問老師如何用bootstrap將>768px時，只有一個col就好？用col-12，(1920px時是用col-lg-4 -->
+// /* 已解決的問題區ok！ */
+// /* ok！<!-- 問老師如何用bootstrap將>768px時，只有一個col就好？用col-12，(1920px時是用col-lg-4 -->
 
-ok！<!-- BOotstrap的padding跟margin只有1~5嗎？對 -->
+// ok！<!-- BOotstrap的padding跟margin只有1~5嗎？對 -->
 
-ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
-/*ok！ <!-- 若要寫文字，這時候該怎麼置中？要固定swiper-container的高度才能用line-height吧？#slide_21{display:flex} --> */
+// ok！<!-- 問老師如何用bootstrap將.text內容置中？ 用flex--> */
 
-/*ok！ 需詢問老師：為什麼::before會無效？
-一定要有content:'';
-    還有position: absolute;
-    若無高度一定要有w跟h
-    width: 100%;
-    height: 100%; */
+// /*ok！ <!-- 若要寫文字，這時候該怎麼置中？要固定swiper-container的高度才能用line-height吧？#slide_21{display:flex} --> */
+
+// /*ok！ 需詢問老師：為什麼::before會無效？
+// 一定要有content:'';
+//     還有position: absolute;
+//     若無高度一定要有w跟h
+//     width: 100%;
+//     height: 100%; */
 
 
-/* ok！需問老師：如何改「swiper點點」的顏色？
-而且swiper的試範點點在右邊(js加入oberser已回恢預設值，在下方) 
-顏色改：*/
-/* 可以用
-    .swiper-pagination-fraction 改方框{
-    background-color;去改！   }
+// /* ok！需問老師：如何改「swiper點點」的顏色？
+// 而且swiper的試範點點在右邊(js加入oberser已回恢預設值，在下方) 
+// 顏色改：*/
+// /* 可以用
+//     .swiper-pagination-fraction 改方框{
+//     background-color;去改！   }
 
-    .swiper-pagination-fraction span改點點 {
-    display:flex
-    justify-con:center
-    aling---center
-} */
-/* #section2 .swiper-pagination-fraction span{
-    background-color: tomato
-} */
+//     .swiper-pagination-fraction span改點點 {
+//     display:flex
+//     justify-con:center
+//     aling---center
+// } */
+//* #section2 .swiper-pagination-fraction span{
+//   background-color: tomato} *
 
-/* OK!問老師：section1水波產生的底圖位置不對>把wave0~5的
-background-size:[auto]要刪除 只留下106%; */
+//* OK!問老師：section1水波產生的底圖位置不對>把wave0~5的
+//background-size:[auto]要刪除 只留下106%; */
 
 // <!--ok！ 4/24看boostrap怎麼讓兩col-5水平置中，在row 用justify-content-center-->

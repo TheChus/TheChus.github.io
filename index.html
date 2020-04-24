@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/index-最新版但手機不能開.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- 越重要的link像是index.css放在最後，程式是由上往下讀取的 -->
 
     <title>TheChusRANCH</title>
@@ -458,12 +458,12 @@
     <!-----------section3的階段目標1  ----------->
     <div id="tosection3" class="ToSection"></div>
     <div class="container">
-        <section id="section3-1" class="">
+        <section id="section3-1">
             <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s"
                 data-aos-anchor-placement="bottom-center">
                 階段目標 Goal</div>
             <div class="text mb-3">第一階段：設備改善添購、牛舍改建重整</div>
-            <!-- 4/22要問老師：如何讓手機版看到是整張圖？「col-12」嗎？但目前測試擋到下方的footer了 -->
+       
             <div data-aos="zoom-in" id="section3-1Background" data-aos-anchor-placement="bottom-bottom" class="">
                 <div class="container">
                     <div class="swiper-container">
@@ -513,9 +513,6 @@
         </section>
     </div>
 
-
-
-    <!-- 4/24科技養牛的三小文字區塊，要再加上圖片各一張(正圓框)用#evevZoom.js來把滑鼠移到圖片變負片效果，或是黑白效果 -->
 
     <!-----------section3的階段目標2  ----------->
     <div class="container">
@@ -607,8 +604,6 @@
     </section>
 
 
-
-    <!-- 4/24將牧牛犬區用skrollr.js用視差滾動，讓每個區塊以上下左右方向移動，像是在四格漫畫fu？我的fu是啥毀？要想想，我總共五張圖 -->
     <!----------- 這裡是section5 ----------->
     <!-------- 這裡是section5-1 -------->
     <div id="tosection5-1" class="ToSection"></div>
@@ -618,7 +613,6 @@
                 關於牧場 About TheChus
             </div>
             <div class="text mb-3">牧「牛」犬們skrollr讓「認養代替購買」滑進來，在下方黑的卡片內</div>
-        <div data-top="transform:rotate(0deg);" data-200-top="transform:rotate(360deg);">
             
             <div class="row justify-content-center">
                 <div class="col-5">
@@ -634,9 +628,7 @@
                     <h3>目前牧場的狗老大，非常保護牧場，外人請勿觸摸(注意!內有惡犬)</h3>
                 </div>
             </div>
-        </div>
-
-        <div data-top="transform:rotate(0deg);" data-200-top="transform:rotate(360deg);">
+        
             <div class="row justify-content-center">
                 <div class="col-5">
                     <div class="pic5" id="pic521"></div>
@@ -651,9 +643,7 @@
                     <h3>牧場最胖的一隻狗，會假裝受傷博取同情</h3>
                 </div>
             </div>
-        </div>
 
-        <div data-top="transform:rotate(0deg);" data-200-top="transform:rotate(360deg);">
             <div class="row justify-content-center">
                 <div class="col-5">
                     <div class="pic5" id="pic531"></div>
@@ -668,9 +658,7 @@
                     <h3>牧場最可愛的黑狗兄，腳短短、愛笑及搖尾巴，很受人疼愛</h3>
                 </div>
             </div>
-        </div>
 
-        <div data-top="transform:rotate(0deg);" data-200-top="transform:rotate(360deg);">
             <div class="row justify-content-center">
                 <div class="col-5">
                     <div class="pic5" id="pic541"></div>
@@ -685,9 +673,7 @@
                     <h3>顧名思義此狗個性較為兩光，曾跑出去大馬路上走失，也曾自己跑去「外勞」宿舍= =</h3>
                 </div>
             </div>
-        </div>
 
-        <div data-top="transform:rotate(0deg);" data-200-top="transform:rotate(360deg);">
             <div class="row justify-content-center">
                 <div class="col-5">
                     <div class="pic5" id="pic551"></div>
@@ -702,7 +688,6 @@
                     <h3>目前還在長大中，腳掌很大隻，就很像熊</h3>
                 </div>
             </div>
-        </div>
 
         </div>
     </section>
@@ -733,9 +718,12 @@
 
     </section>
 
+
+
+    <!----------- 這裡是footer ----------->
     <footer>
 
-        <!-- 未解決區：需參考全球災害網站，調整距離！ -->
+<!-- 4/27未解決區：需參考全球災害網站，調整距離！ -->
         <div class="footer">
             <div id="scene" class="fullpage">
 
@@ -792,18 +780,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<!-- 4/28下面這個套件只是在測試if跟elst？但也是不能用，後續等老師看看，不要用就刪了吧 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 
     <script>
         /////////// 這是nav的taggle在手機版消失 ///////////
-        // $('#navbarSupportedContent ul .nav-item').click(function () {
-        //     $('#toggle').removeClass('on')
-        //     $('#toggle').addClass('collapsed')
+        $('#navbarSupportedContent ul .nav-item').click(function () {
+            $('#toggle').removeClass('on')
+            $('#toggle').addClass('collapsed')
 
-        //     $('.navbar-collapse').removeClass('show')
-        // })
+            $('.navbar-collapse').removeClass('show')
+        })
         // 未測試區：4/22蕭麻吉說：toggleClass像是之前說的foreach或forloop寫法，點擊如果是紅色變綠色，綠色變紅色，可以用這想法在點擊「最新消息……等btns」，把#toggle，remove("on")
         //參考↑ 4/23君毅的教學// 這是nav的taggle在手機版消失 //
 
@@ -925,7 +913,7 @@
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true,
-            // 4/22快直接把照片裁切一樣大小吧！
+            // 4/25~26假日快直接把照片裁切一樣大小吧！
         })
 
 
@@ -956,6 +944,7 @@
 
         /////////// 這是section3-1的AOS ///////////
         AOS.init();
+
         /////////// 這是section3-1的swiper ///////////
         var swiper3_1 = new Swiper('#section3-1 .swiper-container', {
             slidesPerView: 1,
@@ -1011,15 +1000,8 @@
             }
         }
 
-        /////////// 這是section6的skrollr效果 ///////////
-        var s = skrollr.init();
+        /////////// 這是section6改用lax文字效果+aos效果 ///////////
 
-
-        // If you are using require.js to structure your project, you can use skrollr as a module as well.
-        // 4/24問老師下面這段要不要放嗎？
-        // require(['skrollr'], function(skrollr){
-        //     var s = skrollr.init();
-        // });
 
 
 
