@@ -640,18 +640,18 @@ html{
     color: black;
 }
 #section5-1 h1{
-    color: rgb(121, 111, 105) ;
+    color: rgb(63, 69, 105) ;
 }
 #section5-1 h3{
-    color: #B3A79F ;
+    color: rgb(94, 99, 128);
 }
 
-.pic5{
-    width: 100%;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-}
+// .pic5{
+//     width: 100%;
+//     height: 500px;
+//     background-position: center;
+//     background-size: cover;
+// }
 // 皮蛋
 #pic511{
     background-image: url(../img/pic511.jpg);
@@ -692,9 +692,9 @@ html{
 // 4/24問老師：在iphone看奇怪為什麼pic512照片又自動旋轉了？
 
 #section5-1 .row{
-    background-color: #FFE8D6;
+    background-color: rgba(63, 81, 181, 0.1);
     border-radius: 5%;
-    // border: 10px solid black;
+    border: 3px solid white;
     height: calc(100vh - 221px);
 }
 
