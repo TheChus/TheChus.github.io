@@ -124,11 +124,12 @@ html {
   font-weight: 900;
 }
 
-.navbar-collapse {
+/* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
+/* .navbar-collapse {
   position: relative;
   left: 0;
   top: 0;
-}
+} */
 
 @media (max-width: 992px) {
   .navbar-nav {
