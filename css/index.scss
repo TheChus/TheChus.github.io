@@ -13,6 +13,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    text-align: center;
+    color: white;
 }
 
 * {
@@ -448,6 +450,9 @@ html{
     height: 491px;
     // height: 515px;此版本電腦版ok但在iphone看就壞了
 }
+#section3-1 .swiper-container{
+    max-height: 400px;
+}
 
 #section3-1Background{
     background-color: whitesmoke;
@@ -595,6 +600,15 @@ html{
     border-radius: 0 0 30px 30px;
 }
 
+#section4 .title{
+    width: 50px;
+    height: 100%;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50% , -50%);
+}
+
 .section4_text {
     width: 100%;
     display: none;
@@ -648,7 +662,7 @@ html{
 
 .pic5{
     width: 100%;
-    height: 300px;
+    height: 500px;
     background-position: center;
     background-size: cover;
 }
@@ -720,7 +734,7 @@ html{
 #section6{
     width: 100%;
     height: 500px;
-    background: linear-gradient(180deg, rgba(207, 250, 207, 1) 0%, rgb(250, 235, 186) 100%);
+    background: linear-gradient(180deg, rgba(207, 250, 207, 1) 0%, rgb(127, 214, 213) 100%);
     font-size: 50px;
     text-align: center;
     color: rgb(16, 29, 51);
@@ -785,6 +799,16 @@ footer {
     width: 100%;
     height: 100%;
 }
+
+#grass{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/footer-grass.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #cow1 {
     width: 100%;
     height: 100%;

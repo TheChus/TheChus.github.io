@@ -576,24 +576,22 @@
                 </div>
             </div>
 
-
-<!-- 4/23問老師，怎麼讓字跟圖交換？flex-row-reverse沒用？ -->
             <div class="section4_content">
                 <div class="section4_text active" id="text1">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 d-flex">
                             <div class="title">牛奶</div>
                             <div class="pic4" id="pic411"></div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 d-flex">
                             <div class="title">拿鐵</div>
                             <div class="pic4" id="pic412"></div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 d-flex">
                             <div class="title">鮮奶奶酪</div>
                             <div class="pic4" id="pic413"></div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 d-flex">
                             <div class="title">鮮奶布丁</div>
                             <div class="pic4" id="pic414"></div>
                         </div>
@@ -620,7 +618,7 @@
             </div>
             <div class="text mb-3">牧「牛」犬們skrollr讓「認養代替購買」滑進來，在下方黑的卡片內</div>
 
-            <div class="row">
+            <div class="row justify-content-center">
 <!-- 4/24看boostrap怎麼讓兩col-5水平置中 -->
                 <div class="col-5">
                     <div class="pic5" id="pic511"></div>
@@ -718,9 +716,12 @@
     <footer>
 
         <div class="footer">
-            Copyright © 2020 TheChus
             <div id="scene" class="fullpage">
 
+                <div class="layer" data-depth="0.35">
+                    <div id="grass"></div>
+                </div>
+                
                 <div class="layer" data-depth="0.35">
                     <div id="cow1"></div>
                 </div>
@@ -971,7 +972,7 @@
         var parallaxInstance = new Parallax(scene);
 
     </script>
-
+Copyright © 2020 TheChus
 </body>
 
 </html>

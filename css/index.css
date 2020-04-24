@@ -9,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
+  text-align: center;
+  color: white;
 }
 
 * {
@@ -470,6 +472,10 @@ html {
   height: 491px;
 }
 
+#section3-1 .swiper-container {
+  max-height: 400px;
+}
+
 #section3-1Background {
   background-color: whitesmoke;
 }
@@ -628,6 +634,11 @@ html {
   border-radius: 0 0 30px 30px;
 }
 
+#section4 .title {
+  width: 50px;
+  height: 100%;
+}
+
 .section4_text {
   width: 100%;
   display: none;
@@ -684,7 +695,7 @@ html {
 
 .pic5 {
   width: 100%;
-  height: 300px;
+  height: 500px;
   background-position: center;
   background-size: cover;
 }
@@ -756,8 +767,8 @@ html {
 #section6 {
   width: 100%;
   height: 500px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#cffacf), to(#faebba));
-  background: linear-gradient(180deg, #cffacf 0%, #faebba 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#cffacf), to(#7fd6d5));
+  background: linear-gradient(180deg, #cffacf 0%, #7fd6d5 100%);
   font-size: 50px;
   text-align: center;
   color: #101d33;
@@ -813,6 +824,15 @@ footer {
 .layer {
   width: 100%;
   height: 100%;
+}
+
+#grass {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/footer-grass.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #cow1 {
