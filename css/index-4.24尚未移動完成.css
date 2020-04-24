@@ -598,7 +598,6 @@ html {
 /*********** 這裡是section4 ***********/
 #section4 {
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
   background: linear-gradient(180deg, black 0%, white 100%);
 }
 
@@ -608,7 +607,6 @@ html {
 
 #section4_toggle {
   height: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
   background: linear-gradient(180deg, black 0%, white 100%);
   margin: 0;
 }
@@ -632,12 +630,17 @@ html {
 }
 
 .section4_content {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), to(white));
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.1) 0%, white 100%);
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.1) 0%, white 100%);
   width: 100%;
   padding: 15px;
   border-radius: 0 0 30px 30px;
 }
+
+/* new10:49 */
+#section4 .title {
+    width: 50px;
+    height: 100%;
+  }
 
 .section4_text {
   width: 100%;
@@ -673,16 +676,16 @@ html {
 }
 
 #section4 #text2, #text3 {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   line-height: 450px;
 }
 
 /*********** 這裡是section5 ***********/
+/******** 這裡是section5-1 ********/
 #section5-1 {
   width: 100%;
   height: 700px;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(honeydew));
   background: linear-gradient(180deg, white 0%, honeydew 100%);
 }
 
