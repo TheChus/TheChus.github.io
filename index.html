@@ -70,13 +70,14 @@
 
     <!----------- 這裡是section1 ----------->
     <section id="section1" class="mb-5">
-        <div class="mask"></div>
-        <div is="page" id="home" data-role="page">
+        <!-- <div class="mask"></div> -->
+        <!-- <div is="page" id="home" data-role="page">
             <div is="content" role="main" class="ui-content">
                 <div is="dragable" class="bg"></div>
             </div>
-        </div>
-        <!-- <div class="banner"></div> 我的原來寫法，沒有水波效果的，看要不要用在手機版-->
+        </div> -->
+        <div class="banner"></div> 
+    <!-- 我的原來寫法，沒有水波效果的，看要不要用在手機版-->
     </section>
 
     <!----------- 這裡是section2 ----------->
@@ -922,33 +923,10 @@
                 clickable: true,
             },
             autoplay: {
-                delay: 2000,
+                delay: 4000,
                 disableOnInteraction: false,
             },
         });
-
-        // var swiper2H = new Swiper('#section2 .swiper-container-h', {
-        //     slidesPerView: 3,
-        //     spaceBetween: 30,
-        //     pagination: {
-        //         el: '#section2 .swiper-pagination-h',
-        //         clickable: true,
-        //     },
-
-        // });
-        // var swiper2V = new Swiper('#section2 .swiper-container-v', {
-        //     direction: 'vertical',
-        //     slidesPerView: 1,
-        //     spaceBetween: 30,
-        //     pagination: {
-        //         el: '#section2 .swiper-pagination-v',
-        //         clickable: true,
-        //     },
-        //     autoplay: {
-        //         delay: 2000,
-        //         disableOnInteraction: false,
-        //     },
-        // });
 
         lightbox.option({
             'resizeDuration': 200,
@@ -956,9 +934,8 @@
             // 4/22快直接把照片裁切一樣大小吧！
         })
 
-        /////////// 這是section3的swiper ///////////
 
-        // 4/24問老師：可以讓swiper「慢慢」滑到下一張嗎？
+        /////////// 這是section3的swiper ///////////
         var swiper3 = new Swiper('#section3 .swiper-container', {
             slidesPerView: 1,
             spaceBetween: 30,

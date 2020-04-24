@@ -151,11 +151,12 @@ html {
 }
 
 /*********** 這裡是section1 ***********/
-/* #section1 {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-} */
+#section1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
 /* .mask{
     content:'';
     position: absolute;
@@ -164,144 +165,15 @@ html {
     background-color: black;
     opacity: 0.3;
 } */
-/* .banner {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/banner.jpg);
-    background-size: cover;
-    background-position: bottom;
-} */
-#section1 {
-  position: relative;
-  overflow: hidden;
-}
-
-#home,
-.ui-content {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-}
-
-.bg {
-  width: 100%;
-  height: 1000px;
-  background-image: url(../img/banner.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: cover;
-}
-
-.wave-position {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-}
-
-.wave-body {
-  /* position: relative; */
+.banner {
   width: 100%;
   height: 100%;
-}
-
-.wave {
-  position: absolute;
-  top: calc((100% - 30px)/2);
-  left: calc((100% - 30px)/2);
-  width: 30px;
-  height: 30px;
-  border-radius: 300px;
   background-image: url(../img/banner.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
   background-size: cover;
-  -webkit-box-shadow: inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
-          box-shadow: inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
+  background-position: bottom;
 }
 
-.wave0 {
-  z-index: 2;
-  zoom: 1.1;
-  -webkit-animation: w 1s;
-          animation: w 1s;
-}
-
-.wave1 {
-  z-index: 3;
-  zoom: 1.02;
-  -webkit-animation: w 1s .15s;
-          animation: w 1s .15s;
-}
-
-.wave2 {
-  z-index: 4;
-  zoom: 1.06;
-  -webkit-animation: w 1s .3s;
-          animation: w 1s .3s;
-}
-
-.wave3 {
-  z-index: 5;
-  zoom: 1.01;
-  -webkit-animation: w 1s .45s;
-          animation: w 1s .45s;
-}
-
-.wave4 {
-  z-index: 6;
-  zoom: 1.02;
-  -webkit-animation: w 1s .6s;
-          animation: w 1s .6s;
-}
-
-.wave5 {
-  z-index: 7;
-  -webkit-animation: w 1s .75s;
-          animation: w 1s .75s;
-}
-
-@-webkit-keyframes w {
-  0% {
-    top: calc((100% - 30px)/2);
-    left: calc((100% - 30px)/2);
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    top: calc((100% - 300px)/2);
-    left: calc((100% - 300px)/2);
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
-}
-
-@keyframes w {
-  0% {
-    top: calc((100% - 30px)/2);
-    left: calc((100% - 30px)/2);
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    top: calc((100% - 300px)/2);
-    left: calc((100% - 300px)/2);
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
-}
-
+/*********** 這裡是section1有水波效果 ***********/
 /*********** 這裡是section2 ***********/
 #section2 {
   width: 100%;
@@ -760,7 +632,6 @@ html {
 
 #section5-2 .text, .left-block, .right-block {
   width: 300px;
-  height: 300px;
   color: black;
 }
 
