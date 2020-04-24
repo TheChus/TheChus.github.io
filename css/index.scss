@@ -162,9 +162,7 @@ html{
 /*********** 這裡是section1 ***********/
 #section1 {
     width: 100%;
-    height: calc(100vh - 80px);
-    // 高度原本為100vh，測試改成這樣看看手機版如何
-
+    height: 100vh;
     // 下面兩個是水波效果用的
     // position: relative;
     // overflow: hidden;
@@ -583,12 +581,13 @@ html{
 #section4 .title{
     width: 50px;
     height: 100%;
-// 4/24無法置中？！？！
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50% , -50%);
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.562), 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 10px #fff;
+    font-weight: 900;
 }
+.text:nth-child(4) {}
+        
 
 .section4_text {
     width: 100%;
