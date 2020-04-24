@@ -920,6 +920,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <!-- 4/28下面這個是要讓營幕在某高度不做什麼事用的套件，網路說是很好用，但if/else還是失敗了呢 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 
     <script>
@@ -987,38 +990,15 @@
                 clickable: true,
             },
             autoplay: {
-                delay: 2000,
+                delay: 4000,
                 disableOnInteraction: false,
             },
         });
 
-        // var swiper2H = new Swiper('#section2 .swiper-container-h', {
-        //     slidesPerView: 3,
-        //     spaceBetween: 30,
-        //     pagination: {
-        //         el: '#section2 .swiper-pagination-h',
-        //         clickable: true,
-        //     },
-
-        // });
-        // var swiper2V = new Swiper('#section2 .swiper-container-v', {
-        //     direction: 'vertical',
-        //     slidesPerView: 1,
-        //     spaceBetween: 30,
-        //     pagination: {
-        //         el: '#section2 .swiper-pagination-v',
-        //         clickable: true,
-        //     },
-        //     autoplay: {
-        //         delay: 2000,
-        //         disableOnInteraction: false,
-        //     },
-        // });
-
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true,
-            // 4/22快直接把照片裁切一樣大小吧！
+            // 4/25~4/26假加快直接把照片裁切一樣大小吧！
         })
 
         /////////// 這是section3的swiper ///////////
@@ -1079,13 +1059,8 @@
         // 不然就加入「swiper.init();」在所有section的js最下方即可正常swiper --> */
         // swiper.init();
 
-
-        /////////// 這是footer的parrallax ///////////
-        var scene = document.querySelector('#scene');
-        var parallaxInstance = new Parallax(scene);
-
-
-        /////////// 這是section4 ///////////
+ 
+        /////////// 這是section4切換多分頁 ///////////
         var btn = document.querySelectorAll(".button")
         var content = document.querySelectorAll(".section4_text")
 
@@ -1110,8 +1085,20 @@
             }
         }
 
-    </script>
 
+        /////////// 這是section6的skrollr效果 ///////////
+        var s = skrollr.init();
+
+
+
+        /////////// 這是footer的parrallax ///////////
+        var scene = document.querySelector('#scene');
+        var parallaxInstance = new Parallax(scene);
+
+
+
+    </script>
+    Copyright © 2020 TheChus
 </body>
 
 </html>
