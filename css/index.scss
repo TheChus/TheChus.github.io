@@ -586,8 +586,6 @@ html{
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
     font-weight: 900;
 }
-.text:nth-child(4) {}
-        
 
 .section4_text {
     width: 100%;
@@ -623,6 +621,32 @@ html{
     line-height: 450px;
 }
 
+@media (max-width: 992px) {
+    #section4 .title{
+    width: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    }
+
+    .pic4{
+    height: 200px;
+    }
+
+    #section4 #text2,#text3{
+    font-size: 30px;
+    line-height: 432px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pic4{
+    height: 150px;
+    }
+
+    #section4 #text2,#text3{
+    line-height: 332px;
+    }
+}
 
 
 /*********** 這裡是section5 ***********/
@@ -651,6 +675,8 @@ html{
     height: 100%;
     background-position: center;
     background-size: cover;
+    border-radius: 5%;
+    border: 5px solid white;
 }
 // 皮蛋
 #pic511{
@@ -692,10 +718,8 @@ html{
 // 4/24問老師：在iphone看奇怪為什麼pic512照片又自動旋轉了？
 
 #section5-1 .row{
-    background-color: white;
+    // background-color: white;
     // background: linear-gradient(180deg, white 0%, rgba(63, 81, 181, 0.1) 100%);
-    border-radius: 5%;
-    border: 5px solid white;
     height: calc(100vh - 221px);
 }
 

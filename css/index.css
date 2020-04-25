@@ -537,6 +537,30 @@ html {
   line-height: 450px;
 }
 
+@media (max-width: 992px) {
+  #section4 .title {
+    width: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .pic4 {
+    height: 200px;
+  }
+  #section4 #text2, #text3 {
+    font-size: 30px;
+    line-height: 432px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pic4 {
+    height: 150px;
+  }
+  #section4 #text2, #text3 {
+    line-height: 332px;
+  }
+}
+
 /*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
 #section5-1 {
@@ -567,6 +591,8 @@ html {
   height: 100%;
   background-position: center;
   background-size: cover;
+  border-radius: 5%;
+  border: 5px solid white;
 }
 
 #pic511 {
@@ -611,9 +637,6 @@ html {
 }
 
 #section5-1 .row {
-  background-color: white;
-  border-radius: 5%;
-  border: 5px solid white;
   height: calc(100vh - 221px);
 }
 
