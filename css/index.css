@@ -49,15 +49,6 @@ html {
   text-align: center;
 }
 
-.swiper-text {
-  width: 300px;
-  height: 300px;
-  font-size: 30px;
-  font-weight: 700;
-  color: white;
-  text-align: left;
-}
-
 .TA-JUSTIFY {
   text-align: justify;
 }
@@ -174,6 +165,10 @@ html {
   padding: 0;
 }
 
+#swiper_LeftRight {
+  padding: 0 0 0 50px;
+}
+
 .section2_swiper {
   width: 100%;
   height: 300px;
@@ -188,7 +183,6 @@ html {
 
 #section2 .swiper-slide {
   text-align: center;
-  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +192,20 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#section2 .swiper-text {
+  width: 300px;
+  height: 300px;
+  color: white;
+  text-align: left;
+}
+
+#section2 .swiper-text p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: .5rem;
 }
 
 .slide2 {
@@ -210,6 +218,64 @@ html {
   opacity: 0.7;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 1199px) {
+  .section2_swiper {
+    height: 200px;
+  }
+  #section2 .swiper-container {
+    height: 200px;
+  }
+  #section2 .swiper-text {
+    height: 200px;
+  }
+  #section2 .swiper-text p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+  }
+  .slide2 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section2_swiper {
+    height: 150px;
+  }
+  #section2 .swiper-container {
+    height: 150px;
+  }
+  #section2 .swiper-text {
+    height: 150px;
+    width: 450px;
+  }
+  .slide2 {
+    width: 150px;
+    height: 150px;
+  }
+  #section2 .swiper-slide {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 844px) {
+  #swiper_LeftRight {
+    padding: 0 0 0 20px;
+  }
+  #section2 .swiper-text p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 620px) {
+  #swiper_LeftRight {
+    padding: 0 0 0 15px;
+  }
 }
 
 .slide2:hover {
@@ -578,12 +644,15 @@ html {
   color: black;
 }
 
-#section5-1 h1 {
+#section5-1 .dogname {
   color: #3f4569;
+  font-size: 30px;
 }
 
-#section5-1 h3 {
+#section5-1 span {
   color: #5e6380;
+  font-size: 20px;
+  text-align: left;
 }
 
 .pic5 {
@@ -643,24 +712,31 @@ html {
 /******** 這裡是section5-2 ********/
 #section5-2 {
   width: 100%;
-  height: 700px;
   background: -webkit-gradient(linear, left bottom, left top, from(#cffacf), to(honeydew));
   background: linear-gradient(360deg, #cffacf 0%, honeydew 100%);
 }
 
-#section5-2 .text, .left-block, .right-block {
-  width: 300px;
+#section5-2 .text {
   color: black;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 15px;
 }
 
-.left-block, .right-block {
-  float: left;
-  clear: right;
-  font-size: 18px;
-  font-size: 600;
+#section5-2 .col-5 {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
   background-color: white;
-  padding: 15px;
   text-align: justify;
+}
+
+#section5-2 .col-10 {
+  width: 100%;
+  height: 750px;
+  background-image: url(../img/section5-2.jpg);
+  background-size: cover;
+  background-position: 100% 48%;
 }
 
 /*********** 這裡是section6 ***********/

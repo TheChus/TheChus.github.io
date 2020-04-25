@@ -53,14 +53,6 @@ html{
     text-align: center;
 }
 
-.swiper-text{
-    width: 300px;
-    height: 300px;
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
-    text-align: left;
-}
 
 .TA-JUSTIFY{
     text-align: justify;
@@ -305,6 +297,10 @@ html{
     padding: 0;
 }
 
+#swiper_LeftRight{
+    padding: 0 0 0 50px;
+}
+
 .section2_swiper{
     width: 100%;
     height: 300px;
@@ -319,12 +315,25 @@ html{
 
 #section2 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    // font-size: 18px;是誰？有影響了誰？沒有就刪
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#section2 .swiper-text{
+    width: 300px;
+    height: 300px;
+    color: white;
+    text-align: left;
+}
+
+#section2 .swiper-text p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+}
 
 .slide2{
     width: 300px;
@@ -336,6 +345,66 @@ html{
     opacity: 0.7;
     transition: 0.3s;
 }
+
+@media (max-width: 1199px) {
+    .section2_swiper{
+        height: 200px;
+    }
+    #section2 .swiper-container {
+        height: 200px;
+    }
+    #section2 .swiper-text{
+        height: 200px;
+    }
+    #section2 .swiper-text p{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: .5rem;
+    }
+    .slide2{
+        width: 200px;
+        height: 200px;
+    } 
+}
+
+@media (max-width: 991px) {
+    .section2_swiper{
+        height: 150px;
+    }
+    #section2 .swiper-container {
+        height: 150px;
+    }
+    #section2 .swiper-text{
+        height: 150px;
+        width: 450px;
+    }
+    .slide2{
+        width: 150px;
+        height: 150px;
+    }
+    #section2 .swiper-slide {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 844px) {
+    #swiper_LeftRight{
+        padding: 0 0 0 20px;
+    }
+    #section2 .swiper-text p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 620px) {
+    #swiper_LeftRight{
+        padding: 0 0 0 15px;
+    }
+}
+
+
 .slide2:hover{
     opacity: 1;
 }
@@ -663,11 +732,16 @@ html{
 #section5-1 .text{
     color: black;
 }
-#section5-1 h1{
+#section5-1 .dogname{
     color: rgb(63, 69, 105) ;
+    font-size: 30px;
 }
-#section5-1 h3{
+#section5-1 span{
     color: rgb(94, 99, 128);
+    font-size: 20px;
+    
+    // 想讓文字在手機版斷行到第二行時，文字偏左開始？是用下面這是嗎？
+    text-align:left;
 }
 
 .pic5{
@@ -718,8 +792,7 @@ html{
 // 4/24問老師：在iphone看奇怪為什麼pic512照片又自動旋轉了？
 
 #section5-1 .row{
-    // background-color: white;
-    // background: linear-gradient(180deg, white 0%, rgba(63, 81, 181, 0.1) 100%);
+// 4/29再問一次蕭麻吉：為什麼要-221px？忘記是什麼了？只記得要減掉navbar的80px，剩下的是什麼高度？
     height: calc(100vh - 221px);
 }
 
@@ -727,22 +800,29 @@ html{
 /******** 這裡是section5-2 ********/
 #section5-2{
     width: 100%;
-    height: 700px;
     background: linear-gradient(360deg, rgba(207, 250, 207, 1) 0%, rgba(240, 255, 240, 1) 100%);
 }
-#section5-2 .text, .left-block, .right-block{
-    width: 300px;
+#section5-2 .text{
     color: black;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 15px;
 }
 
-.left-block, .right-block{
-    float: left;
-    clear: right;
-    font-size: 18px;
-    font-size: 600;
+#section5-2 .col-5{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
     background-color: white;
-    padding: 15px;
     text-align: justify;
+}
+
+#section5-2 .col-10{
+    width: 100%;
+    height: 750px;
+    background-image: url(../img/section5-2.jpg);
+    background-size: cover;
+    background-position: 100% 48%;
 }
 
 

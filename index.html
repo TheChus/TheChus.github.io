@@ -76,8 +76,8 @@
                 <div is="dragable" class="bg"></div>
             </div>
         </div> -->
-        <div class="banner"></div> 
-    <!-- 我的原來寫法，沒有水波效果的，看要不要用在手機版-->
+        <div class="banner"></div>
+        <!-- 我的原來寫法，沒有水波效果的，看要不要用在手機版-->
     </section>
 
     <!----------- 這裡是section2 ----------->
@@ -94,24 +94,25 @@
 
         <!-- !!!待確認區!!!要詢問老師的問題：swiper有包container，可是上下swiper「黑底」時，還是會一直卡在section2？老師把swiper的js的「滾輪」參數刪除，要自己用滑鼠拖曳才可以， 要再測試手機版可以嗎？-->
 
-        <div class="section2_swiper">
+        <div class="section2_swiper d-none d-lg-block">
             <div class="container">
-                <div class="swiper-container">
+                <div class="swiper-container swiper-container-v">
                     <div class="swiper-wrapper">
 
-                        <!-- 電腦版顯示3張輪播 -->
-                        <div class="swiper-slide d-none d-lg-block">
+                        <!--  4/26測試應該可以把內容swiper-slide的d-none d-lg-block拿掉才對！-->
+                        <!-- 電腦版顯示「上下」3張輪播 -->
+                        <div class="swiper-slide">
                             <div class="container">
                                 <div class="row ml-auto">
                                     <div class="col-12 col-lg-4 pl-lg-5">
                                         <div class="swiper-text">
                                             <span>
-                                                <h5>2019.12.15</h5>
-                                                <h5>牧場日常工作，與「中興大學-</h5>
-                                                <h5>馬鳴興水境」團隊相遇，</h5>
-                                                <h5>最後的桌曆成品</h5>
-                                                <h5>FB<a href="https://www.facebook.com/mamingnchu/"
-                                                        target="_blank">@mamingnchu</a></h5>
+                                                <p>2019.12.15</p>
+                                                <p>牧場日常工作，跟中興大學-</p>
+                                                <p>馬鳴興水境相遇，</p>
+                                                <p>最後的桌曆成品</p>
+                                                <p>FB<a href="https://www.facebook.com/mamingnchu/"
+                                                        target="_blank">@mamingnchu</a></p>
                                             </span>
                                         </div>
                                     </div>
@@ -140,18 +141,18 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide d-none d-lg-block">
+                        <div class="swiper-slide">
                             <div class="container">
                                 <div class="row ml-auto">
                                     <div class=" col-12 col-lg-4 pl-lg-5">
                                         <div class="swiper-text">
                                             <span>
-                                                <h5>2018.11.30</h5>
-                                                <h5>辦公大樓冷氣管道間</h5>
-                                                <h5>撿到的流浪貓</h5>
-                                                <h5>超可愛 很黏人 又白目</h5>
-                                                <h5>梅機FB<a href="https://www.facebook.com/heymeiG/"
-                                                        target="_blank">@heymeiG</a></h5>
+                                                <p>2018.11.30</p>
+                                                <p>辦公大樓冷氣管道間</p>
+                                                <p>撿到的流浪貓</p>
+                                                <p>超可愛 很黏人 又白目</p>
+                                                <p>梅機FB<a href="https://www.facebook.com/heymeiG/"
+                                                        target="_blank">@heymeiG</a></p>
                                             </span>
                                         </div>
                                     </div>
@@ -184,17 +185,17 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide d-none d-lg-block">
+                        <div class="swiper-slide">
                             <div class="container">
                                 <div class="row ml-auto">
                                     <div class=" col-12 col-lg-4 pl-lg-5">
                                         <div class="swiper-text">
                                             <span>
-                                                <h5>2006.05.11</h5>
-                                                <h5>牧場野貓生下了長毛貓!!!</h5>
-                                                <h5>非常帥氣但很怕水</h5>
-                                                <h5>取名為「阿不溜」</h5>
-                                                <h5>可暱稱「溜溜」</h5>
+                                                <p>2006.05.11</p>
+                                                <p>牧場野貓生下了長毛貓!!!</p>
+                                                <p>非常帥氣但很怕水</p>
+                                                <p>取名為「阿不溜」</p>
+                                                <p>暱稱「溜溜」</p>
                                             </span>
                                         </div>
                                     </div>
@@ -227,8 +228,133 @@
                             </div>
                         </div>
 
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section2_swiper d-block d-lg-none" id="swiper_LeftRight">
+                <div class="swiper-container swiper-container-h">
+                    <div class="swiper-wrapper">
+
+                        <!-- 手機版顯示「左右」2張輪播 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-text">
+                                <span>
+                                    <p>2019.12.15</p>
+                                    <p>牧場日常工作，跟中興大學</p>
+                                    <p>馬鳴興水境相遇，</p>
+                                    <p>最後的桌曆成品</p>
+                                    <p>FB<a href="https://www.facebook.com/mamingnchu/" target="_blank">@mamingnchu</a>
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/slide213.JPG" data-lightbox="slide4" data-title="桌曆實物翻拍1">
+                                <div id="slide_211" class="slide2"></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide d-none d-sm-block">
+                            <a href="img/slide211.JPG" data-lightbox="slide4" data-title="牧場兒子-朱八戒">
+                                <div id="slide_212" class="slide2"></div>
+                            </a>
+                        </div>
+                        <div class=" ">
+                            <a href="img/slide212.JPG" data-lightbox="slide4" data-title="牧「牛」犬-皮蛋">
+                                <div id="slide_213"></div>
+                            </a>
+                        </div>
+                        <div class=" ">
+                            <a href="img/slide214.JPG" data-lightbox="slide4" data-title="桌曆實物翻拍2">
+                                <div id="slide_214"></div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-text">
+                                <span>
+                                    <p>2018.11.30</p>
+                                    <p>辦公大樓冷氣管道間</p>
+                                    <p>撿到的流浪貓</p>
+                                    <p>超可愛 很黏人 又白目</p>
+                                    <p>梅機FB<a href="https://www.facebook.com/heymeiG/" target="_blank">@heymeiG</a>
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/slide223.jpg" data-lightbox="slide5" data-title="醜貓多做怪">
+                                <div id="slide_221" class="slide2"></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide d-none d-sm-block">
+                            <a href="img/slide224.jpg" data-lightbox="slide5" data-title="手長長網美照">
+                                <div id="slide_222" class="slide2"></div>
+                            </a>
+                        </div>
+                        <div class=" ">
+                            <a href="img/slide221.JPG" data-lightbox="slide5" data-title="瑜珈墊裡的白目貓">
+                                <div id="slide_223"></div>
+                            </a>
+                        </div>
+                        <div class=" ">
+                            <a href="img/slide222.JPG" data-lightbox="slide5" data-title="搞笑躺">
+                                <div id="slide_224"></div>
+                            </a>
+                        </div>
+                        <div class=" ">
+                            <a href="img/slide225.jpg" data-lightbox="slide5" data-title="Matte Painting">
+                                <div id="slide_225"></div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-text">
+                                <span>
+                                    <p>2006.05.11</p>
+                                    <p>牧場野貓生下了長毛貓!!!</p>
+                                    <p>非常帥氣但很怕水</p>
+                                    <p>取名為「阿不溜」</p>
+                                    <p>暱稱「溜溜」</p>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="img/slide233.jpg" data-lightbox="slide6" data-title="~溜皇上~">
+                                <div id="slide_231" class="slide2"></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide d-none d-sm-block">
+                            <a href="img/slide234.JPG" data-lightbox="slide6" data-title="貪吃貓">
+                                <div id="slide_232" class="slide2"></div>
+                            </a>
+                        </div>
+                        <div class=" ">
+                            <a href="img/slide231.jpg" data-lightbox="slide6" data-title="小時候超級可愛">
+                                <div id="slide_223"></div>
+                            </a>
+                        </div>
+                        <div class=" ">
+                            <a href="img/slide232.JPG" data-lightbox="slide6" data-title="不能吃">
+                                <div id="slide_224"></div>
+                            </a>
+                        </div>
+                        <div class=" ">
+                            <a href="img/slide235.jpg" data-lightbox="slide6" data-title="Low Poly">
+                                <div id="slide_225"></div>
+                            </a>
+                        </div>
+
+
                         <!-- 手機版顯示為9張輪播 -->
-                        <div class="swiper-slide d-block d-lg-none">
+                        <!-- <div class="swiper-slide d-block d-lg-none">
                             <div class="container">
                                 <div class="row ml-auto">
                                     <div class="col-12">
@@ -394,14 +520,13 @@
                             <a href="img/slide235.jpg" data-lightbox="slide6" data-title="Low Poly">
                                 <div id="slide_225"></div>
                             </a>
-                        </div>
+                        </div> -->
 
                     </div>
 
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -461,9 +586,10 @@
         <section id="section3-1">
             <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s"
                 data-aos-anchor-placement="bottom-center">
-                階段目標 Goal</div>
+                <div class="section-name">階段目標 Goal</div>
+            </div>
             <div class="text mb-3">第一階段：設備改善添購、牛舍改建重整</div>
-       
+
             <div data-aos="zoom-in" id="section3-1Background" data-aos-anchor-placement="bottom-bottom" class="">
                 <div class="container">
                     <div class="swiper-container">
@@ -607,85 +733,86 @@
     <!----------- 這裡是section5 ----------->
     <!-------- 這裡是section5-1 -------->
     <div id="tosection5-1" class="ToSection"></div>
-    <section id="section5-1">
+    <section id="section5-1" class="pb-5">
         <div class="container h-100">
             <div class="section-name">
                 關於牧場 About TheChus
             </div>
             <div class="text mb-3">牧「牛」犬們，用lax讓「認養代替購買」滑進來，狗的介紹卡片用aos效果</div>
-            
-            <div class="row justify-content-center pt-5">
-                <div class="col-5 h-75">
+
+            <div class="row pt-5">
+                <div class="col-6 h-75">
                     <div class="pic5" id="pic511"></div>
                 </div>
-                <div class="col-5 h-75">
+                <div class="col-6 h-75">
                     <div class="pic5" id="pic512"></div>
                 </div>
+                <!-- 為什麼文字明明很小，但字的外面還有很大的框？想像上面section3-2一樣，但為什麼壞掉了？bootstrap哪裡錯了嗎？ -->
                 <div class="col-12">
-                    <h1>皮蛋</h1>
-                </div>
-                <div class="col-12">
-                    <h3>目前牧場的狗老大，非常保護牧場，外人請勿觸摸(注意!內有惡犬)</h3>
-                </div>
-            </div>
-        
-            <div class="row justify-content-center  pt-5">
-                <div class="col-5 h-75">
-                    <div class="pic5 h-75" id="pic521"></div>
-                </div>
-                <div class="col-5 h-75">
-                    <div class="pic5 h-75" id="pic522"></div>
+                    <div class="dogname">皮蛋</div>>
                 </div>
                 <div class="col-12">
-                    <h1>黑皮</h1>
-                </div>
-                <div class="col-12">
-                    <h3>牧場最胖的一隻狗，會假裝受傷博取同情</h3>
+                    <span>目前牧場的狗老大，非常保護牧場，外人請勿觸摸(注意!內有惡犬)</span>
                 </div>
             </div>
 
-            <div class="row justify-content-center  pt-5">
-                <div class="col-5 h-75">
+            <div class="row pt-5">
+                <div class="col-6 h-75">
+                    <div class="pic5" id="pic521"></div>
+                </div>
+                <div class="col-6 h-75">
+                    <div class="pic5" id="pic522"></div>
+                </div>
+                <div class="col-12">
+                    <div class="dogname">黑皮</div>>
+                </div>
+                <div class="col-12">
+                    <span>牧場最胖的一隻狗，會假裝受傷博取同情</span>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-6 h-75">
                     <div class="pic5" id="pic531"></div>
                 </div>
-                <div class="col-5 h-75">
+                <div class="col-6 h-75">
                     <div class="pic5" id="pic532"></div>
                 </div>
                 <div class="col-12">
-                    <h1>蛋捲</h1>
+                    <div class="dogname">蛋捲</div>>
                 </div>
                 <div class="col-12">
-                    <h3>牧場最可愛的黑狗兄，腳短短、愛笑及搖尾巴，很受人疼愛</h3>
+                    <span>牧場最可愛的黑狗兄，腳短短、愛笑及搖尾巴，很受人疼愛</span>
                 </div>
             </div>
 
-            <div class="row justify-content-center  pt-5">
-                <div class="col-5 h-75">
+            <div class="row pt-5">
+                <div class="col-6 h-75">
                     <div class="pic5" id="pic541"></div>
                 </div>
-                <div class="col-5 h-75">
+                <div class="col-6 h-75">
                     <div class="pic5" id="pic542"></div>
                 </div>
                 <div class="col-12">
-                    <h1>兩光</h1>
+                    <div class="dogname">兩光</div>>
                 </div>
                 <div class="col-12">
-                    <h3>顧名思義此狗個性較為兩光，曾跑出去大馬路上走失，也曾自己跑去「外勞」宿舍= =</h3>
+                    <span>顧名思義此狗個性較為兩光，曾跑出去大馬路上走失，也曾自己跑去「外勞」宿舍= =</span>
                 </div>
             </div>
 
-            <div class="row justify-content-center  pt-5">
-                <div class="col-5 h-75">
+            <div class="row pt-5">
+                <div class="col-6 h-75">
                     <div class="pic5" id="pic551"></div>
                 </div>
-                <div class="col-5 h-75">
+                <div class="col-6 h-75">
                     <div class="pic5" id="pic552"></div>
                 </div>
                 <div class="col-12">
-                    <h1>熊熊</h1>
+                    <div class="dogname">熊熊</div>
                 </div>
                 <div class="col-12">
-                    <h3>目前還在長大中，腳掌很大隻，就很像熊</h3>
+                    <span>目前還在長大中，腳掌很大隻，就很像熊</span>
                 </div>
             </div>
 
@@ -694,26 +821,32 @@
 
     <!-------- 這裡是section5-2 -------->
     <div id="tosection5-2" class="ToSection"></div>
-    <section id="section5-2">
-        <div class="text mb-3">堅持 永續 科技</div>
+    <section id="section5-2" class="pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="text">堅持 永續 科技</div>
+            </div>
 
-    <div class="section5-2_box">
-        <div class="left-block">
-            <div class="h3">創辦故事</div>
-            <p>從阿公開始養牛至今已進入第三代，近50個年頭，從十幾頭到目前約兩百多頭牛，一路走來的堅持與努力，是阿爸阿母對於做事的理念及態度，未來牧場會持續朝向永續經營發展。</p>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <div class="h3">創辦故事</div>
+                    <p>從阿公開始養牛至今已進入第三代，近50個年頭，從十幾頭到目前約兩百多頭牛，一路走來的堅持與努力，是阿爸阿母對於做事的理念及態度，未來牧場會持續朝向永續經營發展。</p>
+                </div>
+                <div class="col-5">
+                    <div class="h3">未來展望</div>
+                    <p>在這科技爆炸的時代，嘗試將科技帶入傳統產業，是身為7年級生的我們能做到與長輩更多不同面向的發展性，讓傳統牧場也能與科技合併，創造更多科技養牛的可能性！</p>
+                </div>
+                <div class="col-10"></div>
+            </div>
         </div>
-
-        <div class="right-block">
-            <div class="h3">未來展望</div>
-            <p>在這科技爆炸的時代，嘗試將科技帶入傳統產業，是身為7年級生的我們能做到與長輩更多不同面向的發展性，讓傳統牧場也能與科技合併，創造更多科技養牛的可能性！</p>
-        </div>
-    </div>
     </section>
 
 
     <!----------- 這裡是section6 ----------->
     <div id="tosection6" class="ToSection"></div>
-    <section id="section6">先不要聯絡我們，等疫情過了再說唄(¬_¬)
+    <section id="section6" class="pt-5">
+        <p>
+            先不要聯絡我們，</p>等疫情過了再說唄(¬_¬)
         <div id="contactus"></div>
 
     </section>
@@ -723,7 +856,7 @@
     <!----------- 這裡是footer ----------->
     <footer>
 
-<!-- 4/27未解決區：需參考全球災害網站，調整距離！ -->
+        <!-- 4/27未解決區：需參考全球災害網站，調整距離！ -->
         <div class="footer">
             <div id="scene" class="fullpage">
 
@@ -780,7 +913,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- 4/28下面這個套件只是在測試if跟elst？但也是不能用，後續等老師看看，不要用就刪了吧 -->
+    <!-- 4/28下面這個套件只是在測試if跟elst？但也是不能用，後續等老師看看，不要用就刪了吧 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 
@@ -807,8 +940,8 @@
 
         /////////// 這是section1的水波效果 ///////////
 
-    //4/28問偉成老師：如何用if/ else加上營幕寬度，去判斷js screen width，小於992px時，不進水波效果
-    // 以下為用套件modernizr.js測試失敗的寫法
+        //4/28問偉成老師：如何用if/ else加上營幕寬度，去判斷js screen width，小於992px時，不進水波效果
+        // 以下為用套件modernizr.js測試失敗的寫法
 
         // function mq() {
         //     var query = Modernizr.mq('(max-width: 992px)');
@@ -857,8 +990,8 @@
         // });
         // mq();
 
-    //4/28問偉成老師：如何用if/ else加上營幕寬度，去判斷js screen或window width，小於992px時，不進水波效果
-    // 以下為測試失敗的寫法
+        //4/28問偉成老師：如何用if/ else加上營幕寬度，去判斷js screen或window width，小於992px時，不進水波效果
+        // 以下為測試失敗的寫法
 
         // if ($(window).width() > 992) {
         //     (function () {
@@ -894,14 +1027,49 @@
         // }
 
         /////////// 這是section2的swiper+lightbox ///////////
-        var swiper2 = new Swiper('#section2 .swiper-container', {
+        // var swiper2 = new Swiper('#section2 .swiper-container', {
+        //     direction: 'vertical',
+        //     slidesPerView: 1,
+        //     spaceBetween: 30,
+        //     // observer: true,
+        //     // observeParents: true,
+        //     pagination: {
+        //         el: '#section2 .swiper-pagination',
+        //         clickable: true,
+        //     },
+        //     autoplay: {
+        //         delay: 4000,
+        //         disableOnInteraction: false,
+        //     },
+        // });
+
+        var swiper2H = new Swiper('#section2 .swiper-container-h', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: '#section2 .swiper-pagination-h',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            // slidesPerGroup: 3,
+            breakpoints: {
+                // when window width is >= 768px
+                576: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+            }
+        });
+
+        var swiper2V = new Swiper('#section2 .swiper-container-v', {
             direction: 'vertical',
             slidesPerView: 1,
             spaceBetween: 30,
-            // observer: true,
-            // observeParents: true,
             pagination: {
-                el: '#section2 .swiper-pagination',
+                el: '#section2 .swiper-pagination-v',
                 clickable: true,
             },
             autoplay: {
