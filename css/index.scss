@@ -478,24 +478,18 @@ html{
         background-position: 100% 60%;
 }
 #slide_34{
-    background-image: url(../img/slide34.jpg);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-}
-#slide_35{
     background-image: url(../img/slide35.jpg);
         background-position: center;
 }
-#slide_36{
+#slide_35{
     background-image: url(../img/slide36.jpg);
         background-position: 100% 65%;
 }
-#slide_37{
+#slide_36{
     background-image: url(../img/slide37.jpg);
         background-position: 100% 50%;
 }
-#slide_38{
+#slide_37{
     background-image: url(../img/slide38.jpg);
         background-position: 100% 50%;
 }
@@ -809,7 +803,7 @@ html{
     padding: 15px;
 }
 
-#section5-2 .col-5{
+#section5-2 .col-8{
     color: black;
     font-size: 20px;
     font-weight: 400;
@@ -817,12 +811,17 @@ html{
     text-align: justify;
 }
 
-#section5-2 .col-10{
-    width: 100%;
-    height: 750px;
-    background-image: url(../img/section5-2.jpg);
-    background-size: cover;
-    background-position: 100% 48%;
+// #section5-2 .col-10{
+//     width: 100%;
+//     height: 750px;
+//     background-image: url(../img/section5-2.jpg);
+//     background-size: cover;
+//     background-position: 100% 48%;
+// }
+
+#section5-2 img{
+    max-width: 100%;
+    height: auto;
 }
 
 

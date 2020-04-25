@@ -552,7 +552,7 @@
                     <div id="slide_33" class="slide3"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div id="slide_34" class="slide3"></div>
+                    <div id="slide_34" class="slide3">自己的照片記得要ps修圖</div>
                 </div>
                 <div class="swiper-slide">
                     <div id="slide_35" class="slide3">自己的照片記得要ps修圖</div>
@@ -562,9 +562,6 @@
                 </div>
                 <div class="swiper-slide">
                     <div id="slide_37" class="slide3">自己的照片記得要ps修圖</div>
-                </div>
-                <div class="swiper-slide">
-                    <div id="slide_38" class="slide3">自己的照片記得要ps修圖</div>
                 </div>
             </div>
             <!-- !!已解決未處理!!下方點點點的按鈕要記得改顏色！！！ -->
@@ -828,15 +825,17 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-5">
+                <div class="col-8">
                     <div class="h3">創辦故事</div>
                     <p>從阿公開始養牛至今已進入第三代，近50個年頭，從十幾頭到目前約兩百多頭牛，一路走來的堅持與努力，是阿爸阿母對於做事的理念及態度，未來牧場會持續朝向永續經營發展。</p>
                 </div>
-                <div class="col-5">
+                <div class="col-8">
                     <div class="h3">未來展望</div>
                     <p>在這科技爆炸的時代，嘗試將科技帶入傳統產業，是身為7年級生的我們能做到與長輩更多不同面向的發展性，讓傳統牧場也能與科技合併，創造更多科技養牛的可能性！</p>
                 </div>
-                <div class="col-10"></div>
+                <div class="col-10">
+                    <img src="../img/section5-2.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -1045,6 +1044,7 @@
 
         var swiper2H = new Swiper('#section2 .swiper-container-h', {
             slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 30,
             pagination: {
                 el: '#section2 .swiper-pagination-h',
@@ -1054,7 +1054,6 @@
                 delay: 4000,
                 disableOnInteraction: false,
             },
-            // slidesPerGroup: 3,
             breakpoints: {
                 // when window width is >= 768px
                 576: {
