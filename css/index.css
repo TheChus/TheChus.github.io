@@ -533,6 +533,7 @@ html {
   color: white;
   margin-right: 7px;
   translate: 0.3s;
+  border-radius: 0 0 5px 5px;
 }
 
 .button.active {
