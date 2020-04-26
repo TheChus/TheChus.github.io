@@ -485,6 +485,11 @@ html {
   text-align: justify;
 }
 
+#section3-2 img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*********** 這裡是section4 ***********/
 #section4 {
   width: 100%;
