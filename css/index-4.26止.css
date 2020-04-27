@@ -7,7 +7,7 @@ ios不會自動播放影片 */
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
   text-align: center;
   color: white;
   -webkit-overflow-scrolling: touch;
@@ -43,7 +43,7 @@ html {
 }
 
 .text {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: whitesmoke;
   text-align: center;
@@ -146,150 +146,23 @@ html {
 #section1 {
   width: 100%;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 /*********** 這裡是section1有水波效果 ***********/
-#home,
-.ui-content {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-}
-
-.bg {
-  width: 100%;
-  height: 1000px;
-  background-image: url(../img/banner.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: cover;
-}
-
-.wave-position {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-}
-
-.wave-body {
-  /* position: relative; */
-  width: 100%;
-  height: 100%;
-}
-
-.wave {
-  position: absolute;
-  top: calc((100% - 30px)/2);
-  left: calc((100% - 30px)/2);
-  width: 30px;
-  height: 30px;
-  border-radius: 300px;
-  background-image: url(../img/banner.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: cover;
-  -webkit-box-shadow: inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
-          box-shadow: inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
-}
-
-.wave0 {
-  z-index: 2;
-  zoom: 1.1;
-  -webkit-animation: w 1s;
-          animation: w 1s;
-}
-
-.wave1 {
-  z-index: 3;
-  zoom: 1.02;
-  -webkit-animation: w 1s .15s;
-          animation: w 1s .15s;
-}
-
-.wave2 {
-  z-index: 4;
-  zoom: 1.06;
-  -webkit-animation: w 1s .3s;
-          animation: w 1s .3s;
-}
-
-.wave3 {
-  z-index: 5;
-  zoom: 1.01;
-  -webkit-animation: w 1s .45s;
-          animation: w 1s .45s;
-}
-
-.wave4 {
-  z-index: 6;
-  zoom: 1.02;
-  -webkit-animation: w 1s .6s;
-          animation: w 1s .6s;
-}
-
-.wave5 {
-  z-index: 7;
-  -webkit-animation: w 1s .75s;
-          animation: w 1s .75s;
-}
-
-@-webkit-keyframes w {
-  0% {
-    top: calc((100% - 30px)/2);
-    left: calc((100% - 30px)/2);
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    top: calc((100% - 300px)/2);
-    left: calc((100% - 300px)/2);
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
-}
-
-@keyframes w {
-  0% {
-    top: calc((100% - 30px)/2);
-    left: calc((100% - 30px)/2);
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    top: calc((100% - 300px)/2);
-    left: calc((100% - 300px)/2);
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
-}
-
 /*********** 這裡是section2 ***********/
 #section2 {
   width: 100%;
   position: relative;
   margin: 0;
   padding: 0;
-  background-image: url(../img/background/darkness-80.png);
-  padding: 50px 0;
-}
-
-#section2 .section-name {
-  padding: 10px 0;
-  color: whitesmoke;
 }
 
 #swiper_LeftRight {
@@ -342,7 +215,7 @@ html {
   background-size: cover;
   border-radius: 11px;
   border: 5px whitesmoke solid;
-  opacity: 0.8;
+  opacity: 0.7;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -354,12 +227,6 @@ html {
 }
 
 @media (max-width: 991px) {
-  #section2 {
-    padding: 30px 0;
-  }
-  #section2 .swiper-text p {
-    font-size: 15px;
-  }
   .section2_swiper {
     height: 150px;
   }
@@ -381,6 +248,7 @@ html {
     padding: 0 0 0 20px;
   }
   #section2 .swiper-text p {
+    font-size: 15px;
     font-weight: 500;
   }
 }
@@ -426,13 +294,6 @@ html {
   color: #cac5c5;
   margin: 0;
   padding: 0;
-  background-image: url(../img/background/triangle-mosaic.png);
-}
-
-#section3 .section-name {
-  font-size: 25px;
-  color: #292929;
-  padding: 10px 0;
 }
 
 #section3 .swiper-container {
@@ -503,16 +364,7 @@ html {
 /*********** 這裡是section3-1 ***********/
 #section3-1 {
   width: 100%;
-  background-image: url(../img/background/triangle-mosaic.png);
-  padding: 50px 0;
-}
-
-#section3-1 .section-name {
-  color: black;
-}
-
-#section3-1 .text {
-  color: #292929;
+  height: 491px;
 }
 
 #section3-1 .swiper-container {
@@ -605,20 +457,18 @@ html {
 /*********** 這裡是section3-2 ***********/
 #section3-2 {
   width: 100%;
+  background-color: whitesmoke;
   padding-bottom: 15px;
-  background-image: url(../img/background/triangle-mosaic.png);
-  padding: 0 0 50px 0;
 }
 
 #section3-2 .text {
-  color: #292929;
+  color: black;
 }
 
 #title-text {
   font-size: 18px;
   color: black;
   text-align: justify;
-  letter-spacing: 1.5px;
 }
 
 .SmallP {
@@ -626,7 +476,6 @@ html {
   font-weight: 600;
   color: black;
   text-align: justify;
-  margin: 30px 0 20px 0;
 }
 
 #section3-2 .row p {
@@ -634,46 +483,48 @@ html {
   font-weight: 500;
   color: #464646;
   text-align: justify;
-  letter-spacing: 1.5px;
+}
+
+#section3-2 img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*********** 這裡是section4 ***********/
 #section4 {
   width: 100%;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(180deg, black 0%, white 100%);
 }
 
 #section4 .section-name {
-  color: black;
+  background-color: black;
 }
 
 #section4_toggle {
   height: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 55, 50, 0.65)), to(white));
-  background: linear-gradient(180deg, rgba(66, 55, 50, 0.65) 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(180deg, black 0%, white 100%);
   margin: 0;
-  border-radius: 25px 25px 0 25px;
 }
 
 .button {
   width: 100px;
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.808);
+  background-color: black;
   text-align: center;
   line-height: 100px;
   font-size: 18px;
   font-weight: 600;
   color: white;
-  border-radius: 50px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  margin-right: 7px;
+  translate: 0.3s;
+  border-radius: 0 0 5px 5px;
 }
 
 .button.active {
-  background-color: rgba(66, 55, 50, 0.65);
-  color: sandybrown;
-  width: 100px;
-  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
 }
 
 .section4_content {
@@ -696,10 +547,6 @@ html {
 .section4_text {
   width: 100%;
   display: none;
-  color: sandybrown;
-  font-size: 30px;
-  text-shadow: 0px 0px 6px rgba(248, 222, 182, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
-  font-weight: 900;
 }
 
 .section4_text.active {
@@ -764,13 +611,8 @@ html {
 /******** 這裡是section5-1 ********/
 #section5-1 {
   width: 100%;
-  background-image: url(../img/background/triangle-mosaic.png);
-}
-
-.section5-1-background {
-  background-image: url(../img/footer-test.png);
-  width: 100%;
-  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(honeydew));
+  background: linear-gradient(180deg, white 0%, honeydew 100%);
 }
 
 #section5-1 .section-name {
@@ -781,127 +623,44 @@ html {
   color: black;
 }
 
-#text5-1 {
-  color: black;
-  font-size: 25px;
-  text-align: justify;
+#section5-1 .dogname {
+  color: #3f4569;
+  text-shadow: 0px 0px 6px rgba(197, 252, 252, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
 }
 
-#section5-1 .block :nth-child(2n + 1) img {
-  max-width: 80%;
+#section5-1 p {
+  color: #1d1d1d;
+  font-size: 20px;
+  text-align: left;
+}
+
+.pic5 img {
+  max-width: 100%;
   height: auto;
   border-radius: 5%;
   border: 5px solid white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#section5-1 .block :nth-child(2n) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#section5-1 .block :nth-child(2n) div {
-  max-width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-#section5-1 .block :nth-child(2n) div h2 {
-  color: #3a3837;
-  font-size: 28px;
-  font-weight: 600;
-  text-shadow: 0px 0px 6px rgba(58, 56, 55, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
-}
-
-@media screen and (max-width: 576px) {
-  #section5-1 .block :nth-child(2n) div h2 {
-    font-size: 20px;
-  }
-}
-
-#section5-1 .block :nth-child(2n) div p {
-  color: #1d1d1d;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: justify;
-}
-
-@media screen and (max-width: 576px) {
-  #section5-1 .block :nth-child(2n) div p {
-    font-size: 15px;
-  }
-}
-
-#section5-1 .block :nth-child(4n) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#section5-1 .block :nth-child(4n) div {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media screen and (max-width: 768px) {
-  #section5-1 .block :nth-child(2n + 1) img, #section5-1 .block :nth-child(2n) div {
-    max-width: 100%;
-  }
 }
 
 /******** 這裡是section5-2 ********/
 #section5-2 {
   width: 100%;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background: -webkit-gradient(linear, left bottom, left top, from(#cffacf), to(honeydew));
+  background: linear-gradient(360deg, #cffacf 0%, honeydew 100%);
 }
 
 #section5-2 .text {
   color: black;
-  font-weight: 900;
-}
-
-#text5-2 {
   font-size: 30px;
   font-weight: 900;
+  padding: 15px;
 }
 
-#section5-2 .col-10, .col-lg-7 {
+#section5-2 .col-8 {
   color: black;
   font-size: 20px;
   font-weight: 400;
+  background-color: white;
   text-align: justify;
-  letter-spacing: 1.5px;
-}
-
-@media screen and (max-width: 576px) {
-  #section5-2 .col-10, .col-lg-7 {
-    font-size: 18px;
-  }
 }
 
 #section5-2 img {
@@ -913,7 +672,8 @@ html {
 #section6 {
   width: 100%;
   height: 500px;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(#cffacf), to(#7fd6d5));
+  background: linear-gradient(180deg, #cffacf 0%, #7fd6d5 100%);
   font-size: 30px;
   text-align: center;
   color: #101d33;
@@ -1024,4 +784,4 @@ footer {
 #scene {
   overflow: hidden;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index-4.26止.css.map */

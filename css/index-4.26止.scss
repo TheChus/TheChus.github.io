@@ -10,7 +10,7 @@ ios不會自動播放影片 */
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
     text-align: center;
     color: white;
 // 4/28問老師：手機版沒有慢慢滑動的效果，查詢ios應該是這個設定，但沒用= =
@@ -47,7 +47,7 @@ html{
 }
 
 .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     color: whitesmoke;
     text-align: center;
@@ -156,8 +156,8 @@ html{
     width: 100%;
     height: 100vh;
     // 下面兩個是水波效果用的
-    position: relative;
-    overflow: hidden;
+    // position: relative;
+    // overflow: hidden;
 }
 
 // .mask{
@@ -169,13 +169,13 @@ html{
 //     opacity: 0.3;
 // } 
 
-// .banner {
-//     width: 100%;
-//     height: 100%;
-//     background-image: url(../img/banner.jpg);
-//     background-size: cover;
-//     background-position: bottom;
-// }
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
 
 
 /*********** 這裡是section1有水波效果 ***********/
@@ -183,109 +183,109 @@ html{
 //     position: relative;
 //     
 // }
-#home,
-.ui-content {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            // overflow: hidden;
-            cursor: pointer;
-        }
+// #home,
+// .ui-content {
+//             margin: 0;
+//             padding: 0;
+//             height: 100%;
+//             width: 100%;
+//             // overflow: hidden;
+//             cursor: pointer;
+//         }
 
-        .bg {
-            width: 100%;
-            height: 1000px;
-            background-image: url(../img/banner.jpg);
-            background-attachment: fixed;
-            background-position: bottom;
-            background-size: cover;
-        }
+//         .bg {
+//             width: 100%;
+//             height: 1000px;
+//             background-image: url(../img/banner.jpg);
+//             background-attachment: fixed;
+//             background-position: bottom;
+//             background-size: cover;
+//         }
 
-        .wave-position {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-        }
+//         .wave-position {
+//             position: absolute;
+//             width: 300px;
+//             height: 300px;
+//         }
 
-        .wave-body {
-            /* position: relative; */
-            width: 100%;
-            height: 100%;
-        }
+//         .wave-body {
+//             /* position: relative; */
+//             width: 100%;
+//             height: 100%;
+//         }
 
-        .wave {
-            position: absolute;
-            top: calc((100% - 30px)/2);
-            left: calc((100% - 30px)/2);
-            width: 30px;
-            height: 30px;
-            border-radius: 300px;
-            background-image: url(../img/banner.jpg);
-            background-attachment: fixed;
-            background-position: bottom;
-            background-size: cover;
-            box-shadow:inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
-            // z-index: -1;
-        }
+//         .wave {
+//             position: absolute;
+//             top: calc((100% - 30px)/2);
+//             left: calc((100% - 30px)/2);
+//             width: 30px;
+//             height: 30px;
+//             border-radius: 300px;
+//             background-image: url(../img/banner.jpg);
+//             background-attachment: fixed;
+//             background-position: bottom;
+//             background-size: cover;
+//             box-shadow:inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
+//             // z-index: -1;
+//         }
 
-        .wave0 {
-            z-index: 2;
-            zoom: 1.1;
-            animation: w 1s;
-          }
+//         .wave0 {
+//             z-index: 2;
+//             zoom: 1.1;
+//             animation: w 1s;
+//           }
           
-          .wave1 {
-            z-index: 3;
-            zoom: 1.02;
-            animation: w 1s .15s;
-          }
+//           .wave1 {
+//             z-index: 3;
+//             zoom: 1.02;
+//             animation: w 1s .15s;
+//           }
           
-          .wave2 {
-            z-index: 4;
-            zoom: 1.06;
-            animation: w 1s .3s;
-          }
+//           .wave2 {
+//             z-index: 4;
+//             zoom: 1.06;
+//             animation: w 1s .3s;
+//           }
           
-          .wave3 {
-            z-index: 5;
-            zoom: 1.01;
-            animation: w 1s .45s;
-          }
+//           .wave3 {
+//             z-index: 5;
+//             zoom: 1.01;
+//             animation: w 1s .45s;
+//           }
           
-          .wave4 {
-            z-index: 6;
-            zoom: 1.02;
-            animation: w 1s .6s;
-          }
+//           .wave4 {
+//             z-index: 6;
+//             zoom: 1.02;
+//             animation: w 1s .6s;
+//           }
           
-          .wave5 {
-            z-index: 7;
-            animation: w 1s .75s;
-          }
+//           .wave5 {
+//             z-index: 7;
+//             animation: w 1s .75s;
+//           }
 
 
-        @keyframes w {
-            0% {
-                top: calc((100% - 30px)/2);
-                left: calc((100% - 30px)/2);
-                width: 30px;
-                height: 30px;
-                opacity: 1;
-            }
+//         @keyframes w {
+//             0% {
+//                 top: calc((100% - 30px)/2);
+//                 left: calc((100% - 30px)/2);
+//                 width: 30px;
+//                 height: 30px;
+//                 opacity: 1;
+//             }
 
-            99% {
-                opacity: 1;
-            }
+//             99% {
+//                 opacity: 1;
+//             }
 
-            100% {
-                top: calc((100% - 300px)/2);
-                left: calc((100% - 300px)/2);
-                width: 300px;
-                height: 300px;
-                opacity: 0;
-            }
-        }
+//             100% {
+//                 top: calc((100% - 300px)/2);
+//                 left: calc((100% - 300px)/2);
+//                 width: 300px;
+//                 height: 300px;
+//                 opacity: 0;
+//             }
+//         }
    
 
 
@@ -295,13 +295,6 @@ html{
     position: relative;
     margin: 0;
     padding: 0;
-    background-image: url(../img/background/darkness-80.png);
-    padding: 50px 0;
-}
-
-#section2 .section-name{
-    padding: 10px 0;
-    color: whitesmoke;
 }
 
 #swiper_LeftRight{
@@ -349,7 +342,7 @@ html{
     background-size: cover;
     border-radius: 11px;
     border: 5px whitesmoke solid;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: 0.3s;
 }
 
@@ -360,12 +353,6 @@ html{
 }
 
 @media (max-width: 991px) {
-    #section2 {
-        padding: 30px 0;
-    }
-    #section2 .swiper-text p{
-        font-size: 15px;
-    }
     .section2_swiper{
         height: 150px;
     }
@@ -387,6 +374,7 @@ html{
         padding: 0 0 0 20px;
     }
     #section2 .swiper-text p{
+        font-size: 15px;
         font-weight: 500;
     }
 }
@@ -418,7 +406,6 @@ html{
 }
 #slide_232{
     background-image: url(../img/slide232.JPG);
-
 }
 
 
@@ -433,13 +420,6 @@ html{
     color:rgb(202, 197, 197);
     margin: 0;
     padding: 0;
-    background-image: url(../img/background/triangle-mosaic.png);
-}
-
-#section3 .section-name{
-    font-size: 25px;
-    color: rgb(41, 41, 41);
-    padding: 10px 0;
 }
 
 #section3 .swiper-container {
@@ -499,19 +479,9 @@ html{
 /*********** 這裡是section3-1 ***********/
 #section3-1{
     width: 100%;
-    // height: 491px;高度不能寫死，下面section3-2會壞掉
+    height: 491px;
     // height: 515px;此版本電腦版ok但在iphone看就壞了
-    background-image: url(../img/background/triangle-mosaic.png);
-    padding: 50px 0;
 }
-
-#section3-1 .section-name{
-    color: black;
-}
-#section3-1 .text{
-    color: rgb(41, 41, 41);
-}
-
 #section3-1 .swiper-container{
     max-height: 400px;
 }
@@ -583,21 +553,18 @@ html{
 /*********** 這裡是section3-2 ***********/
 #section3-2{
     width: 100%;
-    // background-color: whitesmoke;
+    background-color: whitesmoke;
     padding-bottom: 15px;
-    background-image: url(../img/background/triangle-mosaic.png);
-    padding: 0 0 50px 0;
 }
 
 #section3-2 .text{
-    color: rgb(41, 41, 41);
+    color: black;
 }
 
 #title-text{
     font-size: 18px;
     color: black;
     text-align: justify;
-    letter-spacing: 1.5px;
  }
 
 .SmallP{
@@ -605,7 +572,6 @@ html{
     font-weight: 600;
     color: rgb(0, 0, 0);
     text-align: justify;
-    margin: 30px 0 20px 0;
 }
 
 #section3-2 .row p{
@@ -613,70 +579,50 @@ html{
     font-weight: 500;
     color: rgb(70, 70, 70);
     text-align: justify; 
-    letter-spacing: 1.5px;
+}
+
+
+#section3-2 img{
+    max-width: 100%;
+    height: auto;
 }
 
 /*********** 這裡是section4 ***********/
 #section4{
     width: 100%;
-    background-image: url(../img/background/triangle-mosaic.png);
-    // background: linear-gradient(180deg, rgba(0, 0, 0, 1)0%, rgba(255, 255, 255, 1)100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1)0%, rgba(255, 255, 255, 1)100%);
 }
 
 #section4 .section-name{
-    color: black;
+    background-color: black;
 }
 
 #section4_toggle {
     height: 100px;
-    // background-image: url(../img/background/dot-grid.png);
-    // background: linear-gradient(180deg, rgba(0, 0, 0, 1)0%, rgba(255, 255, 255, 1)100%);
-    background: linear-gradient(180deg, rgba(66, 55, 50, 0.65)0%, rgba(255, 255, 255, 1)100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1)0%, rgba(255, 255, 255, 1)100%);
     margin: 0;
-    border-radius: 25px 25px 0 25px;
 }
-
-.button{
+.button {
     width: 100px;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.808);
+    background-color: black;
     text-align: center;
     line-height: 100px;
     font-size: 18px;
     font-weight: 600;
     color: white;
-    border-radius: 50px;
-    transition: 0.3s;
+    margin-right: 7px;
+    translate: 0.3s;
+    border-radius: 0 0 5px 5px;
 }
-.button.active{
-    background-color: rgba(66, 55, 50, 0.65);
-    color: sandybrown;
-    width: 100px;
-    border-radius: 25px;
+.button.active {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
 }
-
-// .button {
-//     width: 100px;
-//     height: 100px;
-//     background-color: black;
-//     text-align: center;
-//     line-height: 100px;
-//     font-size: 18px;
-//     font-weight: 600;
-//     color: white;
-//     margin-right: 7px;
-//     translate: 0.3s;
-//     border-radius: 0 0 5px 5px;
-// }
-// .button.active {
-//     background-color: rgba(0, 0, 0, 0.65);
-//     color: white;
-// }
 
 
 .section4_content {
     background: linear-gradient(360deg, rgba(255, 255, 255, 0.1)0%, rgba(255, 255, 255, 1)100%); 
-    // background-image: url(../img/background/dot-grid.png);
     width: 100%;
     padding: 15px;
     border-radius: 0 0 30px 30px;
@@ -694,10 +640,6 @@ html{
 .section4_text {
     width: 100%;
     display: none;
-    color: sandybrown;
-    font-size: 30px;
-    text-shadow: 0px 0px 6px rgba(248, 222, 182, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
-    font-weight: 900;
 }
 .section4_text.active {
     display: block;
@@ -761,131 +703,118 @@ html{
 /******** 這裡是section5-1 ********/
 #section5-1{
     width: 100%;
-    background-image: url(../img/background/triangle-mosaic.png);
     // min-height: calc(100vh - 80px);
-    // background: linear-gradient(180deg, white 0%, rgba(240, 255, 240, 1) 100%);
-}
-.section5-1-background{
-    background-image: url(../img/footer-test.png);
-    width: 100%;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, white 0%, rgba(240, 255, 240, 1) 100%);
 }
 
 #section5-1 .section-name{
     color: black;
 }
-
 #section5-1 .text{
     color: black;
 }
-
-#text5-1{
-    color: black;
-    font-size: 25px;
-    text-align: justify;
+#section5-1 .dogname{
+    color: rgb(63, 69, 105) ;
+    text-shadow: 0px 0px 6px rgba(197, 252, 252, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
+    
+}
+#section5-1 p{
+    // color: rgb(94, 99, 128);
+    color: rgb(29, 29, 29);
+    font-size: 20px;
+    
+    // 想讓文字在手機版斷行到第二行時，文字偏左開始？是用下面這是嗎？
+    text-align:left;
 }
 
-// #section5-1 .row{
-//     background-image: url(../img/footer-test.png);
+
+.pic5 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+    border: 5px solid white;
+}
+// .pic5{
+//     width: 100%;
+//     height: 100%;
+//     background-position: center;
+//     background-size: cover;
+//     border-radius: 5%;
+//     border: 5px solid white;
+// }
+// 皮蛋
+// #pic511{
+//     background-image: url(../img/pic511.jpg);
+// }
+// #pic512{
+//     background-image: url(../img/pic512.jpg);
+// }
+// 黑皮
+// #pic521{
+//     background-image: url(../img/pic521.jpg);
+//     // background-position: top;
+// }
+// #pic522{
+//     background-image: url(../img/pic522.jpg);
+// }
+// 蛋捲
+// #pic531{
+//     background-image: url(../img/pic531.JPG);
+// }
+// #pic532{
+//     background-image: url(../img/pic532.JPG);
+//     background-position: right;
+// }
+// 兩光
+// #pic541{
+//     background-image: url(../img/pic541.jpg);
+// }
+// #pic542{
+//     background-image: url(../img/pic542.jpg);
+// }
+// 熊熊
+// #pic551{
+//     background-image: url(../img/pic551.JPG);
+// }
+// #pic552{
+//     background-image: url(../img/pic552.JPG);
 // }
 
-#section5-1{
-    .block{
-        & :nth-child(2n + 1){
-            img{
-                max-width: 80%;
-                height: auto;
-                border-radius: 5%;
-                border: 5px solid white;
-                transition: 0.5s;
-            }
-        }
-        & :nth-child(2n){
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            div{
-                max-width: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items:flex-end;
-                h2{
-                    color: rgb(58, 56, 55) ;
-                    font-size: 28px;
-                    font-weight: 600;
-                    text-shadow: 0px 0px 6px rgba(58, 56, 55, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
-                    @media screen  and (max-width:576px){
-                        font-size: 20px;
-                    }
-                }
-                p{
-                    color: rgb(29, 29, 29);
-                    font-size: 20px;
-                    font-weight: 600;
-                    text-align:justify;
-                    @media screen  and (max-width:576px){
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-        & :nth-child(4n){
-            display: flex;
-            flex-direction: column;
-            div{
-                align-items:flex-start;
-            }
-        }
-        @media screen and (max-width:768px) {
-            & :nth-child(2n + 1) img,& :nth-child(2n) div{
-                max-width: 100%;
-            }
-        }
-    }
-}
+// 4/24問老師：在iphone看奇怪為什麼pic512照片又自動旋轉了？
 
 // #section5-1 .row{
 // // 4/29再問一次蕭麻吉：為什麼要-221px？忘記是什麼了？只記得要減掉navbar的80px，剩下的是什麼高度？
 //     height: calc(100vh - 221px);
 // }
 
-
-
+// 這裡還是改成boostrp切版吧！
 /******** 這裡是section5-2 ********/
 #section5-2{
     width: 100%;
-    background-image: url(../img/background/triangle-mosaic.png);
-    // background: linear-gradient(360deg, rgba(207, 250, 207, 1) 0%, rgba(240, 255, 240, 1) 100%);
+    background: linear-gradient(360deg, rgba(207, 250, 207, 1) 0%, rgba(240, 255, 240, 1) 100%);
 }
-
 #section5-2 .text{
     color: black;
-    font-weight: 900;
-}
-
-#text5-2{
     font-size: 30px;
     font-weight: 900;
+    padding: 15px;
 }
 
-// 4/27問老師：在col-lg-7的時候，圖文無法對齊，但是col-lg-8是正常
-#section5-2 .col-10,.col-lg-7{
+#section5-2 .col-8{
     color: black;
     font-size: 20px;
     font-weight: 400;
+    background-color: white;
     text-align: justify;
-    letter-spacing: 1.5px;
-    @media screen  and (max-width:576px){
-        font-size: 18px;
-    }
 }
 
-@media screen  and (max-width:576px){
-    // #section5-2 .text{
-    //     // font-size: 25px;
-    // }
-}
+// #section5-2 .col-10{
+//     width: 100%;
+//     height: 750px;
+//     background-image: url(../img/section5-2.jpg);
+//     background-size: cover;
+//     background-position: 100% 48%;
+// }
 
 #section5-2 img{
     max-width: 100%;
@@ -898,8 +827,7 @@ html{
 #section6{
     width: 100%;
     height: 500px;
-    background-image: url(../img/background/triangle-mosaic.png);
-    // background: linear-gradient(180deg, rgba(207, 250, 207, 1) 0%, rgb(127, 214, 213) 100%);
+    background: linear-gradient(180deg, rgba(207, 250, 207, 1) 0%, rgb(127, 214, 213) 100%);
     font-size: 30px;
     text-align: center;
     color: rgb(16, 29, 51);
