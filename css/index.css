@@ -432,7 +432,7 @@ html {
 #section3 .section-name {
   font-size: 25px;
   font-weight: 600;
-  color: gray;
+  color: #666666;
   padding: 10px 0;
 }
 
@@ -666,7 +666,7 @@ html {
   font-size: 18px;
   font-weight: 600;
   color: white;
-  border-radius: 50px;
+  border-radius: 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -785,8 +785,13 @@ html {
 
 #text5-1 {
   color: #292929;
-  font-size: 25px;
+  font-size: 23px;
   text-align: justify;
+}
+
+#special {
+  font-size: 45px;
+  font-weight: 900;
 }
 
 #section5-1 .block :nth-child(2n + 1) img {

@@ -22,8 +22,15 @@
 </head>
 
 
-<!-- 4/24急需解決的bug！
+<!-- 4/28急需解決的bug！
 用iphone看，navbar會消失？還有階段目標會蓋住下文 -->
+
+<!-- 4/28問老師：如何將小牛的圖變正常？前一版還正常，但去手機看就壞了 -->
+
+<!-- 4/28問老師：如何讓圖片固定在section右下角，position。abusolute嗎？ -->
+
+<!-- 4/28問老師：為什麼最新消息swiper的梅機第2張照片會被180度翻轉 -->
+
 
 <body>
     <!----------- 這裡是nav ----------->
@@ -367,7 +374,7 @@
     <!----------- 這裡是section3 ----------->
     <section id="section3">
         <div class="container">
-            <div class="section-name">
+            <div class="section-name pt-5">
                 友善環境 Environment
             </div>
         </div>
@@ -412,15 +419,15 @@
     要在div加上data-aos-anchor-placement="center-center"，但現在圖片太大張，loading會lag -->
     <!-----------section3的階段目標1  ----------->
     <div id="tosection3" class="ToSection"></div>
-        <section id="section3-1">
-            <div class="container">
+    <section id="section3-1">
+        <div class="container">
             <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s"
                 data-aos-anchor-placement="bottom-center">
                 <div class="section-name">階段目標 Goal</div>
             </div>
             <div class="text mb-3">第一階段：設備改善添購、牛舍改建重整</div>
 
-            <div data-aos="zoom-in-up" id="section3-1Background" data-aos-anchor-placement="bottom-bottom" class="">
+            <div data-aos="fade-up" id="section3-1Background" data-aos-anchor-placement="center-bottom">
                 <div class="container">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -467,13 +474,13 @@
                 </div>
             </div>
         </div>
-        </section>
+    </section>
 
 
 
     <!-----------section3的階段目標2  ----------->
-        <section id="section3-2">
-            <div class="container">
+    <section id="section3-2">
+        <div class="container">
             <div class="text mb-3">第二階段：科技養牛</div>
             <div class="container">
                 <div id="title-text">
@@ -506,14 +513,14 @@
                         <p>
                             越來越多畜牧業者開始導入IoT(Internet of Things物聯網)、AI、數據分析等技術協助牧場轉型，打造高品質畜牧環境與精準畜牧機制，提升自我競爭能力。</p>
 
-<!-- 4/27問老師怎麼讓圖置中 
+                        <!-- 4/27問老師怎麼讓圖置中 
 用text-align:center，img算是文字-->
                         <!-- <div class=" "><img src="img/section3-2.png" alt=""></div> -->
                     </div>
                 </div>
             </div>
         </div>
-        </section>
+    </section>
 
 
 
@@ -571,72 +578,106 @@
     <div id="tosection5-1" class="ToSection"></div>
     <section id="section5-1" class="pb-5">
         <div class="section5-1-background">
-        <div class="container">
-            <div class="section-name mb-3">
-                關於牧場 About TheChus
-            </div>
-            <div id="text5-1" class="mb-3 pl-5 pr-5">牧場裡除了牛以外，還有五隻牧"牛"犬，都是外面流浪或是被棄養的流浪狗，希望大家能多多幫助流浪動物！</div>
-            <div class="text mb-3">用lax讓「領養代替購買」滑進來，狗的介紹卡片用aos效果</div>
-
-            <div class="text d-flex align-self-start mb-2">牧"牛"犬</div>
-
-            <div class="row pt-3 d-flex justify-content-center block">
-
-                <div class="col-md-5 col-6 order-2">
-                    <img src="img/pic511.jpg" alt="">
+            <div class="container">
+                <div class="section-name mb-3">
+                    關於牧場 About TheChus
                 </div>
-                <div class="col-md-5 col-6 order-1">
-                    <div>
-                        <h2>皮蛋</h2>
-                        <p>目前牧場的狗老大，非常保護牧場，外人請勿觸摸(注意!內有惡犬)</p>
+                <div id="text5-1" class="mb-3 pl-5 pr-5">牧場裡除了牛以外，還有五隻牧"牛"犬，都是外面流浪或是被棄養的流浪狗，希望大家能多多幫助流浪動物！</div>
+
+<!-- 4/28問老師lax怎麼調整？ -->
+                <div id="special" class="text mb-3 lax" data-lax-preset="spin fadeInOut">
+                    <font color="#E0A0A0">領</font><font color="#B6A0A0">養</font><font color="#8CA0A0">代</font><font color="#62A0A0">替</font><font color="#38A0A0">購</font><font color="#0EA0A0">買</font>
+                </div>
+
+                <div class="text d-flex align-self-start mb-2">牧"牛"犬</div>
+
+                <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+                    <div class="row pt-3 d-flex justify-content-center block mb-5">
+
+<!-- 4/28問老師：如何用aos？加入後col都壞掉了？ -->
+                        <div class="col-md-5 col-6 order-2">
+                            <img src="img/pic511.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-5 col-6 order-1">
+                            <div>
+                                <h2>皮蛋</h2>
+                                <p>目前牧場的狗老大，非常保護牧場，外人請勿觸摸(注意!內有惡犬)</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="col-md-5 col-6 order-3">
-                    <img src="img/pic521.jpg" alt="">
-                </div>
-                <div class="col-md-5 col-6 order-4">
-                    <!-- 4/28問老師：為什麼「黑皮」的文字為了要換行加了「flex=column」但img跟文字間距比別隻大？？  -->
-                    <div>
-                        <h2>黑皮</h2>
-                        <p>牧場最胖的一隻狗，會假裝受傷博取同情</p>
+
+
+                <div data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
+                    <div class="row pt-3 d-flex justify-content-center block mb-5">
+
+                        <div class="col-md-5 col-6 order-1">
+                            <img src="img/pic521.jpg" alt="">
+                        </div>
+                        <div class="col-md-5 col-6 order-2">
+                            <div>
+                                <h2>黑皮</h2>
+                                <p>牧場最胖的一隻狗，會假裝受傷博取同情</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="col-md-5 col-6 order-6">
-                    <img src="img/pic532.JPG" alt="">
-                </div>
-                <div class="col-md-5 col-6 order-5">
-                    <div>
-                        <h2>蛋捲</h2>
-                    <p>牧場最可愛的黑狗兄，腳短短、愛笑及搖尾巴，很受人疼愛</p>
+                <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+                    <div class="row pt-3 d-flex justify-content-center block mb-5">
+
+                        <div class="col-md-5 col-6 order-2">
+                            <img src="img/pic532.JPG" alt="">
+                        </div>
+                        <div class="col-md-5 col-6 order-1">
+                            <div>
+                                <h2>蛋捲</h2>
+                                <p>牧場最可愛的黑狗兄，腳短短、愛笑及搖尾巴，很受人疼愛</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="col-md-5 col-6 order-7">
-                    <img src="img/pic541.jpg" alt="">
-                </div>
-                <div class="col-md-5 col-6 order-8">
-                    <div>
-                        <h2>兩光</h2>
-                    <p>顧名思義此狗個性較為兩光，曾跑出去大馬路上走失，也曾自己跑去「外勞」宿舍= =</p>
+                <div data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
+                    <div class="row pt-3 d-flex justify-content-center block mb-5">
+
+                        <div class="col-md-5 col-6 order-1">
+                            <img src="img/pic541.jpg" alt="">
+                        </div>
+                        <div class="col-md-5 col-6 order-2">
+                            <div>
+                                <h2>兩光</h2>
+                                <p>顧名思義此狗個性較為兩光，曾跑出去大馬路上走失，也曾自己跑去「外勞」宿舍= =</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="col-md-5 col-6 order-10">
-                    <img src="img/pic551.JPG" alt="">
-                </div>
-                <!-- 4/28問老師：為什麼「熊熊」的名字跟文字有很大的間格，而且名字無法靠右接近圖？？？ -->
-                <div class="col-md-5 col-6 order-9">
-                    <div>
-                       <h2>熊熊</h2>
-                    <p>目前還在長大中，腳掌很大隻，就很像熊</p> 
+                <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+                    <div class="row pt-3 d-flex justify-content-center block mb-5">
+
+                        <div class="col-md-5 col-6 order-2">
+                            <img src="img/pic551.JPG" alt="">
+                        </div>
+
+                        <div class="col-md-5 col-6 order-1">
+                            <div>
+                                <h2>熊熊</h2>
+                                <p>目前還在長大中，腳掌很大隻，就很像熊</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
     </section>
 
     <!-------- 這裡是section5-2 -------->
@@ -654,6 +695,9 @@
                     <div class="text mb-3 d-flex align-self-start">未來展望</div>
                     <p>在這科技爆炸的時代，嘗試將科技帶入傳統產業，是身為7年級生的我們能做到與長輩更多不同面向的發展性，讓傳統牧場也能與科技合併，創造更多科技養牛的可能性！</p>
                 </div>
+
+<!-- 4/28問老師：為什麼小牛的圖在手機看會壞了？~前天是好的~ -->
+<!-- 4/28 ps把小牛的「蒼迎」修掉！ -->
                 <div class="col-10 d-flex justify-content-center">
                     <img src="img/section5-2.jpg" alt="">
                 </div>
@@ -736,6 +780,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 
 
     <script>
@@ -761,7 +806,7 @@
         var wdth = $(window).width();
         console.log(wdth);
 
-            if (wdth > 992) {
+        if (wdth > 992) {
             var mx, my, timer;
             var z = 2;
             $('.bg').on('mousemove', function (e) {
@@ -974,6 +1019,16 @@
         }
 
         /////////// 這是section6改用lax文字效果+aos效果 ///////////
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
 
 
 

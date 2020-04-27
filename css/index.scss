@@ -439,7 +439,7 @@ html{
 #section3 .section-name{
     font-size: 25px;
     font-weight: 600;
-    color: gray;
+    color: rgb(102, 102, 102);
     padding: 10px 0;
 }
 
@@ -647,7 +647,7 @@ html{
     font-size: 18px;
     font-weight: 600;
     color: white;
-    border-radius: 50px;
+    border-radius: 25px;
     transition: 0.3s;
 }
 .button.active{
@@ -783,8 +783,13 @@ html{
 
 #text5-1{
     color: rgb(41, 41, 41);
-    font-size: 25px;
+    font-size: 23px;
     text-align: justify;
+}
+
+#special{
+    font-size: 45px;
+    font-weight: 900;
 }
 
 // #section5-1 .row{
@@ -846,6 +851,11 @@ html{
         }
     }
 }
+
+
+
+
+
 
 // #section5-1 .row{
 // // 4/29再問一次蕭麻吉：為什麼要-221px？忘記是什麼了？只記得要減掉navbar的80px，剩下的是什麼高度？
