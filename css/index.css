@@ -804,6 +804,8 @@ html {
 
 #section5-2 img {
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 /*********** 這裡是section6 ***********/
