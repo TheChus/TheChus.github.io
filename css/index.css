@@ -644,14 +644,16 @@ html {
 
 @media (max-width: 767px) {
   .section3-2-background {
-    max-width: 60%;
-    right: 178px;
+    right: -150px;
+  }
+  .section3-2-background img {
+    max-width: 80%;
   }
 }
 
 @media (max-width: 575px) {
   .section3-2-background {
-    max-width: 40%;
+    max-width: 70%;
     right: 320px;
   }
 }
