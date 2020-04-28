@@ -899,7 +899,8 @@ html {
 }
 
 #section5-2 img {
-  max-width: 100%;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 /*********** 這裡是section6 ***********/
