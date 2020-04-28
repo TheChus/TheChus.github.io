@@ -63,7 +63,6 @@ html {
 /*********** 這裡是navbar ***********/
 .navbar {
   width: 100%;
-  max-height: 80px;
   position: fixed;
   top: 0;
   left: 0;
