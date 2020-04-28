@@ -489,6 +489,30 @@ html {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1199px) {
+  .section3-2-background {
+    background-position: 113% 180%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section3-2-background {
+    background-position: 122% 113%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section3-2-background {
+    background-position: 259% 109%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .section3-2-background {
+    background-position: 259% 109%;
+  }
+}
+
 #section3-2 .text {
   color: #292929;
 }
