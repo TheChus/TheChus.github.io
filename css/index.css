@@ -803,8 +803,7 @@ html {
 }
 
 #section5-2 img {
-  max-width: 100% !important;
-  height: auto !important;
+  max-width: 100%;
 }
 
 /*********** 這裡是section6 ***********/
