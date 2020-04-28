@@ -670,8 +670,16 @@ html {
         right: -150px;
     }
     @media (max-width: 575px) {
-        max-width: 70%;
-        right: 320px;
+        & img{
+            max-width: 70%;
+        }
+        right: -110px;
+    }
+    @media (max-width: 400px) {
+        & img{
+            max-width: 70%;
+        }
+        right: -80px;
     }
 }
 
@@ -850,20 +858,30 @@ html {
     position: absolute;
     max-width: 100%;
     height: auto;
-    @media (max-width: 1700px) {
-        max-width: 60%;
+    @media (max-width: 1283px) {
+        right: 500px;
+    }
+    @media (max-width: 767px) {
         right: 800px;
     }
-    @media (max-width: 1490px) {
-        right: 930px;
-    }
 
 
 
-    @media (max-width: 575px) {
-        max-width: 40%;
-        right: 320px;
-    }
+
+    // @media (max-width: 1700px) {
+    //     max-width: 60%;
+    //     right: 800px;
+    // }
+    // @media (max-width: 1490px) {
+    //     right: 930px;
+    // }
+
+
+
+    // @media (max-width: 575px) {
+    //     max-width: 40%;
+    //     right: 320px;
+    // }
 }
 
 #section5-1 .section-name {

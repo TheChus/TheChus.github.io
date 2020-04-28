@@ -653,8 +653,19 @@ html {
 
 @media (max-width: 575px) {
   .section3-2-background {
+    right: -110px;
+  }
+  .section3-2-background img {
     max-width: 70%;
-    right: 320px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section3-2-background {
+    right: -80px;
+  }
+  .section3-2-background img {
+    max-width: 70%;
   }
 }
 
@@ -828,23 +839,15 @@ html {
   height: auto;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1283px) {
   .section5-1-background {
-    max-width: 60%;
+    right: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section5-1-background {
     right: 800px;
-  }
-}
-
-@media (max-width: 1490px) {
-  .section5-1-background {
-    right: 930px;
-  }
-}
-
-@media (max-width: 575px) {
-  .section5-1-background {
-    max-width: 40%;
-    right: 320px;
   }
 }
 
