@@ -794,6 +794,21 @@
         //參考↑ 4/23君毅的教學// 這是nav的taggle在手機版消失 //
 
 
+///////// 想讓navbar那條，如果點開後沒反應，往下繼續滾動網頁時，收回navbar！///////
+        // window.onscroll = function () {
+        //     var t = document.documentElement.scrollTop || document.body.scrollTop;
+        //     var top_div = document.getElementById("toggle");
+        //     if (t >= 300) {
+        //         top_div.style.display = "inline";
+        //     }
+        //     else {
+        //         top_div.style.display = "none";
+        //     }
+        // }
+        // 滾對事件  ---> 顯示和隱藏  ---->t 大於多少的時候
+        // 滾對事件  ---> 偵測 我當前的滾輪高度  --> 我滑動的居離   ----> 距離有有超過門檻值  -->nav 回收 
+
+
         /////////// 這是nav ///////////
         $("#toggle").click(function () {
             $(this).toggleClass("on");
@@ -802,6 +817,9 @@
         $('#collapseExample').on('show.bs.collapse', function () {
             console.log("Test");
         });
+
+
+        /////////// 這是section1水波效果if在window.width>992不顯示 ///////////
         var wdth = $(window).width();
         console.log(wdth);
 
@@ -838,8 +856,7 @@
 
 
         /////////// 這是section1的水波效果 ///////////
-
-        //4/28問偉成老師：如何用if/ else加上營幕寬度，去判斷js screen或window width，小於992px時，不進水波效果
+        //如何用if/ else加上營幕寬度，去判斷js screen或window width，小於992px時，不進水波效果
         // 以下為測試失敗的寫法
 
         // if ($(window).width() > 992) {
@@ -876,21 +893,6 @@
         // }
 
         /////////// 這是section2的swiper+lightbox ///////////
-        // var swiper2 = new Swiper('#section2 .swiper-container', {
-        //     direction: 'vertical',
-        //     slidesPerView: 1,
-        //     spaceBetween: 30,
-        //     // observer: true,
-        //     // observeParents: true,
-        //     pagination: {
-        //         el: '#section2 .swiper-pagination',
-        //         clickable: true,
-        //     },
-        //     autoplay: {
-        //         delay: 4000,
-        //         disableOnInteraction: false,
-        //     },
-        // });
 
         var swiper2H = new Swiper('#section2 .swiper-container-h', {
             slidesPerView: 2,
@@ -984,14 +986,6 @@
         });
 
 
-
-        //<!-- 4/22問老師：section2滑鼠往下滾swiper，只能滑到slide-1跟-2，slide-3要手動移動滑鼠才可以？
-        // 下方是助教的方式，但滑鼠滾還是怪怪的？不順？很慢，跟滾輪好像是無關= =
-        // 可將var swiper「3」 = new Swiper重新命名
-        // 不然就加入「swiper.init();」在所有section的js最下方即可正常swiper --> */
-        // swiper.init();
-
-
         /////////// 這是section4切換多分頁 ///////////
         var btn = document.querySelectorAll(".button")
         var content = document.querySelectorAll(".section4_text")
@@ -1017,7 +1011,7 @@
             }
         }
 
-        /////////// 這是section6改用lax文字效果+aos效果 ///////////
+        /////////// 這是section6改用lax文字效果 ///////////
         window.onload = function () {
             lax.setup() // init
 

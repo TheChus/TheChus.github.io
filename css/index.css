@@ -133,10 +133,6 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     padding: 15px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   #nav-4 {
     margin: 0;
@@ -156,14 +152,14 @@ html {
 .ui-content {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
+  height: 100vh;
   cursor: pointer;
 }
 
 .bg {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background-image: url(../img/banner.jpg);
   background-attachment: fixed;
   background-position: bottom;
