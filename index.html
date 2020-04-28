@@ -13,7 +13,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
-    <!-- 越重要的link像是index.css放在最後，程式是由上往下讀取的 -->
 
     <title>TheChusRANCH</title>
     <style>
@@ -99,14 +98,11 @@
 
         <!-- !!已得到解法未修改區!!ok！問老師 ：section2的swiper「點點」不知為何跑到最右下方，超過section2_swiper的高度300px？因為swiper-pagination跑去swiper-container外面了，但也可以這樣用，加上position-ablute去調位置即可 -->
 
-        <!-- !!!待確認區!!!要詢問老師的問題：swiper有包container，可是上下swiper「黑底」時，還是會一直卡在section2？老師把swiper的js的「滾輪」參數刪除，要自己用滑鼠拖曳才可以， 要再測試手機版可以嗎？-->
-
         <div class="section2_swiper d-none d-lg-block">
             <div class="container">
                 <div class="swiper-container swiper-container-v">
                     <div class="swiper-wrapper">
 
-                        <!--  4/26測試應該可以把內容swiper-slide的d-none d-lg-block拿掉才對！-->
                         <!-- 電腦版顯示「上下」3張輪播 -->
                         <div class="swiper-slide">
                             <div class="container">
@@ -415,14 +411,14 @@
     </section>
 
 
-    <!-- !!!已解決，未修改區!!!問老師：都還沒到#section3-1，字彈跳跟aos都出現完了= =
-    要在div加上data-aos-anchor-placement="center-center"，但現在圖片太大張，loading會lag -->
+    <!--4/28問老師：都還沒到#section3-1，字彈跳都出現完了 -->
+
+
     <!-----------section3的階段目標1  ----------->
     <div id="tosection3" class="ToSection"></div>
     <section id="section3-1">
         <div class="container">
-            <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s"
-                data-aos-anchor-placement="bottom-center">
+            <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s">
                 <div class="section-name">階段目標 Goal</div>
             </div>
             <div class="text mb-3">第一階段：設備改善添購、牛舍改建重整</div>
@@ -502,19 +498,16 @@
                     <div class="col-12 col-lg-4 TA-JUSTIFY">
                         <div class="SmallP">讓每隻牛皆成為sensor</div>
                         <p>
-                            依牛舍大小架設不等數量的攝影機，每秒對每隻牛捕捉10張照片，一天共會拍攝864k的照片，並回傳到Cainthus進行分析，透過AI演算法，加權像素改變的比率，依此比率判別牛隻性別、身份與分析不同牛隻的行為模式。</p>
+                            依牛舍大小架設不等數量的攝影機，每秒對每隻牛捕捉10張照片，一天共會拍攝864k的照片，並回傳到Cainthus進行分析，透過AI演算法，加權像素改變的比率，依此比率判別牛隻性別、身份與分析不同牛隻的行為模式。
+                        </p>
                         <p>
                             提供牛隻活動狀況、水份及飼料攝取量、體溫、運動量等報告，使飼養者能夠動態調整餵養計畫、預測異常問題、有效提升生產效率。</p>
                     </div>
 
                     <div class="col-12 col-lg-4 TA-JUSTIFY">
-                        <div class="SmallP">科技技術協助牧場轉型</div>
+                        <div class="SmallP">運用科技協助牧場轉型</div>
                         <p>
                             越來越多畜牧業者開始導入IoT(Internet of Things物聯網)、AI、數據分析等技術協助牧場轉型，打造高品質畜牧環境與精準畜牧機制，提升自我競爭能力。</p>
-
-                        <!-- 4/27問老師怎麼讓圖置中 
-用text-align:center，img算是文字-->
-                        <!-- <div class=" "><img src="img/section3-2.png" alt=""></div> -->
                     </div>
                 </div>
             </div>
@@ -581,97 +574,105 @@
                 <div class="section-name mb-3">
                     關於牧場 TheChus
                 </div>
-                <div id="text5-1" class="mb-3 pl-5 pr-5">牧場裡除了牛以外，還有五隻牧"牛"犬，都是外面流浪或是被棄養的狗狗，希望大家平常也能多幫助流浪動物，讓他們有一個溫暖的家！</div>
+                <div id="text5-1" class="mb-3 pl-5 pr-5">牧場裡除了牛以外，還有五隻牧"牛"犬，都是外面流浪或是被棄養的狗狗，希望大家平常也能多幫助流浪動物，讓他們有一個溫暖的家！
 
-<!-- 4/28問老師lax怎麼調整？ -->
-                <div id="special" class="text mb-3 lax" data-lax-preset="spin fadeInOut">
-                    <font color="#E0A0A0">領</font><font color="#B6A0A0">養</font><font color="#8CA0A0">代</font><font color="#62A0A0">替</font><font color="#38A0A0">購</font><font color="#0EA0A0">買</font>
+                </div>
+
+                <!-- 把font改成span在css給color樣式 -->
+                <div id="special" class="text mb-3 lax" data-lax-anchor="self" data-lax-translate-x="250 1, vh 500"
+                    data-lax-opacity="0 1, vh 0">
+                    <font color="#E0A0A0">領</font>
+                    <font color="#B6A0A0">養</font>
+                    <font color="#8CA0A0">代</font>
+                    <font color="#62A0A0">替</font>
+                    <font color="#38A0A0">購</font>
+                    <font color="#0EA0A0">買</font>
                 </div>
 
                 <div class="text d-flex align-self-start mb-2">牧"牛"犬</div>
 
-                <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
-                    <div class="row pt-3 d-flex justify-content-center block mb-5">
+                <div class="area">
 
-<!-- 4/28問老師：如何用aos？加入後col都壞掉了？ -->
-                        <div class="col-md-5 col-6 order-2">
-                            <img src="img/pic511.jpg" alt="">
-                        </div>
+                    <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+                        <div class="row pt-3 d-flex justify-content-center mb-5 block">
 
-                        <div class="col-md-5 col-6 order-1">
-                            <div>
-                                <h2>皮蛋</h2>
-                                <p>目前牧場的狗老大，非常保護牧場，外人請勿觸摸(注意!內有惡犬)</p>
+                            <!-- 4/28問老師：如何用aos？加入後col都壞掉了？ -->
+                            <div class="col-md-5 col-6 order-2">
+                                <img src="img/pic511.jpg" alt="">
                             </div>
-                        </div>
 
+                            <div class="col-md-5 col-6 order-1">
+                                <div>
+                                    <h2>皮蛋</h2>
+                                    <p>目前牧場的狗老大，非常保護牧場，外人請勿觸摸(注意!內有惡犬)</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
 
+                    <div data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
+                        <div class="row pt-3 d-flex justify-content-center mb-5 block">
 
-
-                <div data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
-                    <div class="row pt-3 d-flex justify-content-center block mb-5">
-
-                        <div class="col-md-5 col-6 order-1">
-                            <img src="img/pic521.jpg" alt="">
-                        </div>
-                        <div class="col-md-5 col-6 order-2">
-                            <div>
-                                <h2>黑皮</h2>
-                                <p>牧場最胖的一隻狗，會假裝受傷博取同情</p>
+                            <div class="col-md-5 col-6 order-1">
+                                <img src="img/pic521.jpg" alt="">
                             </div>
-                        </div>
+                            <div class="col-md-5 col-6 order-2">
+                                <div>
+                                    <h2>黑皮</h2>
+                                    <p>牧場最胖的一隻狗，會假裝受傷博取同情</p>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
 
-                <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
-                    <div class="row pt-3 d-flex justify-content-center block mb-5">
-
-                        <div class="col-md-5 col-6 order-2">
-                            <img src="img/pic532.JPG" alt="">
-                        </div>
-                        <div class="col-md-5 col-6 order-1">
-                            <div>
-                                <h2>蛋捲</h2>
-                                <p>牧場最可愛的黑狗兄，腳短短、愛笑及搖尾巴，很受人疼愛</p>
+                    <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+                        <div class="row pt-3 d-flex justify-content-center mb-5 block">
+                            <div class="col-md-5 col-6 order-2">
+                                <img src="img/pic532.JPG" alt="">
                             </div>
-                        </div>
+                            <div class="col-md-5 col-6 order-1">
+                                <div>
+                                    <h2>蛋捲</h2>
+                                    <p>牧場最可愛的黑狗兄，腳短短、愛笑及搖尾巴，很受人疼愛</p>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
 
-                <div data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
-                    <div class="row pt-3 d-flex justify-content-center block mb-5">
+                    <div data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
+                        <div class="row pt-3 d-flex justify-content-center mb-5 block">
 
-                        <div class="col-md-5 col-6 order-1">
-                            <img src="img/pic541.jpg" alt="">
-                        </div>
-                        <div class="col-md-5 col-6 order-2">
-                            <div>
-                                <h2>兩光</h2>
-                                <p>顧名思義此狗個性較為兩光，曾跑出去大馬路上走失，也曾自己跑去「外勞」宿舍= =</p>
+                            <div class="col-md-5 col-6 order-1">
+                                <img src="img/pic541.jpg" alt="">
                             </div>
-                        </div>
+                            <div class="col-md-5 col-6 order-2">
+                                <div>
+                                    <h2>兩光</h2>
+                                    <p>顧名思義此狗個性較為兩光，曾跑出去大馬路上走失，也曾自己跑去「外勞」宿舍= =</p>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
 
-                <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
-                    <div class="row pt-3 d-flex justify-content-center block mb-5">
+                    <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+                        <div class="row pt-3 d-flex justify-content-center mb-5 block">
 
-                        <div class="col-md-5 col-6 order-2">
-                            <img src="img/pic551.JPG" alt="">
-                        </div>
-
-                        <div class="col-md-5 col-6 order-1">
-                            <div>
-                                <h2>熊熊</h2>
-                                <p>目前還在長大中，腳掌很大隻，就很像熊</p>
+                            <div class="col-md-5 col-6 order-2">
+                                <img src="img/pic551.JPG" alt="">
                             </div>
-                        </div>
 
+                            <div class="col-md-5 col-6 order-1">
+                                <div>
+                                    <h2>熊熊</h2>
+                                    <p>目前還在長大中，腳掌很大隻，就很像熊</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -684,7 +685,6 @@
     <section id="section5-2" class="pb-5">
         <div class="container">
 
-
             <div class="row d-flex justify-content-center">
                 <div class="col-10 col-lg-7 mb-5">
                     <div class="text mb-3">創辦故事</div>
@@ -695,8 +695,8 @@
                     <p>在這科技爆炸的時代，嘗試將科技帶入傳統產業，是身為7年級生的我們能做到與長輩更多不同面向的發展性，讓傳統牧場也能與科技合併，創造更多科技養牛的可能性！</p>
                 </div>
 
-<!-- 4/28問老師：為什麼小牛的圖在手機看會壞了？~前天是好的~ -->
-<!-- 4/28 ps把小牛的「蒼迎」修掉！ -->
+                <!-- 4/28問老師：為什麼小牛的圖在手機看會壞了？~前天是好的~ -->
+                <!-- 4/28 ps把小牛的「蒼迎」修掉！ -->
                 <div class="col-10 d-flex justify-content-center">
                     <img src="img/section5-2.jpg" alt="">
                 </div>

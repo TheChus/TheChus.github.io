@@ -13,7 +13,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     color: white;
-// 4/28問老師：手機版沒有慢慢滑動的效果，查詢ios應該是這個設定，但沒用= =
+    // 4/28問老師：手機版沒有慢慢滑動的效果，查詢ios應該是這個設定，但沒用= =
     -webkit-overflow-scrolling: touch;
 }
 
@@ -23,7 +23,7 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
@@ -34,19 +34,19 @@ html{
     height: 100%;
 }
 
-.section-name{
+.section-name {
     color: white;
     font-size: 30px;
     font-weight: 900;
 }
 
-.SmallSection-name{
+.SmallSection-name {
     color: whitesmoke;
     font-size: 25px;
     font-weight: 800;
 }
 
-.text{
+.text {
     font-size: 25px;
     font-weight: 600;
     color: whitesmoke;
@@ -54,12 +54,12 @@ html{
 }
 
 
-.TA-JUSTIFY{
+.TA-JUSTIFY {
     text-align: justify;
 }
 
 
-.ToSection{
+.ToSection {
     position: relative;
     top: -80px;
     z-index: 999;
@@ -68,7 +68,7 @@ html{
 
 
 /*********** 這裡是navbar ***********/
-.navbar{
+.navbar {
     width: 100%;
     max-height: 80px;
     position: fixed;
@@ -88,7 +88,7 @@ html{
     margin: 10px auto;
 }
 
-// /* 4/22問：這裡是原本toogle的範例寫用(992px「min-width」，可以改成max-width嗎？這段有點看不太懂= = ，不好，因為bootstrp的套件，不要改！
+// OK/* 4/22問：這裡是原本toogle的範例寫用(992px「min-width」，可以改成max-width嗎？不好，因為bootstrp的套件，不要改！
 @media (min-width: 992px) {
     #toggle {
         display: none;
@@ -128,15 +128,16 @@ html{
 
 // 4/23君毅老師說加入此段應該可解決iphone的nav問題
 // 但測試問題還是一樣沒解決
-/* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
 .navbar-collapse {
     position: relative;
     left: 0;
     top: 0;
 }
 
+/* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
+
 @media (max-width: 992px) {
-    .navbar-nav{
+    .navbar-nav {
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 5px;
         max-width: 200px;
@@ -144,7 +145,7 @@ html{
         padding: 15px;
     }
 
-    #nav-4{
+    #nav-4 {
         margin: 0;
     }
 }
@@ -185,108 +186,108 @@ html{
 // }
 #home,
 .ui-content {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            // overflow: hidden;
-            cursor: pointer;
-        }
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    // overflow: hidden;
+    cursor: pointer;
+}
 
-        .bg {
-            width: 100%;
-            height: 1000px;
-            background-image: url(../img/banner.jpg);
-            background-attachment: fixed;
-            background-position: bottom;
-            background-size: cover;
-        }
+.bg {
+    width: 100%;
+    height: 1000px;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+}
 
-        .wave-position {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-        }
+.wave-position {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
 
-        .wave-body {
-            /* position: relative; */
-            width: 100%;
-            height: 100%;
-        }
+.wave-body {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
 
-        .wave {
-            position: absolute;
-            top: calc((100% - 30px)/2);
-            left: calc((100% - 30px)/2);
-            width: 30px;
-            height: 30px;
-            border-radius: 300px;
-            background-image: url(../img/banner.jpg);
-            background-attachment: fixed;
-            background-position: bottom;
-            background-size: cover;
-            box-shadow:inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
-            // z-index: -1;
-        }
+.wave {
+    position: absolute;
+    top: calc((100% - 30px)/2);
+    left: calc((100% - 30px)/2);
+    width: 30px;
+    height: 30px;
+    border-radius: 300px;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    box-shadow: inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
+    // z-index: -1;
+}
 
-        .wave0 {
-            z-index: 2;
-            zoom: 1.1;
-            animation: w 1s;
-          }
-          
-          .wave1 {
-            z-index: 3;
-            zoom: 1.02;
-            animation: w 1s .15s;
-          }
-          
-          .wave2 {
-            z-index: 4;
-            zoom: 1.06;
-            animation: w 1s .3s;
-          }
-          
-          .wave3 {
-            z-index: 5;
-            zoom: 1.01;
-            animation: w 1s .45s;
-          }
-          
-          .wave4 {
-            z-index: 6;
-            zoom: 1.02;
-            animation: w 1s .6s;
-          }
-          
-          .wave5 {
-            z-index: 7;
-            animation: w 1s .75s;
-          }
+.wave0 {
+    z-index: 2;
+    zoom: 1.1;
+    animation: w 1s;
+}
+
+.wave1 {
+    z-index: 3;
+    zoom: 1.02;
+    animation: w 1s .15s;
+}
+
+.wave2 {
+    z-index: 4;
+    zoom: 1.06;
+    animation: w 1s .3s;
+}
+
+.wave3 {
+    z-index: 5;
+    zoom: 1.01;
+    animation: w 1s .45s;
+}
+
+.wave4 {
+    z-index: 6;
+    zoom: 1.02;
+    animation: w 1s .6s;
+}
+
+.wave5 {
+    z-index: 7;
+    animation: w 1s .75s;
+}
 
 
-        @keyframes w {
-            0% {
-                top: calc((100% - 30px)/2);
-                left: calc((100% - 30px)/2);
-                width: 30px;
-                height: 30px;
-                opacity: 1;
-            }
+@keyframes w {
+    0% {
+        top: calc((100% - 30px)/2);
+        left: calc((100% - 30px)/2);
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
 
-            99% {
-                opacity: 1;
-            }
+    99% {
+        opacity: 1;
+    }
 
-            100% {
-                top: calc((100% - 300px)/2);
-                left: calc((100% - 300px)/2);
-                width: 300px;
-                height: 300px;
-                opacity: 0;
-            }
-        }
-   
+    100% {
+        top: calc((100% - 300px)/2);
+        left: calc((100% - 300px)/2);
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
 
 
 /*********** 這裡是section2 ***********/
@@ -299,19 +300,20 @@ html{
     padding: 30px 0 50px 0;
 }
 
-#section2 .section-name{
+#section2 .section-name {
     padding: 10px 0;
     color: rgb(26, 26, 26);
 }
 
-#swiper_LeftRight{
+#swiper_LeftRight {
     padding: 0 0 0 50px;
 }
 
-.section2_swiper{
+.section2_swiper {
     width: 100%;
     height: 200px;
 }
+
 #section2 .swiper-container {
     width: 100%;
     height: 200px;
@@ -322,27 +324,26 @@ html{
 
 #section2 .swiper-slide {
     text-align: center;
-    // font-size: 18px;是誰？有影響了誰？沒有就刪
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#section2 .swiper-text{
+#section2 .swiper-text {
     width: 300px;
     height: 200px;
     color: rgb(56, 56, 56);
     text-align: left;
 }
 
-#section2 .swiper-text p{
+#section2 .swiper-text p {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: .5rem;
 }
 
-.slide2{
+.slide2 {
     width: 200px;
     height: 200px;
     background-position: center;
@@ -354,7 +355,7 @@ html{
 }
 
 @media (max-width: 1199px) {
-    #section2 .swiper-text p{
+    #section2 .swiper-text p {
         font-size: 18px;
     }
 }
@@ -363,60 +364,72 @@ html{
     #section2 {
         padding: 30px 0;
     }
-    #section2 .swiper-text p{
+
+    #section2 .swiper-text p {
         font-size: 15px;
     }
-    .section2_swiper{
+
+    .section2_swiper {
         height: 150px;
     }
+
     #section2 .swiper-container {
         height: 150px;
     }
-    #section2 .swiper-text{
+
+    #section2 .swiper-text {
         height: 150px;
         width: 450px;
     }
-    .slide2{
+
+    .slide2 {
         width: 150px;
         height: 150px;
     }
 }
 
 @media (max-width: 844px) {
-    #swiper_LeftRight{
+    #swiper_LeftRight {
         padding: 0 0 0 20px;
     }
-    #section2 .swiper-text p{
+
+    #section2 .swiper-text p {
         font-weight: 500;
     }
 }
 
 @media (max-width: 620px) {
-    #swiper_LeftRight{
+    #swiper_LeftRight {
         padding: 0 0 0 15px;
     }
 }
 
 
-.slide2:hover{
+.slide2:hover {
     opacity: 1;
 }
-#slide_211{
+
+#slide_211 {
     background-image: url(../img/slide211.JPG);
 }
-#slide_212{
+
+#slide_212 {
     background-image: url(../img/slide212.JPG);
 }
-#slide_221{
+
+#slide_221 {
     background-image: url(../img/slide221.JPG);
 }
-#slide_222{
+
+#slide_222 {
     background-image: url(../img/slide222.JPG);
 }
-#slide_231{
+
+#slide_231 {
     background-image: url(../img/slide231.jpg);
 }
-#slide_232{
+
+#slide_232 {
     background-image: url(../img/slide232.JPG);
 
 }
@@ -430,13 +443,13 @@ html{
 #section3 {
     width: 100%;
     position: relative;
-    color:rgb(202, 197, 197);
+    color: rgb(202, 197, 197);
     margin: 0;
     padding: 0;
     background-image: url(../img/background/triangle-mosaic.png);
 }
 
-#section3 .section-name{
+#section3 .section-name {
     font-size: 25px;
     font-weight: 600;
     color: rgb(102, 102, 102);
@@ -457,7 +470,7 @@ html{
     align-items: center;
 }
 
-.slide3{
+.slide3 {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -467,109 +480,129 @@ html{
     font-size: 30px;
 }
 
-#slide_31{
+#slide_31 {
     background-image: url(../img/slide31.jpg);
     background-position: center;
 }
-#slide_32{
+
+#slide_32 {
     background-image: url(../img/slide32.jpg);
     background-position: 100% 70%;
 }
-#slide_33{
+
+#slide_33 {
     background-image: url(../img/slide33.jpg);
-        background-position: 100% 60%;
+    background-position: 100% 60%;
 }
-#slide_34{
+
+#slide_34 {
     background-image: url(../img/slide34.jpg);
-        background-position: center;
+    background-position: center;
 }
-#slide_35{
+
+#slide_35 {
     background-image: url(../img/slide35.jpg);
-        background-position: 100% 65%;
+    background-position: 100% 65%;
 }
-#slide_36{
+
+#slide_36 {
     background-image: url(../img/slide36.jpg);
-        background-position: 100% 50%;
+    background-position: 100% 50%;
 }
-#slide_37{
+
+#slide_37 {
     background-image: url(../img/slide37.jpg);
-        background-position: 100% 50%;
+    background-position: 100% 50%;
 }
 
 
 /*********** 這裡是section3-1 ***********/
-#section3-1{
+#section3-1 {
     width: 100%;
-    // height: 491px;高度不能寫死，下面section3-2會壞掉
-    // height: 515px;此版本電腦版ok但在iphone看就壞了
     background-image: url(../img/background/triangle-mosaic.png);
     padding: 50px 0;
 }
 
-#section3-1 .section-name{
+#section3-1 .section-name {
     color: rgb(26, 26, 26);
 }
-#section3-1 .text{
+
+#section3-1 .text {
     color: rgb(41, 41, 41);
 }
 
-#section3-1 .swiper-container{
+#section3-1 .swiper-container {
     max-height: 400px;
 }
 
-#section3-1Background{
+#section3-1Background {
     background-color: whitesmoke;
 }
 
-.slide_3-1{
+.slide_3-1 {
     width: 100%;
     height: 400px;
     background-size: cover;
     line-height: 400px;
     color: whitesmoke;
     font-weight: 700;
-    font-size:20px;
+    font-size: 20px;
     background-position: center;
 }
-#slide_3-11{
+
+#slide_3-11 {
     background-image: url(../img/slide311.jpg);
 }
-#slide_3-12{
+
+#slide_3-12 {
     background-image: url(../img/slide312.JPG);
 }
-#slide_3-13{
+
+#slide_3-13 {
     background-image: url(../img/slide313.JPG);
 }
-#slide_3-14{
+
+#slide_3-14 {
     background-image: url(../img/slide314.jpg);
 }
-#slide_3-15{
+
+#slide_3-15 {
     background-image: url(../img/slide315.jpg);
 }
-#slide_3-16{
+
+#slide_3-16 {
     background-image: url(../img/slide316.jpg);
-}#slide_3-17{
+}
+
+#slide_3-17 {
     background-image: url(../img/slide317.JPG);
 }
-#slide_3-18{
+
+#slide_3-18 {
     background-image: url(../img/slide318.JPG);
 }
-#slide_3-19{
+
+#slide_3-19 {
     background-image: url(../img/slide319.JPG);
-}#slide_3-20{
+}
+
+#slide_3-20 {
     background-image: url(../img/slide320.JPG);
 }
-#slide_3-21{
+
+#slide_3-21 {
     background-image: url(../img/slide321.jpg);
 }
-#slide_3-22{
+
+#slide_3-22 {
     background-image: url(../img/slide322.jpg);
 }
 
 #section3-1 .swiper-container {
     width: 100%;
     height: 100%;
-  }
+}
+
 #section3-1 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -582,7 +615,7 @@ html{
 
 
 /*********** 這裡是section3-2 ***********/
-#section3-2{
+#section3-2 {
     width: 100%;
     // background-color: whitesmoke;
     padding-bottom: 15px;
@@ -590,19 +623,19 @@ html{
     padding: 0 0 50px 0;
 }
 
-#section3-2 .text{
+#section3-2 .text {
     color: rgb(41, 41, 41);
 }
 
-#title-text{
+#title-text {
     font-size: 18px;
     color: rgb(61, 61, 61);
     text-align: justify;
     letter-spacing: 1.5px;
     font-weight: 600;
- }
+}
 
-.SmallP{
+.SmallP {
     font-size: 20px;
     font-weight: 600;
     color: rgb(43, 43, 43);
@@ -610,22 +643,22 @@ html{
     margin: 30px 0 20px 0;
 }
 
-#section3-2 .row p{
+#section3-2 .row p {
     font-size: 18px;
     font-weight: 500;
     color: rgb(69, 69, 69);
-    text-align: justify; 
+    text-align: justify;
     letter-spacing: 1.5px;
 }
 
 /*********** 這裡是section4 ***********/
-#section4{
+#section4 {
     width: 100%;
     background-image: url(../img/background/triangle-mosaic.png);
     // background: linear-gradient(180deg, rgba(0, 0, 0, 1)0%, rgba(255, 255, 255, 1)100%);
 }
 
-#section4 .section-name{
+#section4 .section-name {
     color: rgb(26, 26, 26);
 }
 
@@ -638,7 +671,7 @@ html{
     border-radius: 25px 25px 0 25px;
 }
 
-.button{
+.button {
     width: 100px;
     height: 100px;
     background-color: rgba(146, 122, 110, 0.65);
@@ -650,7 +683,8 @@ html{
     border-radius: 25px;
     transition: 0.3s;
 }
-.button.active{
+
+.button.active {
     background-color: rgba(66, 55, 50, 0.65);
     color: sandybrown;
     width: 100px;
@@ -677,14 +711,14 @@ html{
 
 
 .section4_content {
-    background: linear-gradient(360deg, rgba(255, 255, 255, 0.1)0%, rgba(255, 255, 255, 1)100%); 
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.1)0%, rgba(255, 255, 255, 1)100%);
     // background-image: url(../img/background/dot-grid.png);
     width: 100%;
     padding: 15px;
     border-radius: 0 0 30px 30px;
 }
 
-#section4 .title{
+#section4 .title {
     width: 50px;
     height: 100%;
     font-size: 30px;
@@ -701,159 +735,198 @@ html{
     text-shadow: 0px 0px 6px rgba(248, 222, 182, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
     font-weight: 900;
 }
+
 .section4_text.active {
     display: block;
 }
 
-.pic4{
+.pic4 {
     width: 100%;
     height: 300px;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
 }
-#pic411{
+
+#pic411 {
     background-image: url(../img/pic411.jpg);
 }
-#pic412{
+
+#pic412 {
     background-image: url(../img/pic412.jpg);
 }
-#pic413{
+
+#pic413 {
     background-image: url(../img/pic413.jpg);
 }
-#pic414{
+
+#pic414 {
     background-image: url(../img/pic414.jpg);
 }
 
-#section4 #text2,#text3{
+#section4 #text2,
+#text3 {
     font-size: 40px;
     text-align: center;
     line-height: 450px;
 }
 
 @media (max-width: 992px) {
-    #section4 .title{
-    width: 30px;
-    font-size: 20px;
-    font-weight: 700;
+    #section4 .title {
+        width: 30px;
+        font-size: 20px;
+        font-weight: 700;
     }
 
-    .pic4{
-    height: 200px;
+    .pic4 {
+        height: 200px;
     }
 
-    #section4 #text2,#text3{
-    font-size: 30px;
-    line-height: 432px;
+    #section4 #text2,
+    #text3 {
+        font-size: 30px;
+        line-height: 432px;
     }
 }
 
 @media (max-width: 767px) {
-    .pic4{
-    height: 150px;
+    .pic4 {
+        height: 150px;
     }
 
-    #section4 #text2,#text3{
-    line-height: 332px;
+    #section4 #text2,
+    #text3 {
+        line-height: 332px;
     }
 }
 
 
 /*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
-#section5-1{
+#section5-1 {
     width: 100%;
+    overflow: hidden;
     background-image: url(../img/background/triangle-mosaic.png);
-    // min-height: calc(100vh - 80px);
     // background: linear-gradient(180deg, white 0%, rgba(240, 255, 240, 1) 100%);
 }
-.section5-1-background{
+
+.section5-1-background {
     background-image: url(../img/footer-test.png);
     width: 100%;
     background-repeat: no-repeat;
 }
 
-#section5-1 .section-name{
+#section5-1 .section-name {
     color: rgb(26, 26, 26);
 }
 
-#section5-1 .text{
+#section5-1 .text {
     color: rgb(41, 41, 41);
 }
 
-#text5-1{
+#text5-1 {
     color: rgb(41, 41, 41);
     font-size: 23px;
     text-align: justify;
 }
 
-#special{
+#special {
     font-size: 45px;
     font-weight: 900;
 }
 
-// #section5-1 .row{
-//     background-image: url(../img/footer-test.png);
-// }
 
-#section5-1{
-    .block{
-        & :nth-child(2n + 1){
-            img{
-                max-width: 80%;
-                height: auto;
-                border-radius: 5%;
-                border: 5px solid white;
-                transition: 0.5s;
-            }
-        }
-        & :nth-child(2n){
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            div{
-                max-width: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items:flex-end;
-                h2{
-                    color: rgb(58, 56, 55) ;
-                    font-size: 28px;
-                    font-weight: 600;
-                    text-shadow: 0px 0px 6px rgba(58, 56, 55, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
-                    @media screen  and (max-width:576px){
-                        font-size: 20px;
-                    }
-                }
-                p{
-                    color: rgb(29, 29, 29);
-                    font-size: 20px;
-                    font-weight: 600;
-                    text-align:justify;
-                    @media screen  and (max-width:576px){
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-        & :nth-child(4n){
-            display: flex;
-            flex-direction: column;
-            div{
-                align-items:flex-start;
-            }
-        }
-        @media screen and (max-width:768px) {
-            & :nth-child(2n + 1) img,& :nth-child(2n) div{
+#section5-1 {
+    .area {
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 5%;
+            border: 5px solid white;
+            transition: 0.5s;
+
+            @media screen and (max-width:768px) {
                 max-width: 100%;
             }
         }
+
+        h2 {
+            color: rgb(58, 56, 55);
+            font-size: 28px;
+            font-weight: 600;
+            text-shadow: 0px 0px 6px rgba(58, 56, 55, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
+            max-width: 80%;
+
+            @media screen and (max-width:576px) {
+                max-width: 100%;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            color: rgb(29, 29, 29);
+            font-size: 20px;
+            font-weight: 600;
+            text-align: justify;
+            max-width: 80%;
+
+            @media screen and (max-width:576px) {
+                max-width: 100%;
+                font-size: 15px;
+            }
+        }
+
+
+        .block {
+            & :nth-last-child(1) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+        }
+
+        & :nth-child(2n+1) {
+            .block {
+
+                h2,
+                P {
+                    text-align: right;
+                }
+            }
+
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+
+            // div {
+            //     max-width: 80%;
+            //     display: flex;
+            //     flex-direction: column;
+            //     align-items: flex-end;
+            // }
+        }
+
+        & :nth-child(2n) {
+            .block {
+
+                h2,
+                P {
+                    text-align: left;
+                }
+            }
+
+            // display: flex;
+            // flex-direction: column;
+
+            // div {
+            //     align-items: flex-start;
+            // }
+        }
+
     }
 }
-
-
-
 
 
 
@@ -865,31 +938,33 @@ html{
 
 
 /******** 這裡是section5-2 ********/
-#section5-2{
+#section5-2 {
     width: 100%;
     background-image: url(../img/background/triangle-mosaic.png);
     // background: linear-gradient(360deg, rgba(207, 250, 207, 1) 0%, rgba(240, 255, 240, 1) 100%);
 }
 
-#section5-2 .text{
+#section5-2 .text {
     color: rgb(26, 26, 26);
     font-weight: 900;
 }
 
-#text5-2{
+#text5-2 {
     font-size: 30px;
     font-weight: 900;
     color: rgb(41, 41, 41);
 }
 
-// 4/27問老師：在col-lg-7的時候，圖文無法對齊，但是col-lg-8是正常
-#section5-2 .col-10,.col-lg-7{
+// 4/28問老師：在col-lg-7的時候，圖文無法對齊，但是col-lg-8是正常
+#section5-2 .col-10,
+.col-lg-7 {
     color: rgb(41, 41, 41);
     font-size: 20px;
     font-weight: 400;
     text-align: justify;
     letter-spacing: 1.5px;
-    @media screen  and (max-width:576px){
+
+    @media screen and (max-width:576px) {
         font-size: 18px;
     }
 }
@@ -900,15 +975,15 @@ html{
 //     // }
 // }
 
-#section5-2 img{
+#section5-2 img {
     max-width: 100%;
-    height: auto;
+    // height: auto;
 }
 
 
 
 /*********** 這裡是section6 ***********/
-#section6{
+#section6 {
     width: 100%;
     height: 500px;
     background-image: url(../img/background/triangle-mosaic.png);
@@ -918,8 +993,8 @@ html{
     color: rgb(16, 29, 51);
 }
 
-#contactus{
-    width:300px;
+#contactus {
+    width: 300px;
     height: 300px;
     background-image: url(../img/contactus.jpg);
     background-position: center;
@@ -933,8 +1008,7 @@ html{
 
 /*********** 這裡是footer ***********/
 
-// /* 4/22要問老師：footer無法用media query？是因為設定都是100%嗎？不太能理解？圖要依px重新裁切嗎？ */
-// /* 4/22問老師：如何將parallax前方草的效果做成自動波浪動嗎？ */
+// /* 將parallax前方草的效果做成自動波浪動 */
 // /* ！！未做的事！！要加上traslatex、y、z軸！！！！！才有距離感！要把同一層的圖卡一樣的data-depth，像是兩台車同一層、公牛自己一層、屋頂上的狗跟小牛同一層、炸欄的黑皮自己一層、皮蛋跟蛋捲跟熊能一層、母牛一層、前方的草自己一~兩三層。 */
 
 footer {
@@ -973,12 +1047,12 @@ footer {
 // } 
 
 
-.layer{
+.layer {
     width: 100%;
     height: 100%;
 }
 
-#grass{
+#grass {
     width: 100%;
     height: 100%;
     background-image: url(../img/footer-grass.png);
@@ -994,42 +1068,54 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}#cow2 {
+}
+
+#cow2 {
     width: 100%;
     height: 100%;
     background-image: url(../img/cow2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}#cow3 {
+}
+
+#cow3 {
     width: 100%;
     height: 100%;
     background-image: url(../img/cow3.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}#dog1 {
+}
+
+#dog1 {
     width: 100%;
     height: 100%;
     background-image: url(../img/dog1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}#dog2 {
+}
+
+#dog2 {
     width: 100%;
     height: 100%;
     background-image: url(../img/dog2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}#dog3 {
+}
+
+#dog3 {
     width: 100%;
     height: 100%;
     background-image: url(../img/dog3.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}#dog4 {
+}
+
+#dog4 {
     width: 100%;
     height: 100%;
     background-image: url(../img/dog4.png);
@@ -1039,7 +1125,7 @@ footer {
 }
 
 // @media(max-width:1765px){
-    
+
 //     #cow2{
 //         background-image: url(../img/cow21765.png);
 //     }
@@ -1097,6 +1183,9 @@ footer {
 
 
 // /* 已解決的問題區ok！ */
+
+// <!-- 越重要的link像是index.css放在最後，程式是由上往下讀取的 -->
+
 // /* ok！<!-- 問老師如何用bootstrap將>768px時，只有一個col就好？用col-12，(1920px時是用col-lg-4 -->
 
 // ok！<!-- BOotstrap的padding跟margin只有1~5嗎？對 -->
@@ -1132,3 +1221,7 @@ footer {
 //background-size:[auto]要刪除 只留下106%; */
 
 // <!--ok！ 4/24看boostrap怎麼讓兩col-5水平置中，在row 用justify-content-center-->
+
+// <!-- OK!!4/27問老師怎麼讓圖置中 
+// 用text-align:center，img算是文字-->
+// <!-- <div class=" "><img src="img/section3-2.png" alt=""></div> -->

@@ -121,13 +121,13 @@ html {
   font-weight: 900;
 }
 
-/* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
 .navbar-collapse {
   position: relative;
   left: 0;
   top: 0;
 }
 
+/* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
 @media (max-width: 992px) {
   .navbar-nav {
     background-color: rgba(0, 0, 0, 0.8);
@@ -732,7 +732,8 @@ html {
   background-image: url(../img/pic414.jpg);
 }
 
-#section4 #text2, #text3 {
+#section4 #text2,
+#text3 {
   font-size: 40px;
   text-align: center;
   line-height: 450px;
@@ -747,7 +748,8 @@ html {
   .pic4 {
     height: 200px;
   }
-  #section4 #text2, #text3 {
+  #section4 #text2,
+  #text3 {
     font-size: 30px;
     line-height: 432px;
   }
@@ -757,7 +759,8 @@ html {
   .pic4 {
     height: 150px;
   }
-  #section4 #text2, #text3 {
+  #section4 #text2,
+  #text3 {
     line-height: 332px;
   }
 }
@@ -766,6 +769,7 @@ html {
 /******** 這裡是section5-1 ********/
 #section5-1 {
   width: 100%;
+  overflow: hidden;
   background-image: url(../img/background/triangle-mosaic.png);
 }
 
@@ -794,7 +798,7 @@ html {
   font-weight: 900;
 }
 
-#section5-1 .block :nth-child(2n + 1) img {
+#section5-1 .area img {
   max-width: 80%;
   height: auto;
   border-radius: 5%;
@@ -803,7 +807,43 @@ html {
   transition: 0.5s;
 }
 
-#section5-1 .block :nth-child(2n) {
+@media screen and (max-width: 768px) {
+  #section5-1 .area img {
+    max-width: 100%;
+  }
+}
+
+#section5-1 .area h2 {
+  color: #3a3837;
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 0px 0px 6px rgba(58, 56, 55, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 576px) {
+  #section5-1 .area h2 {
+    max-width: 100%;
+    font-size: 20px;
+  }
+}
+
+#section5-1 .area p {
+  color: #1d1d1d;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 576px) {
+  #section5-1 .area p {
+    max-width: 100%;
+    font-size: 15px;
+  }
+}
+
+#section5-1 .area .block :nth-last-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,71 +854,16 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-#section5-1 .block :nth-child(2n) div {
-  max-width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+#section5-1 .area :nth-child(2n+1) .block h2,
+#section5-1 .area :nth-child(2n+1) .block P {
+  text-align: right;
 }
 
-#section5-1 .block :nth-child(2n) div h2 {
-  color: #3a3837;
-  font-size: 28px;
-  font-weight: 600;
-  text-shadow: 0px 0px 6px rgba(58, 56, 55, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
-}
-
-@media screen and (max-width: 576px) {
-  #section5-1 .block :nth-child(2n) div h2 {
-    font-size: 20px;
-  }
-}
-
-#section5-1 .block :nth-child(2n) div p {
-  color: #1d1d1d;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: justify;
-}
-
-@media screen and (max-width: 576px) {
-  #section5-1 .block :nth-child(2n) div p {
-    font-size: 15px;
-  }
-}
-
-#section5-1 .block :nth-child(4n) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#section5-1 .block :nth-child(4n) div {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media screen and (max-width: 768px) {
-  #section5-1 .block :nth-child(2n + 1) img, #section5-1 .block :nth-child(2n) div {
-    max-width: 100%;
-  }
+#section5-1 .area :nth-child(2n) .block h2,
+#section5-1 .area :nth-child(2n) .block P {
+  text-align: left;
 }
 
 /******** 這裡是section5-2 ********/
@@ -898,7 +883,8 @@ html {
   color: #292929;
 }
 
-#section5-2 .col-10, .col-lg-7 {
+#section5-2 .col-10,
+.col-lg-7 {
   color: #292929;
   font-size: 20px;
   font-weight: 400;
@@ -907,14 +893,14 @@ html {
 }
 
 @media screen and (max-width: 576px) {
-  #section5-2 .col-10, .col-lg-7 {
+  #section5-2 .col-10,
+  .col-lg-7 {
     font-size: 18px;
   }
 }
 
 #section5-2 img {
   max-width: 100%;
-  height: auto;
 }
 
 /*********** 這裡是section6 ***********/
