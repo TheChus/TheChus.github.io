@@ -132,10 +132,11 @@ html {
   .navbar-nav {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
-    max-width: 200px;
-    -webkit-transform: translateX(-80%);
-            transform: translateX(-80%);
     padding: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   #nav-4 {
     margin: 0;
