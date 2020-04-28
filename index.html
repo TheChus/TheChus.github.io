@@ -79,7 +79,7 @@
         <!-- <div class="mask"></div> -->
     <!-- 我的原來寫法，沒有水波效果的mask，看要不要用在手機版-->
 
-        <div is="page" id="home" data-role="page">
+        <div is="page" id="home" class="home" data-role="page">
             <div is="content" role="main" class="ui-content">
                 <div is="dragable" class="bg"></div>
             </div>
@@ -478,7 +478,7 @@
 
     <!-----------section3的階段目標2  ----------->
     <section id="section3-2">
-        <div class="section3-2-background">
+        <div class="section3-2-background"><img src="img/section3-2-background.png" alt=""></div>
         <div class="container">
             <div class="text mb-3">第二階段：科技養牛</div>
             <div class="container">
@@ -515,7 +515,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
     </section>
 
 
@@ -573,7 +573,7 @@
     <!-------- 這裡是section5-1 -------->
     <div id="tosection5-1" class="ToSection"></div>
     <section id="section5-1" class="pb-5">
-        <div class="section5-1-background">
+        <div class="section5-1-background"><img src="img/footer-test.png" alt=""></div>
             <div class="container">
                 <div class="section-name mb-3">
                     關於牧場 TheChus
@@ -681,7 +681,7 @@
                 </div>
             </div>
 
-        </div>
+    
     </section>
 
     <!-------- 這裡是section5-2 -------->
@@ -826,6 +826,10 @@
         var wdth = $(window).width();
         console.log(wdth);
 
+        var section1_home = document.querySelector(".home")
+        var section1_ui = document.querySelector(".ui-content")
+        var section1_bg = document.querySelector(".bg")
+
         if (wdth > 992) {
             var mx, my, timer;
             var z = 2;
@@ -855,6 +859,13 @@
                     }, 3000);
                 }
             }
+        }else{
+            section1_home.classList.remove('home');
+            section1_home.classList.add('ios_home');
+            section1_home.classList.remove('ui-content');
+            section1_home.classList.add('ios_ui-content');
+            section1_home.classList.remove('bg');
+            section1_home.classList.add('ios_bg');
         }
 
 

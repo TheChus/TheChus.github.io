@@ -183,9 +183,10 @@ html {
 /*********** 這裡是section1有水波效果 ***********/
 #section1{
     position: relative;
-    
+    overflow: hidden;  
 }
-#home,
+
+.home,
 .ui-content {
     margin: 0;
     padding: 0;
@@ -196,6 +197,18 @@ html {
     cursor: pointer;
 }
 
+.ios_home,
+.ios_ui-content {
+    cursor: pointer;
+    // 下面是cope找到ios解決fix的版本
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .bg {
     width: 100%;
     height: 100vh;
@@ -204,6 +217,21 @@ html {
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
+}
+
+.ios_bg {
+    background-image: url(../img/banner.jpg);
+    // 下面是cope找到ios解決fix的版本
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .wave-position {
@@ -524,6 +552,7 @@ html {
     width: 100%;
     background-image: url(../img/background/triangle-mosaic.png);
     padding: 50px 0;
+    position: relative;
 }
 
 #section3-1 .section-name {
@@ -624,34 +653,23 @@ html {
     padding-bottom: 15px;
     background-image: url(../img/background/triangle-mosaic.png);
     padding: 0 0 50px 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.section3-2-background {
-    background-image: url(../img/section3-2-background.png);
-    background-position: 95% -200%;
-    width: 100%;
-    background-repeat: no-repeat;
-    @media screen and (max-width: 1199px) {
-        background-position: 113% 180%;
+.section3-2-background{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    height: auto;
+    @media (max-width: 767px) {
+        max-width: 60%;
+        right: 178px;
     }
-    @media screen and (max-width: 991px) {
-        background-position: 122% 113%;
-    }
-    @media screen and (max-width: 767px) {
-        background-position: 259% 109%;
-    }
-    @media screen and (max-width: 575px) {
-        background-image: url(../img/section3-2-background-min.png);
-        background-position: 187% 111%;
-    }
-    @media screen and (max-width: 516px) {
-        background-position: 290% 108%;
-    }
-    @media screen and (max-width: 474px) {
-        background-position: 871% 108%;
-    }
-    @media screen and (max-width: 449px) {
-        background-position: 871% 108%;
+    @media (max-width: 575px) {
+        max-width: 40%;
+        right: 320px;
     }
 }
 
@@ -685,6 +703,7 @@ html {
 
 /*********** 這裡是section4 ***********/
 #section4 {
+    position: relative;
     width: 100%;
     background-image: url(../img/background/triangle-mosaic.png);
     // background: linear-gradient(180deg, rgba(0, 0, 0, 1)0%, rgba(255, 255, 255, 1)100%);
@@ -818,6 +837,7 @@ html {
 /*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
 #section5-1 {
+    position: relative;
     width: 100%;
     overflow: hidden;
     background-image: url(../img/background/triangle-mosaic.png);
@@ -825,9 +845,23 @@ html {
 }
 
 .section5-1-background {
-    background-image: url(../img/footer-test.png);
-    width: 100%;
-    background-repeat: no-repeat;
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    @media (max-width: 1700px) {
+        max-width: 60%;
+        right: 800px;
+    }
+    @media (max-width: 1490px) {
+        right: 930px;
+    }
+
+
+
+    @media (max-width: 575px) {
+        max-width: 40%;
+        right: 320px;
+    }
 }
 
 #section5-1 .section-name {
@@ -955,6 +989,7 @@ html {
 
 /******** 這裡是section5-2 ********/
 #section5-2 {
+    position: relative;
     width: 100%;
     background-image: url(../img/background/triangle-mosaic.png);
     // background: linear-gradient(360deg, rgba(207, 250, 207, 1) 0%, rgba(240, 255, 240, 1) 100%);
@@ -1002,6 +1037,7 @@ html {
 
 /*********** 這裡是section6 ***********/
 #section6 {
+    position: relative;
     width: 100%;
     height: 500px;
     background-image: url(../img/background/triangle-mosaic.png);

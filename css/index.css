@@ -141,9 +141,10 @@ html {
 /*********** 這裡是section1有水波效果 ***********/
 #section1 {
   position: relative;
+  overflow: hidden;
 }
 
-#home,
+.home,
 .ui-content {
   margin: 0;
   padding: 0;
@@ -153,6 +154,17 @@ html {
   cursor: pointer;
 }
 
+.ios_home,
+.ios_ui-content {
+  cursor: pointer;
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .bg {
   width: 100%;
   height: 100vh;
@@ -160,6 +172,21 @@ html {
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
+}
+
+.ios_bg {
+  background-image: url(../img/banner.jpg);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
 }
 
 .wave-position {
@@ -499,6 +526,7 @@ html {
   width: 100%;
   background-image: url(../img/background/triangle-mosaic.png);
   padding: 50px 0;
+  position: relative;
 }
 
 #section3-1 .section-name {
@@ -602,55 +630,29 @@ html {
   padding-bottom: 15px;
   background-image: url(../img/background/triangle-mosaic.png);
   padding: 0 0 50px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .section3-2-background {
-  background-image: url(../img/section3-2-background.png);
-  background-position: 95% -200%;
-  width: 100%;
-  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  height: auto;
 }
 
-@media screen and (max-width: 1199px) {
+@media (max-width: 767px) {
   .section3-2-background {
-    background-position: 113% 180%;
+    max-width: 60%;
+    right: 178px;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 575px) {
   .section3-2-background {
-    background-position: 122% 113%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .section3-2-background {
-    background-position: 259% 109%;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .section3-2-background {
-    background-image: url(../img/section3-2-background-min.png);
-    background-position: 187% 111%;
-  }
-}
-
-@media screen and (max-width: 516px) {
-  .section3-2-background {
-    background-position: 290% 108%;
-  }
-}
-
-@media screen and (max-width: 474px) {
-  .section3-2-background {
-    background-position: 871% 108%;
-  }
-}
-
-@media screen and (max-width: 449px) {
-  .section3-2-background {
-    background-position: 871% 108%;
+    max-width: 40%;
+    right: 320px;
   }
 }
 
@@ -684,6 +686,7 @@ html {
 
 /*********** 這裡是section4 ***********/
 #section4 {
+  position: relative;
   width: 100%;
   background-image: url(../img/background/triangle-mosaic.png);
 }
@@ -811,15 +814,36 @@ html {
 /*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
 #section5-1 {
+  position: relative;
   width: 100%;
   overflow: hidden;
   background-image: url(../img/background/triangle-mosaic.png);
 }
 
 .section5-1-background {
-  background-image: url(../img/footer-test.png);
-  width: 100%;
-  background-repeat: no-repeat;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1700px) {
+  .section5-1-background {
+    max-width: 60%;
+    right: 800px;
+  }
+}
+
+@media (max-width: 1490px) {
+  .section5-1-background {
+    right: 930px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section5-1-background {
+    max-width: 40%;
+    right: 320px;
+  }
 }
 
 #section5-1 .section-name {
@@ -913,6 +937,7 @@ html {
 
 /******** 這裡是section5-2 ********/
 #section5-2 {
+  position: relative;
   width: 100%;
   background-image: url(../img/background/triangle-mosaic.png);
 }
@@ -952,6 +977,7 @@ html {
 
 /*********** 這裡是section6 ***********/
 #section6 {
+  position: relative;
   width: 100%;
   height: 500px;
   background-image: url(../img/background/triangle-mosaic.png);
