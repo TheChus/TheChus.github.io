@@ -79,12 +79,12 @@
         <!-- <div class="mask"></div> -->
     <!-- 我的原來寫法，沒有水波效果的mask，看要不要用在手機版-->
 
-        <!-- <div is="page" id="home" data-role="page">
+        <div is="page" id="home" data-role="page">
             <div is="content" role="main" class="ui-content">
                 <div is="dragable" class="bg"></div>
             </div>
-        </div> -->
-        <div class="banner"></div>
+        </div>
+        <!-- <div class="banner"></div> -->
         <!-- 我的原來寫法，沒有水波效果的，看要不要用在手機版-->
     </section>
 
@@ -823,39 +823,39 @@
 
 
         /////////// 這是section1水波效果if在window.width>992不顯示 ///////////
-        // var wdth = $(window).width();
-        // console.log(wdth);
+        var wdth = $(window).width();
+        console.log(wdth);
 
-        // if (wdth > 992) {
-        //     var mx, my, timer;
-        //     var z = 2;
-        //     $('.bg').on('mousemove', function (e) {
-        //         mx = e.pageX;
-        //         my = e.pageY;
-        //         z = z + 1;
-        //         _wave(mx, my, z, true);
-        //     });
+        if (wdth > 992) {
+            var mx, my, timer;
+            var z = 2;
+            $('.bg').on('mousemove', function (e) {
+                mx = e.pageX;
+                my = e.pageY;
+                z = z + 1;
+                _wave(mx, my, z, true);
+            });
 
-        //     function _wave(i, j, k, active) {
-        //         if (active) {
-        //             $('.ui-content').prepend(
-        //                 '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
-        //                 '<div class="wave-body">' +
-        //                 '<div class="wave wave5"></div>' +
-        //                 '<div class="wave wave4"></div>' +
-        //                 '<div class="wave wave3"></div>' +
-        //                 '<div class="wave wave2"></div>' +
-        //                 '<div class="wave wave1"></div>' +
-        //                 '<div class="wave wave0"></div>' +
-        //                 '</div>' +
-        //                 '</div>'
-        //             );
-        //             setTimeout(function () {
-        //                 $('.water' + k).remove();
-        //             }, 3000);
-        //         }
-        //     }
-        // }
+            function _wave(i, j, k, active) {
+                if (active) {
+                    $('.ui-content').prepend(
+                        '<div class="wave-position water' + k + '" style="z-index:' + k + ';top:' + (j - 150) + 'px;left:' + (i - 150) + 'px;">' +
+                        '<div class="wave-body">' +
+                        '<div class="wave wave5"></div>' +
+                        '<div class="wave wave4"></div>' +
+                        '<div class="wave wave3"></div>' +
+                        '<div class="wave wave2"></div>' +
+                        '<div class="wave wave1"></div>' +
+                        '<div class="wave wave0"></div>' +
+                        '</div>' +
+                        '</div>'
+                    );
+                    setTimeout(function () {
+                        $('.water' + k).remove();
+                    }, 3000);
+                }
+            }
+        }
 
 
         /////////// 這是section1的水波效果 ///////////
