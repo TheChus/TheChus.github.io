@@ -125,9 +125,6 @@ html {
   .navbar-nav :nth-child(4) {
     padding-left: 25px;
   }
-  #nav-4 {
-    margin: 0;
-  }
 }
 
 /*********** 這裡是section1 ***********/
@@ -956,6 +953,10 @@ html {
   color: #292929;
 }
 
+#section_5-2_text-1 {
+  margin-bottom: 100px;
+}
+
 #section5-2 .col-10,
 .col-lg-7 {
   color: #292929;
@@ -976,10 +977,6 @@ html {
   max-width: 100%;
   display: block;
   margin: auto;
-}
-
-#section5-2 .row :nth-child(1) {
-  margin-bottom: 50px !important;
 }
 
 /*********** 這裡是section6 ***********/

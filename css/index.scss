@@ -160,9 +160,9 @@ html {
             padding-left: 25px;
         }
     }
-    #nav-4 {
-        margin: 0;
-    }
+    // #nav-4 {
+    //     margin: 0;
+    // }
 }
 
 //     // .navbar h3{
@@ -1053,6 +1053,10 @@ html {
     color: rgb(41, 41, 41);
 }
 
+#section_5-2_text-1{
+    margin-bottom: 100px;
+}
+
 // 4/28問老師：在col-lg-7的時候，圖文無法對齊，但是col-lg-8是正常
 #section5-2 .col-10,
 .col-lg-7 {
@@ -1080,11 +1084,7 @@ html {
     margin: auto;
 }
 
-#section5-2 .row{
-    & :nth-child(1) {
-        margin-bottom: 50px !important;
-    }
-}
+
 
 
 
