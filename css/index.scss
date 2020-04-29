@@ -2,6 +2,9 @@
 // ios不會自動播放影片 */
 
 
+// 4/30問老師該怎麼做往下滾到不section時，上方navbar出現不同name？
+// 像是獨角獸的那個網站
+
 body {
     margin: 0;
     padding: 0;
@@ -1071,6 +1074,12 @@ html {
     // height: auto;
     display: block;
     margin: auto;
+}
+
+#section5-2 .row{
+    & :nth-child(1) {
+        margin-bottom: 50px !important;
+    }
 }
 
 
