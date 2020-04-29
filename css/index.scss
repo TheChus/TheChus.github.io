@@ -1,10 +1,5 @@
-/* 未解決區：
-最後需要問老師ios的nav看不到問題
-ios不會自動播放影片 */
-
-/* 未解決：問老師：要怎麼在手機版把toggle不要看不到？？？(因為前面有把navbar：fixed，還有max-width)。ANS:助教說，是apple ios的問題，要再上網找解法 */
-
-/* 未解決：ios查看網站時，navbar會往上彈？導致無法關閉navbar？ */
+// /* 未解決區：
+// ios不會自動播放影片 */
 
 
 body {
@@ -70,13 +65,14 @@ html {
 /*********** 這裡是navbar ***********/
 .navbar {
     width: 100%;
-    // max-height: 80px;
+    // max-height: 80px;原本ios的navbar會往上滑壞掉，拿掉就好了
     position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
     padding: 0;
 }
+
 
 .bg-my-color {
     background-color: black;
@@ -124,30 +120,54 @@ html {
 .nav-link {
     font-size: 21px;
     font-weight: 900;
+
+    @media (max-width: 767px){
+        font-size: 20px;
+        font-weight: 700;
+    }
+    @media (max-width: 511px){
+        font-size: 19px;
+        font-weight: 700;
+    }
 }
 
-// 4/23君毅老師說加入此段應該可解決iphone的nav問題
-// 但測試問題還是一樣沒解決
-// .navbar-collapse {
-//     position: relative;
-//     left: 0;
-//     top: 0;
-// }
-/* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
+.dropdown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & :nth-child(1) {
+        width: 100%;
+    }
+}
+
+.dropdown-menu{
+    text-align: center;
+}
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .navbar-nav {
         background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 5px;
-        // max-width: 200px;
-        // transform: translateX(-80%);
-        padding: 15px;
-        // flex-direction: row;
+        width: 100%;
+        position: absolute;
+        left: 0;
+
+        & :nth-child(4) {
+            padding-left: 25px;
+        }
     }
 
-    #nav-4 {
-        margin: 0;
+    .navbar h3{
+        color: white;
+        margin: auto;
+        padding: 0 0 0 20px;
+        font-family: "Century Gothic";
+        font-weight: 900;
+
+        @media (max-width: 511px){
+            font-size: 25px;
+        }
     }
 }
 
@@ -1257,6 +1277,20 @@ footer {
 
 
 // /* 已解決的問題區ok！ */
+
+// 4/28偉成老師ok！最後需要問老師ios的navbar會往上彈？導致無法關閉navbar？ ：因為原本設定max-height:80px，拿掉就好了~
+// 連接mac的瀏灠器的「開發」才可檢查ios的問題，
+// 再不行，mac連結手機，直接看手機的「網頁檢閱器」查程式碼異常！
+// 
+// 4/23君毅老師說加入此段應該可解決iphone的nav問題：但測試問題還是一樣沒解決。
+// .navbar-collapse {
+//     position: relative;
+//     left: 0;
+//     top: 0;
+// }
+/* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
+
+
 
 // <!-- 越重要的link像是index.css放在最後，程式是由上往下讀取的 -->
 
