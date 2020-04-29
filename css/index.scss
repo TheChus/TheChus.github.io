@@ -160,22 +160,24 @@ html {
             padding-left: 25px;
         }
     }
+
+    .navbar h3{
+        color: white;
+        margin: auto;
+        padding: 0 0 0 20px;
+        font-family: "Century Gothic";
+        font-weight: 900;
+
+        @media (max-width: 511px){
+            font-size: 25px;
+        }
+    }
+
     // #nav-4 {
     //     margin: 0;
     // }
 }
 
-//     // .navbar h3{
-//     //     color: white;
-//     //     margin: auto;
-//     //     padding: 0 0 0 20px;
-//     //     font-family: "Century Gothic";
-//     //     font-weight: 900;
-
-//     //     @media (max-width: 511px){
-//     //         font-size: 25px;
-//     //     }
-//     // }
 // 
 
 
