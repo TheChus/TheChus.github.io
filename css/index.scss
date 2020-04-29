@@ -120,59 +120,65 @@ html {
     padding: unset;
 }
 
+.navbar-nav {
+            & :nth-child(4) {
+                padding-left: 25px;
+            }
+        }
+
 .nav-link {
     font-size: 21px;
     font-weight: 900;
 
-    @media (max-width: 767px){
-        font-size: 20px;
-        font-weight: 700;
-    }
-    @media (max-width: 511px){
-        font-size: 19px;
-        font-weight: 700;
-    }
-}
-
-.dropdown{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    & :nth-child(1) {
-        width: 100%;
-    }
-}
-
-.dropdown-menu{
-    text-align: center;
-}
-
-
-@media (max-width: 991px) {
-    .navbar-nav {
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 100%;
-        position: absolute;
-        left: 0;
-
-        & :nth-child(4) {
-            padding-left: 25px;
-        }
-    }
-
-    // .navbar h3{
-    //     color: white;
-    //     margin: auto;
-    //     padding: 0 0 0 20px;
-    //     font-family: "Century Gothic";
-    //     font-weight: 900;
-
-    //     @media (max-width: 511px){
-    //         font-size: 25px;
-    //     }
+    // @media (max-width: 767px){
+    //     font-size: 20px;
+    //     font-weight: 700;
+    // }
+    // @media (max-width: 511px){
+    //     font-size: 19px;
+    //     font-weight: 700;
     // }
 }
+
+// .dropdown{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+
+//     & :nth-child(1) {
+//         width: 100%;
+//     }
+// }
+
+// .dropdown-menu{
+//     text-align: center;
+// }
+
+
+// @media (max-width: 991px) {
+//     .navbar-nav {
+//         background-color: rgba(0, 0, 0, 0.8);
+//         width: 100%;
+//         position: absolute;
+//         left: 0;
+
+//         & :nth-child(4) {
+//             padding-left: 25px;
+//         }
+//     }
+
+//     // .navbar h3{
+//     //     color: white;
+//     //     margin: auto;
+//     //     padding: 0 0 0 20px;
+//     //     font-family: "Century Gothic";
+//     //     font-weight: 900;
+
+//     //     @media (max-width: 511px){
+//     //         font-size: 25px;
+//     //     }
+//     // }
+// }
 
 
 

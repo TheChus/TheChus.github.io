@@ -110,54 +110,13 @@ html {
   padding: unset;
 }
 
+.navbar-nav :nth-child(4) {
+  padding-left: 25px;
+}
+
 .nav-link {
   font-size: 21px;
   font-weight: 900;
-}
-
-@media (max-width: 767px) {
-  .nav-link {
-    font-size: 20px;
-    font-weight: 700;
-  }
-}
-
-@media (max-width: 511px) {
-  .nav-link {
-    font-size: 19px;
-    font-weight: 700;
-  }
-}
-
-.dropdown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.dropdown :nth-child(1) {
-  width: 100%;
-}
-
-.dropdown-menu {
-  text-align: center;
-}
-
-@media (max-width: 991px) {
-  .navbar-nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    position: absolute;
-    left: 0;
-  }
-  .navbar-nav :nth-child(4) {
-    padding-left: 25px;
-  }
 }
 
 /*********** 這裡是section1 ***********/
