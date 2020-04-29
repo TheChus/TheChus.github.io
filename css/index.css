@@ -110,13 +110,24 @@ html {
   padding: unset;
 }
 
-.navbar-nav :nth-child(4) {
-  padding-left: 25px;
-}
-
 .nav-link {
   font-size: 21px;
   font-weight: 900;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+  .navbar-nav :nth-child(4) {
+    padding-left: 25px;
+  }
+  #nav-4 {
+    margin: 0;
+  }
 }
 
 /*********** 這裡是section1 ***********/
