@@ -521,6 +521,27 @@ html {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 991px) {
+  .swiper-button-next {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-button-next {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-button-next {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .swiper-button-prev {
   width: 80px;
   height: 80px;
@@ -528,6 +549,27 @@ html {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  .swiper-button-prev {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-button-prev {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .swiper-button-next:after,
@@ -562,12 +604,20 @@ html {
   width: 80%;
   height: 300px;
   background-size: cover;
-  line-height: 400px;
-  color: whitesmoke;
-  font-weight: 700;
-  font-size: 20px;
   background-position: center;
   background-image: url(../img/background/triangle-mosaic.png);
+  position: relative;
+}
+
+#section3-1 .text {
+  background-color: rgba(192, 192, 192, 0.5);
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  font-weight: 800;
+  font-size: 20px;
+  color: whitesmoke;
 }
 
 #slide_3-11 {
@@ -989,6 +1039,7 @@ html {
   position: relative;
   width: 100%;
   background-image: url(../img/background/triangle-mosaic.png);
+  overflow: hidden;
 }
 
 #section5-2 .text {
@@ -1038,6 +1089,7 @@ html {
   font-size: 30px;
   text-align: center;
   color: #101d33;
+  overflow: hidden;
 }
 
 #contactus {
