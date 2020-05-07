@@ -530,8 +530,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-button-next:after, .swiper-button-prev:after {
   content: unset;
 }
 
@@ -543,15 +542,8 @@ html {
   position: relative;
 }
 
-#section3-1 .container {
-  background-image: url(../img/background/triangle-mosaic.png);
-}
-
 #section3-1 .swiper-container {
-  width: 100%;
-  height: 100%;
   max-height: 400px;
-  background-image: url(../img/background/triangle-mosaic.png);
 }
 
 #section3-1Background {
@@ -559,15 +551,14 @@ html {
 }
 
 .slide_3-1 {
-  width: 80%;
-  height: 300px;
+  width: 100%;
+  height: 400px;
   background-size: cover;
   line-height: 400px;
   color: whitesmoke;
   font-weight: 700;
   font-size: 20px;
   background-position: center;
-  background-image: url(../img/background/triangle-mosaic.png);
 }
 
 #slide_3-11 {
@@ -618,6 +609,11 @@ html {
   background-image: url(../img/slide322.jpg);
 }
 
+#section3-1 .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
 #section3-1 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -631,10 +627,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#section3-1 .swiper-pagination-bullet-active {
-  background-color: #dd6d59;
 }
 
 /*********** 這裡是section3-2 ***********/
@@ -735,9 +727,8 @@ html {
   font-weight: 600;
   color: white;
   border-radius: 25px;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
-  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .button.active {
@@ -783,9 +774,6 @@ html {
   background-position: center;
   background-size: cover;
   border-radius: 15px;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
-  cursor: pointer;
 }
 
 @media (max-width: 1440px) {
@@ -793,13 +781,6 @@ html {
     width: 80%;
     height: 240px;
   }
-}
-
-.pic4:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: ease-in-out .5s;
-  transition: ease-in-out .5s;
 }
 
 #pic411 {
@@ -853,19 +834,11 @@ html {
 
 /*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
-#tosection5-1 {
-  top: -60px;
-}
-
 #section5-1 {
   position: relative;
   width: 100%;
   overflow: hidden;
   background-image: url(../img/background/triangle-mosaic.png);
-}
-
-#section5-1 .row {
-  margin: 0;
 }
 
 .section5-1-background {
@@ -899,89 +872,72 @@ html {
   font-weight: 900;
 }
 
-.boxtest {
-  width: 100%;
-}
-
-.box {
-  height: 380px;
-  position: relative;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.card {
-  display: block;
-  position: absolute;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 380px;
+#section5-1 .area img {
+  max-width: 80%;
+  height: auto;
   border-radius: 5%;
   border: 5px solid white;
-  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.front1 {
-  background-image: url(../img/pic511.jpg);
+@media screen and (max-width: 768px) {
+  #section5-1 .area img {
+    max-width: 100%;
+  }
 }
 
-.back1 {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
+#section5-1 .area h2 {
+  color: #3a3837;
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 0px 0px 6px rgba(58, 56, 55, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
+  max-width: 80%;
 }
 
-.front2 {
-  background-image: url(../img/pic511.jpg);
+@media screen and (max-width: 576px) {
+  #section5-1 .area h2 {
+    max-width: 100%;
+    font-size: 20px;
+  }
 }
 
-.back2 {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
+#section5-1 .area p {
+  color: #1d1d1d;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: justify;
+  max-width: 80%;
 }
 
-.front3 {
-  background-image: url(../img/pic511.jpg);
+@media screen and (max-width: 576px) {
+  #section5-1 .area p {
+    max-width: 100%;
+    font-size: 15px;
+  }
 }
 
-.back3 {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
+#section5-1 .area .block :nth-last-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.front4 {
-  background-image: url(../img/pic511.jpg);
+#section5-1 .area :nth-child(2n+1) .block h2,
+#section5-1 .area :nth-child(2n+1) .block P {
+  text-align: right;
 }
 
-.back4 {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
-}
-
-.front5 {
-  background-image: url(../img/pic511.jpg);
-}
-
-.back5 {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
-}
-
-.flipped {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+#section5-1 .area :nth-child(2n) .block h2,
+#section5-1 .area :nth-child(2n) .block P {
+  text-align: left;
 }
 
 /******** 這裡是section5-2 ********/
@@ -1147,4 +1103,4 @@ footer {
 }
 
 /* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index-57備份.css.map */

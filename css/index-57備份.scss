@@ -38,7 +38,7 @@ html {
     font-weight: 900;
 }
 
-.section-name span {
+.section-name span{
     border-bottom: rgb(221, 109, 89) 5px solid;
 }
 
@@ -165,14 +165,14 @@ html {
         }
     }
 
-    .navbar h3 {
+    .navbar h3{
         color: white;
         margin: auto;
         padding: 0 0 0 20px;
         font-family: "Century Gothic";
         font-weight: 900;
 
-        @media (max-width: 511px) {
+        @media (max-width: 511px){
             font-size: 25px;
         }
     }
@@ -214,9 +214,9 @@ html {
 
 
 /*********** 這裡是section1有水波效果 ***********/
-#section1 {
+#section1{
     position: relative;
-    overflow: hidden;
+    overflow: hidden;  
 }
 
 .home,
@@ -422,7 +422,6 @@ html {
     #section2 {
         padding: 30px 0;
     }
-
     #section2 .swiper-text {
         width: 450px;
     }
@@ -555,7 +554,7 @@ html {
     background-position: 100% 50%;
 }
 
-.swiper-button-next {
+.swiper-button-next{
     width: 80px;
     height: 80px;
     background-image: url(../img/smallthing/rightarrow.png);
@@ -563,8 +562,7 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.swiper-button-prev {
+.swiper-button-prev{
     width: 80px;
     height: 80px;
     background-image: url(../img/smallthing/leftarrow.png);
@@ -572,9 +570,7 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-button-next:after, .swiper-button-prev:after{
     content: unset;
 }
 
@@ -587,15 +583,8 @@ html {
     position: relative;
 }
 
-#section3-1 .container{
-    background-image: url(../img/background/triangle-mosaic.png);
-}
-
 #section3-1 .swiper-container {
-    width: 100%;
-    height: 100%;
     max-height: 400px;
-    background-image: url(../img/background/triangle-mosaic.png);
 }
 
 #section3-1Background {
@@ -603,15 +592,14 @@ html {
 }
 
 .slide_3-1 {
-    width: 80%;
-    height: 300px;
+    width: 100%;
+    height: 400px;
     background-size: cover;
     line-height: 400px;
     color: whitesmoke;
     font-weight: 700;
     font-size: 20px;
     background-position: center;
-    background-image: url(../img/background/triangle-mosaic.png);
 }
 
 #slide_3-11 {
@@ -662,6 +650,11 @@ html {
     background-image: url(../img/slide322.jpg);
 }
 
+#section3-1 .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
 #section3-1 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -671,9 +664,7 @@ html {
     align-items: center;
 }
 
-#section3-1 .swiper-pagination-bullet-active{
-    background-color: rgb(221, 109, 89);
-}
+
 
 /*********** 這裡是section3-2 ***********/
 #section3-2 {
@@ -686,34 +677,28 @@ html {
     overflow: hidden;
 }
 
-.section3-2-background {
+.section3-2-background{
     position: absolute;
     bottom: 0;
     right: 0;
     max-width: 100%;
     height: auto;
-
     @media (max-width: 767px) {
-        & img {
+        & img{
             max-width: 80%;
         }
-
         right: -150px;
     }
-
     @media (max-width: 575px) {
-        & img {
+        & img{
             max-width: 70%;
         }
-
         right: -110px;
     }
-
     @media (max-width: 400px) {
-        & img {
+        & img{
             max-width: 70%;
         }
-
         right: -80px;
     }
 }
@@ -746,7 +731,6 @@ html {
 #tosection4 {
     top: -60px;
 }
-
 #section4 {
     position: relative;
     width: 100%;
@@ -773,8 +757,7 @@ html {
     font-weight: 600;
     color: white;
     border-radius: 25px;
-    transition: 0.9s;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
 .button.active {
@@ -821,16 +804,10 @@ html {
     background-position: center;
     background-size: cover;
     border-radius: 15px;
-    transition: 0.9s;
-    cursor: pointer;
     @media (max-width:1440px) {
         width: 80%;
         height: 240px;
     }
-}
-.pic4:hover{
-    transform: scale(0.9);
-    transition: ease-in-out .5s;
 }
 
 #pic411 {
@@ -888,32 +865,42 @@ html {
 
 /*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
-#tosection5-1 {
-    top: -60px;
-}
 #section5-1 {
     position: relative;
     width: 100%;
     overflow: hidden;
     background-image: url(../img/background/triangle-mosaic.png);
-}
-
-#section5-1 .row{
-    margin: 0;
+    // background: linear-gradient(180deg, white 0%, rgba(240, 255, 240, 1) 100%);
 }
 
 .section5-1-background {
     position: absolute;
     max-width: 100%;
     height: auto;
-
     @media (max-width: 1283px) {
         right: 500px;
     }
-
     @media (max-width: 767px) {
         right: 800px;
     }
+
+
+
+
+    // @media (max-width: 1700px) {
+    //     max-width: 60%;
+    //     right: 800px;
+    // }
+    // @media (max-width: 1490px) {
+    //     right: 930px;
+    // }
+
+
+
+    // @media (max-width: 575px) {
+    //     max-width: 40%;
+    //     right: 320px;
+    // }
 }
 
 #text5-1 {
@@ -930,87 +917,97 @@ html {
 }
 
 
+#section5-1 {
+    .area {
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 5%;
+            border: 5px solid white;
+            transition: 0.5s;
 
-.boxtest{
-    width: 100%;
-}
-.box {
-    // width: 20vw;
-    height: 380px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-}
+            @media screen and (max-width:768px) {
+                max-width: 100%;
+            }
+        }
 
-.card {
-    display: block;
-    position: absolute;
-    width: 100%;
-    // height: 100%;
-    backface-visibility: hidden;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    // max-width: 100%;
-    height: 380px;
-    border-radius: 5%;
-    border: 5px solid white;
-    // transition: 0.5s;
-    cursor: pointer;
-}
+        h2 {
+            color: rgb(58, 56, 55);
+            font-size: 28px;
+            font-weight: 600;
+            text-shadow: 0px 0px 6px rgba(58, 56, 55, 0.562), 0px 0px 15px #fff, 0px 0px 20px #fff;
+            max-width: 80%;
 
-.front1 {
-    background-image: url(../img/pic511.jpg);
-}
-.back1 {
-    transform: rotateY(180deg);
-    background-image: url(../img/pic512.jpg);
-}
-.front2 {
-    background-image: url(../img/pic511.jpg);
-}
-.back2 {
-    transform: rotateY(180deg);
-    background-image: url(../img/pic512.jpg);
-}
-.front3 {
-    background-image: url(../img/pic511.jpg);
-}
-.back3 {
-    transform: rotateY(180deg);
-    background-image: url(../img/pic512.jpg);
-}
-.front4 {
-    background-image: url(../img/pic511.jpg);
-}
-.back4 {
-    transform: rotateY(180deg);
-    background-image: url(../img/pic512.jpg);
-}
-.front5 {
-    background-image: url(../img/pic511.jpg);
-}
-.back5 {
-    transform: rotateY(180deg);
-    background-image: url(../img/pic512.jpg);
-}
+            @media screen and (max-width:576px) {
+                max-width: 100%;
+                font-size: 20px;
+            }
+        }
 
-.flipped {
-    transform: rotateY(180deg);
+        p {
+            color: rgb(29, 29, 29);
+            font-size: 20px;
+            font-weight: 600;
+            text-align: justify;
+            max-width: 80%;
+
+            @media screen and (max-width:576px) {
+                max-width: 100%;
+                font-size: 15px;
+            }
+        }
+
+
+        .block {
+            & :nth-last-child(1) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+        }
+
+        & :nth-child(2n+1) {
+            .block {
+
+                h2,
+                P {
+                    text-align: right;
+                }
+            }
+
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+
+            // div {
+            //     max-width: 80%;
+            //     display: flex;
+            //     flex-direction: column;
+            //     align-items: flex-end;
+            // }
+        }
+
+        & :nth-child(2n) {
+            .block {
+
+                h2,
+                P {
+                    text-align: left;
+                }
+            }
+
+            // display: flex;
+            // flex-direction: column;
+
+            // div {
+            //     align-items: flex-start;
+            // }
+        }
+
+    }
 }
-
-// . {
-//     max-width: 100%;
-//     height: 380px;
-//     border-radius: 5%;
-//     border: 5px solid white;
-//     transition: 0.5s;
-
-//     @media screen and (max-width:768px) {
-//         max-width: 100%;
-//     }
-// }
-
 
 
 
@@ -1041,7 +1038,7 @@ html {
     color: rgb(41, 41, 41);
 }
 
-#section_5-2_text-1 {
+#section_5-2_text-1{
     margin-bottom: 100px;
 }
 

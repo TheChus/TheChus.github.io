@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .box {
+        margin: 50px auto;
+        width: 239px;
+        height: 334px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+    }
+
+    .card {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 20px;
+    }
+
+    .front {
+        background-image: url(img/pic511.jpg);
+        background-size: contain;
+        /* background-position: -24px -23px; */
+    }
+
+    .back {
+        transform: rotateY(180deg);
+        background-image: url(img/pic512.jpg);
+        background-size: contain;
+        /* background-position: -287px -23px; */
+    }
+
+    .flipped {
+        transform: rotateY(180deg);
+    }
+</style>
+
+
+<body>
+
+    <div class="box">
+        <div class="card front"></div>
+        <div class="card back"></div>
+    </div>
+
+
+
+    <div class="boxtest pt-3 d-flex justify-content-center mb-5">
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="box">
+                <div class="card front1"></div>
+                <div class="card back1"></div>
+                <!-- <img src="img/pic511.jpg" alt=""> -->
+            </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="box">
+                <div class="card front2"></div>
+                <div class="card back2"></div>
+                <!-- <img src="img/pic521.jpg" alt=""> -->
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="box">
+                <div class="card front3"></div>
+                <div class="card back3"></div>
+                <!-- <img src="img/pic532.JPG" alt=""> -->
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+            <div class="box">
+                <div class="card front4"></div>
+                <div class="card back4"></div>
+                <!-- <img src="img/pic541.jpg" alt=""> -->
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
+            <div class="box">
+                <div class="card front5"></div>
+                <div class="card back5"></div>
+                <!-- <img src="img/pic551.JPG" alt=""> -->
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+
+
+
+
+        /////////// 這是section5的卡片翻轉效果 ///////////
+        $(".box").hover(function (event) {
+            $(this).toggleClass("flipped");
+        });
+    </script>
+
+
+
+</body>
+
+</html>
