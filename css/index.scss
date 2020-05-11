@@ -38,8 +38,23 @@ html {
     font-weight: 900;
 }
 
-.section-name span {
-    border-bottom: rgb(221, 109, 89) 5px solid;
+// .section-name span {
+//     border-bottom: rgb(221, 109, 89) 5px solid;
+// }
+#section2 .section-name span {
+    border-bottom: #ee934c 5px solid;
+}
+#section3 .section-name span {
+    border-bottom: #f7c29f 5px solid;
+}
+#section4 .section-name span {
+    border-bottom: #dcdada 5px solid;
+}
+#section5-1 .section-name span {
+    border-bottom: #f3d3b0 5px solid;
+}
+#section6 .section-name span {
+    border-bottom: #d8cfc0 5px solid;
 }
 
 .SmallSection-name {
@@ -69,6 +84,7 @@ html {
 }
 
 /*********** 這裡是loading動畫 ***********/
+
 @keyframes fadeout {
     from {
         opacity: 1;
@@ -79,11 +95,12 @@ html {
     }
 }
 
-#loading{height:100vh;width:100%;position:fixed;z-index:2000;top:0;background:#fff;
+#loading{height:100vh;width:100%;position: absolute;z-index:98;top:80px;background:#fff;
     animation-name: fadeout;
     animation-duration: 2s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+    overflow: hidden;
 }
 .loader{position:absolute;top:50%;left:40%;margin-left:10%;transform:translate3d(-50%,-50%,0)}
 .loader .dot{width:24px;height:24px;background:#ee934c;border-radius:100%;display:inline-block;animation:slide 1s infinite}
@@ -108,6 +125,28 @@ html {
     padding: 0;
 }
 
+#colorful-1, #colorful-2, #colorful-3, #colorful-4, #colorful-5{
+    color: white;
+    transition: 0.5S;
+}
+#colorful-1:active, #colorful-2:active, #colorful-3:active, #colorful-4:active, #colorful-5:active{
+    opacity: 0.7;
+}
+#colorful-1:hover{
+    color: #ee934c;
+}
+#colorful-2:hover{
+    color: #f7c29f;
+}
+#colorful-3:hover{
+    color: #dcdada;
+}
+#colorful-4:hover{
+    color: #f3d3b0;
+}
+#colorful-5:hover{
+    color: #d8cfc0;
+}
 
 .bg-my-color {
     background-color: black;
@@ -119,7 +158,7 @@ html {
     margin: 10px 30px;
 }
 
-// OK/* 4/22問：這裡是原本toogle的範例寫用(992px「min-width」，可以改成max-width嗎？不好，因為bootstrp的套件，不要改！
+
 @media (min-width: 992px) {
     #toggle {
         display: none;
@@ -1050,9 +1089,11 @@ html {
 }
 
 .tag{
-    font-size: 25px;
+    width: 180px;
+    height: 180px;
+    font-size: 20px;
     text-align: center;
-    line-height: 190px;
+    line-height: 180px;
     background-color: #dcdada;
     border-radius: 100%;
 }
@@ -1107,14 +1148,6 @@ html {
 //     @media screen and (max-width:768px) {
 //         max-width: 100%;
 //     }
-// }
-
-
-
-
-// #section5-1 .row{
-// // 4/29再問一次蕭麻吉：為什麼要-221px？忘記是什麼了？只記得要減掉navbar的80px，剩下的是什麼高度？
-//     height: calc(100vh - 221px);
 // }
 
 
@@ -1433,3 +1466,5 @@ footer {
 // <!-- OK!!4/27問老師怎麼讓圖置中 
 // 用text-align:center，img算是文字-->
 // <!-- <div class=" "><img src="img/section3-2.png" alt=""></div> -->
+
+// OK/* 4/22問：這裡是原本toogle的範例寫用(992px「min-width」，可以改成max-width嗎？不好，因為bootstrp的套件，不要改！

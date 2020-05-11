@@ -31,8 +31,24 @@ html {
   font-weight: 900;
 }
 
-.section-name span {
-  border-bottom: #dd6d59 5px solid;
+#section2 .section-name span {
+  border-bottom: #ee934c 5px solid;
+}
+
+#section3 .section-name span {
+  border-bottom: #f7c29f 5px solid;
+}
+
+#section4 .section-name span {
+  border-bottom: #dcdada 5px solid;
+}
+
+#section5-1 .section-name span {
+  border-bottom: #f3d3b0 5px solid;
+}
+
+#section6 .section-name span {
+  border-bottom: #d8cfc0 5px solid;
 }
 
 .SmallSection-name {
@@ -80,9 +96,9 @@ html {
 #loading {
   height: 100vh;
   width: 100%;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
+  position: absolute;
+  z-index: 98;
+  top: 80px;
   background: #fff;
   -webkit-animation-name: fadeout;
           animation-name: fadeout;
@@ -92,6 +108,7 @@ html {
           animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 .loader {
@@ -183,6 +200,36 @@ html {
   left: 0;
   z-index: 99;
   padding: 0;
+}
+
+#colorful-1, #colorful-2, #colorful-3, #colorful-4, #colorful-5 {
+  color: white;
+  -webkit-transition: 0.5S;
+  transition: 0.5S;
+}
+
+#colorful-1:active, #colorful-2:active, #colorful-3:active, #colorful-4:active, #colorful-5:active {
+  opacity: 0.7;
+}
+
+#colorful-1:hover {
+  color: #ee934c;
+}
+
+#colorful-2:hover {
+  color: #f7c29f;
+}
+
+#colorful-3:hover {
+  color: #dcdada;
+}
+
+#colorful-4:hover {
+  color: #f3d3b0;
+}
+
+#colorful-5:hover {
+  color: #d8cfc0;
 }
 
 .bg-my-color {
@@ -1135,9 +1182,11 @@ html {
 }
 
 .tag {
-  font-size: 25px;
+  width: 180px;
+  height: 180px;
+  font-size: 20px;
   text-align: center;
-  line-height: 190px;
+  line-height: 180px;
   background-color: #dcdada;
   border-radius: 100%;
 }
