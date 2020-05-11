@@ -271,13 +271,13 @@ html {
 //     opacity: 0.3;
 // } 
 
-// .banner {
-//     width: 100%;
-//     height: 100%;
-//     background-image: url(../img/banner.jpg);
-//     background-size: cover;
-//     background-position: bottom;
-// }
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
 
 
 /*********** 這裡是section1有水波效果 ***********/
@@ -286,138 +286,138 @@ html {
     overflow: hidden;
 }
 
-.home,
-.ui-content {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    // 原範例網站寫法height:100%
-    overflow: hidden;
-    cursor: pointer;
-}
+// .home,
+// .ui-content {
+//     margin: 0;
+//     padding: 0;
+//     width: 100%;
+//     height: 100vh;
+//     ///// 原範例網站寫法height:100%
+//     overflow: hidden;
+//     cursor: pointer;
+// }
 
-.ios_home,
-.ios_ui-content {
-    cursor: pointer;
-    // 下面是cope找到ios解決fix的版本
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+// .ios_home,
+// .ios_ui-content {
+//     cursor: pointer;
+//     ///// 下面是cope找到ios解決fix的版本
+//     clip: rect(0, auto, auto, 0);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }
 
-.bg {
-    width: 100%;
-    height: 100vh;
-    // 原範例網站寫法height:100%
-    background-image: url(../img/banner.jpg);
-    background-attachment: fixed;
-    background-position: bottom;
-    background-size: cover;
-}
+// .bg {
+//     width: 100%;
+//     height: 100vh;
+//     ///// 原範例網站寫法height:100%
+//     background-image: url(../img/banner.jpg);
+//     background-attachment: fixed;
+//     background-position: bottom;
+//     background-size: cover;
+// }
 
-.ios_bg {
-    background-image: url(../img/banner.jpg);
-    // 下面是cope找到ios解決fix的版本
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    transform: translateZ(0);
-    will-change: transform;
-}
+// .ios_bg {
+//     background-image: url(../img/banner.jpg);
+//     ///// 下面是cope找到ios解決fix的版本
+//     position: fixed;
+//     display: block;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-size: cover;
+//     background-position: center center;
+//     transform: translateZ(0);
+//     will-change: transform;
+// }
 
-.wave-position {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-}
+// .wave-position {
+//     position: absolute;
+//     width: 300px;
+//     height: 300px;
+// }
 
-.wave-body {
-    /* position: relative; */
-    width: 100%;
-    height: 100%;
-}
+// .wave-body {
+//     /////* position: relative; */
+//     width: 100%;
+//     height: 100%;
+// }
 
-.wave {
-    position: absolute;
-    top: calc((100% - 30px)/2);
-    left: calc((100% - 30px)/2);
-    width: 30px;
-    height: 30px;
-    border-radius: 300px;
-    background-image: url(../img/banner.jpg);
-    background-attachment: fixed;
-    background-position: bottom;
-    background-size: cover;
-    box-shadow: inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
-    // z-index: -1;
-}
+// .wave {
+//     position: absolute;
+//     top: calc((100% - 30px)/2);
+//     left: calc((100% - 30px)/2);
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 300px;
+//     background-image: url(../img/banner.jpg);
+//     background-attachment: fixed;
+//     background-position: bottom;
+//     background-size: cover;
+//     box-shadow: inset 0px 0px 50px 0px transparent, 0px 0px 100px 0px rgba(75, 154, 173, 0.1);
+//     ///// z-index: -1;
+// }
 
-.wave0 {
-    z-index: 2;
-    zoom: 1.1;
-    animation: w 1s;
-}
+// .wave0 {
+//     z-index: 2;
+//     zoom: 1.1;
+//     animation: w 1s;
+// }
 
-.wave1 {
-    z-index: 3;
-    zoom: 1.02;
-    animation: w 1s .15s;
-}
+// .wave1 {
+//     z-index: 3;
+//     zoom: 1.02;
+//     animation: w 1s .15s;
+// }
 
-.wave2 {
-    z-index: 4;
-    zoom: 1.06;
-    animation: w 1s .3s;
-}
+// .wave2 {
+//     z-index: 4;
+//     zoom: 1.06;
+//     animation: w 1s .3s;
+// }
 
-.wave3 {
-    z-index: 5;
-    zoom: 1.01;
-    animation: w 1s .45s;
-}
+// .wave3 {
+//     z-index: 5;
+//     zoom: 1.01;
+//     animation: w 1s .45s;
+// }
 
-.wave4 {
-    z-index: 6;
-    zoom: 1.02;
-    animation: w 1s .6s;
-}
+// .wave4 {
+//     z-index: 6;
+//     zoom: 1.02;
+//     animation: w 1s .6s;
+// }
 
-.wave5 {
-    z-index: 7;
-    animation: w 1s .75s;
-}
+// .wave5 {
+//     z-index: 7;
+//     animation: w 1s .75s;
+// }
 
 
-@keyframes w {
-    0% {
-        top: calc((100% - 30px)/2);
-        left: calc((100% - 30px)/2);
-        width: 30px;
-        height: 30px;
-        opacity: 1;
-    }
+// @keyframes w {
+//     0% {
+//         top: calc((100% - 30px)/2);
+//         left: calc((100% - 30px)/2);
+//         width: 30px;
+//         height: 30px;
+//         opacity: 1;
+//     }
 
-    99% {
-        opacity: 1;
-    }
+//     99% {
+//         opacity: 1;
+//     }
 
-    100% {
-        top: calc((100% - 300px)/2);
-        left: calc((100% - 300px)/2);
-        width: 300px;
-        height: 300px;
-        opacity: 0;
-    }
-}
+//     100% {
+//         top: calc((100% - 300px)/2);
+//         left: calc((100% - 300px)/2);
+//         width: 300px;
+//         height: 300px;
+//         opacity: 0;
+//     }
+// }
 
 
 
