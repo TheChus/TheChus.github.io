@@ -68,6 +68,34 @@ html {
     visibility: hidden;
 }
 
+/*********** 這裡是loading動畫 ***********/
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+#loading{height:100vh;width:100%;position:fixed;z-index:2000;top:0;background:#fff;
+    animation-name: fadeout;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+.loader{position:absolute;top:50%;left:40%;margin-left:10%;transform:translate3d(-50%,-50%,0)}
+.loader .dot{width:24px;height:24px;background:#ee934c;border-radius:100%;display:inline-block;animation:slide 1s infinite}
+.loader .dot:nth-child(1){animation-delay:.1s;background:#ee934c}
+.loader .dot:nth-child(2){animation-delay:.2s;background:#f7c29f}
+.loader .dot:nth-child(3){animation-delay:.3s;background:#dcdada}
+.loader .dot:nth-child(4){animation-delay:.4s;background:#f3d3b0}
+.loader .dot:nth-child(5){animation-delay:.5s;background:#d8cfc0}
+@keyframes slide{0%{transform:scale(1)}50%{opacity:.3;transform:scale(2)}100%{transform:scale(1)}}
+
+
+
 
 /*********** 這裡是navbar ***********/
 .navbar {
@@ -355,6 +383,22 @@ html {
 
 
 /*********** 這裡是section2 ***********/
+#tosection2{
+    top: -680px;
+    @media (max-width:1600px) {
+        top: -480px;
+    }
+    @media (max-width:1366px) {
+        top: -380px;
+    }
+    @media (max-width:768px) {
+        top: -700px;
+    }
+    @media (max-width:576px) {
+        top: -400px;
+    }
+}
+
 #section2 {
     width: 100%;
     position: relative;
@@ -480,6 +524,12 @@ html {
 // 裁切圖片為同樣大小，因為是「max」，但我的圖都沒有這麼小張，用裁切圖片順便優化圖片大小
 
 /*********** 這裡是section3 ***********/
+#tosection3{
+    @media (max-width:1600px) {
+        top: -60px;
+    }
+}
+
 #section3 {
     width: 100%;
     position: relative;
@@ -490,9 +540,9 @@ html {
 }
 
 #section3 .section-name {
-    font-size: 25px;
-    font-weight: 600;
-    color: rgb(102, 102, 102);
+    // font-size: 25px;
+    // font-weight: 600;
+    // color: rgb(102, 102, 102);
     padding: 10px 0;
 }
 
@@ -556,44 +606,44 @@ html {
 }
 
 .swiper-button-next {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-image: url(../img/smallthing/rightarrow.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     @media (max-width:991px) {
-        width: 70px;
-        height: 70px;
-    }
-    @media (max-width:767px) {
-        width: 60px;
-        height: 60px;
-    }
-    @media (max-width:576px) {
         width: 50px;
         height: 50px;
+    }
+    @media (max-width:767px) {
+        width: 40px;
+        height: 40px;
+    }
+    @media (max-width:576px) {
+        width: 30px;
+        height: 30px;
     }
 }
 
 .swiper-button-prev {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-image: url(../img/smallthing/leftarrow.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     @media (max-width:991px) {
-        width: 70px;
-        height: 70px;
-    }
-    @media (max-width:767px) {
-        width: 60px;
-        height: 60px;
-    }
-    @media (max-width:576px) {
         width: 50px;
         height: 50px;
+    }
+    @media (max-width:767px) {
+        width: 40px;
+        height: 40px;
+    }
+    @media (max-width:576px) {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -704,6 +754,9 @@ html {
     align-items: center;
 }
 
+.swiper-pagination-bullet{
+    background-color: tomato;
+}
 #section3-1 .swiper-pagination-bullet-active{
     background-color: rgb(221, 109, 89);
 }
@@ -760,7 +813,7 @@ html {
 }
 
 .SmallP {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: rgb(43, 43, 43);
     text-align: justify;
@@ -768,16 +821,18 @@ html {
 }
 
 #section3-2 .row p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    color: rgb(69, 69, 69);
+    color: rgb(61, 61, 61);
     text-align: justify;
     letter-spacing: 1.5px;
 }
 
 /*********** 這裡是section4 ***********/
 #tosection4 {
-    top: -60px;
+    @media (max-width:1600px) {
+        top: -60px;
+    }
 }
 
 #section4 {
@@ -922,7 +977,9 @@ html {
 /*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
 #tosection5-1 {
-    top: -60px;
+    @media (max-width:1600px) {
+        top: -60px;
+    }
 }
 #section5-1 {
     position: relative;
@@ -990,6 +1047,14 @@ html {
     border: 5px solid white;
     // transition: 0.5s;
     cursor: pointer;
+}
+
+.tag{
+    font-size: 25px;
+    text-align: center;
+    line-height: 190px;
+    background-color: #dcdada;
+    border-radius: 100%;
 }
 
 .front1 {

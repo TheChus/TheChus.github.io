@@ -59,6 +59,122 @@ html {
   visibility: hidden;
 }
 
+/*********** 這裡是loading動畫 ***********/
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#loading {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  background: #fff;
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  margin-left: 10%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.loader .dot {
+  width: 24px;
+  height: 24px;
+  background: #ee934c;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: slide 1s infinite;
+          animation: slide 1s infinite;
+}
+
+.loader .dot:nth-child(1) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+  background: #ee934c;
+}
+
+.loader .dot:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  background: #f7c29f;
+}
+
+.loader .dot:nth-child(3) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  background: #dcdada;
+}
+
+.loader .dot:nth-child(4) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+  background: #f3d3b0;
+}
+
+.loader .dot:nth-child(5) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  background: #d8cfc0;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: .3;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: .3;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 /*********** 這裡是navbar ***********/
 .navbar {
   width: 100%;
@@ -310,6 +426,34 @@ html {
 }
 
 /*********** 這裡是section2 ***********/
+#tosection2 {
+  top: -680px;
+}
+
+@media (max-width: 1600px) {
+  #tosection2 {
+    top: -480px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #tosection2 {
+    top: -380px;
+  }
+}
+
+@media (max-width: 768px) {
+  #tosection2 {
+    top: -700px;
+  }
+}
+
+@media (max-width: 576px) {
+  #tosection2 {
+    top: -400px;
+  }
+}
+
 #section2 {
   width: 100%;
   position: relative;
@@ -431,6 +575,12 @@ html {
 }
 
 /*********** 這裡是section3 ***********/
+@media (max-width: 1600px) {
+  #tosection3 {
+    top: -60px;
+  }
+}
+
 #section3 {
   width: 100%;
   position: relative;
@@ -441,9 +591,6 @@ html {
 }
 
 #section3 .section-name {
-  font-size: 25px;
-  font-weight: 600;
-  color: #666666;
   padding: 10px 0;
 }
 
@@ -513,8 +660,8 @@ html {
 }
 
 .swiper-button-next {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-image: url(../img/smallthing/rightarrow.png);
   background-position: center;
   background-size: contain;
@@ -523,28 +670,28 @@ html {
 
 @media (max-width: 991px) {
   .swiper-button-next {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-@media (max-width: 767px) {
-  .swiper-button-next {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 576px) {
-  .swiper-button-next {
     width: 50px;
     height: 50px;
   }
 }
 
+@media (max-width: 767px) {
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .swiper-button-prev {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-image: url(../img/smallthing/leftarrow.png);
   background-position: center;
   background-size: contain;
@@ -553,22 +700,22 @@ html {
 
 @media (max-width: 991px) {
   .swiper-button-prev {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
 }
 
 @media (max-width: 767px) {
   .swiper-button-prev {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .swiper-button-prev {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -683,6 +830,10 @@ html {
           align-items: center;
 }
 
+.swiper-pagination-bullet {
+  background-color: tomato;
+}
+
 #section3-1 .swiper-pagination-bullet-active {
   background-color: #dd6d59;
 }
@@ -741,7 +892,7 @@ html {
 }
 
 .SmallP {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #2b2b2b;
   text-align: justify;
@@ -749,16 +900,18 @@ html {
 }
 
 #section3-2 .row p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  color: #454545;
+  color: #3d3d3d;
   text-align: justify;
   letter-spacing: 1.5px;
 }
 
 /*********** 這裡是section4 ***********/
-#tosection4 {
-  top: -60px;
+@media (max-width: 1600px) {
+  #tosection4 {
+    top: -60px;
+  }
 }
 
 #section4 {
@@ -903,8 +1056,10 @@ html {
 
 /*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
-#tosection5-1 {
-  top: -60px;
+@media (max-width: 1600px) {
+  #tosection5-1 {
+    top: -60px;
+  }
 }
 
 #section5-1 {
@@ -977,6 +1132,14 @@ html {
   border-radius: 5%;
   border: 5px solid white;
   cursor: pointer;
+}
+
+.tag {
+  font-size: 25px;
+  text-align: center;
+  line-height: 190px;
+  background-color: #dcdada;
+  border-radius: 100%;
 }
 
 .front1 {

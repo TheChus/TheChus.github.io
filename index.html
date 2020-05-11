@@ -23,6 +23,18 @@
 
 
 <body>
+    <!----------- 這裡是loading動畫 ----------->
+    <div id="loading">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+
     <!----------- 這裡是nav ----------->
     <nav class="navbar navbar-expand-lg navbar-light bg-my-color">
         <div class="container">
@@ -41,10 +53,10 @@
                         <a class="nav-link text-white" href="#tosection2">最新消息</a>
                     </li>
                     <li class="nav-item  mr-lg-5">
-                        <a class="nav-link text-white" href="#tosection3">階段目標</a>
+                        <a class="nav-link text-white" href="#tosection3">友善環境</a>
                     </li>
                     <li class="nav-item  mr-lg-5">
-                        <a class="nav-link text-white" href="#tosection4">商品訂購</a>
+                        <a class="nav-link text-white" href="#tosection4">幸福產品</a>
                     </li>
                     <li class="nav-item dropdown mr-lg-5" id="nav-4">
                         <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -54,7 +66,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#tosection5-1">牧"牛"犬</a>
                             <a class="dropdown-item" href="#tosection5-2">創辦故事</a>
-                            <a class="dropdown-item" href="#tosection5-2">未來展望</a>
+                            <a class="dropdown-item" href="#tosection5-3">未來展望</a>
                         </div>
                     </li>
                     </span>
@@ -85,7 +97,7 @@
     <div id="tosection2" class="ToSection"></div>
     <section id="section2">
         <div class="container">
-            <div class="section-name mb-3">
+            <div class="section-name mb-3 animated rubberBand delay-1s">
                 <span>最新消息 News</span>
             </div>
         </div>
@@ -230,7 +242,7 @@
                     </div>
 
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
                 </div>
             </div>
         </div>
@@ -356,17 +368,18 @@
                 </div>
 
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
     </section>
 
 
     <!----------- 這裡是section3 ----------->
+    <div id="tosection3" class="ToSection"></div>
     <section id="section3" class="pb-5">
         <div class="container">
             <div class="section-name pt-5 mb-3">
-                友善環境 Environment
+                <span>友善環境 Environment</span>
             </div>
         </div>
 
@@ -406,18 +419,15 @@
     </section>
 
 
-    <!--4/28問老師：都還沒到#section3-1，字彈跳都出現完了 -->
-
 
     <!-----------section3的階段目標1  ----------->
-    <div id="tosection3" class="ToSection"></div>
     <section id="section3-1">
         <div class="container">
-            <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s">
+            <!-- <div class="SmallSection-name pl-5 mb-2 animated rubberBand delay-1s">
                 <div class="section-name mb-4">
                     <span>階段目標 Goal</span></div>
-            </div>
-            <div class="SmallSection-name mb-3">第一階段：設備改善添購、牛舍改建重整</div>
+            </div> -->
+            <div class="SmallSection-name mb-3">短期目標：牛舍改建重整</div>
 
             <div data-aos="fade-up" id="section3-1Background" data-aos-anchor-placement="center-bottom">
                 <div class="container">
@@ -498,7 +508,7 @@
     <section id="section3-2" class="pb-5">
         <div class="section3-2-background"><img src="img/section3-2-background.png" alt=""></div>
         <div class="container">
-            <div class="SmallSection-name mb-3">第二階段：科技養牛</div>
+            <div class="SmallSection-name mb-3">長期目標：實現科技養牛</div>
             <div class="container">
                 <div id="title-text">
                     <p>美國農業科技公司嘉吉攜手愛爾蘭數據分析公司Cainthus打造養牛大數據，透過影像辨識技術，提高畜牧品質，改善牧場經營方式，打造五星級牛隻旅館，精準管理牛隻健康狀況。
@@ -510,16 +520,14 @@
                     <div class="col-12 col-lg-4 TA-JUSTIFY">
                         <div class="SmallP">臉部辨識牛隻提升生產效率</div>
                         <p>
-                            透過相機與無人機拍攝照片捕捉牛隻的臉部特徵，利用牛皮花紋與臉部辨識技術，幾秒鐘內便能夠掌握牛的身分，即使是同卵雙生也能夠迅速辨識。</p>
-                        <p>
-                            即時檢測牛隻飼料、水分攝取量、體溫等資訊，交由Cainthus之AI演算法分析，將牛隻的行為模式傳至雲端，利用手機便能查看。
+                            透過相機與無人機拍攝照片捕捉牛隻的臉部特徵，利用牛皮花紋與臉部辨識技術，即時檢測牛隻飼料、水分攝取量、體溫等資訊，交由Cainthus之AI演算法分析，將牛隻的行為模式傳至雲端，利用手機便能查看。
                         </p>
                     </div>
 
                     <div class="col-12 col-lg-4 TA-JUSTIFY">
                         <div class="SmallP">讓每隻牛皆成為sensor</div>
                         <p>
-                            依牛舍大小架設不等數量的攝影機，每秒對每隻牛捕捉10張照片，一天共會拍攝864k的照片，並回傳到Cainthus進行分析，透過AI演算法，加權像素改變的比率，依此比率判別牛隻性別、身份與分析不同牛隻的行為模式。
+                            依牛舍大小架設不等數量的攝影機，每秒對每隻牛捕捉10張照片，回傳到Cainthus進行分析，透過AI演算法，判別牛隻性別、身份與分析不同牛隻的行為模式。
                         </p>
                         <p>
                             提供牛隻活動狀況、水份及飼料攝取量、體溫、運動量等報告，使飼養者能夠動態調整餵養計畫、預測異常問題、有效提升生產效率。</p>
@@ -542,8 +550,8 @@
     <div id="tosection4" class="ToSection"></div>
     <section id="section4" class="pb-5 pt-5">
         <div class="container">
-            <div class="section-name mb-3">
-                <span>商品訂購 Product</span>
+            <div class="section-name mb-3 animated rubberBand delay-1s">
+                <span>幸福產品 Product</span>
             </div>
         </div>
 
@@ -601,14 +609,14 @@
             </div>
 
             <!-- 把font改成span在css給color樣式 -->
-            <div id="special" class="text mb-3 lax" data-lax-anchor="self" data-lax-translate-x="250 1, vh 500"
+            <div id="special" class="text mb-3 lax" data-lax-anchor="self" data-lax-translate-x="250 1, vh 600"
                 data-lax-opacity="0 1, vh 0">
-                <font color="#E0A0A0">領</font>
-                <font color="#B6A0A0">養</font>
-                <font color="#8CA0A0">代</font>
-                <font color="#62A0A0">替</font>
-                <font color="#38A0A0">購</font>
-                <font color="#0EA0A0">買</font>
+                <font color="#ee934c">領</font>
+                <font color="#f7c29f">養</font>
+                <font color="#dcdada">代</font>
+                <font color="#f3d3b0">替</font>
+                <font color="#d8cfc0">購</font>
+                <font color="#dcdddd">買</font>
             </div>
 
             <div class="SmallSection-name mb-3">牧"牛"犬</div>
@@ -617,15 +625,19 @@
 
         <div class="row boxtest pt-3 d-flex justify-content-center mb-5">
 
-            <div class="col-8 col-md-2 mr-md-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="col-6 col-md-2 mr-md-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="box">
                     <div class="card front1"></div>
                     <div class="card back1"></div>
                 </div>
             </div>
 
+            <div class="col-6 d-md-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="tag">狗狗卡片點點點</div>
+            </div>
 
-            <div class="col-8 col-md-2 mr-md-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+
+            <div class="col-6 col-md-2 mr-md-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="box">
                     <div class="card front2"></div>
                     <div class="card back2"></div>
@@ -633,7 +645,7 @@
                 </div>
             </div>
 
-            <div class="col-8 col-md-2 mr-md-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="col-6 col-md-2 mr-md-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <div class="box">
                     <div class="card front3"></div>
                     <div class="card back3"></div>
@@ -641,7 +653,7 @@
                 </div>
             </div>
 
-            <div class="col-8 col-md-2 mr-md-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+            <div class="col-6 col-md-2 mr-md-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
                 <div class="box">
                     <div class="card front4"></div>
                     <div class="card back4"></div>
@@ -649,7 +661,7 @@
                 </div>
             </div>
 
-            <div class="col-8 col-md-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
+            <div class="col-6 col-md-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
                 <div class="box">
                     <div class="card front5"></div>
                     <div class="card back5"></div>
@@ -678,7 +690,7 @@
                 </div>
             </div>
 
-
+            <div id="tosection5-3" class="ToSection"></div>
             <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="col-10 col-lg-7 mt-5 mb-3">
                     <div class="text mb-3">未來展望</div>
@@ -1017,7 +1029,7 @@
 
 
         /////////// 這是section5的卡片翻轉效果 ///////////
-        $(".box").hover(function (event) {
+        $(".box").click(function (event) {
             $(this).toggleClass("flipped");
         });
 
