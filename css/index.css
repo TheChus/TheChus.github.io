@@ -356,7 +356,7 @@ html {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   #tosection2 {
     top: -300px;
   }
@@ -489,7 +489,7 @@ html {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   #tosection3 {
     top: -40px;
   }
@@ -828,7 +828,7 @@ html {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   #tosection4 {
     top: -40px;
   }
@@ -982,7 +982,7 @@ html {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   #tosection5-1 {
     top: -40px;
   }
@@ -1177,14 +1177,14 @@ html {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   #tosection5-3 {
     top: -40px;
   }
 }
 
 /*********** 這裡是section6 ***********/
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   #tosection6 {
     top: -40px;
   }
