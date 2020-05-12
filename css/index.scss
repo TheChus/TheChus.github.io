@@ -436,6 +436,9 @@ html {
     @media (max-width:576px) {
         top: -400px;
     }
+    @media (max-width:320px) {
+        top: -300px;
+    }
 }
 
 #section2 {
@@ -566,6 +569,9 @@ html {
 #tosection3{
     @media (max-width:1600px) {
         top: -60px;
+    }
+    @media (max-width:320px) {
+        top: -40px;
     }
 }
 
@@ -872,6 +878,9 @@ html {
     @media (max-width:1600px) {
         top: -60px;
     }
+    @media (max-width:320px) {
+        top: -40px;
+    }
 }
 
 #section4 {
@@ -1018,6 +1027,9 @@ html {
 #tosection5-1 {
     @media (max-width:1600px) {
         top: -60px;
+    }
+    @media (max-width:320px) {
+        top: -40px;
     }
 }
 #section5-1 {
@@ -1203,11 +1215,25 @@ html {
     margin: auto;
 }
 
+#tosection5-3 {
+    @media (max-width:1600px) {
+        top: -60px;
+    }
+    @media (max-width:320px) {
+        top: -40px;
+    }
+}
+
 
 
 
 
 /*********** 這裡是section6 ***********/
+#tosection6 {
+    @media (max-width:320px) {
+        top: -40px;
+    }
+}
 #section6 {
     position: relative;
     width: 100%;
