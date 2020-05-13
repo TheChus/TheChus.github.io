@@ -513,21 +513,6 @@ html {
   height: 70vh;
 }
 
-/* !!未測試未確認!!若圖不需要寫字，此行應該可以刪除 */
-#section3 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .slide3 {
   width: 100%;
   height: 100%;
@@ -634,6 +619,378 @@ html {
   background-image: url(../img/background/triangle-mosaic.png);
   padding: 50px 0 100px 0;
   position: relative;
+  overflow: hidden;
+}
+
+@-webkit-keyframes runright {
+  from {
+    right: 0;
+  }
+  to {
+    right: 30%;
+  }
+}
+
+@keyframes runright {
+  from {
+    right: 0;
+  }
+  to {
+    right: 30%;
+  }
+}
+
+@-webkit-keyframes runright-1600 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 25%;
+  }
+}
+
+@keyframes runright-1600 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 25%;
+  }
+}
+
+@-webkit-keyframes runright-1440 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 20%;
+  }
+}
+
+@keyframes runright-1440 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 20%;
+  }
+}
+
+@-webkit-keyframes runright-1024 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 15%;
+  }
+}
+
+@keyframes runright-1024 {
+  from {
+    right: 0;
+  }
+  to {
+    right: 15%;
+  }
+}
+
+@-webkit-keyframes runright-768 {
+  from {
+    right: -20%;
+  }
+  to {
+    right: 5%;
+  }
+}
+
+@keyframes runright-768 {
+  from {
+    right: -20%;
+  }
+  to {
+    right: 5%;
+  }
+}
+
+@-webkit-keyframes runright-576 {
+  from {
+    right: -40%;
+  }
+  to {
+    right: -15%;
+  }
+}
+
+@keyframes runright-576 {
+  from {
+    right: -40%;
+  }
+  to {
+    right: -15%;
+  }
+}
+
+@-webkit-keyframes runright-375 {
+  from {
+    right: -60%;
+  }
+  to {
+    right: -20%;
+  }
+}
+
+@keyframes runright-375 {
+  from {
+    right: -60%;
+  }
+  to {
+    right: -20%;
+  }
+}
+
+@-webkit-keyframes runleft {
+  from {
+    left: 0;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+@keyframes runleft {
+  from {
+    left: 0;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+@-webkit-keyframes runleft-1600 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 25%;
+  }
+}
+
+@keyframes runleft-1600 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 25%;
+  }
+}
+
+@-webkit-keyframes runleft-1440 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 20%;
+  }
+}
+
+@keyframes runleft-1440 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 20%;
+  }
+}
+
+@-webkit-keyframes runleft-1024 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 15%;
+  }
+}
+
+@keyframes runleft-1024 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 15%;
+  }
+}
+
+@-webkit-keyframes runleft-768 {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 5%;
+  }
+}
+
+@keyframes runleft-768 {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 5%;
+  }
+}
+
+@-webkit-keyframes runleft-576 {
+  from {
+    left: -40%;
+  }
+  to {
+    left: -15%;
+  }
+}
+
+@keyframes runleft-576 {
+  from {
+    left: -40%;
+  }
+  to {
+    left: -15%;
+  }
+}
+
+@-webkit-keyframes runleft-375 {
+  from {
+    left: -60%;
+  }
+  to {
+    left: -20%;
+  }
+}
+
+@keyframes runleft-375 {
+  from {
+    left: -60%;
+  }
+  to {
+    left: -20%;
+  }
+}
+
+.section3-1-background-left {
+  -webkit-animation-name: runleft;
+          animation-name: runleft;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+}
+
+.section3-1-background-left img {
+  max-width: 12%;
+  opacity: 0.5;
+}
+
+@media (max-width: 1600px) {
+  .section3-1-background-left {
+    -webkit-animation-name: runleft-1600;
+            animation-name: runleft-1600;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section3-1-background-left {
+    -webkit-animation-name: runleft-1440;
+            animation-name: runleft-1440;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section3-1-background-left {
+    -webkit-animation-name: runleft-1024;
+            animation-name: runleft-1024;
+  }
+}
+
+@media (max-width: 768px) {
+  .section3-1-background-left {
+    -webkit-animation-name: runleft-768;
+            animation-name: runleft-768;
+  }
+}
+
+@media (max-width: 576px) {
+  .section3-1-background-left {
+    -webkit-animation-name: runleft-576;
+            animation-name: runleft-576;
+  }
+}
+
+@media (max-width: 375px) {
+  .section3-1-background-left {
+    -webkit-animation-name: runleft-375;
+            animation-name: runleft-375;
+  }
+}
+
+.section3-1-background-right {
+  -webkit-animation-name: runright;
+          animation-name: runright;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+.section3-1-background-right img {
+  max-width: 15%;
+}
+
+@media (max-width: 1600px) {
+  .section3-1-background-right {
+    -webkit-animation-name: runright-1600;
+            animation-name: runright-1600;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section3-1-background-right {
+    -webkit-animation-name: runright-1440;
+            animation-name: runright-1440;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section3-1-background-right {
+    -webkit-animation-name: runright-1024;
+            animation-name: runright-1024;
+  }
+}
+
+@media (max-width: 768px) {
+  .section3-1-background-right {
+    -webkit-animation-name: runright-768;
+            animation-name: runright-768;
+  }
+}
+
+@media (max-width: 576px) {
+  .section3-1-background-right {
+    -webkit-animation-name: runright-576;
+            animation-name: runright-576;
+  }
+}
+
+@media (max-width: 375px) {
+  .section3-1-background-right {
+    -webkit-animation-name: runright-375;
+            animation-name: runright-375;
+  }
 }
 
 #section3-1 .container {
@@ -832,17 +1189,18 @@ html {
   position: relative;
   width: 100%;
   background-image: url(../img/background/triangle-mosaic.png);
+  overflow: hidden;
 }
 
 .section4-background {
   position: absolute;
-  top: -50px;
+  top: -45px;
   right: 270px;
   height: auto;
 }
 
 .section4-background img {
-  max-width: 60%;
+  max-width: 50%;
   opacity: 0.5;
 }
 
@@ -858,7 +1216,7 @@ html {
     right: 20px;
   }
   .section4-background img {
-    max-width: 50%;
+    max-width: 40%;
   }
 }
 
@@ -874,7 +1232,7 @@ html {
     right: -120px;
   }
   .section4-background img {
-    max-width: 45%;
+    max-width: 35%;
   }
 }
 
@@ -884,14 +1242,14 @@ html {
     right: -180px;
   }
   .section4-background img {
-    max-width: 40%;
+    max-width: 30%;
   }
 }
 
 @media (max-width: 576px) {
   .section4-background {
-    top: -10px;
-    right: -250px;
+    top: 100px;
+    right: -310px;
   }
   .section4-background img {
     max-width: 20%;
@@ -904,6 +1262,8 @@ html {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, white 100%);
   margin: 0;
   border-radius: 25px 25px 0 25px;
+  position: relative;
+  z-index: 5;
 }
 
 .button {

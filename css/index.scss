@@ -596,14 +596,14 @@ html {
     height: 70vh;
 }
 
-/* !!未測試未確認!!若圖不需要寫字，此行應該可以刪除 */
-#section3 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// /* !!未測試未確認!!若圖不需要寫字，此行應該可以刪除 */
+// #section3 .swiper-slide {
+//     text-align: center;
+//     font-size: 18px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
 .slide3 {
     width: 100%;
@@ -704,7 +704,190 @@ html {
     background-image: url(../img/background/triangle-mosaic.png);
     padding: 50px 0 100px 0;
     position: relative;
+    overflow: hidden;
 }
+
+@keyframes runright {
+    from {
+        right: 0;
+    }
+    to {
+        right: 30%;
+    }
+}
+@keyframes runright-1600 {
+    from {
+        right: 0;
+    }
+    to {
+        right: 25%;
+    }
+}
+@keyframes runright-1440 {
+    from {
+        right: 0;
+    }
+    to {
+        right: 20%;
+    }
+}
+@keyframes runright-1024 {
+    from {
+        right: 0;
+    }
+    to {
+        right: 15%;
+    }
+}
+@keyframes runright-768 {
+    from {
+        right: -20%;
+    }
+    to {
+        right: 5%;
+    }
+}
+@keyframes runright-576 {
+    from {
+        right: -40%;
+    }
+    to {
+        right: -15%;
+    }
+}
+@keyframes runright-375 {
+    from {
+        right: -60%;
+    }
+    to {
+        right: -20%;
+    }
+}
+
+
+@keyframes runleft {
+    from {
+        left: 0;
+    }
+    to {
+        left: 30%;
+    }
+}
+@keyframes runleft-1600 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 25%;
+    }
+}
+@keyframes runleft-1440 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 20%;
+    }
+}
+@keyframes runleft-1024 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 15%;
+    }
+}
+@keyframes runleft-768 {
+    from {
+        left: -20%;
+    }
+    to {
+        left: 5%;
+    }
+}
+@keyframes runleft-576 {
+    from {
+        left: -40%;
+    }
+    to {
+        left: -15%;
+    }
+}
+@keyframes runleft-375 {
+    from {
+        left: -60%;
+    }
+    to {
+        left: -20%;
+    }
+}
+
+.section3-1-background-left {
+    animation-name: runleft;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    & img {
+        max-width: 12%;
+        opacity: 0.5;
+    }
+
+    @media (max-width: 1600px) {
+        animation-name: runleft-1600;
+    }
+    @media (max-width: 1440px) {
+        animation-name: runleft-1440;
+    }
+    @media (max-width: 1024px) {
+        animation-name: runleft-1024;
+    }
+    @media (max-width: 768px) {
+        animation-name: runleft-768;
+    }
+    @media (max-width: 576px) {
+        animation-name: runleft-576;
+    }
+    @media (max-width: 375px) {
+        animation-name: runleft-375;
+    }
+}
+
+.section3-1-background-right {
+    animation-name: runright;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    & img {
+        max-width: 15%;
+        // opacity: 0.5;
+    }
+
+    @media (max-width: 1600px) {
+        animation-name: runright-1600;
+    }
+    @media (max-width: 1440px) {
+        animation-name: runright-1440;
+    }
+    @media (max-width: 1024px) {
+        animation-name: runright-1024;
+    }
+    @media (max-width: 768px) {
+        animation-name: runright-768;
+    }
+    @media (max-width: 576px) {
+        animation-name: runright-576;
+    }
+    @media (max-width: 375px) {
+        animation-name: runright-375;
+    }
+}
+
 
 #section3-1 .container{
     background-image: url(../img/background/triangle-mosaic.png);
@@ -891,15 +1074,16 @@ html {
     width: 100%;
     background-image: url(../img/background/triangle-mosaic.png);
     // background: linear-gradient(180deg, rgba(0, 0, 0, 1)0%, rgba(255, 255, 255, 1)100%);
+    overflow: hidden;
 }
 
 .section4-background {
     position: absolute;
-    top: -50px;
+    top: -45px;
     right: 270px;
     height: auto;
     & img {
-        max-width: 60%;
+        max-width: 50%;
         opacity: 0.5;
     }
 
@@ -908,7 +1092,7 @@ html {
     }
     @media (max-width: 1366px) {
         & img {
-            max-width: 50%;
+            max-width: 40%;
         }
         top:-10px;
         right: 20px;
@@ -918,14 +1102,14 @@ html {
     }
     @media (max-width: 1024px) {
         & img {
-            max-width: 45%;
+            max-width: 35%;
         }
         top: 20px;
         right:-120px;
     }
     @media (max-width: 768px) {
         & img {
-            max-width: 40%;
+            max-width: 30%;
         }
         top: 40px;
         right:-180px;
@@ -934,8 +1118,8 @@ html {
         & img {
             max-width: 20%;
         }
-        top: -10px;
-        right:-250px;
+        top: 100px;
+        right:-310px;
     }
 }
 
@@ -946,6 +1130,8 @@ html {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1)0%, rgba(255, 255, 255, 1)100%);
     margin: 0;
     border-radius: 25px 25px 0 25px;
+    position: relative;
+    z-index: 5;
 }
 
 .button {
