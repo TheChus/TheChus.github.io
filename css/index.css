@@ -1500,6 +1500,7 @@ html {
 }
 
 .card {
+  background-color: unset;
   display: block;
   position: absolute;
   width: 100%;
@@ -1508,14 +1509,14 @@ html {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 380px;
+  height: 300px;
   border-radius: 5%;
   border: 5px solid white;
   cursor: pointer;
 }
 
 .front1 {
-  background-image: url(../img/pic511.jpg);
+  background-image: url(../img/front-dog1-04.png);
 }
 
 .back1 {
@@ -1545,7 +1546,7 @@ html {
 }
 
 .front4 {
-  background-image: url(../img/pic511.jpg);
+  background-image: url(../img/front-dog4-01.png);
 }
 
 .back4 {
