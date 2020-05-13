@@ -617,380 +617,94 @@ html {
 #section3-1 {
   width: 100%;
   background-image: url(../img/background/triangle-mosaic.png);
-  padding: 50px 0 100px 0;
+  padding: 50px 0 50px 0;
   position: relative;
   overflow: hidden;
 }
 
-@-webkit-keyframes runright {
-  from {
-    right: 0;
-  }
-  to {
-    right: 30%;
-  }
-}
-
-@keyframes runright {
-  from {
-    right: 0;
-  }
-  to {
-    right: 30%;
-  }
-}
-
-@-webkit-keyframes runright-1600 {
-  from {
-    right: 0;
-  }
-  to {
-    right: 25%;
-  }
-}
-
-@keyframes runright-1600 {
-  from {
-    right: 0;
-  }
-  to {
-    right: 25%;
-  }
-}
-
-@-webkit-keyframes runright-1440 {
-  from {
-    right: 0;
-  }
-  to {
-    right: 20%;
-  }
-}
-
-@keyframes runright-1440 {
-  from {
-    right: 0;
-  }
-  to {
-    right: 20%;
-  }
-}
-
-@-webkit-keyframes runright-1024 {
-  from {
-    right: 0;
-  }
-  to {
-    right: 15%;
-  }
-}
-
-@keyframes runright-1024 {
-  from {
-    right: 0;
-  }
-  to {
-    right: 15%;
-  }
-}
-
-@-webkit-keyframes runright-768 {
-  from {
-    right: -20%;
-  }
-  to {
-    right: 5%;
-  }
-}
-
-@keyframes runright-768 {
-  from {
-    right: -20%;
-  }
-  to {
-    right: 5%;
-  }
-}
-
-@-webkit-keyframes runright-576 {
-  from {
-    right: -40%;
-  }
-  to {
-    right: -15%;
-  }
-}
-
-@keyframes runright-576 {
-  from {
-    right: -40%;
-  }
-  to {
-    right: -15%;
-  }
-}
-
-@-webkit-keyframes runright-375 {
-  from {
-    right: -60%;
-  }
-  to {
-    right: -20%;
-  }
-}
-
-@keyframes runright-375 {
-  from {
-    right: -60%;
-  }
-  to {
-    right: -20%;
-  }
-}
-
-@-webkit-keyframes runleft {
-  from {
-    left: 0;
-  }
-  to {
-    left: 30%;
-  }
-}
-
-@keyframes runleft {
-  from {
-    left: 0;
-  }
-  to {
-    left: 30%;
-  }
-}
-
-@-webkit-keyframes runleft-1600 {
-  from {
-    left: 0;
-  }
-  to {
-    left: 25%;
-  }
-}
-
-@keyframes runleft-1600 {
-  from {
-    left: 0;
-  }
-  to {
-    left: 25%;
-  }
-}
-
-@-webkit-keyframes runleft-1440 {
-  from {
-    left: 0;
-  }
-  to {
-    left: 20%;
-  }
-}
-
-@keyframes runleft-1440 {
-  from {
-    left: 0;
-  }
-  to {
-    left: 20%;
-  }
-}
-
-@-webkit-keyframes runleft-1024 {
-  from {
-    left: 0;
-  }
-  to {
-    left: 15%;
-  }
-}
-
-@keyframes runleft-1024 {
-  from {
-    left: 0;
-  }
-  to {
-    left: 15%;
-  }
-}
-
-@-webkit-keyframes runleft-768 {
-  from {
-    left: -20%;
-  }
-  to {
-    left: 5%;
-  }
-}
-
-@keyframes runleft-768 {
-  from {
-    left: -20%;
-  }
-  to {
-    left: 5%;
-  }
-}
-
-@-webkit-keyframes runleft-576 {
-  from {
-    left: -40%;
-  }
-  to {
-    left: -15%;
-  }
-}
-
-@keyframes runleft-576 {
-  from {
-    left: -40%;
-  }
-  to {
-    left: -15%;
-  }
-}
-
-@-webkit-keyframes runleft-375 {
-  from {
-    left: -60%;
-  }
-  to {
-    left: -20%;
-  }
-}
-
-@keyframes runleft-375 {
-  from {
-    left: -60%;
-  }
-  to {
-    left: -20%;
-  }
-}
-
-.section3-1-background-left {
-  -webkit-animation-name: runleft;
-          animation-name: runleft;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+.section3-1-background-1 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: auto;
 }
 
-.section3-1-background-left img {
-  max-width: 12%;
-  opacity: 0.5;
+.section3-1-background-1 img {
+  max-width: 75%;
+  opacity: 0.75;
 }
 
-@media (max-width: 1600px) {
-  .section3-1-background-left {
-    -webkit-animation-name: runleft-1600;
-            animation-name: runleft-1600;
-  }
-}
-
-@media (max-width: 1440px) {
-  .section3-1-background-left {
-    -webkit-animation-name: runleft-1440;
-            animation-name: runleft-1440;
-  }
-}
-
-@media (max-width: 1024px) {
-  .section3-1-background-left {
-    -webkit-animation-name: runleft-1024;
-            animation-name: runleft-1024;
-  }
-}
-
-@media (max-width: 768px) {
-  .section3-1-background-left {
-    -webkit-animation-name: runleft-768;
-            animation-name: runleft-768;
-  }
-}
-
-@media (max-width: 576px) {
-  .section3-1-background-left {
-    -webkit-animation-name: runleft-576;
-            animation-name: runleft-576;
-  }
-}
-
-@media (max-width: 375px) {
-  .section3-1-background-left {
-    -webkit-animation-name: runleft-375;
-            animation-name: runleft-375;
-  }
-}
-
-.section3-1-background-right {
-  -webkit-animation-name: runright;
-          animation-name: runright;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+.section3-1-background-2 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   height: auto;
 }
 
-.section3-1-background-right img {
-  max-width: 15%;
+.section3-1-background-2 img {
+  max-width: 75%;
+  opacity: 0.75;
 }
 
-@media (max-width: 1600px) {
-  .section3-1-background-right {
-    -webkit-animation-name: runright-1600;
-            animation-name: runright-1600;
-  }
+.section3-1-background-3 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: auto;
 }
 
-@media (max-width: 1440px) {
-  .section3-1-background-right {
-    -webkit-animation-name: runright-1440;
-            animation-name: runright-1440;
-  }
+.section3-1-background-3 img {
+  max-width: 75%;
+  opacity: 0.75;
 }
 
-@media (max-width: 1024px) {
-  .section3-1-background-right {
-    -webkit-animation-name: runright-1024;
-            animation-name: runright-1024;
-  }
+.section3-1-background-4 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: auto;
 }
 
-@media (max-width: 768px) {
-  .section3-1-background-right {
-    -webkit-animation-name: runright-768;
-            animation-name: runright-768;
-  }
+.section3-1-background-4 img {
+  max-width: 75%;
+  opacity: 0.75;
 }
 
-@media (max-width: 576px) {
-  .section3-1-background-right {
-    -webkit-animation-name: runright-576;
-            animation-name: runright-576;
-  }
+.section3-1-background-5 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: auto;
 }
 
-@media (max-width: 375px) {
-  .section3-1-background-right {
-    -webkit-animation-name: runright-375;
-            animation-name: runright-375;
-  }
+.section3-1-background-5 img {
+  max-width: 75%;
+  opacity: 0.75;
 }
 
 #section3-1 .container {
@@ -1201,7 +915,6 @@ html {
 
 .section4-background img {
   max-width: 50%;
-  opacity: 0.5;
 }
 
 @media (max-width: 1600px) {
@@ -1501,6 +1214,7 @@ html {
 
 .card {
   background-color: unset;
+  border: unset;
   display: block;
   position: absolute;
   width: 100%;
@@ -1510,59 +1224,57 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  border-radius: 5%;
-  border: 5px solid white;
   cursor: pointer;
 }
 
 .front1 {
-  background-image: url(../img/front-dog1-04.png);
+  background-image: url(../img/front-dog1-02.png);
 }
 
 .back1 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
+  background-image: url(../img/back-dog1-06.png);
 }
 
 .front2 {
-  background-image: url(../img/pic511.jpg);
+  background-image: url(../img/front-dog2-02.png);
 }
 
 .back2 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
+  background-image: url(../img/back-dog2-07.png);
 }
 
 .front3 {
-  background-image: url(../img/front-dog3-05.png);
+  background-image: url(../img/front-dog3-02.png);
 }
 
 .back3 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
+  background-image: url(../img/back-dog3-08.png);
 }
 
 .front4 {
-  background-image: url(../img/front-dog4-01.png);
+  background-image: url(../img/front-dog4-02.png);
 }
 
 .back4 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
+  background-image: url(../img/back-dog4-09.png);
 }
 
 .front5 {
-  background-image: url(../img/pic511.jpg);
+  background-image: url(../img/front-dog5-02.png);
 }
 
 .back5 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/pic512.jpg);
+  background-image: url(../img/back-dog5-10.png);
 }
 
 .flipped {
