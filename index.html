@@ -50,16 +50,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mr-lg-5">
-                        <a class="nav-link" id="colorful-1" href="#tosection2">最新消息</a>
+                        <a class="nav-link colorful" id="colorful-1" href="#tosection2">最新消息</a>
                     </li>
                     <li class="nav-item  mr-lg-5">
-                        <a class="nav-link" id="colorful-2" href="#tosection3">友善環境</a>
+                        <a class="nav-link colorful" id="colorful-2" href="#tosection3">友善環境</a>
                     </li>
                     <li class="nav-item  mr-lg-5">
-                        <a class="nav-link" id="colorful-3" href="#tosection4">幸福產品</a>
+                        <a class="nav-link colorful" id="colorful-3" href="#tosection4">幸福產品</a>
                     </li>
                     <li class="nav-item dropdown mr-lg-5" id="nav-4">
-                        <a class="nav-link dropdown-toggle" id="colorful-4" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link colorful dropdown-toggle" id="colorful-4" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             關於牧場
                         </a>
@@ -71,7 +71,7 @@
                     </li>
                     </span>
                     <li class="nav-item">
-                        <a class="nav-link" id="colorful-5" href="#tosection6">聯絡我們
+                        <a class="nav-link colorful" id="colorful-5" href="#tosection6">聯絡我們
                         </a>
                     </li>
                 </ul>
@@ -565,7 +565,7 @@
     <!----------- 這裡是section4 ----------->
     <div id="tosection4" class="ToSection"></div>
     <section id="section4" class="pb-5 pt-5">
-        <div class="section4-background"><img src="img/section5-1-background-01.png" alt=""></div>
+        <div class="section4-background"><img src="img/section4-background.png" alt=""></div>
         <div class="container">
             <div class="section-name mb-4 animated rubberBand delay-1s">
                 <span>幸福產品 Product</span>
@@ -740,13 +740,28 @@
 
     <!----------- 這裡是section6 ----------->
     <div id="tosection6" class="ToSection"></div>
-    <section id="section6" class="pt-5">
+    <section id="section6" class="pt-5 pb-5">
         <div class="section-name mb-3">
             <span>聯絡我們 contactus</span>
         </div>
-        <p>
-            先不要聯絡我們，</p>等疫情過了再說唄(¬_¬)
-        <div id="contactus"></div>
+        
+        
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+            <form>
+                <input type="hidden" name="_token" value="JgBiqxZejdNRCiLqLhTSVYcqqCkh1DVwUcKiNiOx">                                <input id="contact_name" class="col-4 formBG" type="text" placeholder="Name" name="name" /><input id="contact_phone" class="col-8 formBG" type="text" placeholder="Phone Number" name="phone" />
+                <br>
+                <input id="contact_email" class="col formBG" type="text" placeholder="Email" name="email" />
+                <br>
+                <textarea id="contact_main_content" class="col formBG textPart" rows="5" name="main_content" placeholder="先不要聯絡我們，等疫情過了再說唄(¬_¬)"></textarea>
+
+                <a class="btn-lg btn-dark" href="#scene" role="button">Send</a>
+            </form>
+        </div>
+        </div>
+        </div>
+
 
     </section>
 
@@ -1041,6 +1056,23 @@
         /////////// 這是footer的parrallax ///////////
         var scene = document.querySelector('#scene');
         var parallaxInstance = new Parallax(scene);
+
+
+
+
+    // <!-- gotop卷軸偵測jquery -->
+    ///* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+        // $(function () {
+           
+        //     $(window).scroll(function () {
+        //         if ($(this).scrollTop() > 400) {
+        //             $('#gotop').fadeIn("slow");
+        //         } else {
+        //             $('#gotop').fadeOut("slow");
+        //         }
+        //     });
+        // });
+
 
     </script>
     Copyright © 2020 TheChus
