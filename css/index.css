@@ -369,6 +369,193 @@ html {
   padding: 0;
   background-image: url(../img/background/triangle-mosaic.png);
   padding: 30px 0 50px 0;
+  overflow: hidden;
+}
+
+.section2-background-1 {
+  position: absolute;
+  top: 100px;
+  right: 500px;
+  height: auto;
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section2-background-1 img {
+  max-width: 20%;
+  opacity: 0.5;
+}
+
+@media (max-width: 1600px) {
+  .section2-background-1 {
+    right: 320px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section2-background-1 {
+    right: 250px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .section2-background-1 {
+    right: 200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .section2-background-1 {
+    right: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section2-background-1 {
+    right: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2-background-1 {
+    right: -30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section2-background-1 {
+    top: 80px;
+    right: -70px;
+  }
+  .section2-background-1 img {
+    max-width: 15%;
+  }
+}
+
+.section2-background-2 {
+  position: absolute;
+  top: 75px;
+  right: 580px;
+  height: auto;
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section2-background-2 img {
+  max-width: 20%;
+  opacity: 0.5;
+}
+
+@media (max-width: 1600px) {
+  .section2-background-2 {
+    right: 390px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .section2-background-2 {
+    right: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section2-background-2 {
+    right: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2-background-2 {
+    right: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section2-background-2 {
+    top: 70px;
+    right: -20px;
+  }
+  .section2-background-2 img {
+    max-width: 15%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section2-background-2 {
+    right: -30px;
+  }
+}
+
+.section2-background-3 {
+  position: absolute;
+  top: 60px;
+  right: 680px;
+  height: auto;
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section2-background-3 img {
+  max-width: 20%;
+  opacity: 0.5;
+}
+
+@media (max-width: 1600px) {
+  .section2-background-3 {
+    right: 490px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .section2-background-3 {
+    right: 370px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section2-background-3 {
+    right: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2-background-3 {
+    right: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section2-background-3 {
+    top: 50px;
+    right: 10px;
+  }
+  .section2-background-3 img {
+    max-width: 15%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section2-background-3 {
+    right: -15px;
+  }
 }
 
 #section2 .section-name {
@@ -622,91 +809,6 @@ html {
   overflow: hidden;
 }
 
-.section3-1-background-1 {
-  -webkit-animation-name: fadeout;
-          animation-name: fadeout;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  height: auto;
-}
-
-.section3-1-background-1 img {
-  max-width: 75%;
-  opacity: 0.75;
-}
-
-.section3-1-background-2 {
-  -webkit-animation-name: fadeout;
-          animation-name: fadeout;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  height: auto;
-}
-
-.section3-1-background-2 img {
-  max-width: 75%;
-  opacity: 0.75;
-}
-
-.section3-1-background-3 {
-  -webkit-animation-name: fadeout;
-          animation-name: fadeout;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  height: auto;
-}
-
-.section3-1-background-3 img {
-  max-width: 75%;
-  opacity: 0.75;
-}
-
-.section3-1-background-4 {
-  -webkit-animation-name: fadeout;
-          animation-name: fadeout;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  height: auto;
-}
-
-.section3-1-background-4 img {
-  max-width: 75%;
-  opacity: 0.75;
-}
-
-.section3-1-background-5 {
-  -webkit-animation-name: fadeout;
-          animation-name: fadeout;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  height: auto;
-}
-
-.section3-1-background-5 img {
-  max-width: 75%;
-  opacity: 0.75;
-}
-
 #section3-1 .container {
   background-image: url(../img/background/triangle-mosaic.png);
 }
@@ -811,6 +913,86 @@ html {
 
 #section3-1 .swiper-pagination-bullet-active {
   background-color: #dd6d59;
+}
+
+.section3-1-background-1 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section3-1-background-1 img {
+  max-width: 75%;
+  opacity: 0.75;
+}
+
+.section3-1-background-2 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section3-1-background-2 img {
+  max-width: 75%;
+  opacity: 0.75;
+}
+
+.section3-1-background-3 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section3-1-background-3 img {
+  max-width: 75%;
+  opacity: 0.75;
+}
+
+.section3-1-background-4 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section3-1-background-4 img {
+  max-width: 75%;
+  opacity: 0.75;
+}
+
+.section3-1-background-5 {
+  -webkit-animation-name: fadeout;
+          animation-name: fadeout;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section3-1-background-5 img {
+  max-width: 75%;
+  opacity: 0.75;
 }
 
 /*********** 這裡是section3-2 ***********/
@@ -1228,53 +1410,53 @@ html {
 }
 
 .front1 {
-  background-image: url(../img/front-dog1-02.png);
+  background-image: url(../img/front-dog1.png);
 }
 
 .back1 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/back-dog1-06.png);
+  background-image: url(../img/back-dog1.png);
 }
 
 .front2 {
-  background-image: url(../img/front-dog2-02.png);
+  background-image: url(../img/front-dog2.png);
 }
 
 .back2 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/back-dog2-07.png);
+  background-image: url(../img/back-dog2.png);
 }
 
 .front3 {
-  background-image: url(../img/front-dog3-02.png);
+  background-image: url(../img/front-dog3.png);
 }
 
 .back3 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/back-dog3-08.png);
+  background-image: url(../img/back-dog3.png);
 }
 
 .front4 {
-  background-image: url(../img/front-dog4-02.png);
+  background-image: url(../img/front-dog4.png);
 }
 
 .back4 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/back-dog4-09.png);
+  background-image: url(../img/back-dog4.png);
 }
 
 .front5 {
-  background-image: url(../img/front-dog5-02.png);
+  background-image: url(../img/front-dog5.png);
 }
 
 .back5 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: url(../img/back-dog5-10.png);
+  background-image: url(../img/back-dog5.png);
 }
 
 .flipped {
@@ -1337,6 +1519,50 @@ html {
 @media (max-width: 375px) {
   #tosection5-3 {
     top: -40px;
+  }
+}
+
+.section5-2-background {
+  position: absolute;
+  top: 5px;
+  left: 300px;
+}
+
+.section5-2-background img {
+  max-width: 100%;
+  opacity: 0.5;
+}
+
+@media (max-width: 1600px) {
+  .section5-2-background {
+    left: 200px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section5-2-background {
+    left: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .section5-2-background {
+    left: 10px;
+  }
+  .section5-2-background img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section5-2-background {
+    left: -50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .section5-2-background {
+    top: 100px;
   }
 }
 
