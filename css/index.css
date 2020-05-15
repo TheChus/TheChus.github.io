@@ -2267,8 +2267,9 @@ html {
 #section5-2 {
   position: relative;
   width: 100%;
-  background-image: url(../img/background/black_linen_v2_@2X.png);
+  background-image: url(../img/background/black_lozenge_@2X.png);
   overflow: hidden;
+  color: #ddccb8;
 }
 
 #section5-2 .container {
@@ -2325,7 +2326,7 @@ html {
 
 .section5-2-background img {
   max-width: 60%;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 @media (max-width: 1600px) {
@@ -2384,7 +2385,7 @@ html {
     bottom: 20px;
   }
   .section5-2-background img {
-    max-width: 28%;
+    max-width: 25%;
   }
 }
 
