@@ -278,13 +278,13 @@ html {
     }
     40%{
         top: 18%;
-        left: 25%;
-        transform: rotate(-324deg) scale(1.6);
+        left: 20%;
+        transform: rotate(-360deg) scale(1.6);
         animation-timing-function: ease-in-out;
     }
     80%{
         top: 1%;
-        left: 22%;
+        left: 15%;
         transform: rotate(-700deg) scale(1.2);
     }
     90%{
@@ -310,13 +310,13 @@ html {
     }
     40%{
         top: 18%;
-        left: 25%;
-        transform: rotate(-324deg) scale(1.3);
+        left: 20%;
+        transform: rotate(-360deg) scale(1.3);
         animation-timing-function: ease-in-out;
     }
     80%{
         top: 1%;
-        left: 18%;
+        left: 13%;
         transform: rotate(-700deg) scale(1.2);
     }
     90%{
@@ -1593,7 +1593,7 @@ html {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-image: url(../img/background/beige-tiles.png);
+    background-image: url(../img/background/triangle-mosaic.png);
 }
 
 #section5-1 .row{
@@ -1767,18 +1767,18 @@ html {
 #section5-2 {
     position: relative;
     width: 100%;
-    background-image: url(../img/background/beige-tiles.png);
+    background-image: url(../img/background/triangle-mosaic.png);
     overflow: hidden;
 }
 
 #section5-2 .container{
     background-image: url(../img/section5-2.jpg);
-    background-attachment: fixed;
+    // background-attachment: initial;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 100%;
-    height: 450px;
+    // width: 100%;
+    // height: 450px;
 }
 #section5-2 .text {
     font-size: 25px;
@@ -1872,7 +1872,7 @@ html {
     position: relative;
     width: 100%;
     // height: 500px;
-    background-image: url(../img/background/beige-tiles.png);
+    background-image: url(../img/background/triangle-mosaic.png);
     // background: linear-gradient(180deg, rgba(207, 250, 207, 1) 0%, rgb(127, 214, 213) 100%);
     font-size: 30px;
     text-align: center;
