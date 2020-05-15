@@ -504,6 +504,11 @@
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-next">
+                        </div>
+                        <div class="swiper-button-prev"></div>
+
                     </div>
                 </div>
             </div>
@@ -618,7 +623,7 @@
     <!-------- 這裡是section5-1 -------->
     <div id="tosection5-1" class="ToSection"></div>
     <section id="section5-1" class="pb-5 pt-5">
-        <div class="section5-1-background"><img src="img/smallthing/point.png" alt=""></div>
+        <div class="section5-1-background"><img src="img/smallthing/point2.png" alt=""></div>
         <div class="container">
             <div class="section-name mb-4">
                 <span>關於牧場 TheChus</span>
@@ -1017,6 +1022,10 @@
             pagination: {
                 el: '#section3-1 .swiper-pagination',
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '#section3-1 .swiper-button-next',
+                prevEl: '#section3-1 .swiper-button-prev',
             },
             breakpoints: {
                 // when window width is >= 768px

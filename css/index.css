@@ -1729,6 +1729,30 @@ html {
   opacity: 0.75;
 }
 
+#section3-1 .swiper-button-next {
+  background-image: url(../img/smallthing/rightarrow_orange.png);
+  right: -12px;
+}
+
+@media (max-width: 1024px) {
+  #section3-1 .swiper-button-next {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#section3-1 .swiper-button-prev {
+  background-image: url(../img/smallthing/leftarrow_orange.png);
+  left: -12px;
+}
+
+@media (max-width: 1024px) {
+  #section3-1 .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 /*********** 這裡是section3-2 ***********/
 #section3-2 {
   width: 100%;
@@ -1747,29 +1771,21 @@ html {
 }
 
 .section3-2-background img {
-  max-width: 80%;
-  opacity: 0.5;
+  max-width: 65%;
+  opacity: 0.15;
 }
 
 @media (max-width: 767px) {
   .section3-2-background {
-    right: -150px;
+    right: -50px;
   }
   .section3-2-background img {
     max-width: 80%;
+    opacity: 0.1;
   }
 }
 
-@media (max-width: 575px) {
-  .section3-2-background {
-    right: -110px;
-  }
-  .section3-2-background img {
-    max-width: 70%;
-  }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .section3-2-background {
     right: -80px;
   }
@@ -1824,13 +1840,14 @@ html {
 
 .section4-background {
   position: absolute;
-  top: -45px;
-  right: 270px;
+  top: 20px;
+  right: 300px;
   height: auto;
 }
 
 .section4-background img {
-  max-width: 50%;
+  max-width: 40%;
+  opacity: 0.8;
 }
 
 @media (max-width: 1600px) {
@@ -1841,11 +1858,11 @@ html {
 
 @media (max-width: 1366px) {
   .section4-background {
-    top: -10px;
-    right: 20px;
+    top: 20px;
+    right: 100px;
   }
   .section4-background img {
-    max-width: 40%;
+    max-width: 30%;
   }
 }
 
@@ -1861,7 +1878,7 @@ html {
     right: -120px;
   }
   .section4-background img {
-    max-width: 35%;
+    max-width: 25%;
   }
 }
 
@@ -1871,16 +1888,31 @@ html {
     right: -180px;
   }
   .section4-background img {
-    max-width: 30%;
+    max-width: 20%;
   }
 }
 
 @media (max-width: 576px) {
   .section4-background {
+    right: -220px;
+  }
+}
+
+@media (max-width: 414px) {
+  .section4-background {
     right: -250px;
   }
   .section4-background img {
-    max-width: 20%;
+    max-width: 15%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section4-background {
+    right: -260px;
+  }
+  .section4-background img {
+    max-width: 13%;
   }
 }
 
@@ -2038,7 +2070,15 @@ html {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background-image: url(../img/background/black_lozenge_@2X.png);
+}
+
+#section5-1 .section-name {
+  color: whitesmoke;
+}
+
+#section5-1 .SmallSection-name {
+  color: #e0e0e0;
 }
 
 #section5-1 .row {
@@ -2060,7 +2100,6 @@ html {
 
 .section5-1-background img {
   max-width: 20%;
-  opacity: 0.5;
 }
 
 @media (max-width: 1600px) {
@@ -2100,7 +2139,7 @@ html {
 }
 
 #text5-1 {
-  color: #292929;
+  color: #f0f0f0;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -2228,7 +2267,7 @@ html {
 #section5-2 {
   position: relative;
   width: 100%;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background-image: url(../img/background/black_linen_v2_@2X.png);
   overflow: hidden;
 }
 
@@ -2286,7 +2325,7 @@ html {
 
 .section5-2-background img {
   max-width: 60%;
-  opacity: 0.3;
+  opacity: 0.85;
 }
 
 @media (max-width: 1600px) {
@@ -2318,7 +2357,34 @@ html {
 
 @media (max-width: 768px) {
   .section5-2-background {
-    display: none;
+    bottom: 0px;
+  }
+  .section5-2-background img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section5-2-background img {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 414px) {
+  .section5-2-background {
+    left: -245px;
+  }
+  .section5-2-background img {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section5-2-background {
+    bottom: 20px;
+  }
+  .section5-2-background img {
+    max-width: 28%;
   }
 }
 
@@ -2332,11 +2398,15 @@ html {
 #section6 {
   position: relative;
   width: 100%;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background-image: url(../img/background/black_linen_v2_@2X.png);
   font-size: 30px;
   text-align: center;
   color: #101d33;
   overflow: hidden;
+}
+
+#section6 .section-name {
+  color: whitesmoke;
 }
 
 /*********** 這裡是footer ***********/
