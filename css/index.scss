@@ -1,9 +1,4 @@
-// /* 未解決區：
-// ios不會自動播放影片 */
 
-
-// 4/30問老師該怎麼做往下滾到不section時，上方navbar出現不同name？
-// 像是獨角獸的那個網站
 
 body {
     margin: 0;
@@ -38,9 +33,6 @@ html {
     font-weight: 900;
 }
 
-// .section-name span {
-//     border-bottom: rgb(221, 109, 89) 5px solid;
-// }
 #section2 .section-name span {
     border-bottom: #ee934c 5px solid;
 }
@@ -95,9 +87,9 @@ html {
     }
 }
 
-#loading{height:100vh;width:100%;position: absolute;z-index:98;top:80px;background:#fff;
+#loading{height:100vh;width:100%;position: absolute;z-index:98;top:0px;background:#fff;
     animation-name: fadeout;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
     overflow: hidden;
@@ -112,6 +104,272 @@ html {
 @keyframes slide{0%{transform:scale(1)}50%{opacity:.3;transform:scale(2)}100%{transform:scale(1)}}
 
 
+// 測試logo動畫
+@keyframes LG{
+    10%{
+        top: -100px;
+        left: 80%;
+        transform: rotate(0deg) scale(2);
+    }
+    20%{
+        top: 30%;
+        left: 44%;
+        transform: rotate(-180deg) scale(2.2) translate(-50%, -50%);
+    }
+    40%{
+        top: 10%;
+        left: 40%;
+        transform: rotate(-324deg) scale(1.6);
+        animation-timing-function: ease-in-out;
+    }
+    80%{
+        top: 1%;
+        left: 30%;
+        transform: rotate(-1100deg) scale(1.3);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        top: 0%;
+        left: 22%;
+        transform: scale(1);
+    }
+}
+
+@keyframes LG-1600{
+    10%{
+        top: -100px;
+        left: 80%;
+        transform: rotate(0deg) scale(2);
+    }
+    20%{
+        top: 26%;
+        left: 42%;
+        transform: rotate(-180deg) scale(2.2) translate(-50%, -50%);
+    }
+    40%{
+        top: 10%;
+        left: 35%;
+        transform: rotate(-324deg) scale(1.6);
+        animation-timing-function: ease-in-out;
+    }
+    80%{
+        top: 1%;
+        left: 25%;
+        transform: rotate(-1100deg) scale(1.3);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        top: 0%;
+        left: 10%;
+        transform: scale(1);
+    }
+}
+
+@keyframes LG-1440{
+    10%{
+        top: -100px;
+        left: 80%;
+        transform: rotate(0deg) scale(2);
+    }
+    20%{
+        top: 26%;
+        left: 42%;
+        transform: rotate(-180deg) scale(2.2) translate(-50%, -50%);
+    }
+    40%{
+        top: 10%;
+        left: 35%;
+        transform: rotate(-324deg) scale(1.6);
+        animation-timing-function: ease-in-out;
+    }
+    80%{
+        top: 1%;
+        left: 25%;
+        transform: rotate(-1100deg) scale(1.3);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        top: 0%;
+        left: 10%;
+        transform: scale(1);
+    }
+}
+
+@keyframes LG-1024{
+    10%{
+        top: -100px;
+        left: 80%;
+        transform: rotate(0deg) scale(1.8);
+    }
+    20%{
+        top: 22%;
+        left: 38%;
+        transform: rotate(-180deg) scale(2) translate(-50%, -50%);
+    }
+    40%{
+        top: 10%;
+        left: 35%;
+        transform: rotate(-324deg) scale(1.6);
+        animation-timing-function: ease-in-out;
+    }
+    80%{
+        top: 1%;
+        left: 25%;
+        transform: rotate(-1100deg) scale(1.3);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        top: 0%;
+        left: 10%;
+        transform: scale(1);
+    }
+}
+
+@keyframes LG-768{
+    10%{
+        top: -100px;
+        left: 80%;
+        transform: rotate(0deg) scale(1.6);
+    }
+    20%{
+        top: 25%;
+        left: 34%;
+        transform: rotate(-180deg) scale(1.8) translate(-50%, -50%);
+    }
+    40%{
+        top: 18%;
+        left: 35%;
+        transform: rotate(-324deg) scale(1.6);
+        animation-timing-function: ease-in-out;
+    }
+    80%{
+        top: 1%;
+        left: 25%;
+        transform: rotate(-1100deg) scale(1.2);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        top: 0%;
+        left: 10%;
+        transform: scale(1);
+    }
+}
+
+@keyframes LG-414{
+    10%{
+        top: -100px;
+        left: 80%;
+        transform: rotate(0deg) scale(1.6);
+    }
+    20%{
+        top: 27%;
+        left: 30%;
+        transform: rotate(-180deg) scale(1.8) translate(-50%, -50%);
+    }
+    40%{
+        top: 18%;
+        left: 25%;
+        transform: rotate(-324deg) scale(1.6);
+        animation-timing-function: ease-in-out;
+    }
+    80%{
+        top: 1%;
+        left: 22%;
+        transform: rotate(-1100deg) scale(1.2);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+        transform: scale(1);
+    }
+}
+
+@keyframes LG-375{
+    10%{
+        top: -100px;
+        left: 80%;
+        transform: rotate(0deg) scale(1.5);
+    }
+    20%{
+        top: 25%;
+        left: 27%;
+        transform: rotate(-180deg) scale(1.7) translate(-50%, -50%);
+    }
+    40%{
+        top: 18%;
+        left: 20%;
+        transform: rotate(-324deg) scale(1.5);
+        animation-timing-function: ease-in-out;
+    }
+    80%{
+        top: 1%;
+        left: 15%;
+        transform: rotate(-1100deg) scale(1.2);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -100px;
+    animation: LG 4s linear forwards;
+    animation-delay: .5s;
+    @media (max-width:1600px) {
+        animation: LG-1600 4s linear forwards;
+    }
+    @media (max-width:1440px) {
+        animation: LG-1440 4s linear forwards;
+    }
+    @media (max-width:1024px) {
+        animation: LG-1024 4s linear forwards;
+    }
+    @media (max-width:768px) {
+        animation: LG-768 4s linear forwards;
+    }
+    @media (max-width:414px) {
+        animation: LG-414 4s linear forwards;
+    }
+    @media (max-width:375px) {
+        animation: LG-375 4s linear forwards;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 
 /*********** 這裡是navbar ***********/
@@ -123,6 +381,12 @@ html {
     left: 0;
     z-index: 99;
     padding: 0;
+
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
 }
 
 #colorful-1, #colorful-2, #colorful-3, #colorful-4, #colorful-5{
@@ -1177,8 +1441,7 @@ html {
         & img {
             max-width: 20%;
         }
-        top: 100px;
-        right:-310px;
+        right:-250px;
     }
 }
 
