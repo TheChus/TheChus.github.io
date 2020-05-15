@@ -1593,7 +1593,7 @@ html {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-image: url(../img/background/triangle-mosaic.png);
+    background-image: url(../img/background/beige-tiles.png);
 }
 
 #section5-1 .row{
@@ -1767,20 +1767,20 @@ html {
 #section5-2 {
     position: relative;
     width: 100%;
-    background-image: url(../img/background/triangle-mosaic.png);
+    background-image: url(../img/background/beige-tiles.png);
     overflow: hidden;
 }
 
+#section5-2 .container{
+    background-image: url(../img/section5-2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #section5-2 .text {
     font-size: 25px;
     font-weight: 600;
     color: rgb(102, 102, 102);
-}
-
-#text5-2 {
-    font-size: 30px;
-    font-weight: 900;
-    color: rgb(41, 41, 41);
 }
 
 #section_5-2_text-1 {
@@ -1788,31 +1788,26 @@ html {
 }
 
 // 4/28問老師：在col-lg-7的時候，圖文無法對齊，但是col-lg-8是正常
-#section5-2 .col-10,
-.col-lg-7 {
+#section5-2 .col-12,
+.col-lg-6 {
     color: rgb(41, 41, 41);
     font-size: 20px;
     font-weight: 400;
     text-align: justify;
     letter-spacing: 1.5px;
 
+    background-color: rgba(245, 245, 245, 0.5);
+
     @media screen and (max-width:576px) {
         font-size: 18px;
     }
 }
 
-// @media screen  and (max-width:576px){
-//     // #section5-2 .text{
-//     //     // font-size: 25px;
-//     // }
+// #section5-2 img {
+//     max-width: 100%;
+//     display: block;
+//     margin: auto;
 // }
-
-#section5-2 img {
-    max-width: 100%;
-    // height: auto;
-    display: block;
-    margin: auto;
-}
 
 #tosection5-3 {
     @media (max-width:1600px) {
@@ -1825,31 +1820,43 @@ html {
 
 .section5-2-background {
     position: absolute;
-    top: 5px;
-    left: 300px;
+    bottom: 5px;
+    left: 130px;
     & img {
-        max-width: 100%;
-        opacity: 0.5;
+        max-width: 60%;
+        opacity: 0.3;
     }
     @media (max-width:1600px) {
-        left: 200px;
+        left: 20px;
     }
     @media (max-width:1440px) {
-        left: 50px;
+        left: -90px;
     }
     @media (max-width:1280px) {
         & img {
-            max-width: 80%;
+            max-width: 50%;
         }
-        left: 10px;
+        left: -150px;
     }
     @media (max-width:1024px) {
-        left: -50px;
+        left: -200px;
     }
-    @media (max-width:450px) {
-        top: 100px;
+    @media (max-width:768px) {
+        display: none;
     }
 }
+
+// #text5-2 {
+//     // font-size: 30px;
+//     // font-weight: 900;
+//     // color: rgb(41, 41, 41);
+
+//     font-size: 25px;
+//     font-weight: 600;
+//     color: rgb(102, 102, 102);
+//     background-color: unset !important;
+// }
+
 
 
 /*********** 這裡是section6 ***********/
@@ -1862,14 +1869,13 @@ html {
     position: relative;
     width: 100%;
     // height: 500px;
-    background-image: url(../img/background/triangle-mosaic.png);
+    background-image: url(../img/background/beige-tiles.png);
     // background: linear-gradient(180deg, rgba(207, 250, 207, 1) 0%, rgb(127, 214, 213) 100%);
     font-size: 30px;
     text-align: center;
     color: rgb(16, 29, 51);
     overflow: hidden;
 }
-
 
 
 

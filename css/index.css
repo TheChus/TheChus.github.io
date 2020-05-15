@@ -2038,7 +2038,7 @@ html {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background-image: url(../img/background/beige-tiles.png);
 }
 
 #section5-1 .row {
@@ -2228,8 +2228,15 @@ html {
 #section5-2 {
   position: relative;
   width: 100%;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background-image: url(../img/background/beige-tiles.png);
   overflow: hidden;
+}
+
+#section5-2 .container {
+  background-image: url(../img/section5-2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #section5-2 .text {
@@ -2238,36 +2245,25 @@ html {
   color: #666666;
 }
 
-#text5-2 {
-  font-size: 30px;
-  font-weight: 900;
-  color: #292929;
-}
-
 #section_5-2_text-1 {
   margin-bottom: 100px;
 }
 
-#section5-2 .col-10,
-.col-lg-7 {
+#section5-2 .col-12,
+.col-lg-6 {
   color: #292929;
   font-size: 20px;
   font-weight: 400;
   text-align: justify;
   letter-spacing: 1.5px;
+  background-color: rgba(245, 245, 245, 0.5);
 }
 
 @media screen and (max-width: 576px) {
-  #section5-2 .col-10,
-  .col-lg-7 {
+  #section5-2 .col-12,
+  .col-lg-6 {
     font-size: 18px;
   }
-}
-
-#section5-2 img {
-  max-width: 100%;
-  display: block;
-  margin: auto;
 }
 
 @media (max-width: 1600px) {
@@ -2284,45 +2280,45 @@ html {
 
 .section5-2-background {
   position: absolute;
-  top: 5px;
-  left: 300px;
+  bottom: 5px;
+  left: 130px;
 }
 
 .section5-2-background img {
-  max-width: 100%;
-  opacity: 0.5;
+  max-width: 60%;
+  opacity: 0.3;
 }
 
 @media (max-width: 1600px) {
   .section5-2-background {
-    left: 200px;
+    left: 20px;
   }
 }
 
 @media (max-width: 1440px) {
   .section5-2-background {
-    left: 50px;
+    left: -90px;
   }
 }
 
 @media (max-width: 1280px) {
   .section5-2-background {
-    left: 10px;
+    left: -150px;
   }
   .section5-2-background img {
-    max-width: 80%;
+    max-width: 50%;
   }
 }
 
 @media (max-width: 1024px) {
   .section5-2-background {
-    left: -50px;
+    left: -200px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .section5-2-background {
-    top: 100px;
+    display: none;
   }
 }
 
@@ -2336,7 +2332,7 @@ html {
 #section6 {
   position: relative;
   width: 100%;
-  background-image: url(../img/background/triangle-mosaic.png);
+  background-image: url(../img/background/beige-tiles.png);
   font-size: 30px;
   text-align: center;
   color: #101d33;
