@@ -2364,30 +2364,10 @@ html {
   color: #ddccb8;
 }
 
-#section5-2 .container {
-  background-image: url(../img/section5-2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 100%;
-  height: 450px;
-}
-
-@media (max-width: 768px) {
-  #section5-2 .container {
-    background-attachment: inherit;
-  }
-}
-
 #section5-2 .text {
   font-size: 25px;
   font-weight: 600;
   color: #666666;
-}
-
-#section_5-2_text-1 {
-  margin-bottom: 100px;
 }
 
 #section5-2 .col-12,
@@ -2407,87 +2387,10 @@ html {
   }
 }
 
-@media (max-width: 1600px) {
-  #tosection5-3 {
-    top: -60px;
-  }
-}
-
-@media (max-width: 375px) {
-  #tosection5-3 {
-    top: -40px;
-  }
-}
-
-.section5-2-background {
-  position: absolute;
-  bottom: 5px;
-  left: 130px;
-}
-
-.section5-2-background img {
-  max-width: 60%;
-  opacity: 0.9;
-}
-
-@media (max-width: 1600px) {
-  .section5-2-background {
-    left: 20px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .section5-2-background {
-    left: -90px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .section5-2-background {
-    left: -150px;
-  }
-  .section5-2-background img {
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .section5-2-background {
-    left: -200px;
-  }
-}
-
-@media (max-width: 768px) {
-  .section5-2-background {
-    bottom: 0px;
-  }
-  .section5-2-background img {
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 576px) {
-  .section5-2-background img {
-    max-width: 40%;
-  }
-}
-
-@media (max-width: 414px) {
-  .section5-2-background {
-    left: -245px;
-  }
-  .section5-2-background img {
-    max-width: 30%;
-  }
-}
-
-@media (max-width: 375px) {
-  .section5-2-background {
-    bottom: 20px;
-  }
-  .section5-2-background img {
-    max-width: 25%;
-  }
+#section5-2 img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 /*********** 這裡是section6 ***********/
@@ -2505,6 +2408,79 @@ html {
   text-align: center;
   color: #101d33;
   overflow: hidden;
+}
+
+.section6-background {
+  position: absolute;
+  top: 0px;
+  left: 260px;
+}
+
+.section6-background img {
+  max-width: 30%;
+  opacity: 0.65;
+}
+
+@media (max-width: 1600px) {
+  .section6-background {
+    left: 90px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section6-background {
+    left: 10px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .section6-background {
+    left: -20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .section6-background {
+    left: -70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section6-background {
+    left: -140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section6-background {
+    left: -190px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section6-background {
+    top: 10px;
+    left: -210px;
+  }
+  .section6-background img {
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 414px) {
+  .section6-background {
+    top: 90px;
+    left: -250px;
+  }
+  .section6-background img {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section6-background {
+    top: 93px;
+  }
 }
 
 #section6 .section-name {
