@@ -1642,11 +1642,103 @@ html {
 }
 
 .swiper-pagination-bullet {
-  background-color: tomato;
+  background-color: #2d2632;
 }
 
-#section3-1 .swiper-pagination-bullet-active {
-  background-color: #dd6d59;
+#section3-1 .swiper-pagination-bullet-active:nth-child(1) {
+  background-color: #ea563c;
+}
+
+@media (min-width: 768px) {
+  #section3-1 .swiper-pagination-bullet-active:nth-child(1) {
+    background-color: #92a939;
+  }
+}
+
+@media (min-width: 992px) {
+  #section3-1 .swiper-pagination-bullet-active:nth-child(1) {
+    background-color: #ea563c;
+  }
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(2) {
+  background-color: #ea563c;
+}
+
+@media (min-width: 768px) {
+  #section3-1 .swiper-pagination-bullet-active:nth-child(2) {
+    background-color: #92a939;
+  }
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(3) {
+  background-color: #ea563c;
+}
+
+@media (min-width: 768px) {
+  #section3-1 .swiper-pagination-bullet-active:nth-child(3) {
+    background-color: #f39800;
+  }
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(4) {
+  background-color: #92a939;
+}
+
+@media (min-width: 768px) {
+  #section3-1 .swiper-pagination-bullet-active:nth-child(4) {
+    background-color: #f39800;
+  }
+}
+
+@media (min-width: 992px) {
+  #section3-1 .swiper-pagination-bullet-active:nth-child(4) {
+    background-color: #0fb3cd;
+  }
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(5) {
+  background-color: #92a939;
+}
+
+@media (min-width: 768px) {
+  #section3-1 .swiper-pagination-bullet-active:nth-child(5) {
+    background-color: #0fb3cd;
+  }
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(6) {
+  background-color: #92a939;
+}
+
+@media (min-width: 768px) {
+  #section3-1 .swiper-pagination-bullet-active:nth-child(6) {
+    background-color: #0fb3cd;
+  }
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(7) {
+  background-color: #f39800;
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(8) {
+  background-color: #f39800;
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(9) {
+  background-color: #f39800;
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(10) {
+  background-color: #0fb3cd;
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(11) {
+  background-color: #0fb3cd;
+}
+
+#section3-1 .swiper-pagination-bullet-active:nth-child(12) {
+  background-color: #0fb3cd;
 }
 
 .section3-1-background-1 {
