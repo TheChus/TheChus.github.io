@@ -2366,8 +2366,22 @@ html {
 
 #section5-2 .container {
   background-image: url(../img/section5-2.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+  z-index: -1;
+}
+
+#section5-2 .container::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
   background-size: contain;
 }
 
