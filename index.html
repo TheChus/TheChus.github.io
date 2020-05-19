@@ -99,7 +99,7 @@
     <div id="tosection2" class="ToSection"></div>
     <section id="section2">
         <div class="container">
-            <div class="section-name mb-3 animated rubberBand delay-1s">
+            <div class="section-name mb-3 wow rubberBand delay-1s">
                 <span>最新消息 News</span>
             </div>
 
@@ -574,7 +574,7 @@
     <section id="section4" class="pb-5 pt-5">
         <div class="section4-background"><img src="img/section4-background.png" alt=""></div>
         <div class="container">
-            <div class="section-name mb-4 animated rubberBand delay-1s">
+            <div class="section-name mb-4 wow rubberBand delay-1s" data-wow-duration="2s">
                 <span>幸福產品 Product</span>
             </div>
         </div>
@@ -855,6 +855,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 
     <script>
@@ -1090,6 +1091,8 @@
         var parallaxInstance = new Parallax(scene);
 
 
+        /////////// 這是wow.js ///////////
+        new WOW().init();
 
     // <!-- gotop卷軸偵測jquery -->
     ///* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
