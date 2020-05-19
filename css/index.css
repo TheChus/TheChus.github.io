@@ -2010,8 +2010,6 @@ html {
 
 #section4_toggle {
   height: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(white));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, white 100%);
   margin: 0;
   border-radius: 25px 25px 0 25px;
   position: relative;
@@ -2408,79 +2406,6 @@ html {
   text-align: center;
   color: #101d33;
   overflow: hidden;
-}
-
-.section6-background {
-  position: absolute;
-  top: 0px;
-  left: 260px;
-}
-
-.section6-background img {
-  max-width: 30%;
-  opacity: 0.65;
-}
-
-@media (max-width: 1600px) {
-  .section6-background {
-    left: 90px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .section6-background {
-    left: 10px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .section6-background {
-    left: -20px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .section6-background {
-    left: -70px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .section6-background {
-    left: -140px;
-  }
-}
-
-@media (max-width: 768px) {
-  .section6-background {
-    left: -190px;
-  }
-}
-
-@media (max-width: 576px) {
-  .section6-background {
-    top: 10px;
-    left: -210px;
-  }
-  .section6-background img {
-    max-width: 25%;
-  }
-}
-
-@media (max-width: 414px) {
-  .section6-background {
-    top: 90px;
-    left: -250px;
-  }
-  .section6-background img {
-    max-width: 20%;
-  }
-}
-
-@media (max-width: 375px) {
-  .section6-background {
-    top: 93px;
-  }
 }
 
 #section6 .section-name {
