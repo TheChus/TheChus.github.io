@@ -75,13 +75,6 @@ html {
   visibility: hidden;
 }
 
-.fixed {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-}
-
 /*********** 這裡是loading動畫 ***********/
 @-webkit-keyframes fadeout {
   from {
@@ -817,6 +810,19 @@ html {
 }
 
 /*********** 這裡是navbar ***********/
+.fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+#navGroup {
+  width: 100%;
+  height: 0;
+}
+
 .navbar {
   width: 100%;
   padding: 0;
@@ -1933,81 +1939,154 @@ html {
   overflow: hidden;
 }
 
-.section4-background {
+.section4-background1 {
   position: absolute;
   top: 20px;
   right: 300px;
   height: auto;
 }
 
-.section4-background img {
+.section4-background1 img {
   max-width: 40%;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 @media (max-width: 1600px) {
-  .section4-background {
+  .section4-background1 {
     right: 70px;
   }
 }
 
 @media (max-width: 1366px) {
-  .section4-background {
+  .section4-background1 {
     top: 20px;
     right: 100px;
   }
-  .section4-background img {
+  .section4-background1 img {
     max-width: 30%;
   }
 }
 
 @media (max-width: 1280px) {
-  .section4-background {
+  .section4-background1 {
     right: -40px;
   }
 }
 
 @media (max-width: 1024px) {
-  .section4-background {
+  .section4-background1 {
     top: 20px;
     right: -120px;
   }
-  .section4-background img {
+  .section4-background1 img {
     max-width: 25%;
   }
 }
 
 @media (max-width: 768px) {
-  .section4-background {
+  .section4-background1 {
     top: 40px;
     right: -180px;
   }
-  .section4-background img {
+  .section4-background1 img {
     max-width: 20%;
   }
 }
 
 @media (max-width: 576px) {
-  .section4-background {
+  .section4-background1 {
     right: -220px;
   }
 }
 
 @media (max-width: 414px) {
-  .section4-background {
+  .section4-background1 {
     right: -250px;
   }
-  .section4-background img {
+  .section4-background1 img {
     max-width: 15%;
   }
 }
 
 @media (max-width: 375px) {
-  .section4-background {
+  .section4-background1 {
     right: -260px;
   }
-  .section4-background img {
+  .section4-background1 img {
     max-width: 13%;
+  }
+}
+
+.section4-background2 {
+  position: absolute;
+  bottom: 0px;
+  left: 260px;
+}
+
+.section4-background2 img {
+  max-width: 30%;
+  opacity: 0.6;
+}
+
+@media (max-width: 1600px) {
+  .section4-background2 {
+    left: 90px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section4-background2 {
+    left: 10px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .section4-background2 {
+    left: -20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .section4-background2 {
+    left: -70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section4-background2 {
+    left: -140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section4-background2 {
+    left: -190px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section4-background2 {
+    bottom: 10px;
+    left: -210px;
+  }
+  .section4-background2 img {
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 414px) {
+  .section4-background2 {
+    bottom: 90px;
+    left: -250px;
+  }
+  .section4-background2 img {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .section4-background2 {
+    bottom: 93px;
   }
 }
 

@@ -75,13 +75,6 @@ html {
     visibility: hidden;
 }
 
-.fixed{ 
-    position:fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-}
-
 /*********** 這裡是loading動畫 ***********/
 
 @keyframes fadeout {
@@ -380,6 +373,17 @@ html {
 
 
 /*********** 這裡是navbar ***********/
+.fixed{ 
+    position:fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: auto;
+}
+#navGroup{
+    width: 100%;
+    height: 0;
+}
 .navbar {
     width: 100%;
     // max-height: 80px;原本ios的navbar會往上滑壞掉，拿掉就好了
@@ -1467,14 +1471,14 @@ html {
     overflow: hidden;
 }
 
-.section4-background {
+.section4-background1 {
     position: absolute;
     top: 20px;
     right: 300px;
     height: auto;
     & img {
         max-width: 40%;
-        opacity: 0.8;
+        opacity: 0.6;
     }
 
     @media (max-width: 1600px) {
@@ -1520,6 +1524,52 @@ html {
         right:-260px;
     }
 }
+
+.section4-background2 {
+    position: absolute;
+    bottom: 0px;
+    left: 260px;
+    & img {
+        max-width: 30%;
+        opacity: 0.6;
+    }
+    @media (max-width:1600px) {
+        left: 90px;
+    }
+    @media (max-width:1440px) {
+        left: 10px;
+    }
+    @media (max-width:1366px) {
+        left: -20px;
+    }
+    @media (max-width:1280px) {
+        left: -70px;
+    }
+    @media (max-width:1024px) {
+        left: -140px;
+    }
+    @media (max-width:768px) {
+        left: -190px;
+    }
+    @media (max-width:576px) {
+        & img {
+            max-width: 25%;
+        }
+        bottom: 10px;
+        left: -210px;
+    }
+    @media (max-width:414px) {
+        & img {
+            max-width: 20%;
+        }
+        bottom: 90px;
+        left: -250px;
+    }
+    @media (max-width:375px) {
+        bottom: 93px;
+    }
+}
+
 
 #section4_toggle {
     height: 100px;
@@ -1931,50 +1981,7 @@ html {
     overflow: hidden;
 }
 
-// .section6-background {
-//     position: absolute;
-//     top: 0px;
-//     left: 260px;
-//     & img {
-//         max-width: 30%;
-//         opacity: 0.65;
-//     }
-//     @media (max-width:1600px) {
-//         left: 90px;
-//     }
-//     @media (max-width:1440px) {
-//         left: 10px;
-//     }
-//     @media (max-width:1366px) {
-//         left: -20px;
-//     }
-//     @media (max-width:1280px) {
-//         left: -70px;
-//     }
-//     @media (max-width:1024px) {
-//         left: -140px;
-//     }
-//     @media (max-width:768px) {
-//         left: -190px;
-//     }
-//     @media (max-width:576px) {
-//         & img {
-//             max-width: 25%;
-//         }
-//         top: 10px;
-//         left: -210px;
-//     }
-//     @media (max-width:414px) {
-//         & img {
-//             max-width: 20%;
-//         }
-//         top: 90px;
-//         left: -250px;
-//     }
-//     @media (max-width:375px) {
-//         top: 93px;
-//     }
-// }
+
 
 #section6 .section-name{
     color: whitesmoke;
