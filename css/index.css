@@ -1061,6 +1061,8 @@ html {
 #section1 {
   width: 100%;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .banner {
@@ -1071,12 +1073,214 @@ html {
   background-position: bottom;
 }
 
-/*********** 這裡是section1有水波效果 ***********/
-#section1 {
-  position: relative;
-  overflow: hidden;
+.banner_Text {
+  color: white;
+  text-shadow: 3px 3px 2px #999;
+  position: absolute;
 }
 
+#banner_text1 {
+  font-size: 50px;
+  top: 0%;
+  left: 200px;
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-animation-name: banner;
+          animation-name: banner;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media (max-width: 375px) {
+  #banner_text1 {
+    font-size: 30px;
+    -webkit-animation-name: banner-375;
+            animation-name: banner-375;
+    left: 235px;
+  }
+}
+
+#banner_text2 {
+  font-size: 50px;
+  top: 40%;
+  left: 100px;
+  border-radius: 10px;
+}
+
+@media (max-width: 375px) {
+  #banner_text2 {
+    font-size: 30px;
+    top: 70%;
+    left: 120px;
+  }
+}
+
+#banner_text3 {
+  font-size: 60px;
+  top: 50%;
+  left: 100px;
+  opacity: 0;
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media (max-width: 375px) {
+  #banner_text3 {
+    font-size: 40px;
+    top: 80%;
+  }
+}
+
+#banner_text3::after {
+  content: " ";
+  position: absolute;
+  background-color: rgba(250, 133, 44, 0.5);
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@-webkit-keyframes banner {
+  from {
+    top: 0%;
+    left: 22%;
+    -webkit-transform: rotate(-1100deg) scale(1.3);
+            transform: rotate(-1100deg) scale(1.3);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: 30%;
+  }
+}
+
+@keyframes banner {
+  from {
+    top: 0%;
+    left: 22%;
+    -webkit-transform: rotate(-1100deg) scale(1.3);
+            transform: rotate(-1100deg) scale(1.3);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: 30%;
+  }
+}
+
+@-webkit-keyframes banner-375 {
+  from {
+    top: 0%;
+    left: 22%;
+    -webkit-transform: rotate(-1100deg) scale(1.3);
+            transform: rotate(-1100deg) scale(1.3);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: 60%;
+  }
+}
+
+@keyframes banner-375 {
+  from {
+    top: 0%;
+    left: 22%;
+    -webkit-transform: rotate(-1100deg) scale(1.3);
+            transform: rotate(-1100deg) scale(1.3);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: 60%;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, 0) rotateZ(0deg);
+            transform: translate(-50%, 0) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -2%) rotateZ(180deg);
+            transform: translate(-50%, -2%) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0%) rotateZ(360deg);
+            transform: translate(-50%, 0%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, 0) rotateZ(0deg);
+            transform: translate(-50%, 0) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -2%) rotateZ(180deg);
+            transform: translate(-50%, -2%) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0%) rotateZ(360deg);
+            transform: translate(-50%, 0%) rotateZ(360deg);
+  }
+}
+
+.mask {
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #76daff;
+  z-index: 5;
+}
+
+.mask:before, .mask:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  min-width: 300vw;
+  min-height: 300vw;
+  background-color: rgba(118, 218, 255, 0.705);
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.mask:before {
+  top: 99vh;
+  border-radius: 45%;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+  background-color: white;
+  opacity: 0.3;
+}
+
+.mask:after {
+  top: 99vh;
+  opacity: .5;
+  border-radius: 47%;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+
+/*********** 這裡是section1有水波效果 ***********/
 /*********** 這裡是section2 ***********/
 #tosection2 {
   top: -680px;
