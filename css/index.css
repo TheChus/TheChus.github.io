@@ -75,6 +75,13 @@ html {
   visibility: hidden;
 }
 
+.fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
 /*********** 這裡是loading動畫 ***********/
 @-webkit-keyframes fadeout {
   from {
@@ -812,10 +819,6 @@ html {
 /*********** 這裡是navbar ***********/
 .navbar {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
   padding: 0;
   opacity: 0;
   -webkit-animation-name: show;
