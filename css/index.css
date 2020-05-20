@@ -2025,7 +2025,7 @@ html {
 .section4-background2 {
   position: absolute;
   bottom: 0px;
-  left: 260px;
+  left: 60px;
 }
 
 .section4-background2 img {
@@ -2035,43 +2035,24 @@ html {
 
 @media (max-width: 1600px) {
   .section4-background2 {
-    left: 90px;
+    left: -100px;
   }
 }
 
 @media (max-width: 1440px) {
   .section4-background2 {
-    left: 10px;
+    left: -160px;
   }
 }
 
 @media (max-width: 1366px) {
   .section4-background2 {
-    left: -20px;
+    left: -190px;
   }
 }
 
 @media (max-width: 1280px) {
   .section4-background2 {
-    left: -70px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .section4-background2 {
-    left: -140px;
-  }
-}
-
-@media (max-width: 768px) {
-  .section4-background2 {
-    left: -190px;
-  }
-}
-
-@media (max-width: 576px) {
-  .section4-background2 {
-    bottom: 10px;
     left: -210px;
   }
   .section4-background2 img {
@@ -2079,19 +2060,33 @@ html {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 1024px) {
   .section4-background2 {
-    bottom: 90px;
-    left: -250px;
+    left: -220px;
   }
   .section4-background2 img {
     max-width: 20%;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .section4-background2 {
-    bottom: 93px;
+    left: -230px;
+  }
+  .section4-background2 img {
+    max-width: 17%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section4-background2 {
+    left: -240px;
+  }
+}
+
+@media (max-width: 414px) {
+  .section4-background2 {
+    left: -230px;
   }
 }
 

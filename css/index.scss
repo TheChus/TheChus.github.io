@@ -1529,45 +1529,43 @@ html {
 .section4-background2 {
     position: absolute;
     bottom: 0px;
-    left: 260px;
+    left: 60px;
     & img {
         max-width: 30%;
         opacity: 0.6;
     }
     @media (max-width:1600px) {
-        left: 90px;
+        left: -100px;
     }
     @media (max-width:1440px) {
-        left: 10px;
+        left: -160px;
     }
     @media (max-width:1366px) {
-        left: -20px;
-    }
-    @media (max-width:1280px) {
-        left: -70px;
-    }
-    @media (max-width:1024px) {
-        left: -140px;
-    }
-    @media (max-width:768px) {
         left: -190px;
     }
-    @media (max-width:576px) {
+    @media (max-width:1280px) {
         & img {
             max-width: 25%;
         }
-        bottom: 10px;
         left: -210px;
     }
-    @media (max-width:414px) {
+    @media (max-width:1024px) {
         & img {
             max-width: 20%;
         }
-        bottom: 90px;
-        left: -250px;
+        left: -220px;
     }
-    @media (max-width:375px) {
-        bottom: 93px;
+    @media (max-width:768px) {
+        & img {
+            max-width: 17%;
+        }
+        left: -230px;
+    }
+    @media (max-width:576px) {
+        left: -240px;
+    }
+    @media (max-width:414px) {
+        left: -230px;
     }
 }
 
