@@ -1486,25 +1486,25 @@ html {
         right: 70px;
     }
     @media (max-width: 1366px) {
-        & img {
-            max-width: 30%;
-        }
         top:20px;
         right: 100px;
     }
     @media (max-width: 1280px) {
+        & img {
+            max-width: 35%;
+        }
         right: -40px;
     }
     @media (max-width: 1024px) {
         & img {
-            max-width: 25%;
+            max-width: 30%;
         }
         top: 20px;
         right:-120px;
     }
     @media (max-width: 768px) {
         & img {
-            max-width: 20%;
+            max-width: 27%;
         }
         top: 40px;
         right:-180px;
@@ -1565,6 +1565,9 @@ html {
         left: -240px;
     }
     @media (max-width:414px) {
+        & img {
+            max-width: 12%;
+        }
         left: -230px;
     }
 }
@@ -1993,6 +1996,49 @@ html {
     color: whitesmoke;
 }
 
+.formBG {
+    border: 0.5px solid #d8cfc0;
+    outline-color: none;
+    /* outline-offset: unset; */
+    outline: none;
+    border: 2px solid rgba(255,255,255,0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    opacity: 0.8;
+    height: 51px;
+    @media (max-width:768px) {
+        font-size: 25px;
+    }
+    @media (max-width:576px) {
+        font-size: 20px;
+    }
+    @media (max-width:414px) {
+        font-size: 15px;
+        height: 56px;
+        &:nth-child(1){
+            padding:1px 0 1px 15px;
+        }
+    }
+  }
+
+  .textPart{
+    border: 0.5px solid #b3b3b3;
+    outline-color: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    opacity: 0.8;
+    @media (max-width:576px) {
+        font-size: 25px;
+    }
+  }
+
+
+
+
 /*********** 這裡是footer ***********/
 
 // /* 將parallax前方草的效果做成自動波浪動 */
@@ -2000,7 +2046,7 @@ html {
 
 footer {
     width: 100%;
-    height: 566px;
+    height: 350px;
     position: relative;
 }
 
