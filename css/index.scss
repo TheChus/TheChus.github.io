@@ -46,6 +46,9 @@ html {
     border-bottom: #f3d3b0 5px solid;
 }
 #section6 .section-name span {
+    border-bottom: #b2dada 5px solid;
+}
+#section2 .section-name span{
     border-bottom: #d8cfc0 5px solid;
 }
 
@@ -770,19 +773,22 @@ html {
 #tosection2{
     top: -680px;
     @media (max-width:1600px) {
-        top: -530px;
+        top: -450px;
     }
     @media (max-width:1366px) {
-        top: -380px;
+        top: -300px;
     }
     @media (max-width:1280px) {
-        top: -420px;
+        top: -350px;
+    }
+    @media (max-width:1024px) {
+        top: -300px;
     }
     @media (max-width:768px) {
         top: -700px;
     }
     @media (max-width:576px) {
-        top: -350px;
+        top: -300px;
     }
     @media (max-width:414px) {
         top: -450px;
@@ -1260,6 +1266,8 @@ html {
     background-color: #2d2632;
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(1){
+    width: 10px;
+    height: 10px;
     background-color: #ea563c;
     @media (min-width:768px) {
         background-color: #92a939;
@@ -1269,18 +1277,24 @@ html {
     }
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(2){
+    width: 10px;
+    height: 10px;
     background-color: #ea563c;
     @media (min-width:768px) {
         background-color: #92a939;
     }
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(3){
+    width: 10px;
+    height: 10px;
     background-color: #ea563c;
     @media (min-width:768px) {
         background-color: #f39800;
     }
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(4){
+    width: 10px;
+    height: 10px;
     background-color: #92a939;
     @media (min-width:768px) {
         background-color: #f39800;
@@ -1290,33 +1304,49 @@ html {
     }
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(5){
+    width: 10px;
+    height: 10px;
     background-color: #92a939;
     @media (min-width:768px) {
         background-color: #0fb3cd;
     }
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(6){
+    width: 10px;
+    height: 10px;
     background-color: #92a939;
     @media (min-width:768px) {
         background-color: #0fb3cd;
     }
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(7){
+    width: 10px;
+    height: 10px;
     background-color: #f39800;
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(8){
+    width: 10px;
+    height: 10px;
     background-color: #f39800;
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(9){
+    width: 10px;
+    height: 10px;
     background-color: #f39800;
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(10){
+    width: 10px;
+    height: 10px;
     background-color: #0fb3cd;
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(11){
+    width: 10px;
+    height: 10px;
     background-color: #0fb3cd;
 }
 #section3-1 .swiper-pagination-bullet-active:nth-child(12){
+    width: 10px;
+    height: 10px;
     background-color: #0fb3cd;
 }
 

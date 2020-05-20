@@ -48,6 +48,10 @@ html {
 }
 
 #section6 .section-name span {
+  border-bottom: #b2dada 5px solid;
+}
+
+#section2 .section-name span {
   border-bottom: #d8cfc0 5px solid;
 }
 
@@ -1080,19 +1084,25 @@ html {
 
 @media (max-width: 1600px) {
   #tosection2 {
-    top: -530px;
+    top: -450px;
   }
 }
 
 @media (max-width: 1366px) {
   #tosection2 {
-    top: -380px;
+    top: -300px;
   }
 }
 
 @media (max-width: 1280px) {
   #tosection2 {
-    top: -420px;
+    top: -350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #tosection2 {
+    top: -300px;
   }
 }
 
@@ -1104,7 +1114,7 @@ html {
 
 @media (max-width: 576px) {
   #tosection2 {
-    top: -350px;
+    top: -300px;
   }
 }
 
@@ -1672,6 +1682,8 @@ html {
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(1) {
+  width: 10px;
+  height: 10px;
   background-color: #ea563c;
 }
 
@@ -1688,6 +1700,8 @@ html {
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(2) {
+  width: 10px;
+  height: 10px;
   background-color: #ea563c;
 }
 
@@ -1698,6 +1712,8 @@ html {
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(3) {
+  width: 10px;
+  height: 10px;
   background-color: #ea563c;
 }
 
@@ -1708,6 +1724,8 @@ html {
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(4) {
+  width: 10px;
+  height: 10px;
   background-color: #92a939;
 }
 
@@ -1724,6 +1742,8 @@ html {
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(5) {
+  width: 10px;
+  height: 10px;
   background-color: #92a939;
 }
 
@@ -1734,6 +1754,8 @@ html {
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(6) {
+  width: 10px;
+  height: 10px;
   background-color: #92a939;
 }
 
@@ -1744,26 +1766,38 @@ html {
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(7) {
+  width: 10px;
+  height: 10px;
   background-color: #f39800;
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(8) {
+  width: 10px;
+  height: 10px;
   background-color: #f39800;
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(9) {
+  width: 10px;
+  height: 10px;
   background-color: #f39800;
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(10) {
+  width: 10px;
+  height: 10px;
   background-color: #0fb3cd;
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(11) {
+  width: 10px;
+  height: 10px;
   background-color: #0fb3cd;
 }
 
 #section3-1 .swiper-pagination-bullet-active:nth-child(12) {
+  width: 10px;
+  height: 10px;
   background-color: #0fb3cd;
 }
 
