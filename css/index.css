@@ -1023,6 +1023,11 @@ html {
   font-weight: 900;
 }
 
+.dropdown-menu {
+  margin: auto;
+  width: 30%;
+}
+
 @media (max-width: 991px) {
   .navbar-nav {
     background-color: rgba(0, 0, 0, 0.8);
@@ -2471,6 +2476,34 @@ html {
   max-width: 100%;
   display: block;
   margin: auto;
+}
+
+#tosection5-3 {
+  top: -570px;
+}
+
+@media (max-width: 1366px) {
+  #tosection5-3 {
+    top: -480px;
+  }
+}
+
+@media (max-width: 576px) {
+  #tosection5-3 {
+    top: -400px;
+  }
+}
+
+@media (max-width: 414px) {
+  #tosection5-3 {
+    top: -380px;
+  }
+}
+
+@media (max-width: 375px) {
+  #tosection5-3 {
+    top: -300px;
+  }
 }
 
 /*********** 這裡是section6 ***********/
