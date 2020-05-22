@@ -1896,7 +1896,6 @@ html {
 
     & img {
         max-width: 20%;
-        // opacity: 0.5;
     }
 
     @media (max-width: 1600px) {
@@ -1904,21 +1903,36 @@ html {
         right: 80px;
     }
     @media (max-width: 1366px) {
+        & img {
+            max-width: 17%;
+        }
+        top: 260px;
         right: -10px;
+    }
+    @media (max-width: 1280px) {
+        top: 270px;
     }
     @media (max-width: 1024px) {
         & img {
             max-width: 15%;
         }
-        top: 250px;
+        top: 310px;
         right:-70px;
     }
     @media (max-width: 768px) {
-        right: -100px;
+        top: 340px;
+        right: -110px;
     }
     @media (max-width: 576px) {
-        top: 550px;
-        right: -150px;
+        top: 370px;
+        right: -10px;
+    }
+    @media (max-width: 414px) {
+        top: 440px;
+        right: -30px;
+    }
+    @media (max-width: 375px) {
+        top: 480px;
     }
 }
 
@@ -1968,16 +1982,6 @@ html {
     cursor: pointer;
     transition: 0.3S;
 }
-
-// .tag{
-//     width: 180px;
-//     height: 180px;
-//     font-size: 20px;
-//     text-align: center;
-//     line-height: 180px;
-//     background-color: #dcdada;
-//     border-radius: 100%;
-// }
 
 .front1 {
     background-image: url(../img/front-dog1.png);

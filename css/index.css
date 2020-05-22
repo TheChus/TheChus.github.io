@@ -2581,13 +2581,23 @@ html {
 
 @media (max-width: 1366px) {
   .section5-1-background {
+    top: 260px;
     right: -10px;
+  }
+  .section5-1-background img {
+    max-width: 17%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .section5-1-background {
+    top: 270px;
   }
 }
 
 @media (max-width: 1024px) {
   .section5-1-background {
-    top: 250px;
+    top: 310px;
     right: -70px;
   }
   .section5-1-background img {
@@ -2597,14 +2607,28 @@ html {
 
 @media (max-width: 768px) {
   .section5-1-background {
-    right: -100px;
+    top: 340px;
+    right: -110px;
   }
 }
 
 @media (max-width: 576px) {
   .section5-1-background {
-    top: 550px;
-    right: -150px;
+    top: 370px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .section5-1-background {
+    top: 440px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section5-1-background {
+    top: 480px;
   }
 }
 
