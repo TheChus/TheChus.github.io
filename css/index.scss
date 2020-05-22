@@ -675,6 +675,7 @@ html {
     top: 30%;
     left: 100px;
     border-radius: 10px;
+    opacity: 0;
     animation: aniShow-title 0.8s 5s ease-out forwards;
     @media (max-width:1024px) {
         animation: aniShow-title-1024 0.8s 5s ease-out forwards;
@@ -692,7 +693,7 @@ html {
     }
     @media (max-width:414px) {
         animation: aniShow-title-414-1 0.8s 5s ease-out forwards;
-        font-size: 35px;
+        font-size: 30px;
         left: 140px;
     }
     @media (max-width:375px) {
@@ -705,6 +706,7 @@ html {
     top: 40%;
     left: 100px;
     border-radius: 10px;
+    opacity: 0;
     animation: aniShow-title 1s 5.7s ease-out forwards;
     @media (max-width:1024px) {
         animation: aniShow-title-1024 1s 5.7s ease-out forwards;
@@ -722,8 +724,9 @@ html {
     }
     @media (max-width:414px) {
         animation: aniShow-title-414-2 1s 5.7s ease-out forwards;
-        font-size: 32px;
-        left: 83px;
+        font-size: 28px;
+        left: 85px;
+        top: 77%;
     }
     @media (max-width:375px) {
         animation: aniShow-title-375-2 1s 5.7s ease-out forwards;
@@ -734,6 +737,7 @@ html {
     font-size: 45px;
     top: 50%;
     left: 100px;
+    opacity: 0;
     animation: aniShow-text 1.5s 6.5s ease-out forwards;
     @media (max-width:1024px) {
         animation: aniShow-text-1024 1.5s 6.5s ease-out forwards;
@@ -754,11 +758,14 @@ html {
     }
     @media (max-width:414px) {
         animation: aniShow-text-414 1.5s 6.5s ease-out forwards;
-        left: 100px;
-        bottom: 25px;
+        font-size: 28px;
+        left: 110px;
+        bottom: 90px;
     }
     @media (max-width:375px) {
-        left: 75px;
+        animation: aniShow-text-375 1.5s 6.5s ease-out forwards;
+        left: 80px;
+        bottom: 75px;
     }
 }
 #banner_text3::after{
@@ -858,7 +865,7 @@ html {
 
     100% {
         opacity: 1;
-        left: 83px;
+        left: 85px;
     }
 }
 @keyframes aniShow-title-375-1 {
@@ -936,7 +943,18 @@ html {
 
     100% {
         opacity: 1;
-        bottom: 25px;
+        bottom: 90px;
+    }
+}
+@keyframes aniShow-text-375 {
+    0% {
+        opacity: 0;
+        bottom: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 75px;
     }
 }
 
