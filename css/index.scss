@@ -706,6 +706,7 @@ html {
         animation: aniShow-title-375-1 0.8s 5s ease-out forwards;
         left: 130px;
         top: 460px;
+        font-size: 28px;
     }
 }
 #banner_text2{
@@ -742,8 +743,9 @@ html {
     }
     @media (max-width:375px) {
         animation: aniShow-title-375-2 1s 5.7s ease-out forwards;
-        left: 75px;
-        top: 500px;
+        left: 85px;
+        top: 490px;
+        font-size: 25px;
     }
 }
 #banner_text3{
@@ -782,8 +784,9 @@ html {
     }
     @media (max-width:375px) {
         animation: aniShow-text-375 1.5s 6.5s ease-out forwards;
-        left: 100px;
-        top: 540px;
+        left: 105px;
+        top: 520px;
+        font-size: 25px;
     }
 }
 #banner_text3::after{
@@ -905,7 +908,7 @@ html {
 
     100% {
         opacity: 1;
-        left: 75px;
+        left: 85px;
     }
 }
 
@@ -978,12 +981,12 @@ html {
 @keyframes aniShow-text-375 {
     0% {
         opacity: 0;
-        top: 640px;
+        top: 620px;
     }
 
     100% {
         opacity: 1;
-        top: 540px;
+        top: 520px;
     }
 }
 
