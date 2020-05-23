@@ -1081,16 +1081,20 @@ html {
 
 @media (max-width: 1024px) {
   .banner {
-    height: 70%;
-    position: relative;
-    overflow: hidden;
-    background-position: 50% 20%;
+    background-position: 30% 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background-position: 40% 100%;
   }
 }
 
 @media (max-width: 414px) {
   .banner {
-    background-position: 30% 20%;
+    background-image: url(../img/banner-phone.jpg);
+    background-position: 60% 100%;
   }
 }
 
@@ -1132,12 +1136,6 @@ html {
   min-height: 100vh;
   background-color: #76daff;
   z-index: 5;
-}
-
-@media (max-width: 1024px) {
-  .mask {
-    display: none;
-  }
 }
 
 .mask:before, .mask:after {
@@ -1190,7 +1188,11 @@ html {
 
 @media (max-width: 1366px) {
   #banner_text1 {
+    -webkit-animation: aniShow-title-1366 0.8s 5s ease-out forwards;
+            animation: aniShow-title-1366 0.8s 5s ease-out forwards;
+    font-size: 45px;
     top: 200px;
+    left: 80px;
   }
 }
 
@@ -1198,18 +1200,18 @@ html {
   #banner_text1 {
     -webkit-animation: aniShow-title-1024 0.8s 5s ease-out forwards;
             animation: aniShow-title-1024 0.8s 5s ease-out forwards;
-    top: 480px;
+    top: 530px;
     font-size: 38px;
-    left: 400px;
+    left: 500px;
   }
 }
 
 @media (max-width: 768px) {
   #banner_text1 {
-    -webkit-animation: aniShow-title-768-1 0.8s 5s ease-out forwards;
-            animation: aniShow-title-768-1 0.8s 5s ease-out forwards;
-    left: 300px;
-    top: 750px;
+    -webkit-animation: aniShow-title-768 0.8s 5s ease-out forwards;
+            animation: aniShow-title-768 0.8s 5s ease-out forwards;
+    left: 450px;
+    top: 850px;
   }
 }
 
@@ -1217,8 +1219,8 @@ html {
   #banner_text1 {
     -webkit-animation: aniShow-title-576-1 0.8s 5s ease-out forwards;
             animation: aniShow-title-576-1 0.8s 5s ease-out forwards;
-    left: 200px;
-    top: 450px;
+    left: 407px;
+    top: 480px;
   }
 }
 
@@ -1227,8 +1229,8 @@ html {
     -webkit-animation: aniShow-title-414-1 0.8s 5s ease-out forwards;
             animation: aniShow-title-414-1 0.8s 5s ease-out forwards;
     font-size: 30px;
-    left: 140px;
-    top: 530px;
+    left: 280px;
+    top: 610px;
   }
 }
 
@@ -1236,8 +1238,8 @@ html {
   #banner_text1 {
     -webkit-animation: aniShow-title-375-1 0.8s 5s ease-out forwards;
             animation: aniShow-title-375-1 0.8s 5s ease-out forwards;
-    left: 130px;
-    top: 460px;
+    left: 260px;
+    top: 550px;
     font-size: 28px;
   }
 }
@@ -1254,7 +1256,11 @@ html {
 
 @media (max-width: 1366px) {
   #banner_text2 {
+    -webkit-animation: aniShow-title-1366 1s 5.7s ease-out forwards;
+            animation: aniShow-title-1366 1s 5.7s ease-out forwards;
+    font-size: 42px;
     top: 300px;
+    left: 80px;
   }
 }
 
@@ -1262,18 +1268,18 @@ html {
   #banner_text2 {
     -webkit-animation: aniShow-title-1024 1s 5.7s ease-out forwards;
             animation: aniShow-title-1024 1s 5.7s ease-out forwards;
-    top: 530px;
+    top: 570px;
     font-size: 35px;
-    left: 400px;
+    left: 500px;
   }
 }
 
 @media (max-width: 768px) {
   #banner_text2 {
-    -webkit-animation: aniShow-title-768-2 1s 5.7s ease-out forwards;
-            animation: aniShow-title-768-2 1s 5.7s ease-out forwards;
-    left: 235px;
-    top: 800px;
+    -webkit-animation: aniShow-title-768 1s 5.7s ease-out forwards;
+            animation: aniShow-title-768 1s 5.7s ease-out forwards;
+    left: 450px;
+    top: 900px;
   }
 }
 
@@ -1281,8 +1287,8 @@ html {
   #banner_text2 {
     -webkit-animation: aniShow-title-576-2 1s 5.7s ease-out forwards;
             animation: aniShow-title-576-2 1s 5.7s ease-out forwards;
-    left: 140px;
-    top: 500px;
+    left: 280px;
+    top: 520px;
   }
 }
 
@@ -1291,8 +1297,8 @@ html {
     -webkit-animation: aniShow-title-414-2 1s 5.7s ease-out forwards;
             animation: aniShow-title-414-2 1s 5.7s ease-out forwards;
     font-size: 28px;
-    left: 85px;
-    top: 580px;
+    left: 178px;
+    top: 650px;
   }
 }
 
@@ -1300,8 +1306,8 @@ html {
   #banner_text2 {
     -webkit-animation: aniShow-title-375-2 1s 5.7s ease-out forwards;
             animation: aniShow-title-375-2 1s 5.7s ease-out forwards;
-    left: 85px;
-    top: 490px;
+    left: 174px;
+    top: 590px;
     font-size: 25px;
   }
 }
@@ -1320,6 +1326,8 @@ html {
     -webkit-animation: aniShow-text-1366 1.5s 6.5s ease-out forwards;
             animation: aniShow-text-1366 1.5s 6.5s ease-out forwards;
     top: 400px;
+    font-size: 40px;
+    left: 80px;
   }
 }
 
@@ -1328,7 +1336,7 @@ html {
     -webkit-animation: aniShow-text-1024 1.5s 6.5s ease-out forwards;
             animation: aniShow-text-1024 1.5s 6.5s ease-out forwards;
     font-size: 35px;
-    left: 400px;
+    left: 500px;
     top: 580px;
   }
 }
@@ -1337,7 +1345,7 @@ html {
   #banner_text3 {
     -webkit-animation: aniShow-text-768 1.5s 6.5s ease-out forwards;
             animation: aniShow-text-768 1.5s 6.5s ease-out forwards;
-    left: 260px;
+    left: 450px;
     top: 850px;
   }
 }
@@ -1346,7 +1354,7 @@ html {
   #banner_text3 {
     -webkit-animation: aniShow-text-576 1.5s 6.5s ease-out forwards;
             animation: aniShow-text-576 1.5s 6.5s ease-out forwards;
-    left: 165px;
+    left: 330px;
     top: 550px;
   }
 }
@@ -1356,8 +1364,8 @@ html {
     -webkit-animation: aniShow-text-414 1.5s 6.5s ease-out forwards;
             animation: aniShow-text-414 1.5s 6.5s ease-out forwards;
     font-size: 28px;
-    left: 110px;
-    top: 630px;
+    left: 215px;
+    top: 690px;
   }
 }
 
@@ -1365,8 +1373,8 @@ html {
   #banner_text3 {
     -webkit-animation: aniShow-text-375 1.5s 6.5s ease-out forwards;
             animation: aniShow-text-375 1.5s 6.5s ease-out forwards;
-    left: 105px;
-    top: 520px;
+    left: 208px;
+    top: 625px;
     font-size: 25px;
   }
 }
@@ -1404,91 +1412,91 @@ html {
   }
 }
 
-@-webkit-keyframes aniShow-title-1024 {
+@-webkit-keyframes aniShow-title-1366 {
   0% {
     opacity: 0;
-    left: 200px;
+    left: -60px;
   }
   100% {
     opacity: 1;
-    left: 400px;
+    left: 80px;
+  }
+}
+
+@keyframes aniShow-title-1366 {
+  0% {
+    opacity: 0;
+    left: -60px;
+  }
+  100% {
+    opacity: 1;
+    left: 80px;
+  }
+}
+
+@-webkit-keyframes aniShow-title-1024 {
+  0% {
+    opacity: 0;
+    left: 300px;
+  }
+  100% {
+    opacity: 1;
+    left: 500px;
   }
 }
 
 @keyframes aniShow-title-1024 {
   0% {
     opacity: 0;
-    left: 200px;
-  }
-  100% {
-    opacity: 1;
-    left: 400px;
-  }
-}
-
-@-webkit-keyframes aniShow-title-768-1 {
-  0% {
-    opacity: 0;
-    left: 100px;
-  }
-  100% {
-    opacity: 1;
     left: 300px;
   }
-}
-
-@keyframes aniShow-title-768-1 {
-  0% {
-    opacity: 0;
-    left: 100px;
-  }
   100% {
     opacity: 1;
+    left: 500px;
+  }
+}
+
+@-webkit-keyframes aniShow-title-768 {
+  0% {
+    opacity: 0;
     left: 300px;
   }
-}
-
-@-webkit-keyframes aniShow-title-768-2 {
-  0% {
-    opacity: 0;
-    left: 100px;
-  }
   100% {
     opacity: 1;
-    left: 235px;
+    left: 450px;
   }
 }
 
-@keyframes aniShow-title-768-2 {
+@keyframes aniShow-title-768 {
   0% {
     opacity: 0;
-    left: 100px;
+    left: 300px;
   }
   100% {
     opacity: 1;
-    left: 235px;
+    left: 450px;
   }
 }
 
 @-webkit-keyframes aniShow-title-576-1 {
   0% {
     opacity: 0;
-    left: 100px;
+    left: 200px;
   }
   100% {
     opacity: 1;
-    left: 200px;
+    left: 407px;
   }
 }
 
 @keyframes aniShow-title-576-1 {
   0% {
     opacity: 0;
-    left: 100px;
+    left: 200px;
   }
   100% {
     opacity: 1;
-    left: 200px;
+    left: 407px;
   }
 }
 
@@ -1499,7 +1507,7 @@ html {
   }
   100% {
     opacity: 1;
-    left: 140px;
+    left: 280px;
   }
 }
 
@@ -1510,29 +1518,29 @@ html {
   }
   100% {
     opacity: 1;
-    left: 140px;
+    left: 280px;
   }
 }
 
 @-webkit-keyframes aniShow-title-414-1 {
   0% {
     opacity: 0;
-    left: 0px;
+    left: 140px;
   }
   100% {
     opacity: 1;
-    left: 140px;
+    left: 280px;
   }
 }
 
 @keyframes aniShow-title-414-1 {
   0% {
     opacity: 0;
-    left: 0px;
+    left: 140px;
   }
   100% {
     opacity: 1;
-    left: 140px;
+    left: 280px;
   }
 }
 
@@ -1543,7 +1551,7 @@ html {
   }
   100% {
     opacity: 1;
-    left: 85px;
+    left: 178px;
   }
 }
 
@@ -1554,29 +1562,29 @@ html {
   }
   100% {
     opacity: 1;
-    left: 85px;
+    left: 178px;
   }
 }
 
 @-webkit-keyframes aniShow-title-375-1 {
   0% {
     opacity: 0;
-    left: 0px;
+    left: 130px;
   }
   100% {
     opacity: 1;
-    left: 130px;
+    left: 260px;
   }
 }
 
 @keyframes aniShow-title-375-1 {
   0% {
     opacity: 0;
-    left: 0px;
+    left: 130px;
   }
   100% {
     opacity: 1;
-    left: 130px;
+    left: 260px;
   }
 }
 
@@ -1587,7 +1595,7 @@ html {
   }
   100% {
     opacity: 1;
-    left: 85px;
+    left: 174px;
   }
 }
 
@@ -1598,7 +1606,7 @@ html {
   }
   100% {
     opacity: 1;
-    left: 85px;
+    left: 174px;
   }
 }
 
@@ -1649,110 +1657,110 @@ html {
 @-webkit-keyframes aniShow-text-1024 {
   0% {
     opacity: 0;
-    top: 680px;
+    top: 710px;
   }
   100% {
     opacity: 1;
-    top: 580px;
+    top: 610px;
   }
 }
 
 @keyframes aniShow-text-1024 {
   0% {
     opacity: 0;
-    top: 680px;
+    top: 710px;
   }
   100% {
     opacity: 1;
-    top: 580px;
+    top: 610px;
   }
 }
 
 @-webkit-keyframes aniShow-text-768 {
   0% {
     opacity: 0;
-    top: 950px;
+    top: 1050px;
   }
   100% {
     opacity: 1;
-    top: 850px;
+    top: 950px;
   }
 }
 
 @keyframes aniShow-text-768 {
   0% {
     opacity: 0;
-    top: 950px;
+    top: 1050px;
   }
   100% {
     opacity: 1;
-    top: 850px;
+    top: 950px;
   }
 }
 
 @-webkit-keyframes aniShow-text-576 {
   0% {
     opacity: 0;
-    top: 650px;
+    top: 660px;
   }
   100% {
     opacity: 1;
-    top: 550px;
+    top: 560px;
   }
 }
 
 @keyframes aniShow-text-576 {
   0% {
     opacity: 0;
-    top: 650px;
+    top: 660px;
   }
   100% {
     opacity: 1;
-    top: 550px;
+    top: 560px;
   }
 }
 
 @-webkit-keyframes aniShow-text-414 {
   0% {
     opacity: 0;
-    top: 730px;
+    top: 790px;
   }
   100% {
     opacity: 1;
-    top: 630px;
+    top: 690px;
   }
 }
 
 @keyframes aniShow-text-414 {
   0% {
     opacity: 0;
-    top: 730px;
+    top: 790px;
   }
   100% {
     opacity: 1;
-    top: 630px;
+    top: 690px;
   }
 }
 
 @-webkit-keyframes aniShow-text-375 {
   0% {
     opacity: 0;
-    top: 620px;
+    top: 725px;
   }
   100% {
     opacity: 1;
-    top: 520px;
+    top: 625px;
   }
 }
 
 @keyframes aniShow-text-375 {
   0% {
     opacity: 0;
-    top: 620px;
+    top: 725px;
   }
   100% {
     opacity: 1;
-    top: 520px;
+    top: 625px;
   }
 }
 
