@@ -2725,6 +2725,15 @@ footer {
     background-image: url(../img/footer/footerbackground-1920.png);
     background-size: cover;
     background-position: center;
+    
+    span{
+        font-size: 20px;
+        margin: 0 30px;
+        @media (max-width:576px) {
+            font-size: 15px;
+            margin: 0 5px;
+        }
+    }
 }
 
 // @media(max-width:1765px){   

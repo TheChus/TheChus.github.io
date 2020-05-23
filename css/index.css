@@ -3453,6 +3453,18 @@ footer {
   background-position: center;
 }
 
+.footer span {
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+@media (max-width: 576px) {
+  .footer span {
+    font-size: 15px;
+    margin: 0 5px;
+  }
+}
+
 .layer {
   width: 100%;
   height: 100%;
