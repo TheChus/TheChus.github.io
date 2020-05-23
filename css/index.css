@@ -2816,7 +2816,7 @@ html {
 }
 
 .section4-background2 img {
-  max-width: 30%;
+  max-width: 20%;
   opacity: 0.6;
 }
 
@@ -2842,17 +2842,11 @@ html {
   .section4-background2 {
     left: -210px;
   }
-  .section4-background2 img {
-    max-width: 25%;
-  }
 }
 
 @media (max-width: 1024px) {
   .section4-background2 {
     left: -220px;
-  }
-  .section4-background2 img {
-    max-width: 20%;
   }
 }
 
