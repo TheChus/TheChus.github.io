@@ -805,13 +805,13 @@ html {
         animation: aniShow-title-414-1 0.8s 5s ease-out forwards;
         font-size: 30px;
         left: 280px;
-        top: 610px;
+        top: 510px;
     }
 
     @media (max-width:375px) {
         animation: aniShow-title-375-1 0.8s 5s ease-out forwards;
         left: 260px;
-        top: 550px;
+        top: 450px;
         font-size: 28px;
     }
 }
@@ -854,13 +854,13 @@ html {
         animation: aniShow-title-414-2 1s 5.7s ease-out forwards;
         font-size: 28px;
         left: 178px;
-        top: 650px;
+        top: 550px;
     }
 
     @media (max-width:375px) {
         animation: aniShow-title-375-2 1s 5.7s ease-out forwards;
         left: 174px;
-        top: 590px;
+        top: 490px;
         font-size: 25px;
     }
 }
@@ -903,14 +903,14 @@ html {
         animation: aniShow-text-414 1.5s 6.5s ease-out forwards;
         font-size: 28px;
         left: 215px;
-        top: 690px;
+        top: 590px;
 
     }
 
     @media (max-width:375px) {
         animation: aniShow-text-375 1.5s 6.5s ease-out forwards;
         left: 208px;
-        top: 625px;
+        top: 525px;
         font-size: 25px;
     }
 }
@@ -1108,24 +1108,24 @@ html {
 @keyframes aniShow-text-414 {
     0% {
         opacity: 0;
-        top: 790px;
+        top: 690px;
     }
 
     100% {
         opacity: 1;
-        top: 690px;
+        top: 590px;
     }
 }
 
 @keyframes aniShow-text-375 {
     0% {
         opacity: 0;
-        top: 725px;
+        top: 625px;
     }
 
     100% {
         opacity: 1;
-        top: 625px;
+        top: 525px;
     }
 }
 
