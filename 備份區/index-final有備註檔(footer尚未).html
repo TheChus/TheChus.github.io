@@ -18,7 +18,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="./img/smallthing/TheChus.ico">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="index-final有備註檔(footer尚未).css">
 </head>
 
 
@@ -71,6 +71,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#tosection5-1">牧"牛"犬</a>
                                 <a class="dropdown-item" href="#tosection2">最新消息</a>
+                                <!-- <a class="dropdown-item" href="#tosection5-3">未來展望</a> -->
                             </div>
                         </li>
                         </span>
@@ -130,6 +131,29 @@
             </div>
         </div>
 
+        <!-- Swiper -->
+        <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div id="slide_31" class="slide3"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="slide_32" class="slide3"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="slide_33" class="slide3"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="slide_34" class="slide3"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="slide_36" class="slide3"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next">
+            </div>
+            <div class="swiper-button-prev"></div>
+        </div> -->
     </section>
 
 
@@ -347,14 +371,21 @@
 
             </div>
 
+            <!-- 把font改成span在css給color樣式 -->
             <div id="special" class="text mb-3 lax" data-lax-anchor="self" data-lax-translate-x="350 1, vh 500"
                 data-lax-opacity="200 1, vh 0">
-                <span>領</span>
-                <span>養</span>
-                <span>代</span>
-                <span>替</span>
-                <span>購</span>
-                <span>買</span>
+                <!-- <font color="#ee934c">領</font>
+                <font color="#f7c29f">養</font>
+                <font color="#dcdada">代</font>
+                <font color="#f3d3b0">替</font>
+                <font color="#d8cfc0">購</font>
+                <font color="#dcdddd">買</font> -->
+                <font color="#ee934c">領</font>
+                <font color="#f7c29f">養</font>
+                <font color="#dcdada">代</font>
+                <font color="#d6c5b2">替</font>
+                <font color="#dac196">購</font>
+                <font color="#b2dada">買</font>
             </div>
 
             <div class="SmallSection-name mb-3">牧"牛"犬</div>
@@ -403,7 +434,10 @@
                 </div>
             </div>
 
+
         </div>
+
+
 
     </section>
 
@@ -442,9 +476,19 @@
 
         </div>
 
+        <!-- <div class="col-12 d-flex justify-content-center mt-3">
+            <div class="text" id="text5-2">堅持 永續 科技</div>
+        </div> -->
         <div id="special5" class="text mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
             data-aos-anchor-placement="bottom-bottom">
-            <span color="#6ea0a0">堅持 永續 科技</span>
+            <font color="#6ea0a0">堅</font>
+            <font color="#6ea0a0">持</font>
+
+            <font color="#6ea0a0">永</font>
+            <font color="#6ea0a0">續</font>
+
+            <font color="#6ea0a0">科</font>
+            <font color="#6ea0a0">技</font>
         </div>
 
     </section>
@@ -598,7 +642,11 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
+                    <!-- Add Pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
                 </div>
             </div>
         </div>
@@ -719,7 +767,12 @@
                             <div id="slide_225"></div>
                         </a>
                     </div>
+
+
                 </div>
+
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
     </section>
@@ -730,9 +783,11 @@
     <!-- <div id="tosection6" class="ToSection"></div> -->
     <section id="section6" class="pt-5 pb-5">
 
+
         <div class="section-name mb-4 mt-5">
             <span>聯絡我們 contactus</span>
         </div>
+
 
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -750,6 +805,8 @@
                 </div>
             </div>
         </div>
+
+
     </section>
 
 
@@ -824,6 +881,23 @@
 
             $('.navbar-collapse').removeClass('show')
         })
+        // 未測試區：4/22蕭麻吉說：toggleClass像是之前說的foreach或forloop寫法，點擊如果是紅色變綠色，綠色變紅色，可以用這想法在點擊「最新消息……等btns」，把#toggle，remove("on")
+        //參考↑ 4/23君毅的教學// 這是nav的taggle在手機版消失 //
+
+
+        ///////// 想讓navbar那條，如果點開後沒反應，往下繼續滾動網頁時，收回navbar！///////
+        // window.onscroll = function () {
+        //     var t = document.documentElement.scrollTop || document.body.scrollTop;
+        //     var top_div = document.getElementById("toggle");
+        //     if (t >= 300) {
+        //         top_div.style.display = "inline";
+        //     }
+        //     else {
+        //         top_div.style.display = "none";
+        //     }
+        // }
+        // 滾對事件  ---> 顯示和隱藏  ---->t 大於多少的時候
+        // 滾對事件  ---> 偵測 我當前的滾輪高度  --> 我滑動的居離   ----> 距離有有超過門檻值  -->nav 回收 
 
 
         /////////// 這是nav ///////////
@@ -836,11 +910,13 @@
         });
 
 
-        /////////// 這是nav scroll消失效果///////////
+
+        // ---------- nav scroll 效果 ----------
         var lastScrollTop = 0;
 
-        window.addEventListener("scroll", function () {
-            var nowScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+        window.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
+            var nowScrollTop = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
             if (nowScrollTop > lastScrollTop) {
                 // downscroll code
                 $('#navGroup').removeClass('fixed')
@@ -939,8 +1015,33 @@
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true,
+            // 4/25~26假日快直接把照片裁切一樣大小吧！
         })
 
+
+        /////////// 這是section3的swiper ///////////
+        var swiper3 = new Swiper('#section3 .swiper-container', {
+            slidesPerView: 1,
+            loop: true,
+            // pagination: {
+            //     el: '#section3 .swiper-pagination',
+            //     clickable: true,
+            // },
+            navigation: {
+                // 4/22蕭老師說：可以直接給一個class，放上新的箭頭圖片，直接改這裡即可↓
+                nextEl: '#section3 .swiper-button-next',
+                prevEl: '#section3 .swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+
+        // 4/23問題：這是section3-1的Animate.css
+        // 如何讓animate在滑到section3-1才彈跳「2次」？！
+        // 要用onscrolltop嗎？
 
         /////////// 這是section3-1的AOS ///////////
         AOS.init();
@@ -1025,6 +1126,19 @@
 
         /////////// 這是wow.js ///////////
         new WOW().init();
+
+    // <!-- gotop卷軸偵測jquery -->
+    ///* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+        // $(function () {
+
+        //     $(window).scroll(function () {
+        //         if ($(this).scrollTop() > 400) {
+        //             $('#gotop').fadeIn("slow");
+        //         } else {
+        //             $('#gotop').fadeOut("slow");
+        //         }
+        //     });
+        // });
 
 
     </script>

@@ -5,16 +5,19 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   color: white;
+  -webkit-overflow-scrolling: touch;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: '微軟正黑體';
+  -webkit-overflow-scrolling: touch;
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .fullpage {
@@ -193,7 +196,6 @@ html {
   }
 }
 
-/*********** 測試logo動畫 ***********/
 @-webkit-keyframes LG {
   10% {
     top: -100px;
@@ -232,6 +234,7 @@ html {
             transform: scale(1);
   }
 }
+
 @keyframes LG {
   10% {
     top: -100px;
@@ -838,22 +841,14 @@ html {
           animation-fill-mode: forwards;
 }
 
-#colorful-1,
-#colorful-2,
-#colorful-3,
-#colorful-4,
-#colorful-5 {
+#colorful-1, #colorful-2, #colorful-3, #colorful-4, #colorful-5 {
   color: white;
   -webkit-transition: 0.5S;
   transition: 0.5S;
   position: relative;
 }
 
-#colorful-1:active,
-#colorful-2:active,
-#colorful-3:active,
-#colorful-4:active,
-#colorful-5:active {
+#colorful-1:active, #colorful-2:active, #colorful-3:active, #colorful-4:active, #colorful-5:active {
   opacity: 0.7;
 }
 
@@ -1066,9 +1061,9 @@ html {
 #section1 {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/background/black_linen_v2_@2X.png);
   position: relative;
   overflow: hidden;
+  background-image: url(../img/background/black_linen_v2_@2X.png);
 }
 
 .banner {
@@ -2146,8 +2141,7 @@ html {
   padding: 10px 0;
 }
 
-#section3 .col-11,
-.col-md-3 {
+#section3 .col-11, .col-md-3 {
   padding-left: 0;
   padding-right: 0;
 }
@@ -2225,6 +2219,83 @@ html {
   }
 }
 
+.swiper-button-next {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-next {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 991px) {
+  .swiper-button-next {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-prev {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 991px) {
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: unset;
+}
+
 /*********** 這裡是section3-1 ***********/
 #section3-1 {
   width: 100%;
@@ -2243,7 +2314,6 @@ html {
   height: 100%;
   max-height: 400px;
   background-image: url(../img/background/triangle-mosaic.png);
-  cursor: pointer;
 }
 
 #section3-1Background {
@@ -2535,83 +2605,6 @@ html {
 .section3-1-background-5 img {
   max-width: 75%;
   opacity: 0.75;
-}
-
-.swiper-button-next {
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1024px) {
-  .swiper-button-next {
-    width: 52px;
-    height: 52px;
-  }
-}
-
-@media (max-width: 991px) {
-  .swiper-button-next {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .swiper-button-next {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .swiper-button-next {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.swiper-button-prev {
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1024px) {
-  .swiper-button-prev {
-    width: 52px;
-    height: 52px;
-  }
-}
-
-@media (max-width: 991px) {
-  .swiper-button-prev {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .swiper-button-prev {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .swiper-button-prev {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  content: unset;
 }
 
 #section3-1 .swiper-button-next {
@@ -3051,6 +3044,7 @@ html {
   }
 }
 
+/*********** 這裡是section5 ***********/
 /******** 這裡是section5-1 ********/
 @media (max-width: 1600px) {
   #tosection5-1 {
@@ -3171,30 +3165,6 @@ html {
 #special {
   font-size: 45px;
   font-weight: 900;
-}
-
-#special :nth-child(1) {
-  color: #ee934c;
-}
-
-#special :nth-child(2) {
-  color: #f7c29f;
-}
-
-#special :nth-child(3) {
-  color: #dcdada;
-}
-
-#special :nth-child(4) {
-  color: #d6c5b2;
-}
-
-#special :nth-child(5) {
-  color: #dac196;
-}
-
-#special :nth-child(6) {
-  color: #b2dada;
 }
 
 .boxtest {
@@ -3336,8 +3306,27 @@ html {
   color: #ddccb8;
 }
 
-#section5-2 span {
-  color: #6ea0a0;
+#section5-2 .text {
+  font-size: 25px;
+  font-weight: 600;
+  color: #666666;
+}
+
+#section5-2 .col-12,
+.col-lg-6 {
+  color: #292929;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+@media screen and (max-width: 576px) {
+  #section5-2 .col-12,
+  .col-lg-6 {
+    font-size: 18px;
+  }
 }
 
 #section5-2 img {
@@ -3392,6 +3381,7 @@ html {
 .formBG {
   border: 0.5px solid #d8cfc0;
   outline-color: none;
+  /* outline-offset: unset; */
   outline: none;
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.5);
@@ -3597,4 +3587,6 @@ footer {
 #scene {
   overflow: hidden;
 }
+
+/* 4/23君毅老師加入要讓iphone顯示navbar，但失敗 */
 /*# sourceMappingURL=index.css.map */
