@@ -3220,13 +3220,13 @@ html {
 
 @media (max-width: 414px) {
   .box {
-    height: 310px;
+    height: 330px;
   }
 }
 
 @media (max-width: 375px) {
   .box {
-    height: 270px;
+    height: 310px;
   }
 }
 
