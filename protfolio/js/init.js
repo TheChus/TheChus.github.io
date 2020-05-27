@@ -1,8 +1,30 @@
-(function($){
-  $(function(){
+$(document).ready(function () {
+  // Init Scrollspy
+  $('.scrollspy').scrollSpy()
 
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
+  // Init slider
+  $('.slider').slider({
+    indicators: false,
+    interval: 5000
+  })
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  // Init Sidenav
+  $('.sidenav').sidenav({
+    edge: 'right',
+    preventScrolling: false
+  });
+
+  // Init Parallax
+  $('.parallax').parallax()
+
+  // Init carousel slider
+  // $('.carousel.carousel-slider').carousel({
+  //   fullWidth: true,
+  //   indicators: true
+  // })
+
+  // Int floating action button
+  // $('.fixed-action-btn').floatingActionButton({
+  //   toolbarEnabled: true
+  // })
+});
