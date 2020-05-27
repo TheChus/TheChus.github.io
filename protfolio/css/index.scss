@@ -58,19 +58,18 @@ nav {
 }
 
 #arrow {
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    z-index: 3;
     width: 40px;
     height: 40px;
+    position: absolute;
+    bottom: 3%;
+    left: calc(50% - 20px);
+    z-index: 3;
     background-image: url('../img/icons/arrow-down-white.png');
     background-size: cover;
     background-position: center;
-    transform: translateX(-50%);
 }
 
-nav a:hover {
+a:hover {
     color: unset;
     text-decoration: none;
 }
