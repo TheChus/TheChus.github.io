@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', '微軟正黑體', sans-serif;
+  background-color: #faf9f0;
 }
 
 * {
@@ -79,6 +80,7 @@ a:hover {
 /*Side Nav*/
 ul.sidenav {
   width: 200px;
+  background-color: #cccbc6;
 }
 
 ul.sidenav li:last-of-type,
@@ -89,7 +91,7 @@ ul.sidenav li:last-of-type a {
 
 ul.sidenav .divider {
   margin: 15px 20px 28px 25px;
-  background-color: #686666;
+  background-color: #efd9c1;
 }
 
 ul.sidenav .subheader {
@@ -176,6 +178,11 @@ ul.sidenav .subheader {
 
 #section1-1 .box3 {
   background-color: #cccbc6;
+}
+
+section img {
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 /*Footer*/

@@ -1,12 +1,11 @@
 $(document).ready(function () {
   // Init Scrollspy
-  $('.scrollspy').scrollSpy()
+  $('.scrollspy').scrollSpy();
 
   // Init slider
   $('.slider').slider({
     indicators: false,
-    interval: 5000
-  })
+  });
 
   // Init Sidenav
   $('.sidenav').sidenav({
@@ -15,7 +14,7 @@ $(document).ready(function () {
   });
 
   // Init Parallax
-  $('.parallax').parallax()
+  $('.parallax').parallax();
 
   // Init carousel slider
   // $('.carousel.carousel-slider').carousel({
