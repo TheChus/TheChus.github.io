@@ -11,6 +11,11 @@ body {
           box-sizing: border-box;
 }
 
+.section_name {
+  font-family: 'Amaranth';
+  text-shadow: 1px 1px 4px #6d6c6c;
+}
+
 /*Header Section*/
 header {
   position: relative;
@@ -139,7 +144,7 @@ a:hover {
 .avater {
   width: 100px;
   height: 100px;
-  margin: 0 45px;
+  margin-left: 50px;
 }
 
 .name {

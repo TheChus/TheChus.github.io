@@ -10,6 +10,11 @@ body {
     box-sizing: border-box;
 }
 
+.section_name{
+    font-family: 'Amaranth';
+    text-shadow: 1px 1px 4px #6d6c6c;
+}
+
 
 
 /////// Navbar ///////
@@ -116,7 +121,7 @@ a:hover {
 .avater {
     width: 100px;
     height: 100px;
-    margin: 0 45px;
+    margin-left: 50px;;
 }
 
 .name {
@@ -169,8 +174,12 @@ ul.sidenav .subheader {
 }
 
 
+/////// Front-end ///////
 
-//////////////
+
+
+
+//////parallax////////
 .parallax-container {
     max-height: 300px;
     margin-top: 75px;
