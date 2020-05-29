@@ -143,12 +143,12 @@ a:hover {
 }
 
 .name {
-  padding: 0 63px;
+  padding-left: 63px;
   font-weight: 900;
 }
 
 .email {
-  padding: 0 8px;
+  padding-left: 16px;
   font-weight: 100;
 }
 
