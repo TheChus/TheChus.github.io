@@ -21,7 +21,7 @@
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <link rel="shortcut icon" href="">
+  <link rel="shortcut icon" href="img/logo/favicon.ico">
   <link rel="stylesheet" href="css/index.css">
 
 </head>
@@ -29,25 +29,13 @@
 <body>
 
   <!--Header Section-->
-  <header id="home" class="navbar-fixed">
-    <!--Banner Slider-->
-    <div class="slider fullscreen">
-      <ul class="slides">
-        <li>
-          <img src="img/banner/banner3.JPG" alt="">
-          <div class="caption right-align grey-text text-lighten-5">
-            <h3>Life Is <br>Beautiful</h3>
-            <h5>Check out my portfolio</h5>
-          </div>
-        </li>
-        <!-- <li>
-          <img src="img/banner/banner2.JPG" alt="">
-          <div class="caption center-align grey-text text-lighten-4">
-            <h3>Love Adventure</h3>
-            <h5>Embrace Challenges</h5>
-          </div>
-        </li> -->
-      </ul>
+  <header class="navbar-fixed mb-5">
+    <!--Banner-->
+    <div class="banner">
+      <div class="banner_text grey-text text-lighten-5">
+        <h3>Life Is <br>Beautiful</h3>
+        <h5>Check out my portfolio</h5>
+      </div>
     </div>
     <!--Navbar-->
     <nav>
@@ -80,18 +68,67 @@
     <li>
       <div class="divider"></div>
     </li>
-    <li><a class="subheader">Learn More About Me</a></li>
-    <div id="side-nav-icons-container">
-      <h5><a href="#" class="grey-text text-darken-3" target="_blank"><i
-            class="fab fa-medium-m"></i></a>
-      </h5>
-      <h5><a href="#" class="grey-text text-darken-3" target="_blank"><i
-            class="fab fa-github"></i></a>
-      </h5>
-      <h5><a href="#" class="grey-text text-darken-3" target="_blank"><i
-            class="fab fa-linkedin"></i></a></h5>
-    </div>
+    <li>
+      <!-- <div class="background">
+        <img src="images/office.jpg">
+      </div> -->
+      <img class="avater" src="img/logo/avatar.png"></li>
+    <li>
+      <span class="white-text name">Kusti Chu</span></li>
+    <li>
+      <span class="white-text email">cattiechu@hotmail.com</span></li>
+    </li>
   </ul>
+
+
+
+  <!--Skills-->
+  <section class="section-skills parallax-container scrollspy" id="skill">
+    <div class="overlay">
+      <div class="container white-text">
+        <h3>Front-End Skills</h3>
+        <div class="row d-flex justify-content-center">
+          <div class="col">
+            <img src="img/icons/html5.png" alt="" class="imgs">
+            <span class="tooltip-text">Vue.js</span>
+          </div>
+          <div class="col">
+            <img src="img/icons/css3.png" alt="" class="imgs">
+            <span class="tooltip-text">JavaScript</span>
+          </div>
+          <div class="col">
+            <img src="img/icons/sass.png" alt="" class="imgs">
+            <span class="tooltip-text">Sass/SCSS</span>
+          </div>
+          <div class="col">
+            <img src="img/icons/javascript.png" alt="" class="imgs">
+            <span class="tooltip-text">Bootstrap</span>
+          </div>
+          <div class="col">
+            <img src="img/icons/jquery.png" alt="" class="imgs">
+            <span class="tooltip-text">Materialize</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="parallax">
+        <img src="img/travel/newciland.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <section id="section2">
     <div class="box">Lorem ipsum dolor sit amet
@@ -127,49 +164,46 @@
   </section>
 
 
-    <!--Footer-->
-    <footer class="page-footer grey lighten-1">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <div id="footer-logo">
-              <img src="./img/logo/logo.png" alt="Logo of Mike">
-            </div>
-            <p class="grey-text text-darken-3">Learn more about Kusti</p>
-            <div id="footer-links">
-              <a href="https://github.com/smallpaes" target="_blank" class="grey-text text-lighten-3"><i
-                  class="fab fa-github fa-2x"></i></a>
-              <a href="https://medium.com/麥克的半路出家筆記" target="_blank" class="grey-text text-lighten-3"><i
-                  class="fab fa-medium fa-2x"></i></a>
-              <a href="https://www.linkedin.com/in/mike-huang-mikank/" target="_blank"
-                class="grey-text text-lighten-3"><i class="fab fa-linkedin fa-2x"></i></a>
-            </div>
+  <!--Footer-->
+  <footer class="page-footer grey lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div id="footer-logo">
+            <img src="./img/logo/logo.png" alt="Logo of Mike">
+          </div>
+          <p class="grey-text text-darken-3">Learn more about Kusti</p>
+          <div id="footer-links">
+            <a href="#" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-medium fa-2x"></i></a>
+            <a href="#" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-linkedin fa-2x"></i></a>
           </div>
         </div>
       </div>
-      <div class="footer-copyright center">
-        <div class="container">
-          Kusti's Portfolio © 2020 Copyright
-        </div>
+    </div>
+    <div class="footer-copyright center">
+      <div class="container">
+        Kusti's Portfolio © 2020 Copyright
       </div>
-    </footer>
+    </div>
+  </footer>
 
 
 
 
-    <!--jQuery+bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-    <!--materialize-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/index.js"></script>
+  <!--jQuery+bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!--materialize-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 
