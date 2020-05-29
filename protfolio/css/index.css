@@ -53,8 +53,8 @@ header {
 @media (max-width: 992px) {
   .banner_text {
     right: 11%;
-    -webkit-animation: aniShow-title-992 3s 1s ease-out forwards;
-            animation: aniShow-title-992 3s 1s ease-out forwards;
+    -webkit-animation: aniShow-title-992 1.5s 1s ease-out forwards;
+            animation: aniShow-title-992 1.5s 1s ease-out forwards;
   }
 }
 
@@ -135,11 +135,6 @@ nav {
   background-position: center;
 }
 
-a:hover {
-  color: unset;
-  text-decoration: none;
-}
-
 /*Side Nav*/
 .avater {
   width: 100px;
@@ -197,6 +192,25 @@ ul.sidenav .subheader {
   padding: 5px 0px;
 }
 
+#skills .card.large {
+  height: 360px;
+}
+
+#skills h4 {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+#skills .col img.responsive-img {
+  margin: 0 auto;
+  max-height: 100px;
+  padding-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
 .parallax-container {
   max-height: 300px;
   margin-top: 75px;
@@ -213,8 +227,8 @@ ul.sidenav .subheader {
   text-shadow: 1px 1px 4px #232222;
 }
 
-.imgs {
-  max-width: 80%;
+#parallax img.responsive-img {
+  max-width: 30%;
 }
 
 .box {

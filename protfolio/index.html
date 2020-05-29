@@ -8,9 +8,6 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
-  <!--bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
@@ -59,7 +56,7 @@
         <img src="./img/logo/logo.png" alt="Mike's logo"></a>
     </li>
     <li><a class="sidenav-close grey-text text-darken-3 waves-effect"
-        href="#home">Front-end(parallax用Front-end-siklls放圖html5等)</a></li>
+        href="#section1">Front-end</a></li>
     <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#about">Photoshop</a></li>
     <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#skill">Illustrator</a></li>
     <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#project">Decoration</a></li>
@@ -87,6 +84,97 @@
     </div>
     
 
+  </section>
+
+
+  <section id="skills" class="section scrollspy">
+    <h3 class="page-title white-text teal">Skills</h3>
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">HTML</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/html5.png"
+                class="responsive-img"
+              />HTML5
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/css3.png"
+                class="responsive-img"
+              />JSX
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/sass.png"
+                class="responsive-img"
+              />Haml
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/javascript.png"
+                class="responsive-img"
+              />Jade
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/jquery.png"
+                class="responsive-img"
+              />Jekyll
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">CSS</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/bootstrap.png"
+                class="responsive-img"
+              />CSS3
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/materialize.png"
+                class="responsive-img"
+              />SASS
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/GitHub.png"
+                class="responsive-img"
+              />Bootstrap
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/photoshop.png"
+                class="responsive-img"
+              />Foundation
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="img/icons/ai.png"
+                class="responsive-img"
+              />Materialize
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
@@ -141,29 +229,29 @@
 
 
   <!--parallax-->
-  <section class="section-skills parallax-container scrollspy" id="skill">
+  <section class="section-skills parallax-container scrollspy" id="parallax">
     <div class="overlay">
       <div class="container white-text">
         <h3>Front-End Skills</h3>
-        <div class="row d-flex justify-content-center">
+        <div class="row">
           <div class="col">
-            <img src="img/icons/html5.png" alt="" class="imgs">
+            <img src="img/icons/html5.png" alt="" class="responsive-img">
             <span class="tooltip-text">Vue.js</span>
           </div>
           <div class="col">
-            <img src="img/icons/css3.png" alt="" class="imgs">
+            <img src="img/icons/css3.png" alt="" class="responsive-img">
             <span class="tooltip-text">JavaScript</span>
           </div>
           <div class="col">
-            <img src="img/icons/sass.png" alt="" class="imgs">
+            <img src="img/icons/sass.png" alt="" class="responsive-img">
             <span class="tooltip-text">Sass/SCSS</span>
           </div>
           <div class="col">
-            <img src="img/icons/javascript.png" alt="" class="imgs">
+            <img src="img/icons/javascript.png" alt="" class="responsive-img">
             <span class="tooltip-text">Bootstrap</span>
           </div>
           <div class="col">
-            <img src="img/icons/jquery.png" alt="" class="imgs">
+            <img src="img/icons/jquery.png" alt="" class="responsive-img">
             <span class="tooltip-text">Materialize</span>
           </div>
         </div>
@@ -203,15 +291,9 @@
 
 
 
-  <!--jQuery+bootstrap-->
+  <!--jQuery-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
   <!--materialize-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="js/init.js"></script>
