@@ -192,6 +192,10 @@ ul.sidenav .subheader {
   padding: 5px 0px;
 }
 
+.sidenav li {
+  line-height: unset;
+}
+
 #skills .card.large {
   height: 360px;
 }
