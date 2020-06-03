@@ -10,7 +10,8 @@ $(document).ready(function () {
   // Init Sidenav
   $('.sidenav').sidenav({
     edge: 'right',
-    preventScrolling: false
+    preventScrolling: false,
+    closeOnClick: true,
   });
 
   // Init Parallax
