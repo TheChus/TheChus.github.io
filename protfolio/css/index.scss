@@ -197,6 +197,9 @@ ul.sidenav .subheader {
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
     padding-bottom: 20px;
+    &:nth-child(1){
+        border-bottom: unset;
+    }
 }
 
 // #RWD .col img.responsive-img {
@@ -243,7 +246,7 @@ ul.sidenav .subheader {
             margin-top: 100px;
         }
         @media (max-width:414px) {
-            margin-top: 70px;
+            margin-top: 40px;
             margin-bottom: 60px;
             padding: unset;
         }
@@ -262,21 +265,14 @@ ul.sidenav .subheader {
 }
 .section2 span{
     @media (max-width:414px) {
-        // visibility: hidden;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         font-size: 12px;
     }
 }
-.tooltip:hover span{
-    @media (max-width:414px) {
-        visibility: visible;
-    }
-}
 
 #parallax img.responsive-img{
-    // max-width: 30%;
     margin: 0 auto;
     max-height: 100px;
     padding-bottom: 10px;
