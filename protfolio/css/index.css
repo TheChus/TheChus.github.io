@@ -206,11 +206,7 @@ ul.sidenav .subheader {
   line-height: unset;
 }
 
-#skills .card.large {
-  height: 360px;
-}
-
-#skills .row {
+#RWD .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,18 +215,19 @@ ul.sidenav .subheader {
           justify-content: center;
 }
 
-#skills h4 {
+#RWD h4 {
   border-bottom: 1px solid #ddd;
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
 
-#skills .col img.responsive-img {
-  margin: 0 auto;
-  max-height: 100px;
-  padding-bottom: 10px;
-  vertical-align: middle;
-  display: table-cell;
+#RWD .pic {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/front-end/擷取.JPG);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .parallax-container {
@@ -238,11 +235,17 @@ ul.sidenav .subheader {
   margin-top: 75px;
 }
 
+@media (max-width: 414px) {
+  .parallax-container {
+    max-height: 400px;
+  }
+}
+
 .section2 .mask {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(70, 68, 68, 0.75);
+  background-color: rgba(77, 74, 74, 0.5);
 }
 
 .section2 .row {
@@ -255,7 +258,42 @@ ul.sidenav .subheader {
 }
 
 .section2 .row:nth-child(1) {
-  margin-top: 50px;
+  margin-top: 65px;
+}
+
+@media (max-width: 576px) {
+  .section2 .row:nth-child(1) {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 414px) {
+  .section2 .row:nth-child(1) {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 414px) {
+  .tooltip {
+    position: relative;
+  }
+}
+
+@media (max-width: 414px) {
+  .section2 span {
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 414px) {
+  .tooltip:hover span {
+    visibility: visible;
+  }
 }
 
 #parallax img.responsive-img {

@@ -184,27 +184,36 @@ ul.sidenav .subheader {
 
 
 /////// Front-end ///////
-#skills .card.large {
-    height: 360px;
-}
+// #skills .card.large {
+//     height: 360px;
+// }
 
-#skills .row{
+#RWD .row{
     display: flex;
     justify-content: center;
 }
 
-#skills h4 {
+#RWD h4 {
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
 
-#skills .col img.responsive-img {
-    margin: 0 auto;
-    max-height: 100px;
-    padding-bottom: 10px;
-    vertical-align: middle;
-    display: table-cell;
+// #RWD .col img.responsive-img {
+//     margin: 0 auto;
+//     max-height: 100px;
+//     padding-bottom: 10px;
+//     vertical-align: middle;
+//     display: table-cell;
+// }
+
+#RWD .pic{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/front-end/擷取.JPG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -214,22 +223,48 @@ ul.sidenav .subheader {
 .parallax-container {
     max-height: 500px;
     margin-top: 75px;
-    // @media (max-width:992px) {
-    //     max-height: 500px;
-    // }
+    @media (max-width:414px) {
+        max-height: 400px;
+    }
 }
 
 .section2 .mask {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(70, 68, 68, 0.75)
+    background-color: rgba(77, 74, 74, 0.5)
 }
 .section2 .row{
     display: flex;
     justify-content: center;
     &:nth-child(1){
-        margin-top: 50px;
+        margin-top: 65px;
+        @media (max-width:576px) {
+            margin-top: 100px;
+        }
+        @media (max-width:414px) {
+            margin-top: 70px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.tooltip{
+    @media (max-width:414px) {
+        position: relative;
+    }
+}
+.section2 span{
+    @media (max-width:414px) {
+        visibility: hidden;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.tooltip:hover span{
+    @media (max-width:414px) {
+        visibility: visible;
     }
 }
 
@@ -241,9 +276,7 @@ ul.sidenav .subheader {
     vertical-align: middle;
     display: table-cell;
 }
-// #parallax-background img{
-//     max-width: 100%;
-// }
+
 
 
 
