@@ -19,7 +19,8 @@ body {
     background-color: #b0bec5;
     color: white;
 }
-h3{
+
+h3 {
     margin-bottom: 0px;
     margin-top: 0;
     padding: 30px 0px;
@@ -52,6 +53,7 @@ header {
 
 .banner_text {
     font-family: 'Amaranth';
+    font-weight: 700;
     text-shadow: 1px 1px 4px #6d6c6c;
     position: absolute;
     z-index: 3;
@@ -64,11 +66,11 @@ header {
         right: 11%;
         animation: aniShow-title-992 1.5s 1s ease-out forwards;
     }
-}
 
-.banner_text h3,
-h5 {
-    font-weight: 700;
+    h5{
+        animation: aniShow-title 5s 3s ease-out forwards;
+        opacity: 0.3;
+    }
 }
 
 @keyframes aniShow-title {
@@ -76,7 +78,6 @@ h5 {
         opacity: 0;
         right: -5%;
     }
-
     100% {
         opacity: 1;
         right: 18%;
@@ -88,7 +89,6 @@ h5 {
         opacity: 0;
         right: -5%;
     }
-
     100% {
         opacity: 1;
         right: 11%;
@@ -178,7 +178,8 @@ ul.sidenav .subheader {
     height: 100%;
     padding: 5px 0px;
 }
-.sidenav li{
+
+.sidenav li {
     line-height: unset;
 }
 
@@ -188,7 +189,7 @@ ul.sidenav .subheader {
 //     height: 360px;
 // }
 
-#RWD .row{
+#RWD .row {
     display: flex;
     justify-content: center;
 }
@@ -197,7 +198,8 @@ ul.sidenav .subheader {
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    &:nth-child(1){
+
+    &:nth-child(1) {
         border-bottom: unset;
     }
 }
@@ -210,7 +212,7 @@ ul.sidenav .subheader {
 //     display: table-cell;
 // }
 
-#RWD .pic{
+#RWD .pic {
     width: 100%;
     height: 200px;
     background-image: url(../img/front-end/擷取.JPG);
@@ -222,10 +224,11 @@ ul.sidenav .subheader {
 
 
 
-//////parallax////////
+//////Skills////////
 .parallax-container {
     max-height: 500px;
     margin-top: 75px;
+
     @media (max-width:414px) {
         max-height: 400px;
     }
@@ -237,14 +240,18 @@ ul.sidenav .subheader {
     height: 100%;
     background-color: rgba(77, 74, 74, 0.2)
 }
-.section2 .row{
+
+.section2 .row {
     display: flex;
     justify-content: center;
-    &:nth-child(1){
+
+    &:nth-child(1) {
         margin-top: 65px;
+
         @media (max-width:576px) {
             margin-top: 100px;
         }
+
         @media (max-width:414px) {
             margin-top: 40px;
             margin-bottom: 60px;
@@ -252,18 +259,20 @@ ul.sidenav .subheader {
         }
     }
 }
-.section2 .row .col{
+
+.section2 .row .col {
     @media (max-width:414px) {
         padding: unset;
     }
 }
 
-.tooltip{
+.tooltip {
     @media (max-width:414px) {
         position: relative;
     }
 }
-.section2 span{
+
+.section2 span {
     @media (max-width:414px) {
         position: absolute;
         left: 50%;
@@ -272,7 +281,7 @@ ul.sidenav .subheader {
     }
 }
 
-#parallax img.responsive-img{
+#parallax img.responsive-img {
     margin: 0 auto;
     max-height: 100px;
     padding-bottom: 10px;
@@ -280,12 +289,61 @@ ul.sidenav .subheader {
     display: table-cell;
 }
 
+#parallax {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
 
 
+//////photoshop////////
+#photoshop .row .col {
+    padding: unset;
+    line-height: 0.5;
+}
+
+#photoshop {
+    margin-bottom: 100px;
+
+    h4 {
+        background-color: #cccbc6;
+        margin-bottom: 0px;
+        margin-top: 0;
+        padding: 20px 0px;
+    }
+}
+
+.matte-margin{
+    margin-bottom: 100px;
+}
+
+#okinawa {
+    .col {
+        border: #c7d8c6 3px dashed;
+        box-shadow: rgb(233, 233, 233) 0px 0px 20px;
+        width: 48%;
+        @media (max-width:600px) {
+            width: 100%;
+        }
+    }
+    .okinawa-margin{
+        margin-right: 20px;
+        @media (max-width:600px) {
+            margin-right: unset;
+            margin-bottom: 20px;
+        }
+    }
+}
 
 
-
-
+//////illustrator////////
+#illustrator {
+    h4 {
+        background-color: #cccbc6;
+        margin-bottom: 0px;
+        margin-top: 0;
+        padding: 20px 0px;
+    }
+}
 
 
 
