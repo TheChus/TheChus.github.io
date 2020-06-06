@@ -26,6 +26,14 @@ h3 {
   padding: 30px 0px;
 }
 
+.MB-100 {
+  margin-bottom: 100px;
+}
+
+.MT-100 {
+  margin-top: 100px;
+}
+
 /*Header Section*/
 header {
   position: relative;
@@ -208,7 +216,7 @@ ul.sidenav .subheader {
   line-height: unset;
 }
 
-#RWD .row {
+#front-end .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,17 +225,20 @@ ul.sidenav .subheader {
           justify-content: center;
 }
 
-#RWD h4 {
+#front-end .grey-text {
+  background-color: #cccbc6;
+  margin-bottom: 0px;
+  margin-top: 0;
+  padding: 20px 0px;
+}
+
+#front-end .card h4 {
   border-bottom: 1px solid #ddd;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-#RWD h4:nth-child(1) {
-  border-bottom: unset;
-}
-
-#RWD .pic {
+#front-end .pic {
   width: 100%;
   height: 200px;
   background-image: url(../img/front-end/擷取.JPG);
@@ -236,13 +247,106 @@ ul.sidenav .subheader {
   background-repeat: no-repeat;
 }
 
-.parallax-container {
+#ajax .parallax-container {
+  margin-top: unset;
   max-height: 500px;
-  margin-top: 75px;
+}
+
+#ajax .ajaxcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 11px 0;
+}
+
+@media (max-width: 1024px) {
+  #ajax .ajaxcontainer {
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #ajax .ajaxcontainer {
+    padding: 19px 0;
+  }
+}
+
+#ajax .ajaxcard {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 350px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#ajax .ajaxcard h4 {
+  font-weight: 700;
+}
+
+#ajax .ajaxcard h5 {
+  text-align: justify;
+  padding-left: 35px;
 }
 
 @media (max-width: 414px) {
-  .parallax-container {
+  #ajax .ajaxcard h5 {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 414px) {
+  #ajax .ajaxcard {
+    width: 300px;
+  }
+}
+
+#ajax .ajaxcard img {
+  height: 150px;
+  width: 150px;
+}
+
+#ajax .ajaxcard #size {
+  font-size: 30px;
+}
+
+#ajax .ajaxcard #go {
+  font-size: 23px;
+  font-weight: 900;
+}
+
+#ajax .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 79px;
+}
+
+@media (max-width: 414px) {
+  #ajax .test {
+    padding: 0 58px;
+  }
+}
+
+#ajax .test h5 {
+  padding-left: unset;
+}
+
+#ajax .test div {
+  line-height: 60px;
+  background-color: #efd9c1;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  font-size: 1.64rem;
+}
+
+section.parallax-container {
+  max-height: 500px;
+}
+
+@media (max-width: 414px) {
+  section.parallax-container {
     max-height: 400px;
   }
 }
@@ -330,10 +434,6 @@ ul.sidenav .subheader {
   margin-bottom: 0px;
   margin-top: 0;
   padding: 20px 0px;
-}
-
-.matte-margin {
-  margin-bottom: 100px;
 }
 
 #okinawa .col {
