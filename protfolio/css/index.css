@@ -293,22 +293,22 @@ ul.sidenav .subheader {
   }
 }
 
-#ajax img {
+#ajax .ajaxcard img {
   height: 150px;
   width: 150px;
 }
 
-#ajax #lasth5 {
+#ajax .ajaxcard #lasth5 {
   margin-top: 30px;
 }
 
-#ajax #size {
+#ajax .ajaxcard #size {
   font-size: 50px;
   border-bottom: unset;
 }
 
 @media (max-width: 375px) {
-  #ajax #size {
+  #ajax .ajaxcard #size {
     font-size: 45px;
   }
 }
