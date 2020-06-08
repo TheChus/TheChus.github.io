@@ -241,61 +241,47 @@ ul.sidenav .subheader {
     .ajaxcontainer{
         display: flex;
         justify-content: center;
-        padding: 11px 0;
-        @media (max-width:1024px) {
-            padding: 16px 0;
-        }
-        @media (max-width:768px) {
-            padding: 19px 0;
+        padding: 50px 0;
+        @media (max-width:375px) {
+            padding: 67.5px 0;
         }
     }
     .ajaxcard {
-        background-color: rgba(255, 255, 255, 0.75);
-        width: 350px;
-        border-radius: 20px;
+        color: #424242;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
         text-align: center;
         h4{
             font-weight: 700;
+            margin: 0 0 20px 0;
         }
         h5{
-            text-align: justify;
-            padding-left: 35px;
-            @media (max-width:414px) {
-                padding-left: 25px;
+            span{
+                border-bottom: 2px solid rgb(87, 87, 87);
             }
         }
-        @media (max-width:414px) {
-            width: 300px;
+        @media (max-width:375px) {
+            width: 365px;
+            height: 365px;
         }
     }
-    .ajaxcard img {
+    img {
         height: 150px;
         width: 150px;
     }
-    .ajaxcard #size {
-        font-size: 30px;
+    #lasth5{
+        margin-top: 30px;
     }
-    .ajaxcard #go {
-        font-size: 23px;
-        font-weight: 900;
-    }
-    .test {
-        display: flex;
-        padding: 0 79px;
-        @media (max-width:414px) {
-            padding: 0 58px;
-        }
-        h5{
-            padding-left: unset;
+    #size {
+        font-size: 50px;
+        border-bottom:unset;
+        @media (max-width:375px) {
+            font-size: 45px;
         }
     }
-    .test div {
-        line-height: 60px;
-        background-color: #efd9c1;
-        border-radius: 7px;
-        margin-bottom: 15px;
-        font-size: 1.64rem;
-    }
+
 }
 
 
