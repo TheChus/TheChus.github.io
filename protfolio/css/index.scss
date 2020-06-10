@@ -238,15 +238,17 @@ ul.sidenav .subheader {
     .parallax-container {
         margin-top: unset;
         max-height: 500px;
+        @media (max-width:414px) {
+            max-height: 400px;
+        }
     }
 
     .ajaxcontainer {
         display: flex;
         justify-content: center;
         padding: 50px 0;
-
-        @media (max-width:375px) {
-            padding: 67.5px 0;
+        @media (max-width:414px) {
+            padding: 17.5px 0;
         }
     }
 
@@ -269,7 +271,7 @@ ul.sidenav .subheader {
             }
         }
 
-        @media (max-width:375px) {
+        @media (max-width:414px) {
             width: 365px;
             height: 365px;
         }
@@ -287,8 +289,8 @@ ul.sidenav .subheader {
             font-size: 50px;
             border-bottom: unset;
     
-            @media (max-width:375px) {
-                font-size: 45px;
+            @media (max-width:414px) {
+                font-size: 40px;
             }
         }
     }

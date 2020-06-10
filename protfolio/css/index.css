@@ -252,6 +252,12 @@ ul.sidenav .subheader {
   max-height: 500px;
 }
 
+@media (max-width: 414px) {
+  #ajax .parallax-container {
+    max-height: 400px;
+  }
+}
+
 #ajax .ajaxcontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,9 +268,9 @@ ul.sidenav .subheader {
   padding: 50px 0;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   #ajax .ajaxcontainer {
-    padding: 67.5px 0;
+    padding: 17.5px 0;
   }
 }
 
@@ -286,7 +292,7 @@ ul.sidenav .subheader {
   border-bottom: 2px solid #575757;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   #ajax .ajaxcard {
     width: 365px;
     height: 365px;
@@ -307,9 +313,9 @@ ul.sidenav .subheader {
   border-bottom: unset;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   #ajax .ajaxcard #size {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
