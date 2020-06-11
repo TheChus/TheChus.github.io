@@ -225,7 +225,7 @@ ul.sidenav .subheader {
           justify-content: center;
 }
 
-#front-end .grey-text {
+#front-end .white-text {
   background-color: #cccbc6;
   margin-bottom: 0px;
   margin-top: 0;
@@ -412,6 +412,12 @@ section.parallax-container {
   margin-bottom: 0px;
   margin-top: 0;
   padding: 20px 0px;
+}
+
+@media (max-width: 600px) {
+  #MattePainting .container {
+    width: 100%;
+  }
 }
 
 #okinawa .col {
