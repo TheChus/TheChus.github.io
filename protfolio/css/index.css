@@ -275,7 +275,7 @@ ul.sidenav .subheader {
 }
 
 #ajax .ajaxcard {
-  color: #424242;
+  color: #616161;
   background-color: rgba(255, 255, 255, 0.5);
   width: 400px;
   height: 400px;
@@ -289,7 +289,7 @@ ul.sidenav .subheader {
 }
 
 #ajax .ajaxcard h5 span {
-  border-bottom: 2px solid #575757;
+  border-bottom: 2px solid #616161;
 }
 
 @media (max-width: 414px) {
