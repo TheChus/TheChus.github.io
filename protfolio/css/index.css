@@ -216,15 +216,6 @@ ul.sidenav .subheader {
   line-height: unset;
 }
 
-#front-end .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #front-end .white-text {
   background-color: #cccbc6;
   margin-bottom: 0px;
