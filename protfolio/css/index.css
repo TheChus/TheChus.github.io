@@ -238,6 +238,11 @@ ul.sidenav .subheader {
   padding-bottom: 20px;
 }
 
+.container.thirdcolor {
+  font-size: 2.28rem;
+  line-height: 110%;
+}
+
 #front-end .pic {
   width: 100%;
   height: 200px;
