@@ -262,12 +262,12 @@ ul.sidenav .subheader {
   }
 }
 
-#front-end .z-depth-3.pack {
+#front-end .z-depth-3.other {
   margin: 0 auto 150px auto;
 }
 
 @media (max-width: 576px) {
-  #front-end .z-depth-3.pack {
+  #front-end .z-depth-3.other {
     margin: 0 auto 100px auto;
   }
 }
