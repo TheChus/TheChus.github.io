@@ -234,6 +234,12 @@ ul.sidenav .subheader {
   line-height: 110%;
 }
 
+@media (max-width: 576px) {
+  .container.thirdcolor {
+    font-size: 1.78rem;
+  }
+}
+
 #front-end .z-depth-3 {
   margin-bottom: 150px;
 }
@@ -267,7 +273,7 @@ ul.sidenav .subheader {
 }
 
 #front-end .z-depth-3.S-ROW {
-  max-width: 98%;
+  max-width: 97%;
 }
 
 #front-end .pic {
