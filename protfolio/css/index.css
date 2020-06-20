@@ -656,4 +656,71 @@ section.parallax-container {
     font-size: 1.2rem;
   }
 }
+
+/*Project Section*/
+.section-project .card .card-action {
+  border-top: unset;
+}
+
+.section-project h2 {
+  text-shadow: 1px 1px 1px rgba(193, 193, 193, 0.46);
+}
+
+.section-project #github-repo-link:hover {
+  color: #0091ea;
+  font-weight: bold;
+}
+
+.section-project .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-project .row:first-of-type {
+  margin-top: 3rem;
+}
+
+.section-project .card-image {
+  position: relative;
+}
+
+.section-project .card-image:hover .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.section-project .card-image .card-title {
+  top: 50%;
+  left: 50%;
+  bottom: unset;
+  padding: 5px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px #575555;
+  border: 2px solid white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.section-project .card-action p {
+  margin: 0;
+  cursor: pointer;
+}
+
+#test span {
+  text-shadow: 1px 1px 1px rgba(193, 193, 193, 0.46);
+  font-size: 30px;
+  color: gray;
+}
 /*# sourceMappingURL=index.css.map */
