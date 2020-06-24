@@ -625,6 +625,10 @@ section.parallax-container {
   padding: 20px 0px;
 }
 
+#GanttChart .container {
+  width: 100%;
+}
+
 /*Footer*/
 .page-footer .row {
   text-align: center;
