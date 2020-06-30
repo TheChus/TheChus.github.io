@@ -629,6 +629,13 @@ section.parallax-container {
   width: 100%;
 }
 
+#myhouse h4 {
+  background-color: #cccbc6;
+  margin-bottom: 0px;
+  margin-top: 0;
+  padding: 20px 0px;
+}
+
 /*Footer*/
 .page-footer .row {
   text-align: center;
@@ -653,29 +660,29 @@ section.parallax-container {
 
 @media screen and (min-width: 480px) {
   /*Project Section*/
-  .section-project .card-reveal .card-title {
+  .Decorate .card-reveal .card-title {
     font-size: 2rem;
   }
-  .section-project .card-reveal li {
+  .Decorate .card-reveal li {
     font-size: 1.2rem;
   }
 }
 
 /*Project Section*/
-.section-project .card .card-action {
+.Decorate .card .card-action {
   border-top: unset;
 }
 
-.section-project h2 {
+.Decorate h2 {
   text-shadow: 1px 1px 1px rgba(193, 193, 193, 0.46);
 }
 
-.section-project #github-repo-link:hover {
+.Decorate #github-repo-link:hover {
   color: #0091ea;
   font-weight: bold;
 }
 
-.section-project .row {
+.Decorate .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,25 +690,15 @@ section.parallax-container {
       flex-wrap: wrap;
 }
 
-.section-project .row:first-of-type {
+.Decorate .row:first-of-type {
   margin-top: 3rem;
 }
 
-.section-project .card-image {
+.Decorate .card-image {
   position: relative;
 }
 
-.section-project .card-image:hover .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-}
-
-.section-project .card-image .card-title {
+.Decorate .card-image .card-title {
   top: 50%;
   left: 50%;
   bottom: unset;
@@ -717,7 +714,7 @@ section.parallax-container {
   cursor: pointer;
 }
 
-.section-project .card-action p {
+.Decorate .card-action p {
   margin: 0;
   cursor: pointer;
 }
