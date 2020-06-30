@@ -641,13 +641,11 @@ section.parallax-container {
 }
 
 @media screen and (min-width: 480px) {
-  /*Project Section*/
   .Decorate .card-reveal .card-title {
     font-size: 2rem;
   }
 }
 
-/*Project Section*/
 .Decorate .card .card-action {
   border-top: unset;
   padding: 16px 0px;
@@ -663,15 +661,6 @@ section.parallax-container {
   .Decorate .card .card-action {
     padding: 7px 0px;
   }
-}
-
-.Decorate h2 {
-  text-shadow: 1px 1px 1px rgba(193, 193, 193, 0.46);
-}
-
-.Decorate #github-repo-link:hover {
-  color: #0091ea;
-  font-weight: bold;
 }
 
 .Decorate .row {
@@ -723,10 +712,8 @@ section.parallax-container {
   cursor: pointer;
 }
 
-#test span {
-  text-shadow: 1px 1px 1px rgba(193, 193, 193, 0.46);
-  font-size: 30px;
-  color: gray;
+#design .row {
+  margin-top: 20px;
 }
 
 /*Footer*/
@@ -747,7 +734,7 @@ section.parallax-container {
   margin: 1.5rem 0 0 0;
 }
 
-#footer-links a {
-  margin: 0 .5rem;
+#footer-links img {
+  height: 30px;
 }
 /*# sourceMappingURL=index.css.map */

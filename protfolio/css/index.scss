@@ -578,14 +578,11 @@ section.parallax-container {
 
 //////MY-house////////
 @media screen and (min-width: 480px) {
-
-    /*Project Section*/
     .Decorate .card-reveal .card-title {
         font-size: 2rem;
     }
 }
 
-/*Project Section*/
 .Decorate .card .card-action {
     border-top: unset;
     padding: 16px 0px;
@@ -595,15 +592,6 @@ section.parallax-container {
     @media (max-width:600px) {
         padding: 7px 0px;
     }
-}
-
-.Decorate h2 {
-    text-shadow: 1px 1px 1px rgba(193, 193, 193, 0.46);
-}
-
-.Decorate #github-repo-link:hover {
-    color: #0091ea;
-    font-weight: bold;
 }
 
 .Decorate .row {
@@ -620,11 +608,9 @@ section.parallax-container {
         margin-top: 10px;
     }
 }
-
 .Decorate .card-image {
     position: relative;
 }
-
 .Decorate .card-image .card-title {
     top: 50%;
     left: 50%;
@@ -639,30 +625,16 @@ section.parallax-container {
     opacity: 0;
     cursor: pointer;
 }
-
 .Decorate .card-action p {
     margin: 0;
     cursor: pointer;
 }
 
-// 測試設計圖比照實際照片
-#test {
-    span {
-        text-shadow: 1px 1px 1px rgba(193, 193, 193, 0.46);
-        font-size: 30px;
-        color: gray;
+#design{
+    .row{
+        margin-top: 20px;
     }
-
-    // .row{
-    //     margin-bottom: unset;
-    //     .col{
-    //         padding: unset;
-    //         line-height: 0.5;
-    //     }
-    // }
 }
-
-
 
 
 
@@ -684,8 +656,7 @@ section.parallax-container {
 
 #footer-links {
     margin: 1.5rem 0 0 0;
-}
-
-#footer-links a {
-    margin: 0 .5rem;
+    img{
+        height: 30px;
+    }
 }
