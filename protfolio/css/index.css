@@ -625,6 +625,10 @@ section.parallax-container {
   padding: 20px 0px;
 }
 
+#GanttChart {
+  margin-top: 50px;
+}
+
 #GanttChart .container {
   width: 100%;
 }
@@ -636,41 +640,29 @@ section.parallax-container {
   padding: 20px 0px;
 }
 
-/*Footer*/
-.page-footer .row {
-  text-align: center;
-}
-
-#footer-logo {
-  height: 60px;
-}
-
-#footer-logo img {
-  height: 100%;
-  width: auto;
-}
-
-#footer-links {
-  margin: 1.5rem 0 0 0;
-}
-
-#footer-links a {
-  margin: 0 .5rem;
-}
-
 @media screen and (min-width: 480px) {
   /*Project Section*/
   .Decorate .card-reveal .card-title {
     font-size: 2rem;
-  }
-  .Decorate .card-reveal li {
-    font-size: 1.2rem;
   }
 }
 
 /*Project Section*/
 .Decorate .card .card-action {
   border-top: unset;
+  padding: 16px 0px;
+}
+
+@media (max-width: 1024px) {
+  .Decorate .card .card-action {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Decorate .card .card-action {
+    padding: 7px 0px;
+  }
 }
 
 .Decorate h2 {
@@ -691,7 +683,19 @@ section.parallax-container {
 }
 
 .Decorate .row:first-of-type {
-  margin-top: 3rem;
+  margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  .Decorate .row:first-of-type {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Decorate .row:first-of-type {
+    margin-top: 10px;
+  }
 }
 
 .Decorate .card-image {
@@ -723,5 +727,27 @@ section.parallax-container {
   text-shadow: 1px 1px 1px rgba(193, 193, 193, 0.46);
   font-size: 30px;
   color: gray;
+}
+
+/*Footer*/
+.page-footer .row {
+  text-align: center;
+}
+
+#footer-logo {
+  height: 50px;
+}
+
+#footer-logo img {
+  height: 100%;
+  width: auto;
+}
+
+#footer-links {
+  margin: 1.5rem 0 0 0;
+}
+
+#footer-links a {
+  margin: 0 .5rem;
 }
 /*# sourceMappingURL=index.css.map */
