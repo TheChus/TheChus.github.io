@@ -293,64 +293,25 @@ ul.sidenav .subheader {
     padding-bottom: 20px;
 }
 
-.container.thirdcolor {
-    font-size: 2.28rem;
-    line-height: 110%;
-
-    @media (max-width:576px) {
-        font-size: 1.78rem;
-    }
-}
-
-#front-end .z-depth-3 {
-    margin-bottom: 150px;
-
-    @media (max-width:414px) {
-        margin-bottom: 100px;
-    }
-
-    &.pc {
-        margin: 20px auto 150px auto;
-        padding: 20px 0 10px 0;
-
+#front-end {
+    .MB-150{
+        margin-bottom: 150px;
         @media (max-width:576px) {
-            margin: 20px auto 100px auto;
-            padding: 20px 0 1px 0;
+            margin-bottom: 100px;
+        }
+        @media (max-width:414px) {
+            margin-bottom: 80px;
         }
     }
-
-    &.other {
-        margin: 0 auto 150px auto;
-
+    .MB-100 {
         @media (max-width:576px) {
-            margin: 0 auto 100px auto;
+            margin-bottom: 50px;
         }
     }
-
-    &.S-ROW {
-        max-width: 97%;
+    .seo-mb-100{
+        margin-bottom: 65px;
     }
 }
-
-// #front-end .col img.responsive-img {
-//     margin: 0 auto;
-//     max-height: 100px;
-//     padding-bottom: 10px;
-//     vertical-align: middle;
-//     display: table-cell;
-// }
-
-
-// 改成用img，ok下面這段可刪
-#front-end .pic {
-    width: 100%;
-    height: 200px;
-    background-image: url(../img/front-end/擷取.JPG);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 
 //////ajax////////
 #ajax {
@@ -545,12 +506,14 @@ section.parallax-container {
 }
 
 //////MY-house:GanttChart////////
-#GanttChart{
+#GanttChart {
     margin-top: 50px;
-    .container{
+
+    .container {
         width: 100%;
     }
 }
+
 #myhouse {
     h4 {
         background-color: #cccbc6;
@@ -570,9 +533,11 @@ section.parallax-container {
 .Decorate .card .card-action {
     border-top: unset;
     padding: 16px 0px;
+
     @media (max-width:1024px) {
         padding: 10px 0px;
     }
+
     @media (max-width:600px) {
         padding: 7px 0px;
     }
@@ -585,16 +550,20 @@ section.parallax-container {
 
 .Decorate .row:first-of-type {
     margin-top: 30px;
+
     @media (max-width:1000px) {
         margin-top: 20px;
     }
+
     @media (max-width:600px) {
         margin-top: 10px;
     }
 }
+
 .Decorate .card-image {
     position: relative;
 }
+
 .Decorate .card-image .card-title {
     top: 50%;
     left: 50%;
@@ -609,16 +578,18 @@ section.parallax-container {
     opacity: 0;
     cursor: pointer;
 }
+
 .Decorate .card-action p {
     margin: 0;
     cursor: pointer;
 }
 
-#design{
-    #design1{
+#design {
+    #design1 {
         margin-top: 20px;
     }
-    #design2{
+
+    #design2 {
         margin-top: 50px;
         margin-bottom: 100px;
     }
@@ -644,7 +615,8 @@ section.parallax-container {
 
 #footer-links {
     margin: 1.5rem 0 0 0;
-    img{
+
+    img {
         height: 26px;
     }
 }

@@ -365,60 +365,30 @@ ul.sidenav .subheader {
   padding-bottom: 20px;
 }
 
-.container.thirdcolor {
-  font-size: 2.28rem;
-  line-height: 110%;
-}
-
-@media (max-width: 576px) {
-  .container.thirdcolor {
-    font-size: 1.78rem;
-  }
-}
-
-#front-end .z-depth-3 {
+#front-end .MB-150 {
   margin-bottom: 150px;
 }
 
-@media (max-width: 414px) {
-  #front-end .z-depth-3 {
+@media (max-width: 576px) {
+  #front-end .MB-150 {
     margin-bottom: 100px;
   }
 }
 
-#front-end .z-depth-3.pc {
-  margin: 20px auto 150px auto;
-  padding: 20px 0 10px 0;
-}
-
-@media (max-width: 576px) {
-  #front-end .z-depth-3.pc {
-    margin: 20px auto 100px auto;
-    padding: 20px 0 1px 0;
+@media (max-width: 414px) {
+  #front-end .MB-150 {
+    margin-bottom: 80px;
   }
 }
 
-#front-end .z-depth-3.other {
-  margin: 0 auto 150px auto;
-}
-
 @media (max-width: 576px) {
-  #front-end .z-depth-3.other {
-    margin: 0 auto 100px auto;
+  #front-end .MB-100 {
+    margin-bottom: 50px;
   }
 }
 
-#front-end .z-depth-3.S-ROW {
-  max-width: 97%;
-}
-
-#front-end .pic {
-  width: 100%;
-  height: 200px;
-  background-image: url(../img/front-end/擷取.JPG);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+#front-end .seo-mb-100 {
+  margin-bottom: 65px;
 }
 
 #ajax .parallax-container {
