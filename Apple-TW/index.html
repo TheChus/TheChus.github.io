@@ -41,7 +41,8 @@
     <!-- ///////NAVBAR/////// -->
     <nav id="navbar-spy" class="navbar navbar-expand-md navbar-light bg-my-color">
         <div class="container">
-            <a class="navbar-brand d-flex" href="#"><img src="img/logo/apple-icon.png" alt="" width="50" height="50"></a>
+            <a class="navbar-brand" href="#"><img src="img/logo/apple-icon.png" alt="" width="50"
+                    height="50"></a>
 
             <div id="toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <div class="one"></div>
@@ -68,25 +69,35 @@
     </nav>
 
 
-
-    <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
-        <h4 id="iPhone">iPhone</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis. Architecto ipsam sapiente vero
-            voluptates, incidunt libero commodi voluptate natus consequatur corrupti quisquam aut quibusdam optio,
-            mollitia quod porro distinctio.</p>
+    <section>
+        <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
+            <h4 id="iPhone">iPhone</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis. Architecto ipsam sapiente vero
+                voluptates, incidunt libero commodi voluptate natus consequatur corrupti quisquam aut quibusdam optio,
+                mollitia quod porro distinctio.</p>
+        </div>
+    </section>
+    <section>
         <h4 id="iPad">iPad</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
             perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda, aliquid
             vel?</p>
+        </div>
+    </section>
+    <section>
         <h4 id="Mac">Mac</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
             perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda, aliquid
             vel?</p>
+        </div>
+    </section>
+    <section>
         <h4 id="Watch">Watch</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
             perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda, aliquid
             vel?</p>
-    </div>
+        </div>
+    </section>
 
 
 
@@ -126,10 +137,6 @@
         /////////// 這是nav ///////////
         $("#toggle").click(function () {
             $(this).toggleClass("on");
-        });
-
-        $('#collapseExample').on('show.bs.collapse', function () {
-            console.log("Test");
         });
     </script>
 </body>
