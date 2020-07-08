@@ -352,6 +352,10 @@ ul.sidenav .subheader {
   line-height: unset;
 }
 
+.sidenav li:nth-child(1) {
+  margin-bottom: 6px;
+}
+
 #front-end .white-text {
   background-color: #cccbc6;
   margin-bottom: 0px;
