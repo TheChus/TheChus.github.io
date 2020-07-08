@@ -24,6 +24,14 @@ body {
   color: #c9c9c9;
 }
 
+@media (max-width: 767px) {
+  .navbar .container {
+    margin-left: unset;
+    margin-right: unset;
+    max-width: unset;
+  }
+}
+
 .bg-my-color {
   background-color: #242424;
 }
@@ -38,6 +46,25 @@ body {
   background-color: unset;
   color: white;
   font-weight: 900;
+}
+
+.nav-show .nav-link {
+  display: none;
+  position: fixed;
+  top: 10px;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+  .nav-show .nav-link {
+    right: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-show .nav-link.active {
+    display: block;
+  }
 }
 
 #toggle {

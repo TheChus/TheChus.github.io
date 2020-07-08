@@ -21,6 +21,13 @@ body {
     a {
         color: rgb(201, 201, 201);
     }
+    .container{
+        @media (max-width: 767px) {
+            margin-left: unset;
+            margin-right: unset;
+            max-width: unset;
+        }
+    }
 }
 .bg-my-color{
     background-color: rgb(36, 36, 36);
@@ -36,6 +43,22 @@ body {
     background-color: unset;
     color: white;
     font-weight: 900;
+}
+.nav-show{
+    .nav-link{
+        display: none;
+        position: fixed;
+        top: 10px;
+        z-index: 99;
+        @media (max-width: 767px) {
+            right: 70px;
+        }
+    }
+    .nav-link.active{
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
 }
 
 #toggle {
