@@ -127,8 +127,42 @@ body {
 
 @media (max-width: 767px) {
   .nav .nav-item {
-    padding: 10px 0 10px 50px;
+    padding: 10px 50px 10px 50px;
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav .nav-item::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    width: 85%;
     border-bottom: 1px gray solid;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav .nav-item::after {
+    width: 83%;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav .nav-item::after {
+    width: 76%;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav .nav-item::after {
+    width: 74%;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav .nav-item::after {
+    width: 70%;
   }
 }
 
