@@ -36,6 +36,11 @@ body {
   background-color: #242424;
 }
 
+.navbar-brand {
+  padding-top: unset;
+  padding-bottom: unset;
+}
+
 @media (max-width: 767px) {
   .navbar-brand {
     margin-left: calc(50% - 25px);
@@ -51,7 +56,7 @@ body {
 .nav-show .nav-link {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 5px;
   z-index: 99;
 }
 
