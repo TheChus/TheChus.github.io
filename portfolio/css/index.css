@@ -340,12 +340,12 @@ ul.sidenav .subheader {
 }
 
 #side-nav-logo {
-  height: 7%;
+  height: 6%;
 }
 
 #side-nav-logo img {
   height: 100%;
-  padding: 5px 0px;
+  padding: 5px 0 0 32px;
 }
 
 .sidenav li {
