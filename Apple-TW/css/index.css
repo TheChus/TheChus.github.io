@@ -1,12 +1,11 @@
-@charset "UTF-8";
 body {
-  margin: 0;
-  padding: 0;
-  font-family: '微軟正黑體';
+  font-family: "Noto Sans TC", sans-serif;
   position: relative;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
@@ -24,11 +23,18 @@ body {
   color: #c9c9c9;
 }
 
+.navbar .container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 @media (max-width: 767px) {
   .navbar .container {
     margin-left: unset;
     margin-right: unset;
     max-width: unset;
+    padding-left: unset;
+    padding-right: unset;
   }
 }
 
@@ -50,7 +56,7 @@ body {
 .nav-pills .nav-link.active {
   background-color: unset;
   color: white;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .nav-show .nav-link {
@@ -166,8 +172,82 @@ body {
   }
 }
 
-section {
+#apple-footer {
+  background-color: #f5f5f7;
+}
+
+#apple-footer .footer-content {
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  overflow: hidden;
+  padding: 0 22px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+#apple-footer .footer-content .instructions {
+  color: #86868b;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 300;
+  padding: 17px 0 9px 0;
+}
+
+#apple-footer .footer-content .divider {
+  margin: 0 0 20px 0;
   width: 100%;
-  height: 100vh;
+  height: 1px;
+  background-color: #dadada;
+}
+
+#apple-footer .footer-content input {
+  display: none;
+}
+
+#apple-footer .footer-content h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+#apple-footer .footer-content #apple-guide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#apple-footer .footer-content #apple-guide ul {
+  list-style: none;
+}
+
+#apple-footer .footer-content #apple-guide ul li {
+  margin-bottom: .6em;
+}
+
+#apple-footer .footer-content #apple-guide ul li a {
+  color: #515154;
+}
+
+#apple-footer .footer-content .footer-shop {
+  color: #86868b;
+  margin-bottom: 7px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+#apple-footer .footer-content .footer-shop h4 {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#apple-footer .footer-content #copyright {
+  color: #b56357;
+  margin: 10px 0;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
