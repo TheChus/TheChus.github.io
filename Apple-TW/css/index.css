@@ -208,7 +208,7 @@ body {
 
 #apple-footer .footer-content h3 {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #1d1d1f;
 }
 
@@ -221,8 +221,23 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #apple-footer .footer-content #apple-guide ul {
   list-style: none;
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide ul {
+    display: none;
+  }
 }
 
 #apple-footer .footer-content #apple-guide ul li {
@@ -230,7 +245,41 @@ body {
 }
 
 #apple-footer .footer-content #apple-guide ul li a {
-  color: #515154;
+  color: #86868b;
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide input:checked ~ div > ul {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide .apple-text {
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide label h3 {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide div {
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide label h3::after {
+    content: "+";
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+  }
 }
 
 #apple-footer .footer-content .footer-shop {
@@ -238,6 +287,12 @@ body {
   margin-bottom: 7px;
   padding-bottom: 3px;
   border-bottom: 1px solid #d2d2d7;
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content .footer-shop {
+    border-bottom: unset;
+  }
 }
 
 #apple-footer .footer-content .footer-shop h4 {

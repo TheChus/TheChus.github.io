@@ -190,7 +190,7 @@ body {
 
         h3 {
             font-size: 12px;
-            font-weight: 600;
+            font-weight: 500;
             color: #1d1d1f;
         }
 
@@ -198,15 +198,56 @@ body {
             display: flex;
             justify-content: space-between;
 
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
+
             ul {
                 list-style: none;
+                @media (max-width: 767px) {
+                    display: none;
+                }
 
                 li {
                     margin-bottom: .6em;
 
                     a {
-                        color: #515154;
+                        color: #86868b;
                     }
+                }
+            }
+
+            input:checked ~ div > ul{
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+
+            .apple-text {
+                @media (max-width: 767px) {
+                    border-bottom: 1px solid #dadada;
+                    margin-bottom: 15px;
+                }
+            }
+
+            label h3{
+                @media (max-width: 767px) {
+                    cursor: pointer;
+                }
+            }
+
+            div{
+                @media (max-width: 767px) {
+                    position: relative;
+                }
+            }
+
+            label h3::after {
+                @media (max-width: 767px) {
+                    content: "+";
+                    font-size: 14px;
+                    position: absolute;
+                    right: 0;
                 }
             }
         }
@@ -214,21 +255,27 @@ body {
 
 
 
-        .footer-shop{
+        .footer-shop {
             color: #86868b;
             margin-bottom: 7px;
             padding-bottom: 3px;
             border-bottom: 1px solid #d2d2d7;
-            h4{
+            @media (max-width: 767px) {
+                border-bottom: unset;
+            }
+
+            h4 {
                 font-size: 12px;
                 font-weight: 300;
             }
         }
-        #copyright{
+
+        #copyright {
             color: #b56357;
-            margin:20px 0;
+            margin: 20px 0;
             text-align: center;
-            h5{
+
+            h5 {
                 font-size: 16px;
             }
         }
