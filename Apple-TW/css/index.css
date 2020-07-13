@@ -247,7 +247,11 @@ body {
 
 #apple-footer .footer-content #copyright {
   color: #b56357;
-  margin: 10px 0;
+  margin: 20px 0;
   text-align: center;
+}
+
+#apple-footer .footer-content #copyright h5 {
+  font-size: 16px;
 }
 /*# sourceMappingURL=index.css.map */
