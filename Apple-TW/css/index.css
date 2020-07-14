@@ -249,7 +249,43 @@ body {
 }
 
 @media (max-width: 767px) {
-  #apple-footer .footer-content #apple-guide input:checked ~ div > ul {
+  #apple-footer .footer-content #apple-guide input.one:checked ~ div > ul {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide input#service:checked ~ div.service-div > ul {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide input#account:checked ~ div.account-div > ul {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide input#business:checked ~ div.business-div > ul {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide input#education:checked ~ div.education-div > ul {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide input#value:checked ~ div.value-div > ul {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #apple-footer .footer-content #apple-guide input#about:checked ~ div.about-div > ul {
     display: block;
   }
 }
@@ -267,18 +303,15 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  #apple-footer .footer-content #apple-guide div {
-    position: relative;
-  }
+#apple-footer .footer-content #apple-guide label {
+  display: block;
 }
 
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide label h3::after {
     content: "+";
     font-size: 14px;
-    position: absolute;
-    right: 0;
+    float: right;
   }
 }
 

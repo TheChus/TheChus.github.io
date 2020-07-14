@@ -217,7 +217,37 @@ body {
                 }
             }
 
-            input:checked ~ div > ul{
+            input.one:checked ~ div > ul{
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+            input#service:checked ~ div.service-div > ul{
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+            input#account:checked ~ div.account-div > ul{
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+            input#business:checked ~ div.business-div > ul{
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+            input#education:checked ~ div.education-div > ul{
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+            input#value:checked ~ div.value-div > ul{
+                @media (max-width: 767px) {
+                    display: block;
+                }
+            }
+            input#about:checked ~ div.about-div > ul{
                 @media (max-width: 767px) {
                     display: block;
                 }
@@ -236,18 +266,15 @@ body {
                 }
             }
 
-            div{
-                @media (max-width: 767px) {
-                    position: relative;
-                }
+            label{
+                display: block;
             }
 
             label h3::after {
                 @media (max-width: 767px) {
                     content: "+";
                     font-size: 14px;
-                    position: absolute;
-                    right: 0;
+                    float: right;
                 }
             }
         }
