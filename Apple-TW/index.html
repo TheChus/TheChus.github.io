@@ -28,7 +28,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="shortcut icon" href="./img/apple-logo.ico">
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
+    <link rel="shortcut icon" href="./img/favicon.ico.ico">
     <!-- 最後待修正區 -->
 
     <title>Apple(Taiwan)</title>
@@ -37,11 +38,11 @@
 <body data-spy="scroll" data-target="#navbar-spy">
 
     <!-- ///////NAVBAR/////// -->
-    <nav id="navbar-spy" class="navbar navbar-expand-md navbar-light bg-my-color">
+    <nav id="navbar-spy" class="navbar navbar-expand-md navbar-light bg-my-color" role="navigation">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./img/logo/apple-icon.png" alt="" width="50" height="50"></a>
 
-            <div class="nav-show nav-pills ml-auto">
+            <div class="nav-show nav-pills">
                 <div class="nav-item">
                     <a class="nav-link" href="#iPhone">iPhone</a>
                 </div>
@@ -53,6 +54,9 @@
                 </div>
                 <div class="nav-item">
                     <a class="nav-link" href="#Watch">Watch</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#TV">TV</a>
                 </div>
             </div>
 
@@ -75,46 +79,82 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#Watch">Watch</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#TV">TV</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- ///////iPhone/////// -->
-    <section>
-        <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
-            <h4 id="iPhone">iPhone</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis. Architecto ipsam sapiente vero
-                voluptates, incidunt libero commodi voluptate natus consequatur corrupti quisquam aut quibusdam optio,
-                mollitia quod porro distinctio.</p>
-        </div>
-    </section>
+    <main class="main" role="main">
+
+        <!-- ///////iPhone/////// -->
+        <section>
+            <div data-spy="scroll" data-target="#navbar-spy" data-offset="0" id="iPhone">
+                <div id="iphone-SE">
+                    <div class="SE-text">
+                        <span>全新</span>
+                        <h1>iPhone SE</h1>
+                        <h2>付出不多，精采不少。</h2>
+                        <h2>NT$14,500 起</h2>
+                        <p style="color: #86868b;">
+                            <span style="color: #86868b;">折抵換購，NT$10,500 起</span>
+                            <sup>1</sup>
+                        </p>
+                        <a href="javascript:;">
+                            <h3>進一步了解 &gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;購買&gt;</h3>
+                        </a>
+                    </div>
+                    <div class="img-wrapper">
+                        <figure class="SE-background"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-    <section>
-        <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
-            <h4 id="iPad">iPad</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
-                perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda, aliquid
-                vel?</p>
-        </div>
-    </section>
-    <section>
-        <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
-            <h4 id="Mac">Mac</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
-                perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda, aliquid
-                vel?</p>
-        </div>
-    </section>
-    <section>
-        <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
-            <h4 id="Watch">Watch</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
-                perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda, aliquid
-                vel?</p>
-        </div>
-    </section>
+        <section>
+            <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
+                <h4 id="iPad">iPad</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
+                    perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda,
+                    aliquid
+                    vel?</p>
+            </div>
+        </section>
+
+        <section>
+            <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
+                <h4 id="Mac">Mac</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
+                    perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda,
+                    aliquid
+                    vel?</p>
+            </div>
+        </section>
+
+        <section>
+            <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
+                <h4 id="Watch">Watch</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum, optio sunt veniam vero rem id
+                    perspiciatis ullam nobis sed, saepe doloremque nihil neque incidunt voluptate debitis assumenda,
+                    aliquid
+                    vel?</p>
+            </div>
+        </section>
+
+        <section>
+            <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
+                <h4 id="TV">TV</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, debitis. Architecto ipsam sapiente
+                    vero
+                    voluptates, incidunt libero commodi voluptate natus consequatur corrupti quisquam aut quibusdam
+                    optio,
+                    mollitia quod porro distinctio.</p>
+            </div>
+        </section>
+    </main>
 
     <!-- ///////footer/////// -->
     <footer id="apple-footer">
