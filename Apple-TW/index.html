@@ -363,7 +363,11 @@
 
     <script>
 
-        $('body').scrollspy({ target: '#navbar-spy' })
+        $('body').scrollspy({ target: '#navbar-spy' });
+
+        $('[data-spy="scroll"]').each(function () {
+            var $spy = $(this).scrollspy('refresh')
+        });
 
         AOS.init({
             duration: 1000,
