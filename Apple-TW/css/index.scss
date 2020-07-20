@@ -10,6 +10,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.MB-12 {
+    margin-bottom: 12px;
+}
+
 ///////NAVBAR///////
 .navbar {
     width: 100%;
@@ -198,9 +202,10 @@ body {
             top: 40%;
         }
 
-        span {
+        &>span {
             color: #bf4800;
             font-size: 18px;
+
             @media (max-width: 767px) {
                 display: none;
             }
@@ -239,8 +244,10 @@ body {
 
         p {
             span {
+                font-size: 18px;
+
                 @media (max-width: 767px) {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
         }
@@ -254,7 +261,7 @@ body {
                 line-height: 1.8;
 
                 @media (max-width: 767px) {
-                    font-size: 19px;
+                    font-size: 18px;
                 }
             }
 
@@ -359,8 +366,10 @@ body {
 
         p {
             span {
+                font-size: 18px;
+
                 @media (max-width: 767px) {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
         }
@@ -374,7 +383,7 @@ body {
                 line-height: 1.4;
 
                 @media (max-width: 767px) {
-                    font-size: 19px;
+                    font-size: 18px;
                 }
             }
 
@@ -384,6 +393,7 @@ body {
             text-decoration: none;
         }
     }
+
     .img-wrapper {
         position: absolute;
         left: 50%;
@@ -486,7 +496,7 @@ body {
                 line-height: 1.4;
 
                 @media (max-width: 767px) {
-                    font-size: 19px;
+                    font-size: 18px;
                 }
             }
 
@@ -496,6 +506,7 @@ body {
             text-decoration: none;
         }
     }
+
     .img-wrapper {
         position: absolute;
         left: 50%;
@@ -530,15 +541,35 @@ body {
 }
 
 ///////Mac組合優惠///////
+.left-padding {
+    padding-left: 12px;
+    padding-right: 6px;
+
+    @media (max-width: 767px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.right-padding {
+    padding-left: 6px;
+    padding-right: 12px;
+
+    @media (max-width: 767px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 #SET1 {
     overflow: hidden;
     width: 100%;
-    height: 624px;
-    background-color: #fafafa;
+    height: 580px;
+    background-color: #f1f1f3;
     position: relative;
 
     @media (max-width: 1068px) {
-        height: 534px;
+        height: 490px;
     }
 
     @media (max-width: 767px) {
@@ -593,11 +624,12 @@ body {
             text-decoration: none;
         }
     }
+
     .img-wrapper {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -30px;
+        bottom: -20px;
         z-index: 1;
 
         @media (max-width: 1068px) {
@@ -626,6 +658,618 @@ body {
     }
 }
 
+#SET2 {
+    overflow: hidden;
+    width: 100%;
+    height: 580px;
+    background-color: #f1f1f3;
+    position: relative;
+
+    @media (max-width: 1068px) {
+        height: 490px;
+    }
+
+    @media (max-width: 767px) {
+        height: 548px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    .SET2-text {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 5;
+
+        @media (max-width: 1068px) {
+            top: 23%;
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 37px;
+            font-weight: 500;
+            line-height: 1.1;
+
+            @media (max-width: 1068px) {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 27px;
+            }
+        }
+
+        a {
+            color: #2997ff;
+
+            h3 {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.4;
+
+                @media (max-width: 767px) {
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .img-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 1;
+
+        .SET2-background {
+            width: 1262px;
+            height: 580px;
+            background-image: url(../img/優惠組合/SET2_large.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1068px) {
+                width: 516px;
+                height: 490px;
+                background-image: url(../img/優惠組合/SET2_medium.jpg);
+            }
+
+            @media (max-width: 767px) {
+                width: 767px;
+                height: 572px;
+                background-image: url(../img/優惠組合/SET2_small.jpg);
+            }
+        }
+    }
+}
+
+#SET3 {
+    overflow: hidden;
+    width: 100%;
+    height: 580px;
+    background-color: #f1f1f3;
+    position: relative;
+
+    @media (max-width: 1068px) {
+        height: 490px;
+    }
+
+    @media (max-width: 767px) {
+        height: 548px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    .SET3-text {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 5;
+
+        @media (max-width: 1068px) {
+            top: 23%;
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 37px;
+            font-weight: 500;
+            line-height: 1.1;
+
+            @media (max-width: 1068px) {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 27px;
+            }
+        }
+
+        a {
+            color: #2997ff;
+
+            h3 {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.4;
+
+                @media (max-width: 767px) {
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .img-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 1;
+
+        .SET3-background {
+            width: 1262px;
+            height: 580px;
+            background-image: url(../img/優惠組合/SET3_large.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1068px) {
+                width: 516px;
+                height: 490px;
+                background-image: url(../img/優惠組合/SET3_medium.jpg);
+            }
+
+            @media (max-width: 767px) {
+                width: 767px;
+                height: 548px;
+                background-image: url(../img/優惠組合/SET3_small.jpg);
+            }
+        }
+    }
+}
+
+#SET4 {
+    overflow: hidden;
+    width: 100%;
+    height: 580px;
+    background-color: #fafafa;
+    position: relative;
+
+    @media (max-width: 1068px) {
+        height: 490px;
+    }
+
+    @media (max-width: 767px) {
+        height: 548px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    .SET4-text {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 5;
+
+        @media (max-width: 1068px) {
+            top: 23%;
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 37px;
+            font-weight: 500;
+            line-height: 1.1;
+
+            @media (max-width: 1068px) {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 27px;
+            }
+        }
+
+        a {
+            color: #2997ff;
+
+            h3 {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.4;
+
+                @media (max-width: 767px) {
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .img-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 1;
+
+        .SET4-background {
+            width: 1038px;
+            height: 399px;
+            background-image: url(../img/優惠組合/SET4_large.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1068px) {
+                width: 516px;
+                height: 338px;
+                background-image: url(../img/優惠組合/SET4_medium.jpg);
+            }
+
+            @media (max-width: 767px) {
+                width: 767px;
+                height: 360px;
+                background-image: url(../img/優惠組合/SET4_small.jpg);
+            }
+        }
+    }
+}
+
+#SET5 {
+    overflow: hidden;
+    width: 100%;
+    height: 580px;
+    background-color: #fafafa;
+    position: relative;
+
+    @media (max-width: 1068px) {
+        height: 490px;
+    }
+
+    @media (max-width: 767px) {
+        height: 548px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    .SET5-text {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 5;
+
+        @media (max-width: 1068px) {
+            top: 23%;
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 37px;
+            font-weight: 500;
+            line-height: 1.1;
+
+            @media (max-width: 1068px) {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 27px;
+            }
+        }
+
+        a {
+            color: #2997ff;
+
+            h3 {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.4;
+
+                @media (max-width: 767px) {
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .img-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 1;
+
+        .SET5-background {
+            width: 726px;
+            height: 351px;
+            background-image: url(../img/watch/watch_large.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1068px) {
+                width: 516px;
+                height: 278px;
+                background-image: url(../img/watch/watch_medium.jpg);
+            }
+
+            @media (max-width: 767px) {
+                width: 670px;
+                height: 311px;
+                background-image: url(../img/watch/watch_small.jpg);
+            }
+        }
+    }
+}
+
+#SET6 {
+    overflow: hidden;
+    width: 100%;
+    height: 580px;
+    background-color: #f1f1f3;
+    position: relative;
+
+    @media (max-width: 1068px) {
+        height: 490px;
+    }
+
+    @media (max-width: 767px) {
+        height: 548px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    .SET6-text {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 5;
+
+        @media (max-width: 1068px) {
+            top: 23%;
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 37px;
+            font-weight: 500;
+            line-height: 1.1;
+
+            @media (max-width: 1068px) {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 27px;
+            }
+        }
+
+        a {
+            color: #2997ff;
+
+            h3 {
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.4;
+
+                @media (max-width: 767px) {
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .img-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 1;
+
+        .SET6-background {
+            width: 1262px;
+            height: 580px;
+            background-image: url(../img/優惠組合/SET6_large.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1068px) {
+                width: 516px;
+                height: 490px;
+                background-image: url(../img/優惠組合/SET6_medium.jpg);
+            }
+
+            @media (max-width: 767px) {
+                width: 767px;
+                height: 548px;
+                background-image: url(../img/優惠組合/SET6_small.jpg);
+            }
+        }
+    }
+}
+
+.SET7{
+    .col-12{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+#SET7-TV {
+    overflow: hidden;
+    width: 100%;
+    height: 736px;
+    background-color: #fafafa;
+    position: relative;
+
+    @media (max-width: 1068px) {
+        height: 694px;
+    }
+
+    @media (max-width: 767px) {
+        height: 548px;
+    }
+
+    .TV-text {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 26%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 5;
+
+        @media (max-width: 1068px) {
+            top: 23%;
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 1;
+
+            @media (max-width: 1068px) {
+                font-size: 44px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 32px;
+            }
+        }
+
+        h2 {
+            color: #1d1d1f;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 1.2;
+            padding-left: 25px;
+
+            @media (max-width: 1068px) {
+                font-size: 24px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 19px;
+            }
+        }
+
+        p {
+            span {
+                font-size: 18px;
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        a {
+            color: #2997ff;
+
+            h3 {
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 1.4;
+
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
+            }
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .img-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 1;
+
+        @media (max-width: 1068px) {
+            bottom: -10px;
+        }
+
+        .TV-background {
+            width: 2760px;
+            height: 1000px;
+            background-image: url(../img/TV/TV_large.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1068px) {
+                width: 1404px;
+                height: 800px;
+                background-image: url(../img/TV/TV_medium.jpg);
+            }
+
+            @media (max-width: 767px) {
+                width: 1472px;
+                height: 980px;
+                background-image: url(../img/TV/TV_small.jpg);
+            }
+        }
+    }
+}
 
 
 
