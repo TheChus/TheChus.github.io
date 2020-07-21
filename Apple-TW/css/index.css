@@ -283,6 +283,25 @@ body {
   }
 }
 
+#iphone-SE .SE-text h3 {
+  color: #f5f5f7;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 1068px) {
+  #iphone-SE .SE-text h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  #iphone-SE .SE-text h3 {
+    font-size: 19px;
+  }
+}
+
 #iphone-SE .SE-text p span {
   font-size: 18px;
 }
@@ -297,14 +316,15 @@ body {
   color: #2997ff;
 }
 
-#iphone-SE .SE-text a h3 {
+#iphone-SE .SE-text a h4 {
   font-size: 21px;
   font-weight: 400;
   line-height: 1.8;
+  padding-left: 12px;
 }
 
 @media (max-width: 767px) {
-  #iphone-SE .SE-text a h3 {
+  #iphone-SE .SE-text a h4 {
     font-size: 18px;
   }
 }
