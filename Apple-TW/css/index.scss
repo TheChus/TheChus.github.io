@@ -275,6 +275,7 @@ body {
                 font-weight: 400;
                 line-height: 1.8;
                 padding-left: 12px;
+
                 @media (max-width: 767px) {
                     font-size: 18px;
                 }
@@ -820,8 +821,9 @@ body {
             top: 23%;
         }
 
-        h2{
+        h2 {
             font-size: 25px;
+
             @media (max-width: 1068px) {
                 font-size: 20px;
             }
@@ -1001,6 +1003,7 @@ body {
                 font-size: 27px;
             }
         }
+
         h2 {
             color: #ec4c1b;
             font-size: 17px;
@@ -1011,6 +1014,7 @@ body {
                 font-size: 16px;
             }
         }
+
         h4 {
             color: #1d1d1f;
             font-size: 20px;
@@ -1108,23 +1112,26 @@ body {
         @media (max-width: 1068px) {
             top: 21%;
         }
+
         @media (max-width: 767px) {
             top: 19%;
         }
 
-        span{
+        span {
             line-height: 650px;
-            img{
+
+            img {
                 @media (max-width: 1068px) {
                     height: 40px !important;
                 }
             }
+
             @media (max-width: 767px) {
                 line-height: 700px;
             }
         }
 
-        h2{
+        h2 {
             font-size: 20px;
             font-weight: 400;
         }
@@ -1184,121 +1191,116 @@ body {
 
 #SET7-TV {
     overflow: hidden;
-    width: 100%;
-    height: 736px;
-    background-color: #fafafa;
+    width: 94%;
+    max-width: 1380px;
+    height: 499px;
+    background-color: #fff;
     position: relative;
+    margin: 0 auto;
 
     @media (max-width: 1068px) {
-        height: 694px;
+        height: 572px;
     }
 
     @media (max-width: 767px) {
-        height: 548px;
-    }
-
-    .TV-text {
+        height: 512px;
         width: 100%;
-        position: absolute;
-        left: 50%;
-        top: 26%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        z-index: 5;
-
-        @media (max-width: 1068px) {
-            top: 23%;
-        }
-
-        h1 {
-            color: #1d1d1f;
-            font-size: 56px;
-            font-weight: 600;
-            line-height: 1;
-
-            @media (max-width: 1068px) {
-                font-size: 44px;
-            }
-
-            @media (max-width: 767px) {
-                font-size: 32px;
-            }
-        }
-
-        h2 {
-            color: #1d1d1f;
-            font-size: 28px;
-            font-weight: 400;
-            line-height: 1.2;
-            padding-left: 25px;
-
-            @media (max-width: 1068px) {
-                font-size: 24px;
-            }
-
-            @media (max-width: 767px) {
-                font-size: 19px;
-            }
-        }
-
-        p {
-            span {
-                font-size: 18px;
-
-                @media (max-width: 767px) {
-                    font-size: 12px;
-                }
-            }
-        }
-
-        a {
-            color: #2997ff;
-
-            h3 {
-                font-size: 21px;
-                font-weight: 400;
-                line-height: 1.4;
-
-                @media (max-width: 767px) {
-                    font-size: 18px;
-                }
-            }
-
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
+        margin: 0;
     }
 
-    .img-wrapper {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        z-index: 1;
+    .TV-background {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/TV/TV_large.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
         @media (max-width: 1068px) {
-            bottom: -10px;
+            background-image: url(../img/TV/TV_medium.jpg);
         }
 
-        .TV-background {
-            width: 2760px;
-            height: 1000px;
-            background-image: url(../img/TV/TV_large.jpg);
-            background-size: contain;
-            background-repeat: no-repeat;
+        @media (max-width: 767px) {
+            background-image: url(../img/TV/TV_small.jpg);
+            margin-bottom: 0;
+        }
+        @media (max-width: 576px) {
+            background-position: 53% 50%;
+        }
 
-            @media (max-width: 1068px) {
-                width: 1404px;
-                height: 800px;
-                background-image: url(../img/TV/TV_medium.jpg);
-            }
+        .TV-text {
+            width: 100%;
+            position: absolute;
+            left: 25%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 5;
 
             @media (max-width: 767px) {
-                width: 1472px;
-                height: 980px;
-                background-image: url(../img/TV/TV_small.jpg);
+                top: 23%;
+                left: 50%;
+            }
+
+            img {
+                margin-bottom: 30px;
+
+                @media (max-width: 1068px) {
+                    height: 30px !important;
+                }
+
+                @media (max-width: 767px) {
+                    margin-bottom: 25px;
+                    height: 25px !important;
+                }
+            }
+
+            h1 {
+                color: #f5f5f7;
+                font-size: 21px;
+                font-weight: 500;
+                line-height: 1;
+                padding-left: 10px;
+
+                @media (max-width: 1068px) {
+                    font-size: 17px;
+                }
+            }
+
+            h2 {
+                color: #f5f5f7;
+                font-size: 21px;
+                font-weight: 500;
+                line-height: 1.2;
+                padding-left: 25px;
+                margin-bottom: 20px;
+
+                @media (max-width: 1068px) {
+                    font-size: 17px;
+                }
+                @media (max-width: 767px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            a {
+                color: #f5f5f7;
+
+                h3 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 1.4;
+                    padding-left: 16px;
+
+                    @media (max-width: 1068px) {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            a:hover {
+                text-decoration: none;
             }
         }
     }
