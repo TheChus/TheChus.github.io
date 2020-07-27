@@ -183,10 +183,13 @@ body {
 
     @media (max-width: 767px) {
         height: 548px;
-        background-image: url(../img/SE/SE_small.jpg);
+        background-image: url(../img/SE/SE_MD.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    @media (max-width: 635px) {
+        background-image: url(../img/SE/SE_small.jpg);
     }
 
     .SE-text {
