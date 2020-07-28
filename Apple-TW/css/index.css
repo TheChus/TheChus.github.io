@@ -933,6 +933,14 @@ body {
   }
 }
 
+@media (max-width: 414px) {
+  #SET2 .img-wrapper .SET2-background {
+    width: 767px;
+    height: 572px;
+    background-image: url(../img/優惠組合/SET2_small_phone.jpg);
+  }
+}
+
 #SET3 {
   overflow: hidden;
   width: 100%;
