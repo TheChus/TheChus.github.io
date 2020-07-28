@@ -318,6 +318,22 @@ body {
   }
 }
 
+#iphone-SE .SE-text p sup {
+  font-size: 12px;
+}
+
+@media (max-width: 1068px) {
+  #iphone-SE .SE-text p sup {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #iphone-SE .SE-text p sup {
+    display: none;
+  }
+}
+
 #iphone-SE .SE-text a {
   color: #2997ff;
 }
@@ -460,6 +476,22 @@ body {
 @media (max-width: 767px) {
   #iphone-11 .iphone11-text p span {
     font-size: 12px;
+  }
+}
+
+#iphone-11 .iphone11-text p sup {
+  font-size: 12px;
+}
+
+@media (max-width: 1068px) {
+  #iphone-11 .iphone11-text p sup {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #iphone-11 .iphone11-text p sup {
+    display: none;
   }
 }
 
