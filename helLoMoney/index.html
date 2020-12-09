@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>範例RRR</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            padding-top: 54px;
+        }
+
+        .form-group {
+            text-align: left;
+        }
+
+        img.img-responsive {
+            height: 400px;
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-top: 56px;
+            }
+        }
+
+        @media (max-width: 980px) {
+            img.img-responsive {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            img.img-responsive {
+                height: 100px;
+            }
+        }
+    </style>
+
+<body>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">哈嚕 我是鹹酥雞老闆</h1>
+                <p class="lead">請問你要吃蝦米勒!</p>
+                <ul class="list-unstyled">
+                    <li class="col-xs-6">
+                        <h2>鹹酥雞</h2>
+                        <p>NT.50</p>
+                        <select name="number" class="select form-control" data-price="50" data-name="鹹酥雞">
+                            <option style="display:none" value="">請選擇數量</option>
+                            <option value="1">1份</option>
+                            <option value="2">2份</option>
+                            <option value="3">3份</option>
+                        </select>
+                    </li>
+                    <li class="col-xs-6">
+                        <h2>魷魚</h2>
+                        <p>NT.50</p>
+                        <select name="number" class="select form-control" data-price="50" data-name="魷魚">
+                            <option style="display:none" value="">請選擇數量</option>
+                            <option value="1">1份</option>
+                            <option value="2">2份</option>
+                            <option value="3">3份</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">姓名:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">電話:</label>
+                    <input type="number" class="form-control" id="phone">
+                </div>
+
+
+                <div class="form-group col-xs-12">
+                    <label for="pwd">日期：</label>
+                    <input type="text" class="form-control" id="date">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">時間：</label>
+                    <input type="number" class="form-control" id="time">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">主分類：</label>
+                    <input type="text" class="form-control" id="primary">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">子分類：</label>
+                    <input type="text" class="form-control" id="secondary">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">幣別：</label>
+                    <input type="text" class="form-control" id="currency" value="TWD">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">匯率</label>
+                    <input type="text" class="form-control" id="exchangeRate" value="1">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">金額</label>
+                    <input type="text" class="form-control" id="amount">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">帳務說明</label>
+                    <input type="text" class="form-control" id="description">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">標籤：</label>
+                    <input type="text" class="form-control" id="tag">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">附圖</label>
+                    <input type="text" class="form-control" id="pic">
+                </div>
+
+                <div class="form-group col-xs-12">
+                    <button type="button" id="sendOrder" class="btn btn-primary col-xs-12">送出訂單</button>
+                </div>
+                <div class="col-xs-12 text-center">純屬線上訂購 demo</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">製作 by <a href="https://ianchuu.com" target="_blank">Ian Chu.</a></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.js'></script>
+
+    <script>
+        $(function () {
+            // 監聽 送出訂單 按鈕點擊
+            // 下面這段主要在組合資料，還有擋使用者不填資料不能送出
+            $('#sendOrder').click(function (e) {
+                var status = true;
+
+                var date = $('#date').val();
+                var time = $('#time').val();
+                var primary = $('#primary').val();
+                var secondary = $('#secondary').val();
+                var currency = $('#currency').val();
+                var exchangeRate = $('#exchangeRate').val();
+                var amount = $('#amount').val();
+                var description = $('#description').val();
+                var tag = $('#tag').val();
+
+
+                // 訂單  後面再加上選項數量*價格
+                var order = '';
+                // 價格 先預設0 後面再加上
+                var price = 0;
+                $('input').focus(function () {
+                    $(this).css('border', '');
+                });
+                // 處理價格 跟 訂單 資料
+                $('.select').each(function (index) {
+                    if ($(this).val() !== '') {
+                        order += $(this).data('name') + ' - ' + $(this).val() + '份 \n';
+                        price += Number($(this).data('price')) * Number($(this).val());
+                    }
+                });
+                order = order.substring(0, order.length - 1);
+
+                // 擋住不填資料邏輯
+                if (date == '') {
+                    $('#date').css('border', '1px solid #ff0000');
+                    status = false;
+                }
+                if (time == '') {
+                    $('#time').css('border', '1px solid #ff0000');
+                    status = false;
+                }
+                if (primary == '') {
+                    $('#primary').css('border', '1px solid #ff0000');
+                    status = false;
+                }
+                if (secondary == '') {
+                    $('#secondary').css('border', '1px solid #ff0000');
+                    status = false;
+                }
+                if (amount == '') {
+                    $('#amount').css('border', '1px solid #ff0000');
+                    status = false;
+                }
+                if (description == '') {
+                    $('#description').css('border', '1px solid #ff0000');
+                    status = false;
+                }
+                if (tag == '') {
+                    $('#tag').css('border', '1px solid #ff0000');
+                    status = false;
+                }
+                // if (phone == '') {
+                //     $('#phone').css('border', '1px solid #ff0000');
+                //     status = false;
+                // }
+                // if (order == '') {
+                //     alert('請選擇訂購品項喔');
+                //     status = false;
+                // }
+                // 如果 �必填欄位都過了 才會到這邊
+                if (status) {
+                    // 增加日期資料
+                    var currentdate = new Date();
+                    var filltime = currentdate.getFullYear() + "/"
+                        + (currentdate.getMonth() + 1) + "/"
+                        + currentdate.getDate() + "  "
+                        + currentdate.getHours() + ":"
+                        + currentdate.getMinutes() + ":"
+                        + currentdate.getSeconds();
+                    // 打包 要的資料
+                    var data = {
+                        'write': filltime,
+                        'date': date,
+                        'time': time,
+                        'primary': primary,
+                        'secondary': secondary,
+                        'currency': currency,
+                        'exchangeRate': exchangeRate,
+                        'amount': amount,
+                        'description': description,
+                        'tag': tag,
+                    }
+                    // 呼叫 send ajax function
+                    send(data);
+                }
+            });
+        });
+        function send(data) {
+            $.ajax({
+                // 這邊用get type
+                type: "get",
+                // api url - google appscript 產出的 url
+                url: "https://script.google.com/macros/s/AKfycbziODwfa60H4_llBhBr121FJjnIygqURKZJaHIE-kLMRLBm7AY/exec",
+                // 剛剛整理好的資料帶入
+                data: data,
+                // 資料格式是JSON 
+                dataType: "JSON",
+                // 成功送出 會回頭觸發下面這塊感謝
+                success: function (response) {
+                    console.log(response);
+                    alert('感謝您的訂購！！');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
