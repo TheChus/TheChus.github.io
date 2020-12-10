@@ -46,10 +46,6 @@ $(function () {
 
         // 如果 必填欄位都過了 才會到這邊
         if (status) {
-            var file_data = $('#pic').prop('files')[0];   //取得上傳檔案屬性
-            var form_data = new FormData();  //建構new FormData()
-            form_data.append('file', file_data);  //把物件加到file後面
-
             // 增加日期資料
             var currentdate = moment().format("YYYY/MM/DD HH:mmZ");
             // 打包 要的資料
@@ -64,7 +60,6 @@ $(function () {
                 'amount': amount,
                 'description': description,
                 'tag': tag,
-                'pic': form_data,
             }
             // 呼叫 send ajax function
             send(data);
@@ -92,8 +87,8 @@ function send(data) {
             $("#amount").empty();
             $("#description").empty();
             $("#tag").empty();
-            $("#pic").empty();
 
+            $("#newArea").slideUp();
             $("#new").show();
             $("#close").hide();
 
