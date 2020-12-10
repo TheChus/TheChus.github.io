@@ -16,6 +16,7 @@ $(function () {
 
         // 增加日期資料
         var currentdate = moment().format("YYYY/MM/DD HH:mm");
+        console.log(currentdate);
         console.log(typeof currentdate);
 
         // 擋住不填資料邏輯
