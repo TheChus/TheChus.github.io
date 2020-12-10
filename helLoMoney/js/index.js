@@ -15,8 +15,8 @@ $(function () {
         var tag = $('#tag').val();
 
         // 增加日期資料
-        var currentdate = moment().format("YYYY/MM/DD HH:mmZ");
-        console.log(currentdate);
+        var currentdate = moment().format("YYYY/MM/DD HH:mm");
+        console.log(typeof currentdate);
 
         // 擋住不填資料邏輯
         if (date == '') {
