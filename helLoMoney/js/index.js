@@ -14,6 +14,10 @@ $(function () {
         var description = $('#description').val();
         var tag = $('#tag').val();
 
+        // 增加日期資料
+        var currentdate = moment().format("YYYY/MM/DD HH:mmZ");
+        console.log(currentdate);
+
         // 擋住不填資料邏輯
         if (date == '') {
             $('#date').css('border', '1px solid #ff0000');
@@ -46,9 +50,6 @@ $(function () {
 
         // 如果 必填欄位都過了 才會到這邊
         if (status) {
-            // 增加日期資料
-            var currentdate = moment().format("YYYY/MM/DD HH:mmZ");
-            console.log(currentdate);
             // 打包 要的資料
             var data = {
                 'write': currentdate,
