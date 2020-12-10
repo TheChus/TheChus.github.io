@@ -48,6 +48,7 @@ $(function () {
         if (status) {
             // 增加日期資料
             var currentdate = moment().format("YYYY/MM/DD HH:mmZ");
+            console.log(currentdate);
             // 打包 要的資料
             var data = {
                 'write': currentdate,
