@@ -20,8 +20,9 @@ $(function () {
             + (currentdate.getMonth() + 1) + "/"
             + currentdate.getDate() + "  "
             + currentdate.getHours() + ":"
-            + currentdate.getMinutes() + ":"
+            + currentdate.getMinutes();
         console.log(filltime);
+        console.log(typeof filltime);
         // var currentdate = moment().format("YYYY/MM/DD HH:mm");
         // console.log(currentdate);
         // console.log(typeof currentdate);
@@ -58,9 +59,11 @@ $(function () {
 
         // 如果 必填欄位都過了 才會到這邊
         if (status) {
+            // 增加日期資料
+            var wirhtDate = moment().format("YYYY/MM/DD HH:mm");
             // 打包 要的資料
             var data = {
-                'write': filltime,
+                'write': wirhtDate,
                 'date': date,
                 'time': time,
                 'primary': primary,
