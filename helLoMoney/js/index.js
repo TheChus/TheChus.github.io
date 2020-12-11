@@ -15,9 +15,16 @@ $(function () {
         var tag = $('#tag').val();
 
         // 增加日期資料
-        var currentdate = moment().format("YYYY/MM/DD HH:mm");
-        console.log(currentdate);
-        console.log(typeof currentdate);
+        var currentdate = new Date();
+        var filltime = currentdate.getFullYear() + "/"
+            + (currentdate.getMonth() + 1) + "/"
+            + currentdate.getDate() + "  "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes() + ":"
+        console.log(filltime);
+        // var currentdate = moment().format("YYYY/MM/DD HH:mm");
+        // console.log(currentdate);
+        // console.log(typeof currentdate);
 
         // 擋住不填資料邏輯
         if (date == '') {
@@ -53,7 +60,7 @@ $(function () {
         if (status) {
             // 打包 要的資料
             var data = {
-                'write': currentdate,
+                'write': filltime,
                 'date': date,
                 'time': time,
                 'primary': primary,
