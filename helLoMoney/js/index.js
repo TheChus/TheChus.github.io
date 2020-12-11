@@ -78,15 +78,13 @@ function send(data) {
         dataType: "JSON",
         // 成功送出 會回頭觸發下面這塊感謝
         success: function (response) {
-            $("#date").empty();
-            $("#time").empty();
-            $("#primary").empty();
-            $("#secondary").empty();
-            $("#currency").empty();
-            $("#exchangeRate").empty();
-            $("#amount").empty();
-            $("#description").empty();
-            $("#tag").empty();
+            $("#date").val('');
+            $("#time").val('');
+            $("#primary").val('');
+            $("#secondary").val('');
+            $("#amount").val('');
+            $("#description").val('');
+            $("#tag").val('');
 
             $("#newArea").slideUp();
             $("#new").show();
