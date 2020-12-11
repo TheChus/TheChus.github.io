@@ -20,8 +20,7 @@ $(function () {
             + (currentdate.getMonth() + 1) + "/"
             + currentdate.getDate() + "  "
             + currentdate.getHours() + ":"
-            + currentdate.getMinutes() + ":"
-            + currentdate.getSeconds();
+            + currentdate.getMinutes();
         console.log(filltime);
         console.log(typeof filltime);
         // var currentdate = moment().format("YYYY/MM/DD HH:mm");
@@ -61,16 +60,10 @@ $(function () {
         // 如果 必填欄位都過了 才會到這邊
         if (status) {
             // 增加日期資料
-            var currentdate = new Date();
-            var filltime = currentdate.getFullYear() + "/"
-                + (currentdate.getMonth() + 1) + "/"
-                + currentdate.getDate() + "  "
-                + currentdate.getHours() + ":"
-                + currentdate.getMinutes() + ":"
-                + currentdate.getSeconds();
+            var writedate = moment().format("YYYY/MM/DD HH:mm");
             // 打包 要的資料
             var data = {
-                'write': filltime,
+                'write': writedate,
                 'date': date,
                 'time': time,
                 'primary': primary,
@@ -79,7 +72,7 @@ $(function () {
                 'exchangeRate': exchangeRate,
                 'amount': amount,
                 'description': description,
-                'tag': tag,
+                'tag': writedate,
             }
             // 呼叫 send ajax function
             send(data);
