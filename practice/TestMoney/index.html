@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>哈囉Money</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="imgs/abuliu.png" sizes="32x32">
+    <link rel="shortcut icon" href="imgs/abuliu.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="imgs/abuliu.png">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div class="container">
+        <div id="Buttons" class="row">
+            <div class="col-12 text-center">
+                <button type="button" id="new" class="btn btn-light col-auto mt-3">新增開啟</button>
+                <button type="button" id="close" class="btn btn-light col-auto mt-3">關閉新增</button>
+                <button type="button" id="tagAccount" class="btn btn-secondary col-auto mt-3">標籤查詢</button>
+                <button type="button" id="checkAccount" class="btn btn-info col-auto mt-3">查帳功能</button>
+                <!-- <ul class="list-unstyled">
+                    <li class="col-xs-6">
+                        <h2>鹹酥雞</h2>
+                        <p>NT.50</p>
+                        <select name="number" class="select form-control" data-price="50" data-name="鹹酥雞">
+                            <option style="display:none" value="">請選擇數量</option>
+                            <option value="1">1份</option>
+                            <option value="2">2份</option>
+                            <option value="3">3份</option>
+                        </select>
+                    </li>
+                    <li class="col-xs-6">
+                        <h2>魷魚</h2>
+                        <p>NT.50</p>
+                        <select name="number" class="select form-control" data-price="50" data-name="魷魚">
+                            <option style="display:none" value="">請選擇數量</option>
+                            <option value="1">1份</option>
+                            <option value="2">2份</option>
+                            <option value="3">3份</option>
+                        </select>
+                    </li>
+                </ul> -->
+                <!-- <div class="form-group col-xs-12">
+                    <label for="pwd">姓名:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group col-xs-12">
+                    <label for="pwd">電話:</label>
+                    <input type="number" class="form-control" id="phone">
+                </div> -->
+
+            </div>
+        </div>
+        <div id="newArea" class="row">
+            <div class="form-group col-12 d-flex mt-3">
+                <div class="col-auto">日期&emsp;&emsp;</div>
+                <div class="col">
+                    <input type="date" class="form-control" id="date">
+                </div>
+            </div>
+            <div class="form-group col-12 d-flex">
+                <div class="col-auto">時間&emsp;&emsp;</div>
+                <div class="col">
+                    <input type="time" class="form-control" id="time">
+                </div>
+            </div>
+            <div class="form-group col-12 d-flex">
+                <div class="col-auto">主分類&emsp;</div>
+                <div class="col">
+                    <input type="text" class="form-control" id="primary">
+                </div>
+            </div>
+            <div class="form-group col-12 d-flex">
+                <div class="col-auto">子分類&emsp;</div>
+                <div class="col">
+                    <input type="text" class="form-control" id="secondary">
+                </div>
+            </div>
+            <div class="form-group col-12 d-flex">
+                <div class="col-auto">幣別&emsp;&emsp;</div>
+                <div class="col">
+                    <input type="text" class="form-control" id="currency" value="TWD">
+                </div>
+            </div>
+            <div class="form-group col-12 d-flex">
+                <div class="col-auto">匯率&emsp;&emsp;</div>
+                <div class="col">
+                    <input type="number" class="form-control" id="exchangeRate" value="1">
+                </div>
+            </div>
+            <div class="form-group col-12 d-flex">
+                <div class="col-auto">金額&emsp;&emsp;</div>
+                <div class="col">
+                    <input type="number" class="form-control" id="amount">
+                </div>
+            </div>
+            <div class="form-group col-12 d-flex">
+                <div class="col-auto">帳務說明</div>
+                <div class="col">
+                    <input type="text" class="form-control" id="description">
+                </div>
+            </div>
+            <div class="form-group col-12 d-flex">
+                <div class="col-auto">標籤&emsp;&emsp;</div>
+                <div class="col">
+                    <input type="text" class="form-control" id="tag">
+                </div>
+            </div>
+        </div>
+
+        <div id="BTNS" class="row">
+            <div class="form-group col-12 text-center">
+                <button type="button" id="sendOrder" class="btn btn-dark col-auto">&nbsp;&nbsp;儲存&nbsp;&nbsp;</button>
+                <button type="button" id="delete" class="btn btn-danger col-auto">&nbsp;&nbsp;刪除&nbsp;&nbsp;</button>
+                <button type="button" id="modify" class="btn btn-success col-auto">&nbsp;&nbsp;修改&nbsp;&nbsp;</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.js'></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
