@@ -71,7 +71,7 @@ function send(data) {
         // 這邊用get type
         type: "get",
         // api url - google appscript 產出的 url
-        url: "https://script.google.com/macros/s/AKfycbyaWFzXaztVCyc2FM1LwDJQuHx0xk5cpB6Do0kM_w/exec",
+        url: "https://script.google.com/macros/s/AKfycbyepJDDWS3JqmYDqQdtvHa18Xo1aijHiJPdjPbVywH3ZTqL3aPz/exec",
         // 剛剛整理好的資料帶入
         data: data,
         // 資料格式是JSON 
