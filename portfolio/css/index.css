@@ -83,12 +83,12 @@ header {
 }
 @media (max-width: 576px) {
   .banner h3 {
-    font-size: 31px;
+    font-size: 32px;
   }
 }
 @media (max-width: 375px) {
   .banner h3 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
