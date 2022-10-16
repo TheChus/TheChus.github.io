@@ -6,8 +6,7 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "微軟正黑體";
 }
 
@@ -27,14 +26,12 @@ html {
   position: fixed;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background-color: #868686;
   width: 100%;
   padding-bottom: 16px;
   z-index: 99;
 }
-
 #Buttons #new,
 #Buttons #close {
   color: #17445c;
@@ -53,7 +50,6 @@ html {
   color: #9b9b9b;
   margin-top: 100px;
 }
-
 #newArea input {
   background-color: #ebedee;
   color: #ab956c;
@@ -61,5 +57,4 @@ html {
 
 #BTNS {
   margin-top: 640px;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

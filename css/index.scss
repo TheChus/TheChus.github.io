@@ -789,21 +789,30 @@ html {
         left: 500px;
     }
 
+    @media (max-width:800px) {
+        animation: aniShow-title-1024 0.8s 5s ease-out forwards;
+        top: 530px;
+        font-size: 34px;
+        left: 500px;
+    }
+
     @media (max-width:768px) {
         animation: aniShow-title-768 0.8s 5s ease-out forwards;
         left: 450px;
-        top: 850px;
+        top: 450px;
+        font-size: 32px;
     }
 
     @media (max-width:576px) {
         animation: aniShow-title-576-1 0.8s 5s ease-out forwards;
         left: 407px;
         top: 480px;
+        font-size: 30px;
     }
 
     @media (max-width:414px) {
         animation: aniShow-title-414-1 0.8s 5s ease-out forwards;
-        font-size: 30px;
+        font-size: 28px;
         left: 280px;
         top: 510px;
     }
@@ -812,7 +821,7 @@ html {
         animation: aniShow-title-375-1 0.8s 5s ease-out forwards;
         left: 260px;
         top: 450px;
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
@@ -838,21 +847,29 @@ html {
         left: 500px;
     }
 
+    @media (max-width:800px) {
+        animation: aniShow-title-1024 0.8s 5s ease-out forwards;
+        top: 570px;
+        font-size: 32px;
+        left: 500px;
+    }
+
     @media (max-width:768px) {
         animation: aniShow-title-768 1s 5.7s ease-out forwards;
         left: 450px;
-        top: 900px;
+        top: 500px;
     }
 
     @media (max-width:576px) {
         animation: aniShow-title-576-2 1s 5.7s ease-out forwards;
         left: 280px;
         top: 520px;
+        font-size: 28px;
     }
 
     @media (max-width:414px) {
         animation: aniShow-title-414-2 1s 5.7s ease-out forwards;
-        font-size: 28px;
+        font-size: 24px;
         left: 178px;
         top: 550px;
     }
@@ -861,7 +878,7 @@ html {
         animation: aniShow-title-375-2 1s 5.7s ease-out forwards;
         left: 174px;
         top: 490px;
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 
@@ -886,17 +903,24 @@ html {
         top: 580px;
     }
 
+    @media (max-width:800px) {
+        animation: aniShow-text-1024 1.5s 6.5s ease-out forwards;
+        font-size: 30px;
+        left: 500px;
+        top: 580px;
+    }
+
     @media (max-width:768px) {
         animation: aniShow-text-768 1.5s 6.5s ease-out forwards;
         left: 450px;
-        top: 850px;
+        top: 450px;
     }
 
     @media (max-width:576px) {
         animation: aniShow-text-576 1.5s 6.5s ease-out forwards;
         left: 330px;
         top: 550px;
-
+        font-size: 28px;
     }
 
     @media (max-width:414px) {
@@ -904,14 +928,14 @@ html {
         font-size: 28px;
         left: 215px;
         top: 590px;
-
+        font-size: 24px;
     }
 
     @media (max-width:375px) {
         animation: aniShow-text-375 1.5s 6.5s ease-out forwards;
         left: 208px;
         top: 525px;
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 

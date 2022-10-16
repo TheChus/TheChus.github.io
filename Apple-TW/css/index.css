@@ -7,8 +7,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -23,16 +22,13 @@ body {
   z-index: 999;
   padding: unset;
 }
-
 .navbar a {
-  color: #c9c9c9;
+  color: rgb(201, 201, 201);
 }
-
 .navbar .container {
   padding-left: 50px;
   padding-right: 50px;
 }
-
 @media (max-width: 767px) {
   .navbar .container {
     margin-left: unset;
@@ -44,14 +40,13 @@ body {
 }
 
 .bg-my-color {
-  background-color: #242424;
+  background-color: rgb(36, 36, 36);
 }
 
 .navbar-brand {
   padding-top: unset;
   padding-bottom: unset;
 }
-
 @media (max-width: 767px) {
   .navbar-brand {
     margin-left: calc(50% - 25px);
@@ -70,19 +65,16 @@ body {
   top: 5px;
   z-index: 99;
 }
-
 @media (max-width: 767px) {
   .nav-show .nav-link {
     right: 70px;
   }
 }
-
 @media (max-width: 576px) {
   .nav-show .nav-link {
     right: 30px;
   }
 }
-
 @media (max-width: 767px) {
   .nav-show .nav-link.active {
     display: block;
@@ -94,13 +86,11 @@ body {
   height: 30px;
   margin: 10px 30px;
 }
-
 @media (min-width: 768px) {
   #toggle {
     display: none;
   }
 }
-
 @media (max-width: 576px) {
   #toggle {
     width: 20px;
@@ -114,20 +104,17 @@ body {
   height: 3px;
   background: whitesmoke;
   margin: 8px auto;
-  -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
 #toggle.on .one {
-  -webkit-transform: rotate(45deg) translate(5px, 2px);
-          transform: rotate(45deg) translate(5px, 2px);
+  transform: rotate(45deg) translate(5px, 2px);
 }
 
 #toggle.on .two {
-  -webkit-transform: rotate(-45deg) translate(7px, -2px);
-          transform: rotate(-45deg) translate(7px, -2px);
+  transform: rotate(-45deg) translate(7px, -2px);
 }
 
 @media (max-width: 767px) {
@@ -135,41 +122,35 @@ body {
     display: unset;
   }
 }
-
 @media (max-width: 767px) {
   .nav .nav-item {
     position: relative;
   }
 }
-
 @media (max-width: 767px) {
   .nav .nav-item::after {
-    content: ' ';
+    content: " ";
     position: absolute;
     bottom: 0;
     width: 85%;
     border-bottom: 1px gray solid;
   }
 }
-
 @media (max-width: 576px) {
   .nav .nav-item::after {
     width: 83%;
   }
 }
-
 @media (max-width: 414px) {
   .nav .nav-item::after {
     width: 76%;
   }
 }
-
 @media (max-width: 375px) {
   .nav .nav-item::after {
     width: 74%;
   }
 }
-
 @media (max-width: 320px) {
   .nav .nav-item::after {
     width: 70%;
@@ -179,13 +160,11 @@ body {
 #navbarSupportedContent ul li {
   padding: 0 30px;
 }
-
 @media (max-width: 991px) {
   #navbarSupportedContent ul li {
     padding: 0 10px;
   }
 }
-
 @media (max-width: 767px) {
   #navbarSupportedContent ul li {
     padding: 10px 50px 10px 50px;
@@ -199,13 +178,11 @@ body {
   background-color: #131313;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #iphone-SE {
     height: 694px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-SE {
     height: 548px;
@@ -215,60 +192,50 @@ body {
     background-position: center;
   }
 }
-
 @media (max-width: 635px) {
   #iphone-SE {
     background-image: url(../img/SE/SE_small.jpg);
   }
 }
-
 #iphone-SE .SE-text {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 35%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #iphone-SE .SE-text {
     top: 40%;
   }
 }
-
 #iphone-SE .SE-text > span {
   color: #bf4800;
   font-size: 18px;
 }
-
 @media (max-width: 767px) {
   #iphone-SE .SE-text > span {
     display: none;
   }
 }
-
 #iphone-SE .SE-text h1 {
   color: #f5f5f7;
   font-size: 56px;
   font-weight: 600;
   line-height: 1.2;
 }
-
 @media (max-width: 1068px) {
   #iphone-SE .SE-text h1 {
     font-size: 44px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-SE .SE-text h1 {
     font-size: 32px;
   }
 }
-
 #iphone-SE .SE-text h2 {
   color: #f5f5f7;
   font-size: 28px;
@@ -276,100 +243,82 @@ body {
   line-height: 1.5;
   padding-left: 25px;
 }
-
 @media (max-width: 1068px) {
   #iphone-SE .SE-text h2 {
     font-size: 24px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-SE .SE-text h2 {
     font-size: 19px;
   }
 }
-
 #iphone-SE .SE-text h3 {
   color: #f5f5f7;
   font-size: 28px;
   font-weight: 400;
   line-height: 1.5;
 }
-
 @media (max-width: 1068px) {
   #iphone-SE .SE-text h3 {
     font-size: 24px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-SE .SE-text h3 {
     font-size: 19px;
   }
 }
-
 #iphone-SE .SE-text p span {
   font-size: 18px;
 }
-
 @media (max-width: 767px) {
   #iphone-SE .SE-text p span {
     font-size: 12px;
   }
 }
-
 #iphone-SE .SE-text p sup {
   font-size: 12px;
 }
-
 @media (max-width: 1068px) {
   #iphone-SE .SE-text p sup {
     font-size: 10px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-SE .SE-text p sup {
     display: none;
   }
 }
-
 #iphone-SE .SE-text a {
   color: #2997ff;
 }
-
 #iphone-SE .SE-text a h4 {
   font-size: 21px;
   font-weight: 400;
   line-height: 1.8;
   padding-left: 12px;
 }
-
 @media (max-width: 767px) {
   #iphone-SE .SE-text a h4 {
     font-size: 18px;
   }
 }
-
 #iphone-SE .SE-text a:hover {
   text-decoration: none;
 }
-
 #iphone-SE .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: -50px;
   z-index: 1;
 }
-
 @media (max-width: 1068px) {
   #iphone-SE .img-wrapper {
     bottom: -140px;
   }
 }
-
 #iphone-SE .img-wrapper .SE-background {
   width: 1156px;
   height: 584px;
@@ -377,14 +326,12 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #iphone-SE .img-wrapper .SE-background {
     width: 796px;
     height: 535px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-SE .img-wrapper .SE-background {
     width: unset;
@@ -400,55 +347,46 @@ body {
   background-color: #fafafa;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #iphone-11 {
     height: 694px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-11 {
     height: 548px;
   }
 }
-
 #iphone-11 .iphone11-text {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 26%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #iphone-11 .iphone11-text {
     top: 23%;
   }
 }
-
 #iphone-11 .iphone11-text h1 {
   color: #1d1d1f;
   font-size: 56px;
   font-weight: 600;
   line-height: 1;
 }
-
 @media (max-width: 1068px) {
   #iphone-11 .iphone11-text h1 {
     font-size: 44px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-11 .iphone11-text h1 {
     font-size: 32px;
   }
 }
-
 #iphone-11 .iphone11-text h2 {
   color: #1d1d1f;
   font-size: 28px;
@@ -456,81 +394,66 @@ body {
   line-height: 1.2;
   padding-left: 25px;
 }
-
 @media (max-width: 1068px) {
   #iphone-11 .iphone11-text h2 {
     font-size: 24px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-11 .iphone11-text h2 {
     font-size: 19px;
   }
 }
-
 #iphone-11 .iphone11-text p span {
   font-size: 18px;
 }
-
 @media (max-width: 767px) {
   #iphone-11 .iphone11-text p span {
     font-size: 12px;
   }
 }
-
 #iphone-11 .iphone11-text p sup {
   font-size: 12px;
 }
-
 @media (max-width: 1068px) {
   #iphone-11 .iphone11-text p sup {
     font-size: 10px;
   }
 }
-
 @media (max-width: 767px) {
   #iphone-11 .iphone11-text p sup {
     display: none;
   }
 }
-
 #iphone-11 .iphone11-text a {
   color: #2997ff;
 }
-
 #iphone-11 .iphone11-text a h3 {
   font-size: 21px;
   font-weight: 400;
   line-height: 1.4;
   padding-left: 12px;
 }
-
 @media (max-width: 767px) {
   #iphone-11 .iphone11-text a h3 {
     font-size: 18px;
   }
 }
-
 #iphone-11 .iphone11-text a:hover {
   text-decoration: none;
 }
-
 #iphone-11 .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: -50px;
   z-index: 1;
 }
-
 @media (max-width: 1068px) {
   #iphone-11 .img-wrapper {
     bottom: -10px;
   }
 }
-
 #iphone-11 .img-wrapper .iphone11-background {
   width: 2618px;
   height: 538px;
@@ -538,7 +461,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #iphone-11 .img-wrapper .iphone11-background {
     width: 1155px;
@@ -546,7 +468,6 @@ body {
     background-image: url(../img/iphone11/iphone11_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #iphone-11 .img-wrapper .iphone11-background {
     width: 796px;
@@ -562,55 +483,46 @@ body {
   background-color: #fafafa;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #ipad-pro {
     height: 694px;
   }
 }
-
 @media (max-width: 767px) {
   #ipad-pro {
     height: 548px;
   }
 }
-
 #ipad-pro .ipad-pro-text {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 25%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #ipad-pro .ipad-pro-text {
     top: 20%;
   }
 }
-
 #ipad-pro .ipad-pro-text h1 {
   color: #1d1d1f;
   font-size: 56px;
   font-weight: 600;
   line-height: 1;
 }
-
 @media (max-width: 1068px) {
   #ipad-pro .ipad-pro-text h1 {
     font-size: 44px;
   }
 }
-
 @media (max-width: 767px) {
   #ipad-pro .ipad-pro-text h1 {
     font-size: 32px;
   }
 }
-
 #ipad-pro .ipad-pro-text h2 {
   color: #1d1d1f;
   font-size: 28px;
@@ -618,55 +530,45 @@ body {
   line-height: 1.2;
   padding-left: 25px;
 }
-
 @media (max-width: 1068px) {
   #ipad-pro .ipad-pro-text h2 {
     font-size: 24px;
   }
 }
-
 @media (max-width: 767px) {
   #ipad-pro .ipad-pro-text h2 {
     font-size: 19px;
   }
 }
-
 #ipad-pro .ipad-pro-text a {
   color: #2997ff;
 }
-
 #ipad-pro .ipad-pro-text a h3 {
   font-size: 21px;
   font-weight: 400;
   line-height: 1.4;
   padding-left: 12px;
 }
-
 @media (max-width: 767px) {
   #ipad-pro .ipad-pro-text a h3 {
     font-size: 18px;
   }
 }
-
 #ipad-pro .ipad-pro-text a:hover {
   text-decoration: none;
 }
-
 #ipad-pro .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: -30px;
   z-index: 1;
 }
-
 @media (max-width: 1068px) {
   #ipad-pro .img-wrapper {
     bottom: 15px;
   }
 }
-
 #ipad-pro .img-wrapper .ipad-pro-background {
   width: 3010px;
   height: 736px;
@@ -674,7 +576,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #ipad-pro .img-wrapper .ipad-pro-background {
     width: 610px;
@@ -682,7 +583,6 @@ body {
     background-image: url(../img/ipad/ipadpro_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #ipad-pro .img-wrapper .ipad-pro-background {
     width: 736px;
@@ -695,7 +595,6 @@ body {
   padding-left: 12px;
   padding-right: 6px;
 }
-
 @media (max-width: 767px) {
   .left-padding {
     padding-left: 0px;
@@ -707,7 +606,6 @@ body {
   padding-left: 6px;
   padding-right: 12px;
 }
-
 @media (max-width: 767px) {
   .right-padding {
     padding-left: 0px;
@@ -722,91 +620,75 @@ body {
   background-color: #f1f1f3;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #SET1 {
     height: 490px;
   }
 }
-
 @media (max-width: 767px) {
   #SET1 {
     height: 548px;
   }
 }
-
 #SET1 .SET1-text {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 25%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #SET1 .SET1-text {
     top: 23%;
   }
 }
-
 #SET1 .SET1-text h1 {
   color: #1d1d1f;
   font-size: 37px;
   font-weight: 500;
   line-height: 1.1;
 }
-
 @media (max-width: 1068px) {
   #SET1 .SET1-text h1 {
     font-size: 28px;
     line-height: 1.3;
   }
 }
-
 @media (max-width: 767px) {
   #SET1 .SET1-text h1 {
     font-size: 25px;
   }
 }
-
 #SET1 .SET1-text a {
   color: #2997ff;
 }
-
 #SET1 .SET1-text a h3 {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.4;
 }
-
 @media (max-width: 767px) {
   #SET1 .SET1-text a h3 {
     font-size: 16px;
   }
 }
-
 #SET1 .SET1-text a:hover {
   text-decoration: none;
 }
-
 #SET1 .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: -20px;
   z-index: 1;
 }
-
 @media (max-width: 1068px) {
   #SET1 .img-wrapper {
     bottom: 15px;
   }
 }
-
 #SET1 .img-wrapper .SET1-background {
   width: 706px;
   height: 385px;
@@ -814,7 +696,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #SET1 .img-wrapper .SET1-background {
     width: 558px;
@@ -822,7 +703,6 @@ body {
     background-image: url(../img/優惠組合/SET1_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #SET1 .img-wrapper .SET1-background {
     width: 796px;
@@ -838,60 +718,50 @@ body {
   background-color: #f1f1f3;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #SET2 {
     height: 490px;
   }
 }
-
 @media (max-width: 767px) {
   #SET2 {
     height: 548px;
   }
 }
-
 #SET2 figure {
   margin: 0;
 }
-
 #SET2 .SET2-text {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 25%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #SET2 .SET2-text {
     top: 23%;
   }
 }
-
 #SET2 .SET2-text h1 {
   color: #1d1d1f;
   font-size: 37px;
   font-weight: 600;
   line-height: 1.1;
 }
-
 @media (max-width: 1068px) {
   #SET2 .SET2-text h1 {
     font-size: 30px;
     line-height: 1.2;
   }
 }
-
 @media (max-width: 767px) {
   #SET2 .SET2-text h1 {
     font-size: 27px;
   }
 }
-
 #SET2 .SET2-text h2 {
   color: #1d1d1f;
   font-size: 20px;
@@ -899,48 +769,39 @@ body {
   line-height: 1.2;
   padding-left: 25px;
 }
-
 @media (max-width: 1068px) {
   #SET2 .SET2-text h2 {
     font-size: 19px;
   }
 }
-
 @media (max-width: 767px) {
   #SET2 .SET2-text h2 {
     font-size: 18px;
   }
 }
-
 #SET2 .SET2-text a {
   color: #2997ff;
 }
-
 #SET2 .SET2-text a h3 {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.4;
 }
-
 @media (max-width: 767px) {
   #SET2 .SET2-text a h3 {
     font-size: 16px;
   }
 }
-
 #SET2 .SET2-text a:hover {
   text-decoration: none;
 }
-
 #SET2 .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 0;
   z-index: 1;
 }
-
 #SET2 .img-wrapper .SET2-background {
   width: 1262px;
   height: 580px;
@@ -948,7 +809,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #SET2 .img-wrapper .SET2-background {
     width: 516px;
@@ -956,7 +816,6 @@ body {
     background-image: url(../img/優惠組合/SET2_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #SET2 .img-wrapper .SET2-background {
     width: 767px;
@@ -964,7 +823,6 @@ body {
     background-image: url(../img/優惠組合/SET2_small.jpg);
   }
 }
-
 @media (max-width: 414px) {
   #SET2 .img-wrapper .SET2-background {
     width: 767px;
@@ -980,50 +838,41 @@ body {
   background-color: #f1f1f3;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #SET3 {
     height: 490px;
   }
 }
-
 @media (max-width: 767px) {
   #SET3 {
     height: 548px;
   }
 }
-
 #SET3 figure {
   margin: 0;
 }
-
 #SET3 .SET3-text {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 25%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #SET3 .SET3-text {
     top: 23%;
   }
 }
-
 #SET3 .SET3-text h2 {
   font-size: 25px;
 }
-
 @media (max-width: 1068px) {
   #SET3 .SET3-text h2 {
     font-size: 20px;
   }
 }
-
 #SET3 .SET3-text h1 {
   color: #1d1d1f;
   font-size: 37px;
@@ -1031,7 +880,6 @@ body {
   line-height: 1.1;
   padding-left: 20px;
 }
-
 @media (max-width: 1068px) {
   #SET3 .SET3-text h1 {
     font-size: 25px;
@@ -1039,22 +887,18 @@ body {
     padding-left: 10px;
   }
 }
-
 @media (max-width: 767px) {
   #SET3 .SET3-text h1 {
     font-size: 27px;
   }
 }
-
 #SET3 .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 0;
   z-index: 1;
 }
-
 #SET3 .img-wrapper .SET3-background {
   width: 1262px;
   height: 580px;
@@ -1062,7 +906,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #SET3 .img-wrapper .SET3-background {
     width: 516px;
@@ -1070,7 +913,6 @@ body {
     background-image: url(../img/優惠組合/SET3_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #SET3 .img-wrapper .SET3-background {
     width: 767px;
@@ -1086,70 +928,58 @@ body {
   background-color: #fafafa;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #SET4 {
     height: 490px;
   }
 }
-
 @media (max-width: 767px) {
   #SET4 {
     height: 548px;
   }
 }
-
 #SET4 figure {
   margin: 0;
 }
-
 #SET4 .SET4-text {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 20%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #SET4 .SET4-text {
     top: 18%;
   }
 }
-
 #SET4 .SET4-text h1 {
   color: #1d1d1f;
   font-size: 37px;
   font-weight: 500;
   line-height: 1.1;
 }
-
 @media (max-width: 1068px) {
   #SET4 .SET4-text h1 {
     font-size: 30px;
     line-height: 1.3;
   }
 }
-
 @media (max-width: 767px) {
   #SET4 .SET4-text h1 {
     font-size: 27px;
     line-height: 1.4;
   }
 }
-
 #SET4 .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 0;
   z-index: 1;
 }
-
 #SET4 .img-wrapper .SET4-background {
   width: 1038px;
   height: 399px;
@@ -1157,7 +987,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #SET4 .img-wrapper .SET4-background {
     width: 516px;
@@ -1165,7 +994,6 @@ body {
     background-image: url(../img/優惠組合/SET4_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #SET4 .img-wrapper .SET4-background {
     width: 767px;
@@ -1181,73 +1009,61 @@ body {
   background-color: #fafafa;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #SET5 {
     height: 490px;
   }
 }
-
 @media (max-width: 767px) {
   #SET5 {
     height: 548px;
   }
 }
-
 #SET5 figure {
   margin: 0;
 }
-
 #SET5 .SET5-text {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 25%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #SET5 .SET5-text {
     top: 23%;
   }
 }
-
 #SET5 .SET5-text h1 {
   color: #1d1d1f;
   font-size: 37px;
   font-weight: 600;
   line-height: 1.1;
 }
-
 @media (max-width: 1068px) {
   #SET5 .SET5-text h1 {
     font-size: 30px;
     line-height: 1.2;
   }
 }
-
 @media (max-width: 767px) {
   #SET5 .SET5-text h1 {
     font-size: 27px;
   }
 }
-
 #SET5 .SET5-text h2 {
   color: #ec4c1b;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.2;
 }
-
 @media (max-width: 1068px) {
   #SET5 .SET5-text h2 {
     font-size: 16px;
   }
 }
-
 #SET5 .SET5-text h4 {
   color: #1d1d1f;
   font-size: 20px;
@@ -1255,48 +1071,39 @@ body {
   line-height: 1.2;
   padding-left: 25px;
 }
-
 @media (max-width: 1068px) {
   #SET5 .SET5-text h4 {
     font-size: 19px;
   }
 }
-
 @media (max-width: 767px) {
   #SET5 .SET5-text h4 {
     font-size: 18px;
   }
 }
-
 #SET5 .SET5-text a {
   color: #2997ff;
 }
-
 #SET5 .SET5-text a h3 {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.4;
 }
-
 @media (max-width: 767px) {
   #SET5 .SET5-text a h3 {
     font-size: 16px;
   }
 }
-
 #SET5 .SET5-text a:hover {
   text-decoration: none;
 }
-
 #SET5 .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 0;
   z-index: 1;
 }
-
 #SET5 .img-wrapper .SET5-background {
   width: 726px;
   height: 351px;
@@ -1304,7 +1111,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #SET5 .img-wrapper .SET5-background {
     width: 516px;
@@ -1312,7 +1118,6 @@ body {
     background-image: url(../img/watch/watch_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #SET5 .img-wrapper .SET5-background {
     width: 670px;
@@ -1328,97 +1133,80 @@ body {
   background-color: #f1f1f3;
   position: relative;
 }
-
 @media (max-width: 1068px) {
   #SET6 {
     height: 490px;
   }
 }
-
 @media (max-width: 767px) {
   #SET6 {
     height: 548px;
   }
 }
-
 #SET6 figure {
   margin: 0;
 }
-
 #SET6 .SET6-text {
   color: #f1f1f3;
   width: 100%;
   position: absolute;
   left: 50%;
   top: 23%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 1068px) {
   #SET6 .SET6-text {
     top: 21%;
   }
 }
-
 @media (max-width: 767px) {
   #SET6 .SET6-text {
     top: 19%;
   }
 }
-
 #SET6 .SET6-text span {
   line-height: 650px;
 }
-
 @media (max-width: 1068px) {
   #SET6 .SET6-text span img {
     height: 40px !important;
   }
 }
-
 @media (max-width: 767px) {
   #SET6 .SET6-text span {
     line-height: 700px;
   }
 }
-
 #SET6 .SET6-text h2 {
   font-size: 20px;
   font-weight: 400;
 }
-
 #SET6 .SET6-text h1 {
   color: #f1f1f3;
   font-size: 50px;
   font-weight: 500;
   line-height: 1.1;
 }
-
 @media (max-width: 1068px) {
   #SET6 .SET6-text h1 {
     font-size: 45px;
     line-height: 1.2;
   }
 }
-
 @media (max-width: 767px) {
   #SET6 .SET6-text h1 {
     font-size: 40px;
   }
 }
-
 #SET6 .img-wrapper {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 0;
   z-index: 1;
 }
-
 #SET6 .img-wrapper .SET6-background {
   width: 1262px;
   height: 580px;
@@ -1426,7 +1214,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 1068px) {
   #SET6 .img-wrapper .SET6-background {
     width: 516px;
@@ -1434,7 +1221,6 @@ body {
     background-image: url(../img/優惠組合/SET6_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #SET6 .img-wrapper .SET6-background {
     width: 767px;
@@ -1457,13 +1243,11 @@ body {
   position: relative;
   margin: 0 auto;
 }
-
 @media (max-width: 1068px) {
   #SET7-TV {
     height: 572px;
   }
 }
-
 @media (max-width: 767px) {
   #SET7-TV {
     height: 512px;
@@ -1471,7 +1255,6 @@ body {
     margin: 0;
   }
 }
-
 #SET7-TV .TV-background {
   position: relative;
   width: 100%;
@@ -1481,61 +1264,51 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 @media (max-width: 1068px) {
   #SET7-TV .TV-background {
     background-image: url(../img/TV/TV_medium.jpg);
   }
 }
-
 @media (max-width: 767px) {
   #SET7-TV .TV-background {
     background-image: url(../img/TV/TV_small.jpg);
     margin-bottom: 0;
   }
 }
-
 @media (max-width: 576px) {
   #SET7-TV .TV-background {
     background-position: 53% 50%;
   }
 }
-
 #SET7-TV .TV-background .TV-text {
   width: 100%;
   position: absolute;
   left: 25%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 5;
 }
-
 @media (max-width: 767px) {
   #SET7-TV .TV-background .TV-text {
     top: 23%;
     left: 50%;
   }
 }
-
 #SET7-TV .TV-background .TV-text img {
   margin-bottom: 30px;
 }
-
 @media (max-width: 1068px) {
   #SET7-TV .TV-background .TV-text img {
     height: 30px !important;
   }
 }
-
 @media (max-width: 767px) {
   #SET7-TV .TV-background .TV-text img {
     margin-bottom: 25px;
     height: 25px !important;
   }
 }
-
 #SET7-TV .TV-background .TV-text h1 {
   color: #f5f5f7;
   font-size: 21px;
@@ -1543,13 +1316,11 @@ body {
   line-height: 1;
   padding-left: 10px;
 }
-
 @media (max-width: 1068px) {
   #SET7-TV .TV-background .TV-text h1 {
     font-size: 17px;
   }
 }
-
 #SET7-TV .TV-background .TV-text h2 {
   color: #f5f5f7;
   font-size: 21px;
@@ -1558,36 +1329,30 @@ body {
   padding-left: 25px;
   margin-bottom: 20px;
 }
-
 @media (max-width: 1068px) {
   #SET7-TV .TV-background .TV-text h2 {
     font-size: 17px;
   }
 }
-
 @media (max-width: 767px) {
   #SET7-TV .TV-background .TV-text h2 {
     margin-bottom: 15px;
   }
 }
-
 #SET7-TV .TV-background .TV-text a {
   color: #f5f5f7;
 }
-
 #SET7-TV .TV-background .TV-text a h3 {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
   padding-left: 16px;
 }
-
 @media (max-width: 1068px) {
   #SET7-TV .TV-background .TV-text a h3 {
     font-size: 15px;
   }
 }
-
 #SET7-TV .TV-background .TV-text a:hover {
   text-decoration: none;
 }
@@ -1595,7 +1360,6 @@ body {
 #apple-footer {
   background-color: #f5f5f7;
 }
-
 #apple-footer .footer-content {
   font-size: 12px;
   font-weight: 400;
@@ -1606,7 +1370,6 @@ body {
   margin: 0 auto;
   max-width: 980px;
 }
-
 #apple-footer .footer-content .instructions {
   color: #86868b;
   line-height: 1.5;
@@ -1614,119 +1377,92 @@ body {
   font-weight: 300;
   padding: 17px 0 9px 0;
 }
-
 #apple-footer .footer-content .divider {
   margin: 0 0 20px 0;
   width: 100%;
   height: 1px;
   background-color: #dadada;
 }
-
 #apple-footer .footer-content input {
   display: none;
 }
-
 #apple-footer .footer-content h3 {
   font-size: 12px;
   font-weight: 500;
   color: #1d1d1f;
 }
-
 #apple-footer .footer-content #apple-guide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 #apple-footer .footer-content #apple-guide ul {
   list-style: none;
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide ul {
     display: none;
   }
 }
-
 #apple-footer .footer-content #apple-guide ul li {
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
-
 #apple-footer .footer-content #apple-guide ul li a {
   color: #86868b;
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide input.one:checked ~ div > ul {
     display: block;
   }
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide input#service:checked ~ .service-div > ul {
     display: block;
   }
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide input#account:checked ~ .account-div > ul {
     display: block;
   }
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide input#business:checked ~ .business-div > ul {
     display: block;
   }
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide input#education:checked ~ .education-div > ul {
     display: block;
   }
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide input#value:checked ~ .value-div > ul {
     display: block;
   }
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide input#about:checked ~ .about-div > ul {
     display: block;
   }
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide .apple-text {
     border-bottom: 1px solid #dadada;
     margin-bottom: 15px;
   }
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide label h3 {
     cursor: pointer;
   }
 }
-
 #apple-footer .footer-content #apple-guide label {
   display: block;
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content #apple-guide label h3::after {
     content: "+";
@@ -1734,32 +1470,26 @@ body {
     float: right;
   }
 }
-
 #apple-footer .footer-content .footer-shop {
   color: #86868b;
   margin-bottom: 7px;
   padding-bottom: 3px;
   border-bottom: 1px solid #d2d2d7;
 }
-
 @media (max-width: 767px) {
   #apple-footer .footer-content .footer-shop {
     border-bottom: unset;
   }
 }
-
 #apple-footer .footer-content .footer-shop h4 {
   font-size: 12px;
   font-weight: 300;
 }
-
 #apple-footer .footer-content #copyright {
   color: #b56357;
   margin: 20px 0;
   text-align: center;
 }
-
 #apple-footer .footer-content #copyright h5 {
   font-size: 16px;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
