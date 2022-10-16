@@ -903,12 +903,12 @@ html {
         top: 580px;
     }
 
-    @media (max-width:800px) {
-        animation: aniShow-text-1024 1.5s 6.5s ease-out forwards;
-        font-size: 30px;
-        left: 500px;
-        top: 580px;
-    }
+    // @media (max-width:800px) {
+        // animation: aniShow-text-1024 1.5s 6.5s ease-out forwards;
+        // font-size: 30px;
+        // left: 500px;
+        // top: 580px;
+    // }
 
     @media (max-width:768px) {
         animation: aniShow-text-768 1.5s 6.5s ease-out forwards;
